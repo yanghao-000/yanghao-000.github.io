@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>题库-下载</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<script>if(document.documentElement.clientHeight<510){window.location.href = "index2.html";}</script>
+		<link href="http://cdn.bootcss.com/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ani.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<img src="images/tips/logo-h5.jpg" style="opacity: 0;position: fixed;top:-100%;"/>
+		<div class="swiper-container">
+		  	<div class="swiper-wrapper">
+			    <div class="swiper-slide page1">
+			    	<dl class="logo-box clearfix">
+			    		<dt class="left"><img src="images/logo.jpg"/></dt>
+			    		<dd class="left">
+			    			<h1>会答 KuaiDa</h1>
+			    			<h2>海量会计题库</h2>
+			    		</dd>
+			    	</dl>
+			    	<img class="page1-title marginC opacityZero" src="images/page1-title.png"/>
+			    	<div class="page1-cont relative">
+			    		<img class="page1-circle marginC opacityZero" src="images/page1-circle.png"/>
+			    		<img class="page1-person marginC absolute opacityZero" src="images/page1-person.png"/>
+			    	</div>
+			    	<h3 class="page-text page1-h3 opacityZero">却不知道他们<br/>是在哪里做会计习题？</h3>
+			    </div>
+			    <div class="swiper-slide page2">
+			    	<dl class="logo-box clearfix">
+			    		<dt class="left"><img src="images/logo.jpg"/></dt>
+			    		<dd class="left">
+			    			<h1>会答 KuaiDa</h1>
+			    			<h2>海量会计题库</h2>
+			    		</dd>
+			    	</dl>
+			    	<img class="page2-title marginC opacityZero" src="images/page2-title.png"/>
+			    	<div class="page2-cont marginC relative">
+			    		<img class="page2-circle marginC opacityZero" src="images/page2-circle.png"/>
+			    		<div class="page2-phone-out absolute">
+			    			<img class="page2-phone marginC opacityZero absolute" src="images/page2-phone.png"/>
+			    		</div>
+			    		<script>
+		    				var o = document.getElementsByClassName("page2-phone-out")[0];
+		    				o.style.height = o.offsetWidth*1.4 + "px";
+		    				o.style.webkitBorderRadius = o.offsetWidth + "px";
+		    			</script>
+			    	</div>
+			    	<h3 class="page-text page2-h3 opacityZero">躺着也能做会计习题的一款会答APP<br/>会计证、初级、中级等题型随时练</h3>
+			    </div>
+			    <div class="swiper-slide page3">
+			    	<dl class="logo-box clearfix">
+			    		<dt class="left"><img src="images/logo.jpg"/></dt>
+			    		<dd class="left">
+			    			<h1>会答 KuaiDa</h1>
+			    			<h2>海量会计题库</h2>
+			    		</dd>
+			    	</dl>
+		    		<img class="page3-title marginC opacityZero" src="images/page3-title.png"/>
+		    		<div class="page3-cont relative">
+			    		<img class="page3-circle marginC opacityZero" src="images/page3-circle.png"/>
+			    		<!--<ul class="absolute opacityZero">
+			    			<li class="li-b"><p>随堂<br />练习</p></li>
+			    			<li class="li-s"><p>单科<br />考试</p></li>
+			    			<li class="li-s"><p>模拟<br />考试</p></li>
+			    			<li class="li-b"><p>真题<br />密卷</p></li>
+			    		</ul>
+			    		<script>
+			    			var liB = document.getElementsByClassName("li-b");
+			    			var wB = liB[0].offsetWidth;
+			    			for(var i=0; i<liB.length; i++){
+			    				liB[i].style.height = wB + "px";
+			    			}
+			    			var liS = document.getElementsByClassName("li-s");
+			    			var wS = liS[0].offsetWidth;
+			    			for(var i=0; i<liS.length; i++){
+			    				liS[i].style.height = wS + "px";
+			    			}
+			    		</script>-->
+			    		<img class="page3-4r marginC absolute opacityZero" src="images/page3-4r.png"/>
+			    	</div>
+			    	<h3 class="page-text page3-h3 opacityZero">海量会计题库尽在会答APP<br />加入我们</h3>
+			    	<img class="page3-btn marginC opacityZero lastDowloade" src="images/page3-btn.png"/>
+			    </div>
+		  	</div>
+		</div>
+		
+		<div class="arrow"><img src="images/arrow.png"/></div>
+		
+		<div class="pop-dload-tip">
+			<img src="images/tips/pop_tit_bg.png">
+		</div>
+		
+		<div id="spinner-out">
+			<div class="spinner">
+			  <div class="spinner-container container1">
+			    <div class="circle1"></div>
+			    <div class="circle2"></div>
+			    <div class="circle3"></div>
+			    <div class="circle4"></div>
+			  </div>
+			  <div class="spinner-container container2">
+			    <div class="circle1"></div>
+			    <div class="circle2"></div>
+			    <div class="circle3"></div>
+			    <div class="circle4"></div>
+			  </div>
+			  <div class="spinner-container container3">
+			    <div class="circle1"></div>
+			    <div class="circle2"></div>
+			    <div class="circle3"></div>
+			    <div class="circle4"></div>
+			  </div>
+			</div>
+		</div>
+		
+		<script>
+			function loadImage(){
+					// 图片的路径地址
+				var loadData = [
+					"images/tips/logo-h5.jpg",
+					"images/bg.jpg",
+					"images/logo.jpg",
+					"images/page1-title.png",
+					"images/page1-circle.png",
+					"images/page1-person.png",
+					"images/page2-title.png",
+					"images/page1-circle.png",
+					"images/page2-phone.png",
+				];
+				var num = loadData.length;
+				var k = 0;
+				for(var i = 0 ; i < num ;i ++ ){
+					var img = new Image();
+					img.src=loadData[i];
+					img.onload = function (){
+						k++;
+						if(k == num){
+							document.getElementById("spinner-out").style.display = "none";
+						}else{
+//							document.getElementById("spinner-out").style.display = "block";
+						};
+					};
+				};
+			};
+			loadImage();
+		</script>	
+		<script src="http://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+		<script src="js/judge-device.js"></script>
+		<script src="js/index.js"></script>
+		
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			wx.config({
+			    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+			    appId: '', // 必填，公众号的唯一标识
+			    timestamp: '', // 必填，生成签名的时间戳
+			    nonceStr: '', // 必填，生成签名的随机串
+			    signature: '',// 必填，签名，见附录1
+			    jsApiList: [
+			    	'checkJsApi',
+	  				'onMenuShareTimeline',
+	  				'onMenuShareAppMessage',
+	  				'onMenuShareQQ',
+			    ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+			});
+			
+			wx.ready(function(){
+				wx.checkJsApi({
+				    jsApiList: ['chooseImage'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+				    success: function(res) {
+				        // 以键值对的形式返回，可用的api值true，不可用为false
+				        // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+				    }
+				});
+				wx.onMenuShareAppMessage({
+				    title: "会答——会计学习神器",
+				    desc: '会答是恒企全国千名老师真人在线、随时回答学员会计学习、工作、职业规划问题的平台，最短3秒钟回应，支持语音、图文、白板三种问答方式；每日推荐会计直播、好文、微课音频，是你会计职业生涯里的好帮手。',
+					link: "http://m.kjcity.com/kuaida/",
+				    imgUrl: "images/logo-h5.jpg",
+				    trigger: function (res) {
+				    // 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
+				    },
+				    success: function (res) {
+				    },
+				    cancel: function (res) {
+				    },
+				    fail: function (res) {
+				    }
+				});
+				wx.onMenuShareTimeline({
+				    title: "会答——会计学习神器", // 分享标题
+				    link: "http://m.kjcity.com/kuaida/", // 分享链接
+				    imgUrl: "images/logo-h5.jpg", // 分享图标
+				    success: function () { 
+				        // 用户确认分享后执行的回调函数
+				    },
+				    cancel: function () { 
+				        // 用户取消分享后执行的回调函数
+				    }
+				});
+				wx.onMenuShareQQ({
+				    title: "会答——会计学习神器", // 分享标题
+				    desc: '会答是恒企全国千名老师真人在线、随时回答学员会计学习、工作、职业规划问题的平台，最短3秒钟回应，支持语音、图文、白板三种问答方式；每日推荐会计直播、好文、微课音频，是你会计职业生涯里的好帮手。', // 分享描述
+				    link: "http://m.kjcity.com/kuaida/", // 分享链接
+				    imgUrl: "images/logo-h5.jpg", // 分享图标
+				    success: function () { 
+				       // 用户确认分享后执行的回调函数
+				    },
+				    cancel: function () { 
+				       // 用户取消分享后执行的回调函数
+				    }
+				});
+			});
+		</script>
+	</body>
+</html>
