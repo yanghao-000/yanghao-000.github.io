@@ -44,11 +44,11 @@
 			    	<img class="page2-title marginC opacityZero" src="images/page2-title.png"/>
 			    	<div class="page2-cont marginC relative">
 			    		<img class="page2-circle marginC opacityZero" src="images/page2-circle.png"/>
-			    		<div class="page2-phone-out absolute">
+			    		<div id="page2-phone-out" class="page2-phone-out absolute">
 			    			<img class="page2-phone marginC opacityZero absolute" src="images/page2-phone.png"/>
 			    		</div>
 			    		<script>
-		    				var o = document.getElementsByClassName("page2-phone-out")[0];
+		    				var o = document.getElementById("page2-phone-out");
 		    				o.style.height = o.offsetWidth*1.4 + "px";
 		    				o.style.borderRadius = o.offsetWidth + "px";
 		    				o.style.webkitBorderRadius = o.offsetWidth + "px";
