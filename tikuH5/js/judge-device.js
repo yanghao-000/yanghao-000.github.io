@@ -10,43 +10,42 @@ $(function(){
                 android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, 
                 iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
                 iPad: u.indexOf('iPad') > -1, //是否iPad
-                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                wx: window.navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == 'micromessenger'
             };
         }(),
         language:(navigator.browserLanguage || navigator.language).toLowerCase()
 	}
 	
-	if(browser.versions.ios){
+	if(browser.versions.ios && (!browser.versions.wx)){
 		$(".pop-dload-tip img").attr('src','images/tips/pop_tit_bg.png');
-		window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8"; //跳转APP下载链接
-	}else if(browser.versions.android){
+		window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+	}else if(browser.versions.android && (!browser.versions.wx)){
 		$(".pop-dload-tip img").attr('src','images/tips/androind_tip.png');
-//		window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v2.0.0.apk"; //跳转APP下载链接
+		window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v2.0.0.apk";
 	}
 	
-	function isWeiXin(){
-	    var ua = window.navigator.userAgent.toLowerCase();
-	    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-	    	$(".pop-dload-tip").fadeIn();
-	        return true;
-	    }else{
-	        return false;
-	    }
-	}
+//	function isWeiXin(){
+//	    var ua = window.navigator.userAgent.toLowerCase();
+//	    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+//	    	$(".pop-dload-tip").fadeIn();
+//	        return true;
+//	    }else{
+//	        return false;
+//	    }
+//	}
+	
 	$(".lastDowloade").on("click",function(){
-		if(browser.versions.ios){
-			isWeiXin();
-			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8"; //跳转APP下载链接
-		}else if(browser.versions.android){
-			if(isWeiXin()) return;
-			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v2.0.0.apk"; //跳转APP下载链接
+		if(browser.versions.ios&&browser.versions.wx){
+			$(".pop-dload-tip").fadeIn();
+		}else if(browser.versions.android&&browser.versions.wx){
+			$(".pop-dload-tip").fadeIn();
 		}
 	});
 	
 	$(".pop-dload-tip img").click(function(){
 		$(".pop-dload-tip").fadeOut();
 	});
-	
 	
 	$('openApp').onclick = function(e){  
         // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为  
