@@ -132,6 +132,16 @@
 	height:100%;
 	background-color: #f0f0f0;
 }
+.spinner-text{
+	position: absolute;
+	width:80%;
+	left:0;
+	right:0;
+	margin:0 auto;
+	font-size: 1.2em;
+	text-align: center;
+	top:55%;
+}
 .spinner {
 	position: absolute;
   width: 40px;
@@ -144,9 +154,9 @@
 }
  
 .container1 > div, .container2 > div, .container3 > div {
-  width: 6px;
-  height: 6px;
-  background-color: #333;
+  width: 8px;
+  height: 8px;
+  background-color: #27ae61;
  
   border-radius: 100%;
   position: absolute;

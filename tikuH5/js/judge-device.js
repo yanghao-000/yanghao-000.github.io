@@ -17,22 +17,27 @@ $(function(){
         language:(navigator.browserLanguage || navigator.language).toLowerCase()
 	}
 	
-	if(browser.versions.ios && (!browser.versions.wx)){
+	if(browser.versions.ios && browser.versions.wx){
 		$(".pop-dload-tip img").attr('src','images/tips/pop_tit_bg.png');
+	}
+	if(browser.versions.android && browser.versions.wx){
+		$(".pop-dload-tip img").attr('src','images/tips/androind_tip.png');
+	}
+	
+	if(browser.versions.ios && !browser.versions.wx){
 		window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
 	}
-	if(browser.versions.android && (!browser.versions.wx)){
-		$(".pop-dload-tip img").attr('src','images/tips/androind_tip.png');
+	if(browser.versions.android && !browser.versions.wx){
 		window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v2.0.0.apk";
 	}
 	
 	$(".lastDowloade").on("click",function(){
 		if(browser.versions.wx){
 			$(".pop-dload-tip").fadeIn();
-		}else if(browser.versions.android){
-			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v2.0.0.apk";
 		}else if(browser.versions.ios){
 			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+		}else if(browser.versions.android){
+			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v2.0.0.apk";
 		}
 	});
 	
