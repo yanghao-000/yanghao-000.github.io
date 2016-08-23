@@ -32,11 +32,11 @@ img{
 	color:#fff;
 }
 .logo-box dd h1{
-	font-size: 1.2em;
-	line-height: 1.2em;
+	font-size: 1.3em;
+	/*line-height: 1.2em;*/
 }
 .logo-box dd h2{
-	font-size: 1em;
+	font-size: 1.1em;
 }
 .page-text{
 	font-size: 1.5em;
@@ -222,14 +222,14 @@ img{
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
 .logo-box dd h1{
-	line-height: 1.1em;
+	/*line-height: 1.1em;*/
 }
-.page3-cont ul .li-s p{
+/*.page3-cont ul .li-s p{
 	margin-top:0.6em;
-}
-.page3-cont ul .li-b p{
+}*/
+/*.page3-cont ul .li-b p{
 	margin-top:0.5em;
-}
+}*/
 }
 @media only screen and (min-width: 375px) and (max-width: 413px) {
 	body{font-size: 84%;}
