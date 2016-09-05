@@ -1,0 +1,11 @@
+.show-total{
+	width:100%;
+	background: -webkit-linear-gradient(left bottom, #1c90e0 , #71eafb);
+    background: -webkit-linear-gradient(to top right, #1c90e0 , #71eafb); 
+}
+#dial{
+	background: url(../images/pc-report/report-c.png) no-repeat center 0;
+	background-size: 100% 100%;
+	display: block;
+	margin:0 auto;
+}
