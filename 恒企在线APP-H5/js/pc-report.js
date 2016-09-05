@@ -1,5 +1,5 @@
 $(function(){
-	drawInit(70,1000);
+	drawInit(89,1000);
 });
 
 function drawInit(inputNum,t){
@@ -7,7 +7,7 @@ function drawInit(inputNum,t){
 	var ctx = dial.getContext("2d");
 	var w = dial.width;
 	var h = dial.height;
-	var r = 87;
+	var r = 88;
 	var p = Math.PI;
 	var num = -1;
 	var deg;
@@ -39,14 +39,19 @@ function drawInit(inputNum,t){
 		ctx.save();
 		
 		ctx.beginPath();
-		var linear_gradient = ctx.createLinearGradient(0, 0, 100, 0);
-		linear_gradient.addColorStop(0, '#ffffff');
-		linear_gradient.addColorStop(0.75, '#ffffff');
-		linear_gradient.addColorStop(0, '#ffffff');
-		ctx.strokeStyle = linear_gradient;
+		ctx.rotate(p);
+		 //水平渐变值必须保持为0
+        var gr = ctx.createLinearGradient(0,0,0,124);
+        //添加颜色端点
+		gr.addColorStop(0,'rgba(255,255,255,0.0)');
+        gr.addColorStop(.5,'rgba(255,255,255,1)');  
+        gr.addColorStop(1,'rgba(255,255,255,0.0)');  
+        ctx.strokeStyle = gr;
+//		ctx.fillStyle = gr;
 		ctx.lineWidth = 3;
-		ctx.arc(0,0,r,p,deg);
+		ctx.arc(0,0,r,p,deg+p);
 		ctx.stroke();
+//		ctx.fill();
 		ctx.restore();
 		ctx.save();
 		
