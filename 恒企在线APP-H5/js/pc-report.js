@@ -7,7 +7,7 @@ function drawInit(inputNum,t){
 	var ctx = dial.getContext("2d");
 	var w = dial.width;
 	var h = dial.height;
-	var r = 89;
+	var r = 87;
 	var p = Math.PI;
 	var num = -1;
 	var deg;
@@ -44,7 +44,7 @@ function drawInit(inputNum,t){
 		linear_gradient.addColorStop(0.75, '#ffffff');
 		linear_gradient.addColorStop(0, '#ffffff');
 		ctx.strokeStyle = linear_gradient;
-		ctx.lineWidth = 2;
+		ctx.lineWidth = 3;
 		ctx.arc(0,0,r,p,deg);
 		ctx.stroke();
 		ctx.restore();
