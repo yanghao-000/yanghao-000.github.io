@@ -12,7 +12,7 @@ function drawInit(inputNum,t){
 	var num = -1;
 	var deg;
 	var ter;
-	var time = t/inputNum;
+	var time = t/inputNum/2;
 	
 	var loadImg = ["images/pc-report/report-dot.png","images/pc-report/report-zhen.png"];
 	var imgNum = loadImg.length;
