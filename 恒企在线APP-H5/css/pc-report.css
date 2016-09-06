@@ -2,10 +2,24 @@
 	width:100%;
 	background: -webkit-linear-gradient(left bottom, #1c90e0 , #71eafb);
     background: -webkit-linear-gradient(to top right, #1c90e0 , #71eafb); 
+    text-align: center;
+    padding-top:0.2rem;
+    padding-bottom:0.3rem;
 }
 #dial{
 	background: url(../images/pc-report/report-c.png) no-repeat center 0;
 	background-size: 100% 100%;
 	display: block;
 	margin:0 auto;
+}
+.show-total h1{
+	font-size: 0.6rem;
+	color:#c0ebfe;
+	text-shadow:0px 0px 8px #33a4e3;
+	line-height: 0.72rem;
+}
+.show-total h2{
+	font-size: 0.3rem;
+	color:#fff;
+	text-shadow:0px 0px 8px #33a4e3;
 }
