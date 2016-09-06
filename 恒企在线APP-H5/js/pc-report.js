@@ -43,6 +43,7 @@ function drawInit(inputNum,t,arr,arr2,arr3){
 	};
 
 	function drawDial(n){
+		if(num==100){return false};
 		ctx.clearRect(0,0,w,h);
 		ctx.save();		
 		
