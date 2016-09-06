@@ -1,5 +1,5 @@
 $(function(){
-	var passRate = 100;
+	var passRate = 50;
 	var pArr = [70,50,30];
 	var lArr = ["06.01","06.02","06.03","06.04","06.05","06.06","06.07","06.08"];
 	var dArr = [20,40,30,10,90,20,50,40];
@@ -30,6 +30,7 @@ function drawInit(inputNum,t,arr,arr2,arr3){
 				setTimeout(function(){
 					numTiaoDong($(".show-total h1 span"),inputNum,t);
 					timer = setInterval(function(){
+						calDeg(inputNum);
 						drawDial(inputNum);
 					},t/inputNum);
 					$(".show-sub p").each(function(i){
@@ -42,7 +43,7 @@ function drawInit(inputNum,t,arr,arr2,arr3){
 	};
 
 	function drawDial(n){
-		calDeg(n);
+		
 		ctx.clearRect(0,0,w,h);
 		ctx.save();		
 		
