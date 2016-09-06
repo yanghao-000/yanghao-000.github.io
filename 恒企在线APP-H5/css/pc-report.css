@@ -103,12 +103,13 @@ body{
 	color:#999;
 	height: 16px;
 	line-height: 16px;
+	overflow: hidden;
 }
 .show-chartLine dd span{
 	display: block;
-	width:11px;
-	height:11px;
-	margin-top:1px;
+	width:10px;
+	height:10px;
+	margin-top:3px;
 	margin-right:6px;
 	background: url(../images/pc-report/chart-dot.png) no-repeat 0 center;
 	-webkit-background-size: cover;
