@@ -101,6 +101,8 @@ body{
 .show-chartLine dd{
 	font-size: 12px;
 	color:#999;
+	height: 16px;
+	line-height: 16px;
 }
 .show-chartLine dd span{
 	display: block;
