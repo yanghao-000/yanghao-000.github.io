@@ -1,8 +1,9 @@
 $(function(){
+	var passRate = 100;
 	var pArr = [70,50,30];
 	var lArr = ["06.01","06.02","06.03","06.04","06.05","06.06","06.07","06.08"];
 	var dArr = [20,40,30,10,90,20,50,40];
-	drawInit(100,1000,pArr,lArr,dArr);
+	drawInit(passRate,1000,pArr,lArr,dArr);
 });
 
 //表盘
@@ -82,10 +83,9 @@ function drawInit(inputNum,t,arr,arr2,arr3){
 	}
 	function calDeg(n){
 		num++;
-		if(num<n){
+		if(num<=n){
 			deg = p + num/100*p;
 		}else{
-			deg = p + num/100*p;
 			clearInterval(timer);
 			return false;
 		}	
@@ -130,8 +130,9 @@ function chartLine(lArr,dArr){
 		]
 	}
 	var options = {
+		animation : false,
 		scaleFontColor : "#333",
-		 scaleGridLineColor : "#ddd",
+		scaleGridLineColor : "#ddd",
 		animationSteps : 100,
 		pointDotRadius : 4,
 		pointDotStrokeWidth : 3,

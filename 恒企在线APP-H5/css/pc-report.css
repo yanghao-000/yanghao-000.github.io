@@ -42,10 +42,14 @@ body{
 	margin-bottom:0.1rem;
 }
 .show-sub h1{
-	font-size: 0.26rem;
+	font-size: 0.28rem;
 }
 .show-sub dd{
 	font-size: 0.28rem;
+	color:#ff465c;
+}
+.show-sub dd.pass{
+	color:#289bfb;
 }
 .show-sub dt{
 	width:5.7rem;
