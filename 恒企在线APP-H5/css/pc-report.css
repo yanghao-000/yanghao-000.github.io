@@ -1,11 +1,118 @@
+body{
+	background-color: #f0f0f0;
+}
+/*==================================*/
 .show-total{
 	width:100%;
-	background: -webkit-linear-gradient(left bottom, #1c90e0 , #71eafb);
-    background: -webkit-linear-gradient(to top right, #1c90e0 , #71eafb); 
+	background: -webkit-linear-gradient(left bottom, #1c90e0 , #71eafb); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top right, #1c90e0 , #71eafb); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top right, #1c90e0 , #71eafb); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to top right, #1c90e0 , #71eafb); /* 标准的语法（必须放在最后） */
+    text-align: center;
+    padding-top:0.2rem;
+    padding-bottom:0.3rem;
+    margin-bottom:0.14rem;
 }
 #dial{
 	background: url(../images/pc-report/report-c.png) no-repeat center 0;
 	background-size: 100% 100%;
 	display: block;
 	margin:0 auto;
+}
+.show-total h1{
+	font-size: 0.6rem;
+	color:#c0ebfe;
+	text-shadow:0px 0px 8px #33a4e3;
+	line-height: 0.72rem;
+}
+.show-total h2{
+	font-size: 0.3rem;
+	color:#fff;
+	text-shadow:0px 0px 8px #33a4e3;
+}
+/*=========================*/
+.show-sub{
+	margin-bottom:0.14rem;
+	padding:0 0.32rem;
+	background-color: #fff;
+	padding-top:0.3rem;
+	padding-bottom:0.2rem;
+}
+.show-sub li{
+	margin-bottom:0.1rem;
+}
+.show-sub h1{
+	font-size: 0.28rem;
+}
+.show-sub dd{
+	font-size: 0.28rem;
+	color:#ff465c;
+}
+.show-sub dd.pass{
+	color:#289bfb;
+}
+.show-sub dt{
+	width:5.7rem;
+	height:8px;
+	background-color: #eee;
+	margin-top:8px;
+	-webkit-border-radius: 8px;
+}
+.show-sub dl{
+	line-height: 22px;
+}
+.show-sub ul li p{
+	width:0%;
+	height:100%;
+	-webkit-border-radius: 8px;
+}
+.show-sub ul li:nth-child(1) p{
+	background: -webkit-linear-gradient(left, #2a9bfb , #55e6d8); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #2a9bfb, #55e6d8); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #2a9bfb, #55e6d8); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #2a9bfb , #55e6d8); /* 标准的语法（必须放在最后） */
+}
+.show-sub ul li:nth-child(2) p{
+	background: -webkit-linear-gradient(left, #ff9329 , #ffd58c); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #ff9329, #ffd58c); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #ff9329, #ffd58c); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #ff9329 , #ffd58c); /* 标准的语法（必须放在最后） */
+}
+.show-sub ul li:nth-child(3) p{
+	background: -webkit-linear-gradient(left, #f6596f , #f99a7b); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #f6596f, #f99a7b); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #f6596f, #f99a7b); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #f6596f , #f99a7b); /* 标准的语法（必须放在最后） */
+}
+/*===============================*/
+.show-chartLine{
+	padding:0 0.32rem;
+	padding-top:0.32rem;
+	padding-bottom:0.42rem;
+	background-color: #fff;
+}
+.show-chartLine dl{
+	margin-bottom:0.46rem;
+}
+.show-chartLine dt{
+	font-size: 0.28rem;
+	color:#666;
+}
+.show-chartLine dd{
+	font-size: 12px;
+	color:#999;
+}
+.show-chartLine dd span{
+	display: block;
+	width:11px;
+	height:11px;
+	margin-top:3px;
+	margin-right:6px;
+	background: url(../images/pc-report/chart-dot.png) no-repeat 0 center;
+	-webkit-background-size: cover;
+}
+#chartLine{
+	display: block;
+	margin:0 auto;
+	margin-left:-16px;	
 }
