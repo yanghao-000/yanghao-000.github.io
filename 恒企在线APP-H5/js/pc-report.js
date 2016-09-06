@@ -1,5 +1,5 @@
 $(function(){
-	drawInit(58,1000);
+	drawInit(100,1000);
 });
 
 function drawInit(inputNum,t){
