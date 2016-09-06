@@ -1,3 +1,4 @@
+//数字跳动
 var numTiaoDong = function(obj,num,time){
 	var i = 0;
 	var t = setInterval(function(){
