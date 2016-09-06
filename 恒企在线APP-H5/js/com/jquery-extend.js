@@ -3,7 +3,7 @@ var numTiaoDong = function(obj,num,time){
 	var t = setInterval(function(){
 		obj.text(i++);
 		if(i>=num){
-			obj.text(num);
+			obj.text(parseInt(num));
 			clearInterval(t);
 		}
 	},time/num);

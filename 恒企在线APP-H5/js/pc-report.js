@@ -1,8 +1,9 @@
 $(function(){
-	drawInit(100,1000);
+	var pArr = [70,50,30];
+	drawInit(100,1000,pArr);
 });
 
-function drawInit(inputNum,t){
+function drawInit(inputNum,t,arr){
 	var dial = document.getElementById("dial");
 	var ctx = dial.getContext("2d");
 	var w = dial.width;
@@ -21,12 +22,15 @@ function drawInit(inputNum,t){
 		img.src=loadImg[i];
 		img.onload = function (){
 			k++;
-			if(k == imgNum) {
+			if(k == imgNum){
 				setTimeout(function(){
 					numTiaoDong($(".show-total h1 span"),inputNum,t);
 					timer = setInterval(function(){
 						drawDial(inputNum);
 					},t/inputNum);
+					$(".show-sub p").each(function(i){
+						barPercent($(this),arr[i],t);
+					});
 				},200);
 			};
 		};
@@ -79,7 +83,12 @@ function drawInit(inputNum,t){
 		}else{
 			deg = p + num/100*p;
 			clearInterval(timer);
-//			return false;
+			return false;
 		}	
 	}
+}
+
+function barPercent(obj,per,t){
+	obj.animate({"width":per+"%"},t);
+	numTiaoDong(obj.parent().next().find("span"),per,t);
 }
