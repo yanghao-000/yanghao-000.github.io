@@ -106,12 +106,12 @@ html,body{
 	color:#12C38C;
 	margin-right:0.22rem;
 	background: url(../images/icon/title-white-r.png) no-repeat center center;
-	-webkit-background-size: cover;
+	-webkit-background-size: 100% 100%;
 }
 .t-d dd p.active i{
 	color:#fff;
 	background: url(../images/icon/title-green-r.png) no-repeat center center;
-	-webkit-background-size: cover;
+	-webkit-background-size: 100% 100%;
 }
 .t-d dd p em{
 	float:left;
