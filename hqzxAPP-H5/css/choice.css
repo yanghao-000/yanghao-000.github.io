@@ -129,3 +129,52 @@ html,body{
 	color:#fff;
 	text-align: center;
 }
+/*==========================*/
+.answer-sheet{
+	position: fixed;
+	height:100%;
+	width:100%;
+	z-index: 2;
+	top:0;
+	left:0;
+	background-color: #f0f0f0;
+	overflow: auto;
+	display: none;
+}
+.sheet-title{
+	position: relative;
+	height:0.9rem;
+	line-height: 0.9rem;
+	font-size: 0.36rem;
+	text-align: center;
+	border-bottom:1px solid #ccc;
+}
+.sheet-title i{
+	position: absolute;
+	right:0;
+	font-size: 0.32rem;
+	height:100%;
+	padding:0 15px;
+}
+.sheet-body{
+	padding:0.4rem 0.15rem 0;
+}
+.sheet-body p{
+	float:left;
+	width:0.8rem;
+	height:0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	font-size: 0.32rem;
+	background-color: #fff;
+	-webkit-border-radius: 50%;
+	margin:0 0.2rem 0.4rem;
+}
+.sheet-body p.active{
+	background-color: #12C38C;
+	color:#fff;
+}
+.sheet-body p.has{
+	background-color: #aaa;
+	color:#fff;
+}

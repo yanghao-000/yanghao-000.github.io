@@ -2,8 +2,10 @@ $(function(){
 	var n = 6;
 	init(n);  
 	setTimeCountDown(1,30,0);  
+	hid();
+	showSheet();
 });
-
+var mySwiper;
 //初始化
 function init(n){
 	var wrap = $(".swiper-wrapper");
@@ -21,19 +23,14 @@ function init(n){
 		}
 	});
 	
-	var mySwiper = new Swiper('.swiper-container', {
+	mySwiper = new Swiper('.swiper-container', {
 		autoHeight: true,
 		onSlideChangeStart: slideTouch,
 	});
 //	单选点击
 	$(".box").on("click",".dx p",function(){
 		$(this).addClass("active").siblings().removeClass("active");
-//		if(!$(this).parent().hasClass("hasChoose")){
-			mySwiper.slideNext(function(){},500);
-//		}else{
-//			slideTouch();
-//		}
-//		$(this).parent().addClass("hasChoose");
+		mySwiper.slideNext(function(){},500);
 	});
 //	多选点击
 	$(".box").on("click",".ddx p",function(){
@@ -91,12 +88,31 @@ function setTimeCountDown(a,b,c,fn){
 }
 
 //点击收藏
-$(".hid").on("click",function(){
-	if($(this).hasClass("active")){
-		$(this).removeClass("active");
-		$(this).siblings().text("收藏");
-	}else{
-		$(this).addClass("active");
-		$(this).siblings().text("已收藏");
-	}
-});
+function hid(){
+	$(".hid").on("click",function(){
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$(this).siblings().text("收藏");
+		}else{
+			$(this).addClass("active");
+			$(this).siblings().text("已收藏");
+		}
+	});
+}
+
+//答题卡
+function showSheet(n){
+	var answerSheet = $(".answer-sheet");
+	var p = $(".sheet-body p");
+	$(".sheet").on("click",function(){
+		$(".answer-sheet").fadeIn();
+	});
+	$(".sheet-title i").on("click",function(){
+		answerSheet.fadeOut(0);
+	});
+	p.on("click",function(){
+		answerSheet.fadeOut(0);
+		var i = $(this).index();
+		mySwiper.slideTo(i, 500, false);    //点击答题卡 跳转对应题目
+	});
+}
