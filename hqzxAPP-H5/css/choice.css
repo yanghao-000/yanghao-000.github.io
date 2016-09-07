@@ -91,7 +91,7 @@ html,body{
 }
 .t-d dd p{
 	height:0.5rem;
-	line-height: 0.49rem;
+	line-height: 0.5rem;
 	margin-bottom:0.4rem;
 }
 .t-d dd p.active i{
@@ -106,7 +106,7 @@ html,body{
 	float:left;
 	width:0.5rem;
 	height:0.5rem;
-	line-height: 0.5rem;
+	/*line-height: 0.5rem;*/
 	-webkit-border-radius: 50%;
 	border:1px solid #12C38C;
 	color:#12C38C;
