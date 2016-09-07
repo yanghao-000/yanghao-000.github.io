@@ -143,3 +143,19 @@ function chartLine(lArr,dArr){
 	}
 	var myNewChart = new Chart(ctx).Line(data,options);
 }
+
+
+//数字跳动
+function numTiaoDong(obj,num,time){
+	var i = 0;
+	var t = setInterval(function(){
+		obj.text(i++);
+		if(i>=60){
+			obj.parent().addClass("pass");
+		}
+		if(i>=num){
+			obj.text(parseInt(num));
+			clearInterval(t);
+		}
+	},time/num);
+}

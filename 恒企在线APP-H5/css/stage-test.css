@@ -16,11 +16,7 @@ html,body{
 	width:33%;
 	float:left;
 	font-size: 0.3rem;
-<<<<<<< HEAD
 	border-right:1px solid #ccc;
-=======
-	border-right:1px solid #ddd;
->>>>>>> origin/master
 }
 .hd li.active{
 	color:#12c38c;
@@ -46,17 +42,13 @@ html,body{
 	background-color: #fff;
 	font-size: 0.3rem;
 	color:#666;
-<<<<<<< HEAD
-	height:60px;
-	line-height: 60px;
-	text-indent: 0.26rem;
-	border-bottom:1px solid #ccc;
-=======
-	height:1.2rem;
+	height: 1.2rem;
 	line-height: 1.2rem;
 	text-indent: 0.26rem;
-	border-bottom:1px solid #ddd;
->>>>>>> origin/master
+	border-bottom:1px solid #ccc;
+}
+.swiper-slide li:hover{
+	background-color: #ddd;
 }
 .swiper-slide li.no-bor{
 	border-bottom:none;

@@ -1,0 +1,127 @@
+html,body{
+	height:100%;
+}
+/*===================*/
+.title{
+	padding:0.3rem 0.32rem;
+	border-top:0.5px solid #ccc;
+	background-color: #fafafa;
+}
+.title dt{
+	font-size: 0.32rem;
+	color:#666;
+}
+.title dd{
+	font-size: 0.32rem;
+}
+.title dd i{
+	color:#12C38C;
+}
+.title dd em{
+	color:#333;
+}
+/*===============================*/
+.footer{
+	text-align: center;
+	padding-top:0.14rem;
+	padding-bottom:0.1rem;
+	border-top:0.5px solid #ccc;
+	width:100%;
+	position: fixed;
+	bottom:0;
+	left:0;
+}
+.footer li{
+	float: left;
+	width:25%;
+}
+.footer li p{
+	font-size: 0.36rem;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	margin-bottom:0.06rem;
+	color:#12C38C;
+}
+.footer ul li:nth-child(1) p{
+	background: url(../images/icon/title-star.png) no-repeat center center;
+	-webkit-background-size: contain;
+}
+.footer ul li:nth-child(1) p.active{
+	background: url(../images/icon/title-star-act.png) no-repeat center center;
+	-webkit-background-size: contain;
+}
+.footer ul li:nth-child(2) p{
+	background: url(../images/icon/title-book.png) no-repeat center center;
+	-webkit-background-size: contain;
+}
+.footer ul li:nth-child(3) p{
+	background: url(../images/icon/title-speak.png) no-repeat center center;
+	-webkit-background-size: contain;
+}
+.footer li h1{
+	font-size: 0.2rem;
+	color:#666;
+}
+/*==================================*/
+.box{
+	height: 0;
+	overflow: auto;
+	background-color: #f0f0f0;
+}
+.swiper-slide{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding:0.3rem 0.3rem;
+}
+/*=======================*/
+.t-d{
+	
+}
+.t-d dt{
+	font-size: 0.32rem;
+	line-height: 0.52rem;
+	margin-bottom:0.46rem;
+}
+.t-d dt span{
+	font-size: 0.24rem;
+	color:#999;
+}
+.t-d dd{
+	font-size: 0.32rem;
+}
+.t-d dd p{
+	height:0.5rem;
+	line-height: 0.49rem;
+	margin-bottom:0.4rem;
+}
+.t-d dd p.active i{
+	color:#fff;
+	background-color: #12C38C;
+}
+.t-d dd p i{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	display: block;
+	float:left;
+	width:0.5rem;
+	height:0.5rem;
+	line-height: 0.46rem;
+	-webkit-border-radius: 50%;
+	border:0.5px solid #12C38C;
+	color:#12C38C;
+	margin-right:0.22rem;
+}
+.sure-btn{
+	padding-top:0.4rem;
+}
+.sure-btn p{
+	width:48%;
+	line-height:0.8rem;
+	-webkit-border-radius: 4px;
+	background-color: #12C38C;
+	font-size: 0.32rem;
+	margin:0 auto;
+	color:#fff;
+	text-align: center;
+}
