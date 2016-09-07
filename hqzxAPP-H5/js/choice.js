@@ -28,21 +28,19 @@ function init(n){
 //	单选点击
 	$(".box").on("click",".dx p",function(){
 		$(this).addClass("active").siblings().removeClass("active");
-		if(!$(this).parent().hasClass("hasChoose")){
+//		if(!$(this).parent().hasClass("hasChoose")){
 			mySwiper.slideNext(function(){},500);
-		}else{
-			slideTouch();
-		}
-		$(this).parent().addClass("hasChoose");
+//		}else{
+//			slideTouch();
+//		}
+//		$(this).parent().addClass("hasChoose");
 	});
 //	多选点击
 	$(".box").on("click",".ddx p",function(){
 		if(!$(this).hasClass("active")){
 			$(this).addClass("active");
-			$(this).parent().addClass("hasChoose");
 		}else{
 			$(this).removeClass("active");
-			$(this).parent().removeClass("hasChoose");
 		}
 	});
 //	多选确定按钮点击
