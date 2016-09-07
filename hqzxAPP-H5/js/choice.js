@@ -107,12 +107,15 @@ function showSheet(n){
 	$(".sheet").on("click",function(){
 		$(".answer-sheet").fadeIn();
 	});
-	$(".sheet-title i").on("click",function(){
-		answerSheet.fadeOut(0);
-	});
+//	$(".sheet-title i").on("click",function(){
+//		answerSheet.fadeOut(0);
+//	});
 	p.on("click",function(){
 		answerSheet.fadeOut(0);
 		var i = $(this).index();
 		mySwiper.slideTo(i, 500, false);    //点击答题卡 跳转对应题目
+	});
+	$(".answer-sheet").on("click",function(){
+		answerSheet.fadeOut(0);
 	});
 }

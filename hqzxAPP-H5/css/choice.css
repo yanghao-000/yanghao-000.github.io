@@ -141,7 +141,7 @@ html,body{
 	overflow: auto;
 	display: none;
 }
-.sheet-title{
+/*.sheet-title{
 	position: relative;
 	height:0.9rem;
 	line-height: 0.9rem;
@@ -155,20 +155,20 @@ html,body{
 	font-size: 0.32rem;
 	height:100%;
 	padding:0 15px;
-}
+}*/
 .sheet-body{
 	padding:0.4rem 0.15rem 0;
 }
 .sheet-body p{
 	float:left;
-	width:0.8rem;
-	height:0.8rem;
-	line-height: 0.8rem;
+	width:0.6rem;
+	height:0.6rem;
+	line-height: 0.6rem;
 	text-align: center;
 	font-size: 0.32rem;
 	background-color: #fff;
 	-webkit-border-radius: 50%;
-	margin:0 0.2rem 0.4rem;
+	margin:0 0.3rem 0.3rem;
 }
 .sheet-body p.active{
 	background-color: #12C38C;
