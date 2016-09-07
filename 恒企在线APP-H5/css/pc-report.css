@@ -101,11 +101,14 @@ body{
 .show-chartLine dd{
 	font-size: 12px;
 	color:#999;
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
 }
 .show-chartLine dd span{
 	display: block;
-	width:11px;
-	height:11px;
+	width:10px;
+	height:10px;
 	margin-top:3px;
 	margin-right:6px;
 	background: url(../images/pc-report/chart-dot.png) no-repeat 0 center;
