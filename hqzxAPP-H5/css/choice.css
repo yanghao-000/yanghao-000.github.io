@@ -106,11 +106,14 @@ html,body{
 	float:left;
 	width:0.5rem;
 	height:0.5rem;
-	/*line-height: 0.5rem;*/
+	line-height: 0.48rem;
 	-webkit-border-radius: 50%;
 	border:1px solid #12C38C;
 	color:#12C38C;
 	margin-right:0.22rem;
+}
+.t-d dd p em{
+	float:left;
 }
 .sure-btn{
 	padding-top:0.4rem;
