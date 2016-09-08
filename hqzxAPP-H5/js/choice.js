@@ -30,7 +30,7 @@ function init(n){
 		mySwiper.slideNext(function(){},500);
 	});
 //	多选点击
-	$(".box").on("click",".ddx p",function(){
+	$(".box").on("click",".ddx p,.dddx p",function(){
 		if(!$(this).hasClass("active")){
 			$(this).addClass("active");
 		}else{
@@ -38,7 +38,7 @@ function init(n){
 		}
 	});
 //	多选确定按钮点击
-	$(".box").on("click",".ddx .sure-btn",function(){
+	$(".box").on("click",".ddx .sure-btn,.dddx .sure-btn",function(){
 		mySwiper.slideNext(function(){},500);
 	});
 }

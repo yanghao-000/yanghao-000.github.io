@@ -2,5 +2,3 @@ $(function(){
 	slideCreate();
 	launchInit();
 });
-
-

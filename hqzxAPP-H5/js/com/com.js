@@ -24,5 +24,17 @@ function slideCreate(){
 		slide.eq(mySwiper.previousIndex).animate({"scrollTop":0},300);
 	});
 }
-
-
+//展开效果
+function launchInit(){
+	$(".t-zong").on("click",function(){
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$(this).find(".ss").removeClass("active");
+			$(this).siblings().fadeOut(200);
+		}else{
+			$(this).addClass("active");
+			$(this).find(".ss").addClass("active");
+			$(this).siblings().fadeIn(200);
+		}
+	});
+}

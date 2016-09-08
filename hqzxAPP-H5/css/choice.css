@@ -116,6 +116,11 @@ html,body{
 .t-d dd p em{
 	float:left;
 }
+.dddx p{
+	font-size: 0.32rem;
+	line-height: 0.54rem;
+	margin-bottom:0.2rem;
+}
 .sure-btn{
 	padding-top:0.4rem;
 }
@@ -141,21 +146,6 @@ html,body{
 	overflow: auto;
 	display: none;
 }
-/*.sheet-title{
-	position: relative;
-	height:0.9rem;
-	line-height: 0.9rem;
-	font-size: 0.36rem;
-	text-align: center;
-	border-bottom:1px solid #ccc;
-}
-.sheet-title i{
-	position: absolute;
-	right:0;
-	font-size: 0.32rem;
-	height:100%;
-	padding:0 15px;
-}*/
 .sheet-body{
 	padding:0.4rem 0.15rem 0;
 }
