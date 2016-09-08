@@ -64,9 +64,12 @@ html,body{
 }
 /*==================================*/
 .box{
-	height: 0;
+	height:0;
 	overflow: auto;
 	background-color: #f0f0f0;
+}
+.swiper-slide{
+	overflow: auto;
 }
 .swiper-slide{
 	box-sizing: border-box;

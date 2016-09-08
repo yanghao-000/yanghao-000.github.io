@@ -17,9 +17,7 @@ function init(n){
 	var d = H-h1-h2;
 	$(".box").css("height",d);
 	$(".swiper-slide").each(function(i){
-		if($(this).outerHeight(true)<d){
-			$(this).css({"height":d});
-		}
+		$(this).css({"height":d});
 	});
 	
 	mySwiper = new Swiper('.swiper-container', {
@@ -47,7 +45,7 @@ function init(n){
 
 // 点击答案 滑动下一题的回调
 function slideTouch(){    
-//	alert(123);
+	$(".swiper-slide").eq(mySwiper.previousIndex).animate({"scrollTop":0},300);
 }
 
 //点击收藏
