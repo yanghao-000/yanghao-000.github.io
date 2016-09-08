@@ -1,7 +1,6 @@
 $(function(){
 	var n = 6;
-	init(n);  
-	setTimeCountDown(1,30,0);  
+	init(n);   
 	hid();
 	showSheet();
 });
@@ -51,42 +50,6 @@ function slideTouch(){
 //	alert(123);
 }
 
-//倒计时
-function setTimeCountDown(a,b,c,fn){
-//	var end = new Date(time);
-	var end = new Date();
-	end = end.getTime() + (a*3600+b*60+c)*1000;
-	
-	var tDay = document.getElementById("t-d-text");
-	var tHour = document.getElementById("t-h-text");
-	var tMin = document.getElementById("t-m-text");
-	var tSec = document.getElementById("t-s-text");
-	var tMs = document.getElementById("t-ms-text");
-	
-	var setTimeCountDownT = setInterval(function(){
-		var now = new Date();
-		var leftTime = end-now.getTime();
-		var ms = Math.floor((leftTime)%100);
-		var s = Math.floor((leftTime/1000)%60);
-		var m = Math.floor((leftTime/1000/60)%60);
-		var h = Math.floor((leftTime/1000/60/60)%24);
-		var d = Math.floor((leftTime/1000/60/60/24));		
-		if(ms<10){ms="0"+ms}
-		if(s<10){s="0"+s}
-		if(m<10){m="0"+m}
-		if(h<10){h="0"+h}
-		if(d<10){d="0"+d}
-//		tMs.innerHTML = ms;
-		tSec.innerHTML = s;
-		tMin.innerHTML = m;
-		tHour.innerHTML = h;
-		if(s=="00"&&m=="00"&&h=="00"){
-			if(fn){fu();}
-		}
-//		tDay.innerHTML = d;
-	},10);
-}
-
 //点击收藏
 function hid(){
 	$(".hid").on("click",function(){
@@ -107,9 +70,6 @@ function showSheet(n){
 	$(".sheet").on("click",function(){
 		$(".answer-sheet").fadeIn();
 	});
-//	$(".sheet-title i").on("click",function(){
-//		answerSheet.fadeOut(0);
-//	});
 	p.on("click",function(){
 		answerSheet.fadeOut(0);
 		var i = $(this).index();

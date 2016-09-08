@@ -2,7 +2,7 @@ html,body{
 	height:100%;
 	background-color: #f0f0f0;
 }
-/*========================*/
+/*===========三栏导航=============*/
 .hd{
 	height:0.6rem;
 	line-height: 0.6rem;
@@ -32,11 +32,12 @@ html,body{
 	text-overflow: ellipsis;
 }
 /*================================*/
-.swiper-container{
-	
+.box{
+	height:0;
+	overflow: auto;
 }
 .swiper-slide{
-	
+	overflow: auto;
 }
 .swiper-slide li{
 	background-color: #fff;
