@@ -46,6 +46,10 @@ html,body{
 .fen{
 	/*display: none;*/
 }
+.fen:hover{
+	/*display: none;*/
+	background-color: #ccc;
+}
 .zong,.fen{
 	position: relative;
 	float:right;
@@ -98,7 +102,7 @@ html,body{
 .ss{
 	position: absolute;
 	width:0.38rem;
-	top:0.26rem;
+	top:0.3rem;
 	left:-0.56rem;
 	z-index: 2;
 }
@@ -115,7 +119,7 @@ html,body{
 .ssr{
 	position: absolute;
 	width:0.38rem;
-	top:-1.08rem;
+	top:-1.02rem;
 	left:-0.56rem;
 }
 .ssr p{
@@ -128,7 +132,7 @@ html,body{
 .ssr h2{
 	display: block;
 	width:1px;
-	height:1.4rem;
+	height:1.44rem;
 	background-color: #12C38C;
 	margin:0 auto;
 }
@@ -136,7 +140,7 @@ html,body{
 
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-	.ssr{top:-1.06rem;}
+	.ssr{top:-1.0rem;}
 }
 @media only screen and (min-width: 375px) and (max-width: 413px) {
 	
