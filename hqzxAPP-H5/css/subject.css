@@ -55,9 +55,9 @@
 }
 .stair-4 p em{
 	float: left;
-	width:0.14rem;
-	height:0.14rem;
-	-webkit-border-radius: 0.12rem;
+	width:8px;
+	height:8px;
+	-webkit-border-radius: 50%;
 	background-color: #ccc;
 	margin-top:0.14rem;
 	margin-left:0.14rem;
