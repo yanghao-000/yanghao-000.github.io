@@ -1,0 +1,97 @@
+body{
+	background-color:#f0f0f0;
+}
+/*================================*/
+.cuoti-header{
+	padding:0.3rem 0.3rem;
+	background-color: #fff;
+	margin-bottom:0.18rem;
+}
+.header-top{
+	margin-bottom:0.2rem;
+}
+.header-top dt{
+	font-size: 0.3rem;
+	height:0.44rem;
+	line-height: 0.44rem;
+}
+.header-top h1{
+	font-size: 0.28rem;
+	color:#999;
+}
+.sz-btn{
+	-webkit-box-sizing: border-box;
+	padding:0 0.24rem;
+	font-size: 0.24rem;
+	height:0.44rem;
+	line-height: 0.4rem;
+	-webkit-border-radius: 0.44rem;
+	border:1px solid #ddd;
+	color:#12C38C;
+}
+.header-top .sz-btn{
+	margin-right:2%;
+}
+.header-bot{
+	width:100%;
+	-webkit-box-sizing: border-box;
+	border:1px solid #ddd;
+	padding:3% 2% 3% 3%;
+	background-color: #fafafa;
+}
+.header-bot dt{
+	font-size: 0.28rem;
+	height:0.44rem;
+	line-height: 0.44rem;
+	color:#666;
+	margin-bottom:0.1rem;
+}
+.header-bot h1{
+	width:73%;
+	font-size: 0.24rem;
+	color:#999;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*==========================*/
+.cuoti-body{
+	background-color: #fff;
+}
+.cuoti-body .body-nav{
+	border-bottom:1px solid #ddd;
+}
+.body-nav{
+	padding:0.14rem 0;
+}
+.body-nav li{
+	width:49.5%;
+	font-size: 0.3rem;
+	padding:0.14rem 0;
+	text-align: center;
+}
+.body-nav ul li:nth-child(1){
+	border-right:1px solid #ddd;
+}
+.body-box dt,.body-box dd{
+	text-align: center;
+	font-size: 0.28rem;
+	width:50%;
+	padding:0.3rem 0;
+}
+.body-box dt p,.body-box dd p{
+	width:78%;
+	margin:0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.body-box dt{
+	color:#999;
+}
+.body-box dd{
+	color: #12C38C;
+}
+.body-box dl{
+	border-bottom:1px solid #ddd;
+}
