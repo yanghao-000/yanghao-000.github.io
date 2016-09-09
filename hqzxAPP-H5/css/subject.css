@@ -53,20 +53,19 @@
 .stair-4 p{
 	text-indent: 0.46rem;
 	position: relative;
+	height: 0.4rem;
+	line-height: 0.4rem;
 }
 .stair-4 p em{
-	/*float: left;*/
 	position: absolute;
-	width:0.14rem;
-	height:0.14rem;
+	width:8px;
+	height:8px;
 	-webkit-border-radius: 50%;
 	background-color: #ccc;
 	left:0.14rem;
 	top:0;
 	bottom:0;
 	margin:auto 0;
-	/*margin-top:0.14rem;
-	margin-left:0.14rem;*/
 }
 .subject ul{
 	display: none;
