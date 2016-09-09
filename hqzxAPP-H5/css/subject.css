@@ -1,0 +1,95 @@
+.subject{
+	font-size: 0.3rem;
+	color:#999;
+}
+.stair-1{
+	border-bottom:1px solid #ddd;	
+}
+.stair-1 > p{
+	padding:0.4rem 0 0.4rem 0.38rem;
+	float:left;
+	height:0.4rem;
+	line-height: 0.4rem;
+}
+.subject ul{
+	background-color: #fafafa;
+}
+.stair-2{
+	padding:0 0.38rem 0 0.76rem;
+}
+.stair-3,.stair-4{
+	padding-left: 0.38rem;
+}
+.stair-2 p,.stair-3 p,.stair-4 p{
+	padding: 0.18rem 0;
+	float:left;
+}
+.stair-1 span{
+	float: right;
+	height:0.4rem;
+	width:0.23rem;
+	margin:0.4rem 0.38rem 0.4rem 0;
+	background: url(../images/icon/arrow-shi.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-webkit-transition: all 0.4s; 
+}
+.stair-1.active span{
+	-webkit-transform: rotate(90deg);
+	-webkit-transition: all 0.4s; 
+}
+.stair-2 > i,.stair-3 > i{
+	float: left;
+	height:0.3rem;
+	width:0.17rem;
+	margin:0.23rem 0 0.23rem 0.16rem;
+	background: url(../images/icon/arrow-shi.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-webkit-transition: all 0.4s; 
+}
+.stair-2.active > i,.stair-3.active > i{
+	-webkit-transform: rotate(90deg);
+	-webkit-transition: all 0.4s; 
+}
+.stair-4 p{
+	text-indent: 0.18rem;
+}
+.stair-4 p em{
+	float: left;
+	width:0.14rem;
+	height:0.14rem;
+	-webkit-border-radius: 0.12rem;
+	background-color: #ccc;
+	margin-top:0.14rem;
+	margin-left:0.14rem;
+}
+.subject ul{
+	display: none;
+}
+
+/*章节===================================*/
+.section{
+	font-size: 0.3rem;
+	color:#999;
+}
+.section ul{
+	background-color: #fafafa;
+}
+.section .stair-1 em{
+	float:left;
+	height:0.4rem;
+	width:0.4rem;
+	background: url(../images/icon/title-no-choose.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	margin-right: 0.28rem;
+}
+.section .stair-1 em.active{
+	background: url(../images/icon/title-choose.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.section .stair-1 li{
+	padding:0.2rem 0.38rem 0.2rem 0.76rem;
+}
+.section .stair-1 ul{
+	padding:0.12rem 0;
+	display: none;
+}
