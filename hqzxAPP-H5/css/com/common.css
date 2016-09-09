@@ -1,0 +1,46 @@
+/*提示框*/
+.tips-popup{
+	position: fixed;
+	text-align: center;
+	width:36%;
+	font-size: 0.3rem;
+	color:#fff;
+	background: rgba(0,0,0,0.3);
+	-webkit-box-sizing: border-box;
+	padding:0.14rem 0.64rem;
+	-webkit-border-radius: 3px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	top:50%;
+	-webkit-animation: fadeInUp 0.5s both;
+}
+.tips-popup.out{
+	-webkit-animation: fadeOutDown 0.5s both;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80%, 0);
+    transform: translate3d(0, 80%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80%, 0);
+    transform: translate3d(0, 80%, 0);
+    display: none;
+  }
+}

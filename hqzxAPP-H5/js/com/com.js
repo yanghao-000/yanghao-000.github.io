@@ -38,3 +38,30 @@ function launchInit(){
 		}
 	});
 }
+
+//弹框
+var popup = (function(){
+	var timer;
+	var tips = function(h1){
+		clearTimeout(timer);
+		$(".tips-popup").remove();
+		
+		var t = t || 1600;
+		
+		var con = '<div class="tips-popup">'+h1+'</div>'
+		$("body").append(con);
+		
+		var hei = $(".tips-popup").outerHeight(true);
+		$(".tips-popup").css({"marginTop":-hei/2});
+		
+		timer = setTimeout(function(){
+			$(".tips-popup").addClass("out");
+			$(".tips-popup.out")[0].addEventListener("webkitAnimationEnd", function(){
+				$(this).remove();
+			}, false); 
+		},t);
+	}
+	return {
+		tips:tips
+	}
+})();

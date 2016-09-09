@@ -1,0 +1,47 @@
+html,body{
+	height:100%;
+}
+body{
+	background-color: #f0f0f0;
+}
+.banner img{
+	display: block;
+	width:100%;
+}
+.list{
+	
+}
+.list li{
+	padding:0.4rem 0.3rem;
+	background-color: #fff;
+	border-bottom:1px solid #ddd;
+}
+.list li.no-bor{
+	border-bottom:none;
+}
+.list li p{
+	height:0.34rem;
+	line-height: 0.34rem;
+	font-size: 0.3rem;
+	background: url(../images/icon/title-arrow.png) no-repeat right center;
+	-webkit-background-size: contain;
+}
+.list li.no-bug p{
+	background: url(../images/icon/title-suo.png) no-repeat right center;
+	-webkit-background-size: contain;
+}
+.bug-btn{
+	position: absolute;
+	width:3.8rem;
+	height:0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	background-color: #12C38C;
+	color:#fff;
+	font-size: 0.3rem;
+	left:0;
+	right:0;
+	margin:0 auto;
+	bottom:17%;
+	-webkit-border-radius: 3px;
+}
