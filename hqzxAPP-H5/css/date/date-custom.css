@@ -1,5 +1,9 @@
+.dwwr{
+	font-family: "微软雅黑";
+}
 .mbsc-ios7 .dwbc{
-	border-color:#ccc;
+	border:none;
+	background-color: #f0f0f0;
 }
 .dwb.dwb1.dwb-e{
 	color:#666;
@@ -7,7 +11,7 @@
 	font-weight: normal;
 	height:0.9rem;
 	line-height: 0.9rem;
-	padding:0 0.3rem;
+	padding:0 0.4rem;
 }
 .dwb.dwb0.dwb-e{
 	color:#12C38C;
@@ -15,17 +19,11 @@
 	font-weight: normal;
 	height:0.9rem;
 	line-height: 0.9rem;
-	padding:0 0.3rem;
+	padding:0 0.4rem;
 }
-/*.dwfl{
-	width:21%;
-}*/
-/*.dw-li.dw-v{
-	padding:0;
-}*/
-/*.dw-i{
-	
-}*/
+.mbsc-ios7 .dwb{
+	display: block;
+}
 .dwc{
 	80%;
 }
@@ -35,4 +33,7 @@
 }
 .dw-i{
 	text-align: center;
+}
+.mbsc-ios7 .dw-sel{
+	color:#666;
 }

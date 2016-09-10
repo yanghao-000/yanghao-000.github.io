@@ -51,8 +51,8 @@
 	-webkit-transition: all 0.4s; 
 }
 .stair-4 p{
-	text-indent: 0.46rem;
 	position: relative;
+	text-indent: 0.46rem;
 	height: 0.4rem;
 	line-height: 0.4rem;
 }

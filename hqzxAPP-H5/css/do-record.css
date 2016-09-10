@@ -1,0 +1,27 @@
+.do-record li{
+	padding:0.24rem 0.3rem;
+	position: relative;
+	border-bottom:1px solid #ddd;
+}
+.do-record li p{
+	position: absolute;
+	background: url(../images/icon/title-arrow.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	width:0.16rem;
+	height:0.3rem;
+	right:0.3rem;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+}
+.do-record .item{
+	width:94%;
+}
+.do-record .item h1{
+	font-size: 0.3rem;
+	margin-bottom:0.2rem;
+}
+.do-record .item h2{
+	font-size: 0.22rem;
+	color:#999;
+}
