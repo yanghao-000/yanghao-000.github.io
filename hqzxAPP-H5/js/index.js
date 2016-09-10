@@ -10,15 +10,10 @@ function dataInit(){
 	    maxDate: new Date(2030,1,1),   
 	    lang: 'zh',
 //	    fixedWidth: 50,
-//	    onInit: function(inst){
-//	    	dateAddText(inst.settings.wheels[0][0].values,"年");
-//			dateAddText(inst.settings.wheels[0][1].values,"月");
-//			dateAddText(inst.settings.wheels[0][2].values,"日");
-//	    },
 	    onSelect: function (valueText,inst) {
 	    	console.log(valueText);   //返回选择的日期
 		},
-		onBeforeShow: function (inst) {
+		onBeforeShow: function (inst) { 
 			if(inst.settings.wheels[0][0].values[0].length<=4){
 				dateAddText(inst.settings.wheels[0][0].values,"年");
 				dateAddText(inst.settings.wheels[0][1].values,"月");
