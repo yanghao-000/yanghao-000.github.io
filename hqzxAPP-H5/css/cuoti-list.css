@@ -1,11 +1,10 @@
 body{
 	background-color: #f0f0f0;
 }
+.title-a{
+	background-color: #fff;
+	margin-bottom:0.5em;
+}
 .t-d dt i{
 	display: none;
-}
-.t-d{
-	margin-bottom:0.12rem;
-	background-color: #fff;
-	padding:0.2rem 0.3rem;
 }

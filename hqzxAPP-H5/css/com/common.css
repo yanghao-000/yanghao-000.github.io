@@ -1,13 +1,269 @@
+html,body{
+	height:100%;
+	background-color: #f0f0f0;
+}
+/*===========三栏导航=============*/
+.hd{
+	height:2.3em;
+	line-height: 2.3em;
+	padding-top:0.8em;
+	padding-bottom:0.8em;
+	text-align: center;
+	background-color: #fff;
+	margin-bottom:0.5em;
+}
+.hd li{
+	width:33%;
+	float:left;
+	font-size: 1.25em;
+	border-right:1px solid #ccc;
+}
+.hd li.active{
+	color:#12c38c;
+}
+.hd li.no-bor{
+	border-right:none;
+}
+.hd li p{
+	width:70%;
+	margin:0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*==============左右切换===================*/
+.box{
+	height:0;
+	overflow: auto;
+}
+.swiper-slide{
+	overflow: auto;
+}
+/*================================*/
+.stage-li{
+	position: relative;
+	background-color: #fff;
+	font-size: 1.25em;
+	color:#666;
+	height: 4.6em;
+	line-height: 4.6em;
+	text-indent: 1em;
+	border-bottom:1px solid #ccc;
+}
+.stage-li.no-bor{
+	border-bottom:none;
+}
+.stage-li span{
+	position: absolute;
+	width:1.3em;
+	height:1.3em;
+	background: url(../../images/icon/pencil.png) no-repeat 0 center;
+	-webkit-background-size:cover;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	right:1.4em;
+}
+/*=======================展开=============================*/
+.add-xia{
+	background-color: #fff;
+	border-bottom:1px solid #ccc;
+}
+.t-fen{
+	display: none;
+}
+.fen{
+
+}
+.fen:hover{
+	
+}
+.zong,.fen{
+	position: relative;
+	float:right;
+	width:86%;
+	height:6.6em;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-top:1.1em;
+}
+.zong h1{
+	font-size: 1.25em;
+	margin-bottom:0.3em;
+}
+.num{
+	font-size: 1.1em;
+	color:#7f7f7f;
+}
+.num i{
+	color:#12C38C;
+}
+.bat{
+	margin-bottom:0.3em;
+}
+.bat li{
+	float:left;
+	width:1.3em;
+	height:0.75em;
+	background: url(../../images/icon/title-bet.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	margin-right:0.125em;
+}
+.bat li.active{
+	background: url(../../images/icon/title-bet-active.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.fen{
+	border-top:1px solid #ccc;
+}
+.fen h1{
+	font-size: 1.1em;
+	color:#999;
+	margin-bottom:0.4em;
+	background: url(../../images/icon/pencil.png) no-repeat 92% center;
+	-webkit-background-size: contain;
+}
+.ss{
+	position: absolute;
+	width:0.125em;
+	top:1.25em;
+	left:-2.5em;
+	z-index: 2;
+}
+.ss p{
+	width:1.6em;
+	height:1.6em;
+	background:#fff url(../../images/icon/title-add.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.ss.active p{
+	background:#fff url(../../images/icon/title-dev.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.ssr{
+	position: absolute;
+	width:1.6em;
+	top:-4.6em;
+	left:-2.5em;
+}
+.ssr p{
+	width:0.8em;
+	height:0.8em;
+	-webkit-border-radius: 50%;
+	background-color: #12C38C;
+	margin:0 auto;
+}
+.ssr h2{
+	display: block;
+	width:1px;
+	height:4.1em;
+	background-color: #12C38C;
+	margin:0 auto;
+}
+/*=======================*/
+.title-a{
+	padding:1.6em 1.25em 1.25em;
+}
+.t-d dt{
+	font-size: 1.25em;
+	line-height: 1.8em;
+	margin-bottom:1.4em;
+}
+.t-d dt span{
+	font-size: 0.8em;
+	color:#999;
+}
+.t-d dd{
+	font-size: 1.25em;
+}
+.t-d dd p{
+	height:1.8em;
+	line-height: 1.8em;
+	margin-bottom:1em;
+}
+.t-d dd p i{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	display: block;
+	float:left;
+	width:1.8em;
+	height:1.8em;
+	-webkit-border-radius: 50%;
+	color:#12C38C;
+	margin-right:0.9em;
+	background: url(../../images/icon/title-white-r.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.t-d dd p.active i{
+	color:#fff;
+	background: url(../../images/icon/title-green-r.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.t-d dd p em{
+	float:left;
+}
+.dddx > p{
+	font-size: 1.25em;
+	line-height: 1.6em;
+	margin-bottom: 1em;
+}
+.sure-btn{
+	padding-top:1.6em;
+}
+.sure-btn p{
+	width:48%;
+	line-height:2.4em;
+	-webkit-border-radius: 4px;
+	background-color: #12C38C;
+	font-size: 1.3em;
+	margin:0 auto;
+	color:#fff;
+	text-align: center;
+}
+/*==================================*/
+.right-ans{
+	font-size: 1.25em;
+	color:#12C38C;
+	margin-bottom:0.6em;
+}
+.right-ans em{
+	color:#f16d60;
+}
+.resolu{
+	position: relative;
+}
+.resolu .res{
+	font-size: 1em;
+	position: absolute;
+	left:0;
+	top:0.2em;
+	width:3em;
+	height:1.8em;
+	line-height: 1.8em;
+	text-align: center;
+	color:#fff;
+	background-color: #12C38C;
+	-webkit-border-radius: 4px;
+}
+.resolu p{
+	padding-left:3em;
+	font-size:1.25em;
+	line-height: 1.7em;
+}
+/*==========================================*/
+
+
 /*提示框*/
 .tips-popup{
 	position: fixed;
 	text-align: center;
 	width:36%;
-	font-size: 0.3rem;
+	font-size: 1.25em;
 	color:#fff;
 	background: rgba(0,0,0,0.3);
 	-webkit-box-sizing: border-box;
-	padding:0.24rem 0.64rem;
+	padding:0.5em 2em;
 	-webkit-border-radius: 3px;
 	left:0;
 	right:0;

@@ -65,3 +65,10 @@ var popup = (function(){
 		tips:tips
 	}
 })();
+
+function setRadius(obj){
+	var h = obj.eq(0).outerWidth();
+	obj.each(function(i){
+		$(this).css({"height":h,"lineHeight":h+"px"});
+	});
+}

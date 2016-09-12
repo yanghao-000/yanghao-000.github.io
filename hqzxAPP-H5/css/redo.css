@@ -1,0 +1,6 @@
+.arrow{
+	width:1.2em;
+	height:1.2em;
+	background: url(../images/icon/pencil.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}

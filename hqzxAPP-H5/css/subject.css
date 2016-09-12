@@ -1,34 +1,37 @@
+body{
+	background-color: #fff;
+}
 .subject{
-	font-size: 0.3rem;
+	font-size: 1.25em;
 	color:#999;
 }
 .stair-1{
 	border-bottom:1px solid #ddd;	
 }
 .stair-1 > p{
-	padding:0.4rem 0 0.4rem 0.38rem;
+	padding:1em 0 1em 1.5em;
 	float:left;
-	height:0.4rem;
-	line-height: 0.4rem;
+	height:1.6em;
+	line-height: 1.6em;
 }
 .subject ul{
 	background-color: #fafafa;
 }
 .stair-2{
-	padding:0 0.38rem 0 0.76rem;
+	padding:0 1.5em 0 3.16em;
 }
 .stair-3,.stair-4{
-	padding-left: 0.38rem;
+	padding-left: 1.5em;
 }
 .stair-2 p,.stair-3 p,.stair-4 p{
-	padding: 0.18rem 0;
+	padding: 0.65em 0;
 	float:left;
 }
 .stair-1 span{
 	float: right;
-	height:0.4rem;
-	width:0.23rem;
-	margin:0.4rem 0.38rem 0.4rem 0;
+	height:1.6em;
+	width:0.7em;
+	margin:1em 1.5em 1em 0;
 	background: url(../images/icon/arrow-shi.png) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 	-webkit-transition: all 0.4s; 
@@ -37,34 +40,37 @@
 	-webkit-transform: rotate(90deg);
 	-webkit-transition: all 0.4s; 
 }
-.stair-2 > i,.stair-3 > i{
-	float: left;
-	height:0.3rem;
-	width:0.17rem;
-	margin:0.23rem 0 0.23rem 0.16rem;
+.stair-2 p{
+	position: relative;
+}
+.stair-2 > p i,.stair-3 > p i{
+	position: absolute;
+	width:0.56em;
+	height:1em;
+	top:0; bottom:0; margin:auto 0;
+	/*top:1em;*/
+	right:-1.2em;
 	background: url(../images/icon/arrow-shi.png) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 	-webkit-transition: all 0.4s; 
 }
-.stair-2.active > i,.stair-3.active > i{
+.stair-2.active > p i,.stair-3.active > p i{
 	-webkit-transform: rotate(90deg);
 	-webkit-transition: all 0.4s; 
 }
 .stair-4 p{
 	position: relative;
-	text-indent: 0.46rem;
-	height: 0.4rem;
-	line-height: 0.4rem;
+	text-indent: 1.6em;
 }
 .stair-4 p em{
 	position: absolute;
-	width:8px;
-	height:8px;
-	/*-webkit-border-radius: 50%;*/
-	/*background-color: #ccc;*/
-	background: url(../images/icon/title-gray-dot.png) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	left:0.14rem;
+	width:0.6em;
+	height:0.6em;
+	-webkit-border-radius: 50%;
+	background-color: #ccc;
+	/*background: url(../images/icon/title-gray-dot.png) no-repeat center center;*/
+	/*-webkit-background-size: 100% 100%;*/
+	left:0.54em;
 	top:0;
 	bottom:0;
 	margin:auto 0;
@@ -75,28 +81,42 @@
 
 /*章节===================================*/
 .section{
-	font-size: 0.3rem;
+	font-size: 1.25em;
 	color:#999;
 }
 .section ul{
 	background-color: #fafafa;
 }
-.section .stair-1 em{
+.section .stair em{
 	float:left;
-	height:0.4rem;
-	width:0.4rem;
+	height:1.4em;
+	width:1.4em;
 	background: url(../images/icon/title-no-choose.png) no-repeat center center;
 	-webkit-background-size: 100% 100%;
-	margin-right: 0.28rem;
+	margin-right: 1em;
+	/*margin-top: -0.1em;*/
 }
-.section .stair-1 em.active{
+.section .stair-1 >p em.active{
+	background: url(../images/icon/title-choose.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.section .stair-1 >p em{
+	float:left;
+	height:1.6em;
+	width:1.6em;
+	background: url(../images/icon/title-no-choose.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	margin-right: 1em;
+	/*margin-top: -0.1em;*/
+}
+.section .stair em.active{
 	background: url(../images/icon/title-choose.png) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 }
 .section .stair-1 li{
-	padding:0.2rem 0.38rem 0.2rem 0.76rem;
+	padding:0.8em 1.5em 0.8em 3em;
 }
 .section .stair-1 ul{
-	padding:0.12rem 0;
+	padding:0.5em 0;
 	display: none;
 }

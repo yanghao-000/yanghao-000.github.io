@@ -1,4 +1,5 @@
 $(function(){
+	setRadius($(".sheet-body p"));
 	dtReportNav();
 });
 function dtReportNav(){

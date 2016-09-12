@@ -12,7 +12,7 @@ function init(n){
 		$('<div class="swiper-slide"></div>').appendTo(wrap);
 	}
 	var H = $("html").outerHeight(true);
-	var h1 = $(".title").outerHeight(true);
+	var h1 = $(".choice-title").outerHeight(true);
 	var h2 = $(".footer").outerHeight(true);
 	var d = H-h1-h2;
 	$(".box").css("height",d);
@@ -66,7 +66,8 @@ function showSheet(n){
 	var answerSheet = $(".answer-sheet");
 	var p = $(".sheet-body p");
 	$(".sheet").on("click",function(){
-		$(".answer-sheet").fadeIn();
+		$(".answer-sheet").show(0).addClass("active");
+		setRadius(p);
 	});
 	p.on("click",function(){
 		answerSheet.fadeOut(0);
@@ -74,6 +75,6 @@ function showSheet(n){
 		mySwiper.slideTo(i, 500, false);    //点击答题卡 跳转对应题目
 	});
 	$(".answer-sheet").on("click",function(){
-		answerSheet.fadeOut(0);
+		answerSheet.hide(0);
 	});
 }

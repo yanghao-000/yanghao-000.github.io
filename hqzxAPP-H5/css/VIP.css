@@ -7,12 +7,13 @@ body{
 .banner img{
 	display: block;
 	width:100%;
+	height:100%;
 }
 .list{
 	
 }
 .list li{
-	padding:0.4rem 0.3rem;
+	padding:1.5em 1.25em;
 	background-color: #fff;
 	border-bottom:1px solid #ddd;
 }
@@ -20,9 +21,7 @@ body{
 	border-bottom:none;
 }
 .list li p{
-	height:0.34rem;
-	line-height: 0.34rem;
-	font-size: 0.3rem;
+	font-size: 1.25em;
 	background: url(../images/icon/title-arrow.png) no-repeat right center;
 	-webkit-background-size: contain;
 }
@@ -32,13 +31,13 @@ body{
 }
 .bug-btn{
 	position: absolute;
-	width:3.8rem;
-	height:0.8rem;
-	line-height: 0.8rem;
+	width:50%;
+	height:2.6em;
+	line-height: 2.6em;
 	text-align: center;
 	background-color: #12C38C;
 	color:#fff;
-	font-size: 0.3rem;
+	font-size: 1.25em;
 	left:0;
 	right:0;
 	margin:0 auto;

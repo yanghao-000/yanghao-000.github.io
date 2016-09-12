@@ -9,7 +9,6 @@ function dataInit(){
 	    minDate: new Date(),
 	    maxDate: new Date(2030,1,1),   
 	    lang: 'zh',
-//	    fixedWidth: 50,
 	    onSelect: function (valueText,inst) {
 	    	console.log(valueText);   //返回选择的日期
 		},

@@ -7,33 +7,49 @@
 }
 .dwb.dwb1.dwb-e{
 	color:#666;
-	font-size: 0.36rem;
+	font-size: 1.5em;
 	font-weight: normal;
-	height:0.9rem;
-	line-height: 0.9rem;
-	padding:0 0.4rem;
+	height:2.5em;
+	line-height: 2.5em;
+	padding:0 1.1em;
 }
 .dwb.dwb0.dwb-e{
 	color:#12C38C;
-	font-size: 0.36rem;
+	font-size: 1.5em;
 	font-weight: normal;
-	height:0.9rem;
-	line-height: 0.9rem;
-	padding:0 0.4rem;
+	height:2.5em;
+	line-height: 2.5em;
+	padding:0 1.1em;
 }
 .mbsc-ios7 .dwb{
 	display: block;
 }
 .dwc{
-	80%;
+	width:80%;
+	margin:0 auto;
+}
+.dwwc{
+	width:100%;
 }
 .mbsc-ios7.dwwol{
 	padding:0;
 	margin:0;
 }
+.mbsc-ios7 .dw-sel{
+	color:#666;
+}
 .dw-i{
 	text-align: center;
 }
-.mbsc-ios7 .dw-sel{
-	color:#666;
+.dwwl.dwwl0{
+	
+}
+.dwwl.dwwl1{
+	
+}
+.dwwl.dwwl2{
+	
+}
+.dwwc{
+	-webkit-box-sizing: border-box;
 }
