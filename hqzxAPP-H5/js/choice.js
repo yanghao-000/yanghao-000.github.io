@@ -4,7 +4,7 @@ $(function(){
 	hid();
 	showSheet();
 });
-var mySwiper;
+var mySwiperCHoiceCHoice;
 //初始化
 function init(n){
 	var wrap = $(".swiper-wrapper");
@@ -20,14 +20,14 @@ function init(n){
 		$(this).css({"height":d});
 	});
 	
-	mySwiper = new Swiper('.swiper-container', {
+	mySwiperCHoice = new Swiper('.swiper-container', {
 		autoHeight: true,
 		onSlideChangeStart: slideTouch,
 	});
 //	单选点击
 	$(".box").on("click",".dx p",function(){
 		$(this).addClass("active").siblings().removeClass("active");
-		mySwiper.slideNext(function(){},500);
+		mySwiperCHoice.slideNext(function(){},500);
 	});
 //	多选点击
 	$(".box").on("click",".ddx p,.dddx p",function(){
@@ -39,13 +39,13 @@ function init(n){
 	});
 //	多选确定按钮点击
 	$(".box").on("click",".ddx .sure-btn,.dddx .sure-btn",function(){
-		mySwiper.slideNext(function(){},500);
+		mySwiperCHoice.slideNext(function(){},500);
 	});
 }
 
 // 点击答案 滑动下一题的回调
 function slideTouch(){    
-	$(".swiper-slide").eq(mySwiper.previousIndex).animate({"scrollTop":0},300);
+	$(".swiper-slide").eq(mySwiperCHoice.previousIndex).animate({"scrollTop":0},300);
 }
 
 //点击收藏
@@ -72,7 +72,7 @@ function showSheet(n){
 	p.on("click",function(){
 		answerSheet.fadeOut(0);
 		var i = $(this).index();
-		mySwiper.slideTo(i, 500, false);    //点击答题卡 跳转对应题目
+		mySwiperCHoice.slideTo(i, 500, false);    //点击答题卡 跳转对应题目
 	});
 	$(".answer-sheet").on("click",function(){
 		answerSheet.hide(0);

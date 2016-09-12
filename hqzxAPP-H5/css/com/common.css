@@ -39,7 +39,7 @@ html,body{
 .swiper-slide{
 	overflow: auto;
 }
-/*================================*/
+/*==============阶段考试列表==================*/
 .stage-li{
 	position: relative;
 	background-color: #fff;
@@ -160,7 +160,7 @@ html,body{
 	background-color: #12C38C;
 	margin:0 auto;
 }
-/*=======================*/
+/*===========题目============*/
 .title-a{
 	padding:1.6em 1.25em 1.25em;
 }
@@ -203,7 +203,7 @@ html,body{
 .t-d dd p em{
 	float:left;
 }
-.dddx > p{
+.dddx > p,.ddddx > p{
 	font-size: 1.25em;
 	line-height: 1.6em;
 	margin-bottom: 1em;
@@ -220,6 +220,155 @@ html,body{
 	margin:0 auto;
 	color:#fff;
 	text-align: center;
+}
+/*========分录================*/
+.fenlu{
+	/*font-size: 1.25em;*/
+}
+.fenlu-head{
+	font-size: 1.25em;
+	padding-bottom:1em;
+}
+.fenlu-body{
+	padding:0 4% 1.6em;
+	/*border-bottom:1px solid #ccc;*/
+	position: relative;
+}
+.fenlu-body .bor-b{
+	position: absolute;
+	width:200%;
+	height:1px;
+	background-color: #ccc;
+	bottom:0;
+	left:-50%;
+}
+/*=========*/
+.fenlu-body .btn-ul{
+	
+}
+.fenlu-body .btn-ul li{
+	float:left;
+	width:22%;
+	font-size: 1em;
+	text-align: center;
+	padding:0.5em 0;
+	background-color: #bfbfbf;
+	color:#fff;
+	margin-right:4%;
+	-webkit-border-radius: 3px;
+}
+.fenlu-body .btn-ul li.no-mar{
+	margin-right:0;
+}
+.fenlu-body .btn-ul li.active{
+	background-color: #12C38C;
+}
+/*=========*/
+.fenlu-body .box-ul{
+	border:1px solid #ccc;
+	margin-bottom:1.3em;
+}
+.fenlu-body .box-ul li{
+	text-align: center;
+}
+.fenlu-body .box-ul li .this-div{
+	float:left;
+	width:33.3%;
+}
+/*==this-li-tit==*/
+.fenlu-body .box-ul .this-li-tit{
+	background-color: #eee;
+	font-size: 1.25em;
+	line-height: 2em;
+	border-bottom:1px solid #ccc;
+}
+.fenlu-body .box-ul .this-li-tit .this-div:nth-child(2):first-letter,.fenlu-body .box-ul .this-li-tit .this-div:nth-child(3):first-letter{
+	letter-spacing: 1.6em;
+}
+/*==this-li-sel==*/
+.fenlu-body .box-ul .this-li-sel{
+	background-color: #eee;
+	font-size: 1.25em;
+}
+.fenlu-body .box-ul .this-li-sel .sel-p{
+	width:80%;
+	margin:0.3em auto;
+	background-color: #fff;
+	height:1.6em;
+	line-height: 1.6em;
+	border:1px solid #ccc;
+	-webkit-border-radius: 3px;
+	color:#888;
+}
+.fenlu-body .box-ul .this-li-sel .sel-p-1 span{
+	float:left;
+	width:50%;
+	text-align: center;
+	font-size: 0.9em;
+}
+.fenlu-body .box-ul .this-li-sel .sel-p-1 span.active{
+	background-color: #12C38C;
+	color:#fff;
+}
+.fenlu-body .box-ul .this-li-sel .sel-p-2 span{
+	display: block;
+	float:left;
+	font-size: 0.8em;
+	height:100%;
+	text-indent: 8%;
+}
+.fenlu-body .box-ul .this-li-sel .sel-p-2 .sel-span-l{
+	width:68%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.fenlu-body .box-ul .this-li-sel .sel-p-2 .sel-span-r{
+	width:32%;
+	background: url(../../images/icon/title-shi-puls.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.fenlu-body .box-ul li.this-li-sel .sel-p-3{
+	
+}
+.fenlu-body .box-ul li.this-li-sel .sel-p-3 input{
+	display: block;
+	border:none;
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+	text-indent: 14%;
+	color:#888;
+}
+/*==this-li-sel==*/
+.fenlu-body .box-ul .this-li-add{
+	background-color: #ddd;
+	color:#888;
+	font-size: 1.2em;
+	padding:0.5em 0;
+	height:1.2em;
+	line-height: 1.2em;
+}
+.fenlu-body .box-ul .this-li-add .this-div:nth-child(1){
+	position: relative;
+	text-align: left;
+	text-indent: 14%;
+}
+.fenlu-body .box-ul .this-li-add .this-div span{
+	position: absolute;
+	width:0.8em;
+	height:0.8em;
+	background: url(../../images/icon/title-no-sel.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	left:17%;
+}
+.fenlu-body .box-ul .this-li-add.active .this-div span{
+	background: url(../../images/icon/title-sel.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
 }
 /*==================================*/
 .right-ans{
