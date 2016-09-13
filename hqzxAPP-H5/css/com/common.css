@@ -208,6 +208,9 @@ html,body{
 	line-height: 1.6em;
 	margin-bottom: 1em;
 }
+.ddddx > p{
+	margin-bottom: 0;
+}
 .sure-btn{
 	padding-top:1.6em;
 }
@@ -223,14 +226,14 @@ html,body{
 }
 /*========分录================*/
 .fenlu{
-	/*font-size: 1.25em;*/
+	padding-top:1.6em;
 }
 .fenlu-head{
 	font-size: 1.25em;
 	padding-bottom:1em;
 }
 .fenlu-body{
-	padding:0 4% 1.6em;
+	padding:0 4% 0;
 	/*border-bottom:1px solid #ccc;*/
 	position: relative;
 }
@@ -244,7 +247,7 @@ html,body{
 }
 /*=========*/
 .fenlu-body .btn-ul{
-	
+	padding-bottom:1.6em;
 }
 .fenlu-body .btn-ul li{
 	float:left;
@@ -270,6 +273,7 @@ html,body{
 }
 .fenlu-body .box-ul li{
 	text-align: center;
+	/*padding:0 1.5%;*/
 }
 .fenlu-body .box-ul li .this-div{
 	float:left;
@@ -291,7 +295,7 @@ html,body{
 	font-size: 1.25em;
 }
 .fenlu-body .box-ul .this-li-sel .sel-p{
-	width:80%;
+	width:76%;
 	margin:0.3em auto;
 	background-color: #fff;
 	height:1.6em;
@@ -329,7 +333,7 @@ html,body{
 	-webkit-background-size: 100% 100%;
 }
 .fenlu-body .box-ul li.this-li-sel .sel-p-3{
-	
+	width:68%;
 }
 .fenlu-body .box-ul li.this-li-sel .sel-p-3 input{
 	display: block;
@@ -338,7 +342,7 @@ html,body{
 	margin:0;
 	width:100%;
 	height:100%;
-	text-indent: 14%;
+	text-indent: 20%;
 	color:#888;
 }
 /*==this-li-sel==*/
@@ -346,7 +350,8 @@ html,body{
 	background-color: #ddd;
 	color:#888;
 	font-size: 1.2em;
-	padding:0.5em 0;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
 	height:1.2em;
 	line-height: 1.2em;
 }
@@ -369,6 +374,52 @@ html,body{
 .fenlu-body .box-ul .this-li-add.active .this-div span{
 	background: url(../../images/icon/title-sel.png) no-repeat center center;
 	-webkit-background-size: 100% 100%;
+}
+/*=========================*/
+.fenlu-body .save-ul{
+	font-size: 1.25em;
+	color:#666;
+	/*margin-bottom:1.3em;*/
+}
+.fenlu-body .save-ul .save-box{
+	line-height: 1.6em;
+	margin-bottom:0.5em;
+}
+.fenlu-body .save-ul .save-box .left{
+	width:30%;
+	text-indent: 1em
+}
+.fenlu-body .save-ul .save-box .right{
+	width:70%;
+}
+.fenlu-body .save-ul .save-box .right i{
+	padding-right:20%;
+}
+.fenlu-body .save-ul .change-btn{
+	width:40%;
+	text-align: center;
+	margin:0 auto;
+	font-size: 0.9em;
+	height:2.4em;
+	line-height: 2.4em;
+	color:#fff;
+	background-color: #12C38C;
+	border-radius: 3px;
+	margin-top:1.8em;
+	margin-bottom:1.6em;
+}
+.ddddx .submit-btn{
+	width:60%;
+	text-align: center;
+	margin:0 auto;
+	font-size: 1.25em;
+	height:3em;
+	line-height: 3em;
+	color:#fff;
+	background-color: #12C38C;
+	border-radius: 3px;
+	margin-top:1.8em;
+	margin-bottom:1.8em;
 }
 /*==================================*/
 .right-ans{
