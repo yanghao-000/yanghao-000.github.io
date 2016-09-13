@@ -23,9 +23,9 @@ body{
 	-webkit-box-sizing: border-box;
 	padding:0 1em;
 	font-size: 1em;
-	height:1.8em;
-	line-height: 1.8em;
-	-webkit-border-radius: 1.8em;
+	height: 2em;
+	line-height: 2em;
+	-webkit-border-radius: 2em;
 	border:1px solid #ddd;
 	color:#12C38C;
 }
