@@ -30,11 +30,15 @@ function launchInit(){
 		if($(this).hasClass("active")){
 			$(this).removeClass("active");
 			$(this).find(".ss").removeClass("active");
-			$(this).siblings().fadeOut(200);
+//			$(this).stop().siblings().slideUp(200);
+			$(this).siblings().hide(0).css("-webkit-transform","translateY(-50px)");
 		}else{
 			$(this).addClass("active");
 			$(this).find(".ss").addClass("active");
-			$(this).siblings().fadeIn(200);
+//			$(this).stop().siblings().slideDown(200);
+			$(this).siblings().show(0);
+			$(this).siblings().css("-webkit-transform","translateY(0px)");
+			$(this).siblings().css("-webkit-transition","all 0.2s");
 		}
 	});
 }

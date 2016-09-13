@@ -70,13 +70,8 @@ html,body{
 	border-bottom:1px solid #ccc;
 }
 .t-fen{
+	-webkit-transform: translateY(-50px);
 	display: none;
-}
-.fen{
-
-}
-.fen:hover{
-	
 }
 .zong,.fen{
 	position: relative;
@@ -149,8 +144,8 @@ html,body{
 .ssr p{
 	width:0.8em;
 	height:0.8em;
-	-webkit-border-radius: 50%;
-	background-color: #12C38C;
+	background: url(../../images/icon/title-green-r.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
 	margin:0 auto;
 }
 .ssr h2{
