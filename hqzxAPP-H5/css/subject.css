@@ -60,7 +60,8 @@ body{
 }
 .stair-4 p{
 	position: relative;
-	text-indent: 1.6em;
+	/*text-indent: 1.6em;*/
+	padding-left:1.6em;
 }
 .stair-4 p em{
 	position: absolute;

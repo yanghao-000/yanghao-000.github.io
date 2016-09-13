@@ -70,6 +70,7 @@ var popup = (function(){
 	}
 })();
 
+//设置答题卡圆角
 function setRadius(obj){
 	var h = obj.eq(0).outerWidth();
 	obj.each(function(i){
