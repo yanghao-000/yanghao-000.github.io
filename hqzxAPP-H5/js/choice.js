@@ -23,6 +23,8 @@ function init(n){
 	mySwiperCHoice = new Swiper('.swiper-container', {
 		autoHeight: true,
 		onSlideChangeStart: slideTouch,
+		preventLinksPropagation : false,
+		preventClicks : false,
 	});
 //	单选点击
 	$(".box").on("click",".dx p",function(){
@@ -50,13 +52,13 @@ function slideTouch(){
 
 //点击收藏
 function hid(){
-	$(".hid").on("click",function(){
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-			$(this).siblings().text("收藏");
+	$(".hid").on("touchend",function(){
+		if($(this).find("p").hasClass("active")){
+			$(this).find("p").removeClass("active");
+			$(this).find("h1").text("收藏");
 		}else{
-			$(this).addClass("active");
-			$(this).siblings().text("已收藏");
+			$(this).find("p").addClass("active");
+			$(this).find("h1").text("已收藏");
 		}
 	});
 }
@@ -65,16 +67,16 @@ function hid(){
 function showSheet(n){
 	var answerSheet = $(".answer-sheet");
 	var p = $(".sheet-body p");
-	$(".sheet").on("click",function(){
+	$(".sheet").on("touchend",function(){
 		$(".answer-sheet").show(0).addClass("active");
 		setRadius(p);
 	});
-	p.on("click",function(){
+	p.on("touchend",function(){
 		answerSheet.fadeOut(0);
 		var i = $(this).index();
 		mySwiperCHoice.slideTo(i, 500, false);    //点击答题卡 跳转对应题目
 	});
-	$(".answer-sheet").on("click",function(){
+	$(".answer-sheet").on("touchend",function(){
 		answerSheet.hide(0);
 	});
 }

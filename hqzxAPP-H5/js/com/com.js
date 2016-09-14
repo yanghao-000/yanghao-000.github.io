@@ -17,7 +17,7 @@ function slideCreate(){
 	     	slide.eq(mySwiper.previousIndex).animate({"scrollTop":0},300);
 	    }
 	});
-	nav.click(function(){
+	nav.on("touchend",function(){
 		var i = $(this).index();
 		mySwiper.slideTo(i, 500, false);
 		$(this).addClass("active").siblings().removeClass("active");
@@ -26,7 +26,7 @@ function slideCreate(){
 }
 //展开效果
 function launchInit(){
-	$(".t-zong").on("click",function(){
+	$(".t-zong").on("touchend",function(){
 		if($(this).hasClass("active")){
 			$(this).removeClass("active");
 			$(this).find(".ss").removeClass("active");
@@ -40,6 +40,7 @@ function launchInit(){
 			$(this).siblings().css("-webkit-transform","translateY(0px)");
 			$(this).siblings().css("-webkit-transition","all 0.2s");
 		}
+		return false;
 	});
 }
 
