@@ -26,7 +26,7 @@ function slideCreate(){
 }
 //展开效果
 function launchInit(){
-	$(".t-zong").on("touchend",function(){
+	$(".t-zong").on("click",function(){
 		if($(this).hasClass("active")){
 			$(this).removeClass("active");
 			$(this).find(".ss").removeClass("active");
