@@ -61,6 +61,9 @@ html,body{
 	font-size: 1.1em;
 	color:#666;
 }
+.footer.dline:after{
+	display: none;
+}
 /*======================================*/
 .answer-sheet{
 	position: fixed;
