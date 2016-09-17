@@ -2,7 +2,7 @@ $(function(){
 	sectionSlide();
 });
 function sectionSlide(){
-	$(".section").on("click",".stair",function(){
+	$(".section").on("touchend",".stair",function(){
 		if($(this).hasClass("active")){
 			$(this).removeClass("active");
 			$(this).children("ul").stop().slideUp();

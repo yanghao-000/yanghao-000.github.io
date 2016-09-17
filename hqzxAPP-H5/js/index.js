@@ -10,7 +10,7 @@ function dataInit(){
 	    maxDate: new Date(2030,1,1),   
 	    lang: 'zh',
 	    onSelect: function (valueText,inst) {
-	    	console.log(valueText);   //返回选择的日期
+	    	console.log(calLeftTime(valueText));   //返回剩余日期
 		},
 		onBeforeShow: function (inst) { 
 			if(inst.settings.wheels[0][0].values[0].length<=4){
@@ -25,17 +25,25 @@ function dataInit(){
 //      	return array[0] + "年"+array[1] + "月" ;//窗体标题头显示
 //  	},
 	});
+	
+	function dateAddText(arr,str){
+		var a = arr;
+		var l = a.length;
+		var b = [];
+		for(var i=0; i<l; i++){
+			b.push(a[i]+str);
+		}
+		a.splice(0,l);
+		for(var i=0; i<l; i++){
+			a.push(b[i]);
+		}
+	}
 }
+ function calLeftTime(str){
+ 	var a = new Date();
+ 	var t = new Date(str);
+ 	var l = t.getTime()-a.getTime();
+ 	var day = Math.ceil((l/1000/60/60)/24);
+ 	return day;
+ }
 
-function dateAddText(arr,str){
-	var a = arr;
-	var l = a.length;
-	var b = [];
-	for(var i=0; i<l; i++){
-		b.push(a[i]+str);
-	}
-	a.splice(0,l);
-	for(var i=0; i<l; i++){
-		a.push(b[i]);
-	}
-}
