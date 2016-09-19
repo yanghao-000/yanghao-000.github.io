@@ -10,6 +10,9 @@
 .ssr h2{
 	height:3.5em;
 }
+.zong h1 {
+    margin-bottom: 0;
+}
 /*============================*/
 .arrow{
 	width:0.6em;

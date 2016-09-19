@@ -26,7 +26,7 @@ function slideCreate(){
 }
 //展开效果
 function launchInit(){
-	$(".t-zong").on("click",function(){
+//	$(".t-zong").on("tap",function(){
 		if($(this).hasClass("active")){
 			$(this).removeClass("active");
 			$(this).find(".ss").removeClass("active");
@@ -40,8 +40,8 @@ function launchInit(){
 			$(this).siblings().css("-webkit-transform","translateY(0px)");
 			$(this).siblings().css("-webkit-transition","all 0.2s");
 		}
-		return false;
-	});
+//		return false;
+//	});
 }
 
 //弹框
