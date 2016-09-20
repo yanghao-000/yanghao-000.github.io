@@ -20,7 +20,7 @@ $(function(){
         slideX = Math.abs(posXend - posX);
         slideY = posYend - posY;
     }, false);
-    $(".t-zong").on("tap",function(event){
+    $(".t-zong").on("touchend",function(event){
     	if(slideX<4){
     		if($(this).hasClass("active")){
 				$(this).removeClass("active");
@@ -36,7 +36,8 @@ $(function(){
 				$(this).siblings().css("-webkit-transition","all 0.2s");
 			}
     	}
-    	return false;
+//  	return false;
+ 		event.preventDefault();
     });
 	
 });
