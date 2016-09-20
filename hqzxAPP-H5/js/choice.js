@@ -32,7 +32,7 @@ function init(n){
 		mySwiperCHoice.slideNext(function(){},500);
 	});
 //	多选点击
-	$(".box").on("touchend",".ddx p,.dddx p",function(){
+	$(".box").on("click",".ddx p,.dddx p",function(){
 		if(!$(this).hasClass("active")){
 			$(this).addClass("active");
 		}else{
