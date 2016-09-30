@@ -22,9 +22,7 @@ html,body{
 /*===============================*/
 .footer{
 	text-align: center;
-	padding-top:0.5em;
-	padding-bottom:0.2em;
-	/*border-top:1px solid #ccc;*/
+	border-top:1px solid #ccc;
 	width:100%;
 	position: fixed;
 	bottom:0;
@@ -32,14 +30,17 @@ html,body{
 }
 .footer li{
 	float: left;
-	width:25%;
+}
+.footer li:nth-child(1),.footer li:nth-child(2),.footer li:nth-child(3){
+	width:20%;
 }
 .footer li p{
 	font-size: 1.5em;
 	height: 1.3em;
-	line-height: 1.4em;
+	line-height: 1.3em;
 	margin-bottom:0.2em;
-	color:#12C38C;
+	color:#fff;
+	margin-top:0.3em;
 }
 .footer ul li:nth-child(1) p{
 	background: url(../images/icon/title-star.png) no-repeat center center;
@@ -60,9 +61,25 @@ html,body{
 .footer li h1{
 	font-size: 1.1em;
 	color:#666;
+	margin-bottom:0.2em;
 }
-.footer.dline:after{
-	display: none;
+.footer li:nth-child(4) h1{
+	color:#fff;
+}
+.footer .left-time{
+	position: absolute;
+	height:100%;
+	right:0;
+}
+.footer li.left-time{
+	width:40%;
+	background-color: #febf14;
+}
+.footer li.left-time p{
+	height:1.5em;
+	line-height: 1.5em;
+	font-size: 1.8em;
+	margin:0;
 }
 /*======================================*/
 .answer-sheet{

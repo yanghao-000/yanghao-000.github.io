@@ -41,6 +41,27 @@ body{
 	left:0;
 	right:0;
 	margin:0 auto;
-	bottom:17%;
+	bottom:11%;
 	-webkit-border-radius: 3px;
+}
+.infor{
+	padding:0 1.5em;
+	background-color: #FFFFFF;
+	margin-bottom:0.5em;
+}
+.infor h1{
+	font-size: 1.25em;
+	padding:0.5em 0;
+	border-bottom:1px solid #ccc;
+}
+.infor dl dt{
+	width:10%;
+	height:6.5em;
+	background: url(../images/icon/vip-dun.png) no-repeat center center;
+	-webkit-background-size: contain;
+	margin-right:5%;
+}
+.infor dl dd{
+	line-height: 1.5em;
+	padding: 1em 0;
 }

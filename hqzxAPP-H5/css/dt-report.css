@@ -9,20 +9,39 @@ html,body{
 	text-align: center;
 	padding:1.4em 0;
 }
-.banner dl{
-	margin-bottom:1.1em;
+.banner dd,.banner dt{
+	width:49.5%;
 }
-.banner dd{
-	font-size: 1.25em;
-	color:#d4fff1;
-}
-.banner dt{
-	color:#d4fff1;
-}
-.banner dd span{
+.banner dt h1{
 	font-size: 1.6em;
-	padding-right:0.25em;
-	color:#fff;
+	margin-bottom:0.2em;
+}
+.banner dt h1 span{
+	font-size: 1.4em;
+}
+.banner dt h2{
+	font-size: 1em;
+}
+.banner em.left{
+	width:1px;
+	height:4.2em;
+	margin-top:0.4em;
+	background-color: #fff;
+}
+.banner dl dd{
+	text-align: left;
+}
+.banner dl dd .t-div{
+	margin-bottom:0.5em;
+}
+.banner dl dd .t-div.no-mar{
+	margin-bottom:0;
+}
+.banner dl dd .t-div p{
+	text-align: center;
+	width:44%;
+	margin-left:17%;
+	margin-right:3%;
 }
 .banner ul{
 	padding:0 0.33em;

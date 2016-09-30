@@ -1,4 +1,4 @@
-//左右切换   接收完数据再执行
+//左右切换 
 function slideCreate(){
 	var H = $("html").outerHeight(true);
 	var h = $(".hd").outerHeight(true);
@@ -35,7 +35,6 @@ function launchInit(){
     $(".t-zong").on("touchstart",function(){
     	slideX = 0;
         var touch = event.targetTouches[0];
-        console.log(touch.clientX);
         posX = touch.clientX;
         posY = touch.clientY;
     });
@@ -69,27 +68,49 @@ function launchInit(){
 //弹框
 var popup = (function(){
 	var timer;
+	var flag = true;
+	
 	var tips = function(h1){
-		clearTimeout(timer);
-		$(".tips-popup").remove();
-		
-		var t = t || 1600;
-		
-		var con = '<div class="tips-popup">'+h1+'</div>'
+		if(flag){
+			flag = false;
+			clearTimeout(timer);
+			$(".tips-popup").remove();
+			
+			var t = t || 1600;
+			
+			var con = '<div class="tips-popup">'+h1+'</div>'
+			$("body").append(con);
+			
+			var hei = $(".tips-popup").outerHeight(true);
+			$(".tips-popup").css({"marginTop":-hei/2});
+			
+			timer = setTimeout(function(){
+				$(".tips-popup").addClass("out");
+				$(".tips-popup.out")[0].addEventListener("webkitAnimationEnd", function(){
+					$(this).remove();
+					flag = true;
+				}, false); 
+			},t);
+		}
+	}
+	
+	var share = function(){
+		$(".pop-bg,.share-pop").remove();
+			
+		var con = '<div class="pop-bg"></div><div class="share-pop"><ul class="clearfix"><li><p></p><h1>朋友圈</h1></li><li><p></p><h1>微信</h1></li><li><p></p><h1>QQ</h1></li><li><p></p><h1>QQ空间</h1></li><li><p></p><h1>微博</h1></li></ul><dl><dt class="pop-cancel-btn">取消</dt></dl></div>'
 		$("body").append(con);
 		
-		var hei = $(".tips-popup").outerHeight(true);
-		$(".tips-popup").css({"marginTop":-hei/2});
+		$(".pop-bg,.share-pop").stop(true,true).fadeIn();
 		
-		timer = setTimeout(function(){
-			$(".tips-popup").addClass("out");
-			$(".tips-popup.out")[0].addEventListener("webkitAnimationEnd", function(){
-				$(this).remove();
-			}, false); 
-		},t);
+		$(".share-pop .pop-cancel-btn,.pop-bg").on("click",function(){
+			$(".pop-bg,.share-pop").remove();
+			return false;
+		});
 	}
+	
 	return {
-		tips:tips
+		tips:tips,
+		share:share,
 	}
 })();
 
