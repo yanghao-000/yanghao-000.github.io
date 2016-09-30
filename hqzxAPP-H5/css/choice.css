@@ -74,6 +74,8 @@ html,body{
 .footer li.left-time{
 	width:40%;
 	background-color: #febf14;
+	border-top:1px solid #FEBF14;
+	margin-top:-2px;
 }
 .footer li.left-time p{
 	height:1.5em;
