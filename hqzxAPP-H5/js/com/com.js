@@ -275,8 +275,8 @@ function judgeAnd(){
 	}
 	
 	if(browser.versions.android){
-		$(".rank-ul li .rank-d-3 dl dt p").eq(1).each(function(){
-			$(this).css({"marginTop":0});
+		$(".rank-ul li .rank-d-3 dl dt").each(function(){
+			$(this).find("p").eq(1).css({"marginTop":0});
 		});
 		$(".pass-body .head .w2 h1").css({"marginTop":"0.7em"});
 	}
