@@ -1,5 +1,5 @@
 $(function(){
-	$("body").on("click",".p1",function(){
+	$(".p1").on("click",function(){
 		popup.pause("是否退出做题？",function(){});
 	});
 	
@@ -16,7 +16,7 @@ $(function(){
 	});
 	
 	$("body").on("click",".p5",function(){
-		popup.flish("已答完所有题目，是否现在交卷？",function(){});
+		popup.flish("已答完所有题目，是否现在交卷？","取消","确定",function(){});
 	});
 	
 	$("body").on("click",".p6",function(){

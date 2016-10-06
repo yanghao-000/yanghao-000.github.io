@@ -178,8 +178,6 @@ var popup = (function(){
 	}
 	
 	var flish = function(t1,t2,t3,fn){
-		var t2 = t2 || "取消";
-		var t3 = t3 || "确定";
 		var con = 	'<div class="pop-bg"></div>'+
 					'<div class="pop-pause pop-flish">'+
 						'<div class="t-h1"><img src="images/icon/pop-text-icon.png"/></div>'+
