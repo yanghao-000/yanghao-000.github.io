@@ -8,7 +8,7 @@ html,body{
 }
 .dline:after{
 	width:200%;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #eee;
 	position:absolute;
 	bottom:-1px;
 	left:0;
@@ -19,7 +19,7 @@ html,body{
 }
 .dline:before{
 	width:200%;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #eee;
 	position:absolute;
 	top:-1px;
 	left:0;
@@ -33,7 +33,7 @@ html,body{
 }
 .ddline:before{
 	height:200%;
-	border-right:1px solid #ccc;
+	border-right:1px solid #eee;
 	position:absolute;
 	left:-1px;
 	top:0;
@@ -44,7 +44,7 @@ html,body{
 }
 .ddline:after{
 	height:200%;
-	border-right:1px solid #ccc;
+	border-right:1px solid #eee;
 	position:absolute;
 	left:-1px;
 	top:0;
@@ -67,7 +67,7 @@ html,body{
 	width:33%;
 	float:left;
 	font-size: 1.25em;
-	border-right:1px solid #ccc;
+	border-right:1px solid #eee;
 }
 .hd li.active{
 	color:#12c38c;
@@ -99,7 +99,7 @@ html,body{
 	height: 4.6em;
 	line-height: 4.6em;
 	text-indent: 1em;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #eee;
 }
 .stage-li.no-bor{
 	border-bottom:none;
@@ -118,7 +118,7 @@ html,body{
 /*=======================展开=============================*/
 .add-xia{
 	background-color: #fff;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #eee;
 }
 .t-fen{
 	-webkit-transform: translateY(-50px);
@@ -160,7 +160,7 @@ html,body{
 	-webkit-background-size: 100% 100%;
 }
 .fen{
-	border-top:1px solid #ccc;
+	border-top:1px solid #eee;
 }
 .fen h1{
 	font-size: 1.1em;
@@ -281,7 +281,7 @@ html,body{
 }
 .fenlu-body{
 	padding:0 4% 0;
-	/*border-bottom:1px solid #ccc;*/
+	/*border-bottom:1px solid #eee;*/
 	position: relative;
 }
 .fenlu-body .bor-b{
@@ -316,7 +316,7 @@ html,body{
 }
 /*=========*/
 .fenlu-body .box-ul{
-	border:1px solid #ccc;
+	border:1px solid #eee;
 	margin-bottom:1.3em;
 }
 .fenlu-body .box-ul li{
@@ -332,7 +332,7 @@ html,body{
 	background-color: #eee;
 	font-size: 1.25em;
 	line-height: 2em;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #eee;
 }
 .fenlu-body .box-ul .this-li-tit .this-div:nth-child(2):first-letter,.fenlu-body .box-ul .this-li-tit .this-div:nth-child(3):first-letter{
 	letter-spacing: 1.6em;
@@ -348,7 +348,7 @@ html,body{
 	background-color: #fff;
 	height:1.6em;
 	line-height: 1.6em;
-	border:1px solid #ccc;
+	border:1px solid #eee;
 	-webkit-border-radius: 3px;
 	color:#888;
 }
@@ -609,7 +609,7 @@ html,body{
 	padding:0 0.6em;
 }
 .share-pop dl dt{
-	border-top:1px solid #ccc;
+	border-top:1px solid #eee;
 	text-align: center;
 	font-size: 1.25em;
 	padding:0.8em 0;

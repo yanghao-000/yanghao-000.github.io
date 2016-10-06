@@ -42,7 +42,7 @@
 }
 /*====================*/
 .rank-title{
-	/*border-bottom:1px solid #ccc;*/
+	/*border-bottom:1px solid #eee;*/
 	background-color: #fff;
 	overflow: hidden;
 }
@@ -58,7 +58,7 @@
 }
 .rank-ul li{
 	padding:1em 0 1em 1em;
-	border-top:1px solid #ccc;
+	border-top:1px solid #eee;
 	background-color: #fff;
 }
 .rank-ul li .rank-d-1,.rank-ul li .rank-d-2,.rank-ul li .rank-d-3{
@@ -101,6 +101,7 @@
 	padding:0.1em 0.4em 0.05em;
 	margin-left:0.5em;
 	color:#12C38C;
+	margin-top:0.25em;
 }
 .rank-ul li .rank-d-3 dl dd{
 		
