@@ -254,3 +254,29 @@ var popup = (function(){
 		balance:balance,
 	}
 })();
+
+function judgeAnd(){
+	var browser={
+  	  	versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {
+                webKit: u.indexOf('AppleWebKit') > -1, 
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, 
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, 
+                iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                wx: window.navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == 'micromessenger'
+            };
+        }(),
+        language:(navigator.browserLanguage || navigator.language).toLowerCase()
+	}
+	
+	if(browser.versions.android){
+		$(".rank-ul li .rank-d-3 dl dt p").eq(1).css({"marginTop":0});
+		$(".pass-body .head .w2 h1").css({"marginTop":"0.7em"});
+	}
+}
+judgeAnd();
