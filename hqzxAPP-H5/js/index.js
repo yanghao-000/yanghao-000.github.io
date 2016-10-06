@@ -1,5 +1,6 @@
 $(function(){
 	dataInit();	
+	popTikuChoice();
 });
 
 function dataInit(){
@@ -39,6 +40,7 @@ function dataInit(){
 		}
 	}
 }
+//计算剩余时间
  function calLeftTime(str){
  	var a = new Date();
  	var t = new Date(str);
@@ -46,4 +48,16 @@ function dataInit(){
  	var day = Math.ceil((l/1000/60/60)/24);
  	return day;
  }
+
+//题库类型选择弹框
+function popTikuChoice(){
+	$("body").on("touchend",".domee",function(){
+		var hei = $(".pop-choice").outerHeight();
+		$(".pop-choice").css({"marginTop":-hei/2});
+		$(".pop-choice-out,.pop-choice").stop(true,true).fadeIn();
+	});
+	$("body").on("touchend",".pop-choice-out",function(){
+		$(".pop-choice-out,.pop-choice").stop(true,true).fadeOut();
+	});
+}
 

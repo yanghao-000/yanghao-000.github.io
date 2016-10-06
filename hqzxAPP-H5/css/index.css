@@ -1,0 +1,85 @@
+/*题库选择弹框============*/
+.pop-choice-out{
+	position: fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+}
+.pop-choice{
+	-webkit-box-sizing: border-box;
+	position: fixed;
+	width:89%;
+	left:0;
+	right:0;
+	margin:0 auto;
+	top:50%;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	padding:1.4em;
+	display: none;
+}
+.pop-choice .t-h1{
+	font-size: 1.5em;
+	margin-bottom:0.5em;
+	color:#12c38c;
+}
+.pop-choice .t-h2{
+	font-size: 1.1em;
+	margin-bottom:1.2em;
+	color:#999;	
+}
+.pop-choice .t-h3{
+	margin-bottom:0.5em;
+}
+.pop-choice .t-h3 ul li:nth-child(even){
+	float:right;
+}
+.pop-choice .t-h3 ul li:nth-child(odd){
+	float:left;
+}
+.pop-choice .t-h3 li{
+	width:46%;
+	height:2.4em;
+	line-height: 2.4em;
+	-webkit-border-radius: 2.4em;
+	border:1px solid #ccc;
+	margin-bottom:1.16em;
+}
+.pop-choice .t-h3 .t-ul-1 li{
+	color:#80d77b;
+	border-color:#80d77b;
+}
+.pop-choice .t-h3 .t-ul-1 li.act{
+	background-color: #80d77b;
+	color:#fff;
+}
+.pop-choice .t-h3 .t-ul-2 li{
+	color:#f7b77a;
+	border-color:#f7b77a;
+}
+.pop-choice .t-h3 .t-ul-2 li.act{
+	background-color: #f7b77a;
+	color:#fff;
+}
+.pop-choice .t-h3 .t-ul-3 li{
+	color:#8adac8;
+	border-color:#8adac8;
+}
+.pop-choice .t-h3 .t-ul-3 li.act{
+	background-color: #8adac8;
+	color:#fff;
+}
+.pop-choice .t-h4{
+	font-size: 1.2em;
+	width:45%;
+	margin:0 auto;
+	height:2.1em;
+	line-height: 2.1em;
+	-webkit-border-radius: 2.1em;
+	background-color: #12C38C;
+	color:#fff;	
+}
