@@ -4,10 +4,6 @@ $(function(){
 	var lArr = ["06.01","06.02","06.03","06.04","06.05","06.06","06.07","06.08"];
 	var dArr = [20,40,30,10,90,20,50,40];
 	drawInit(passRate,1000,pArr,lArr,dArr);
-	
-	$(".show-total").on("click",function(){
-		popup.share();
-	});
 });
 
 //表盘
