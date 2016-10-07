@@ -286,8 +286,9 @@ function judgeAnd(){
 		});
 		$(".pass-body .head .dif h1").css({"lineHeight":"3.6em","height":"3.6em"});
 		
-		$(".index-ban .t-h3").css({"lineHeight":"1.9em"});
-		$(".conti-test .text").css({"width":"28%"});
+		$(".index-ban .t-h3").css({"lineHeight":"2.2em"});
+		$(".conti-test .text").css({"width":"24%"});
+		$(".index-ban").css({"paddingTop":"2.2em"});
 	}
 }
 judgeAnd();

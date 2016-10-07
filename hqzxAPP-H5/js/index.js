@@ -1,5 +1,6 @@
 $(function(){
 	popTikuChoice();
+	judgeAnd();
 });
 
 //题库类型选择弹框
