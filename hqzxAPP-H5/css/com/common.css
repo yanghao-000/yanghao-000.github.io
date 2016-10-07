@@ -748,13 +748,6 @@ html,body{
 	height:1.9em;
 }
 
-
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-
-}
-@media only screen and (min-width: 375px) and (max-width: 413px) {
-	
-}
-@media only screen and (min-width: 414px){
-	
+.t-shadow{
+	text-shadow: 0 0px 5px rgba(51,164,227,1);
 }

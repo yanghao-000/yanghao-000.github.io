@@ -1,3 +1,178 @@
+.conti-test{
+	-webkit-box-sizing: border-box;
+	height:3.3em;
+	background-color: #ecfff9;
+	color:#12C38C;
+	padding-top:1em;
+}
+.conti-test .text{
+	text-align: right;
+	width:30%;
+	margin:0 auto;
+	background: url(../images/icon/index-jx.png) no-repeat 0 center;
+	-webkit-background-size: contain;
+}
+/*===============*/
+.index-ban{
+	position: relative;
+	background: url(../images/bg/index-bg.jpg) no-repeat center 0;
+	-webkit-background-size: 100% 100%;
+	color:#d5f2ff;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	padding-top:2.0em;
+}
+.index-ban .t-h1{
+	font-size: 1.75em;
+	margin-bottom:0.4em;
+}
+.index-ban .t-h2{
+	font-size: 1.75em;
+}
+.index-ban .t-h2 i{
+	color:#fff;
+	font-size: 1.4em;
+	padding:0 0.5em;
+}
+.index-ban .t-h3{
+	font-size: 1.1em;
+	position: absolute;
+	color:#fff;
+	width:4em;
+	height:1.8em;
+	line-height: 1.8em;
+	-webkit-border-radius: 1.8em;
+	border:1px solid #fff;
+	right:5%;
+	top:11%;
+}
+/*===============*/
+.index-tit{
+	padding:1em 1em;
+	background-color: #fff;
+	border-bottom:1px solid #eee;
+}
+.index-tit p{
+	font-size: 1.2em;
+	background: url(../images/icon/index-xie.png) no-repeat right center;
+	-webkit-background-size: contain;
+}
+.index-tit em{
+	float:right;
+	width:3em;
+	height:3em;
+	top:0;
+	bottom:0;
+	margin: auto 0;
+	right:0;
+}
+/*=================*/
+.index-nav{
+	padding:1.1em 1em 0;
+	background-color: #fff;
+}
+.index-nav ul{
+	text-align: center;
+}
+.index-nav ul li{
+	float:left;
+	width:25%;
+	margin-bottom:1.1em;
+}
+.index-nav ul li .t-dt{
+	width:58%;
+	margin:0 auto;
+	-webkit-border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: 46% 46%;
+	margin-bottom:0.5em;
+}
+.index-nav ul li.t-li-1 .t-dt{
+	background-color: rgba(255,196,106,0.2);
+	background-image: url(../images/icon/index-i-1.png);
+}
+.index-nav ul li.t-li-2 .t-dt{
+	background-color: rgba(193,230,117,0.2);
+	background-image: url(../images/icon/index-i-2.png);
+}
+.index-nav ul li.t-li-3 .t-dt{
+	background-color: rgba(95,196,255,0.2);
+	background-image: url(../images/icon/index-i-3.png);
+}
+.index-nav ul li.t-li-4 .t-dt{
+	background-color: rgba(252,152,118,0.2);
+	background-image: url(../images/icon/index-i-4.png);
+}
+.index-nav ul li.t-li-5 .t-dt{
+	background-color: rgba(93,213,247,0.2);
+	background-image: url(../images/icon/index-i-5.png);
+}
+.index-nav ul li.t-li-6 .t-dt{
+	background-color: rgba(198,208,255,0.2);
+	background-image: url(../images/icon/index-i-6.png);
+}
+.index-nav ul li.t-li-7 .t-dt{
+	background-color: rgba(255,196,106,0.2);
+	background-image: url(../images/icon/index-i-7.png);
+}
+.index-nav ul li.t-li-8 .t-dt{
+	background-color: rgba(95,196,255,0.2);
+	background-image: url(../images/icon/index-i-8.png);
+}
+/*======================*/
+.index-nav-t{
+	line-height: 3.7em;
+	background-color: #fff;
+	margin-top:0.4em;
+}
+.index-nav-t ul{
+	padding:0 1em;
+	border-bottom:1px solid #eee;
+}
+.index-nav-t li{
+	float:left;
+	width:50%;
+	padding:1em 0;
+}
+.index-nav-t li i{
+	font-size: 1.2em;
+}
+.index-nav-t li p{
+	height:3.7em;
+	width:3.7em;
+	float:right;
+	-webkit-border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: 44% 44%;
+	margin-right:1.2em;
+}
+.index-nav-t ul li.t-li-1 p{
+	background-color: rgba(99,203,143,0.2);
+	background-image: url(../images/icon/index-i2-1.png);
+}
+.index-nav-t ul li.t-li-2 p{
+	background-color: rgba(99,203,143,0.2);
+	background-image: url(../images/icon/index-i2-2.png);
+}
+.index-nav-t ul li.t-li-3 p{
+	background-color: rgba(252,152,118,0.2);
+	background-image: url(../images/icon/index-i2-3.png);
+}
+.index-nav-t ul li.t-li-4 p{
+	background-color: rgba(252,152,118,0.2);
+	background-image: url(../images/icon/index-i2-4.png);
+}
+.index-nav-t ul li.t-li-1,.index-nav-t ul li.t-li-2{
+	
+}
+.index-nav-t ul li.t-li-2,.index-nav-t ul li.t-li-4{
+	text-indent: 1em;
+}
+.index-nav-t ul li.t-li-2 p,.index-nav-t ul li.t-li-4 p{
+	margin-right:0.6em;
+}
 /*题库选择弹框============*/
 .pop-choice-out{
 	position: fixed;

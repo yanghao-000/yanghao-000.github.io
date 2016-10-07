@@ -11,44 +11,94 @@
 		<link rel="stylesheet" type="text/css" href="css/date/date-custom.css"/>
 	    
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<style type="text/css">
-			a{
-				display: block;
-				float: left;
-				width:3em;
-				height:3em;
-				background-color: #f0f0f0;
-				font-size: 1em;
-				margin:10px 20px;
-			}
-			#dome{
-				font-size: 0.4rem;
-				float: right;
-				padding-top:20px;
-			}
-		</style>
+
 	</head>
 	<body>
-		<a href="choice-question.html">选择题</a>
-		<a href="class-test.html">随堂测试</a>
-		<a href="couti-list-out.html">错题列表</a>
-		<a href="do-record.html">做题记录</a>
-		<a href="dt-report.html">答题报告</a>
-		<a href="dt-report-3.html">答题报告3</a>
-		<a href="my-hid.html">我的收藏</a>
-		<a href="pass.html">达标率</a>
-		<a href="pc-report.html">测评报告</a>
-		<a href="section.html">章节</a>
-		<a href="stage-test.html">阶段考试</a>
-		<a href="subject.html">科目</a>
-		<a href="VIP.html">vip</a>
-		<a href="rank.html">我的排名</a>
-		<a href="popup.html">弹框</a>
+		<div class="conti-test">
+			<div class="text">继续上次考试</div>
+		</div>
 		
-		<div class="clear"></div>
+		<div class="index-ban">
+			<div class="t-h1 t-shadow">距离考试</div>
+			<div class="t-h2 t-shadow">剩  <i>000</i> 天</div>
+			<div class="t-h3 t-shadow">设置</div>
+		</div>
+		<script>
+			var banWid = document.documentElement.clientWidth;
+			document.getElementsByClassName("index-ban")[0].style.height = 270*banWid/750 + "px";
+		</script>
 		
-		<p class="dome" id="dome">请设置</p>
-		<p class="domee">题库选择</p>
+		<div class="index-tit relative">
+			<p>会计基础(校区专业)</p>
+			<em class="absolute"></em>
+		</div>
+		
+		<div class="index-nav">
+			<ul class="clearfix">
+				<a href="class-test.html"><li class="t-li-1">
+					<div class="t-dt"></div>
+					<div class="t-dd">随堂练习</div>
+				</li></a>
+				<a href="stage-test.html"><li class="t-li-2">
+					<div class="t-dt"></div>
+					<div class="t-dd">阶段考试</div>
+				</li></a>
+				<a href="danke-test.html"><li class="t-li-3">
+					<div class="t-dt"></div>
+					<div class="t-dd">单科考试</div>
+				</li></a>
+				<a href="VIP.html"><li class="t-li-4">
+					<div class="t-dt"></div>
+					<div class="t-dd">VIP题库</div>
+				</li></a>
+				<a href="my-hid.html"><li class="t-li-5">
+					<div class="t-dt"></div>
+					<div class="t-dd">我的收藏</div>
+				</li></a>
+				<a href="do-record.html"><li class="t-li-6">
+					<div class="t-dt"></div>
+					<div class="t-dd">做题记录</div>
+				</li></a>
+				<a href="redo.html"><li class="t-li-7">
+					<div class="t-dt"></div>
+					<div class="t-dd">错题重做</div>
+				</li></a>
+				<a href=""><li class="t-li-8">
+					<div class="t-dt"></div>
+					<div class="t-dd">会计证考点</div>
+				</li></a>
+			</ul>
+		</div>
+		<script>
+			var obj = document.getElementsByClassName("t-dt");
+			var w = obj[0].offsetWidth;
+			for(var i=0; i<obj.length; i++){
+				obj[i].style.height = w + "px";
+			}
+		</script>
+		
+		<div class="index-nav-t">
+			<ul class="clearfix">
+				<a href="pc-report.html"><li class="t-li-1">
+					<i>评估报告</i>
+					<p></p>
+				</li></a>
+				<a href="rank.html"><li class="t-li-2">
+					<i>排行榜</i>
+					<p></p>
+				</li></a>
+			</ul>
+			<ul class="clearfix">
+				<a href="couti-list-out.html"><li class="t-li-3">
+					<i>知识错误表</i>
+					<p></p>
+				</li></a>
+				<a href="pass.html"><li class="t-li-4">
+					<i>达标信息表</i>
+					<p></p>
+				</li></a>
+			</ul>			
+		</div>
 		
 		<div class="pop-choice-out"></div>
 		<div class="pop-choice">
@@ -72,7 +122,7 @@
 					<li>会计证(校区专用)</li>
 				</ul>
 			</div>
-			<div class="t-h4">下一步</div>
+			<div class="t-h4">保存</div>
 		</div>
 		
 		

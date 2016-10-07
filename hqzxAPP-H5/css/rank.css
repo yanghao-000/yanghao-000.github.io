@@ -20,17 +20,14 @@
 	font-size: 1.25em;
 	margin-bottom:0.2em;
 	color:#d8eeff;
-	text-shadow: 0 0px 5px rgba(51,164,227,1);
 }
 .banner .ban-h3 li h2{
 	font-size: 1.5em;
-	text-shadow: 0 0px 5px rgba(51,164,227,1);
 }
 .banner .ban-h2{
 	width:100%;
 	font-size: 1.5em;
 	top:53%;
-	text-shadow: 0 0px 5px rgba(51,164,227,1);
 }
 .banner .ban-h1{
 	width:100%;
@@ -42,7 +39,6 @@
 }
 /*====================*/
 .rank-title{
-	/*border-bottom:1px solid #eee;*/
 	background-color: #fff;
 	overflow: hidden;
 }
