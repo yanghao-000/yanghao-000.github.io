@@ -282,9 +282,9 @@ function judgeAnd(){
 		$(".pass-body .head .w2 h1").css({"marginTop":"0.7em"});
 		
 		$(".pass-body .body .w1").each(function(){
-			$(this).find("p").eq(0).css({"marginTop":"0.4em"});
+			$(this).find("p").eq(0).css({"marginTop":"0.6em"});
 		});
-		$(".pass-body .head .w2.dif h1").css({"lineHeight":"3.6em"});
+		$(".pass-body .head .dif h1").css({"lineHeight":"3.6em","height":"3.6em"});
 	}
 }
 judgeAnd();
