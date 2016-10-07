@@ -278,10 +278,13 @@ function judgeAnd(){
 		$(".rank-ul li .rank-d-3 dl dt").each(function(){
 			$(this).find("p").eq(1).css({"marginTop":0});
 		});
+		
 		$(".pass-body .head .w2 h1").css({"marginTop":"0.7em"});
-//		$(".pass-body .body .w1").each(function(){
-//			$(this).find("p").eq(0).css({"marginTop":0});
-//		});
+		
+		$(".pass-body .body .w1").each(function(){
+			$(this).find("p").eq(0).css({"marginTop":"0.4em"});
+		});
+		$(".pass-body .head .w2.dif h1").css({"lineHeight":"3.6em"});
 	}
 }
 judgeAnd();
