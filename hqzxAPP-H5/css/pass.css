@@ -38,6 +38,7 @@
 	padding: 0 1em;
 	height:5.1em;
 	color:#666;
+	overflow: hidden;
 }
 .pass-body .body dt,.pass-body .body dd{
 	float: left;
