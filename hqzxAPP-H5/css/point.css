@@ -1,0 +1,43 @@
+body{
+	background-color: #fff;
+}
+.zhan-tot{
+	border-bottom:1px solid #ccc;
+}
+.zhan-tot p{
+	position: relative;
+	font-size: 1.4em;
+	padding:1em 0.8em;
+	background-color: #f0f0f0;
+}
+.zhan-tot p i{
+	position: absolute;
+	width:0.8em;
+	height:1.2em;
+	background: url(../images/icon/title-arrow.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	right:0.8em;
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.4s;
+}
+.zhan-tot.active p i{
+	-webkit-transform: rotate(90deg);
+	-webkit-transition: all 0.4s;
+}
+.zhan-tot li{
+	font-size: 1.3em;
+	padding:0.9em 1.3em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background-color: #fff;
+}
+.zhan-tot ul a{
+	color:#333;
+}
+.zhan-tot ul{
+	display: none;
+}
