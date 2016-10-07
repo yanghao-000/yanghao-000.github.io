@@ -280,7 +280,7 @@ function judgeAnd(){
 		});
 		$(".pass-body .head .w2 h1").css({"marginTop":"0.7em"});
 		$(".pass-body .body .w1").each(function(){
-			$(this).find("p").eq(0).css({"marginTop":"0.4em"});
+			$(this).find("p").eq(0).css({"marginTop":0});
 		});
 	}
 }
