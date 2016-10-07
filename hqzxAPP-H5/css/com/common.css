@@ -89,6 +89,7 @@ html,body{
 }
 .swiper-slide{
 	overflow: auto;
+	position: relative;
 }
 /*==============阶段考试列表==================*/
 .stage-li{
@@ -747,7 +748,7 @@ html,body{
 	font-size: 1.4em;
 	height:1.9em;
 }
-
+/*===================*/
 .t-shadow{
 	text-shadow: 0 0px 5px rgba(51,164,227,1);
 }

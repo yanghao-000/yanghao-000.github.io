@@ -79,5 +79,6 @@ function showSheet(n){
 	});
 	$(".answer-sheet").on("touchend",function(){
 		answerSheet.hide(0);
+		return false;
 	});
 }
