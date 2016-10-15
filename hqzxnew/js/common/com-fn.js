@@ -230,6 +230,7 @@ function sxHoverTop(obj,cl){
 	});
 }
 
+//图片加载  先加载数据
 function loadingImg(obj,imgAdd){
 	obj.each(function(){
 		obj.css({"background":"url(images/icon/img-loading.gif) no-repeat center center"});
