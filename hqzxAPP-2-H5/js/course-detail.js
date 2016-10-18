@@ -8,7 +8,7 @@ $(function(){
 function courseBuyPop(){
 	var bg = $(".black-bg");
 	var pop = $(".course-bug-pop");
-	bg.css({"display":"block","-webkit-animation":"fadeIn 0.5s both"});
+	bg.css({"display":"block","-webkit-animation":"fadeIn 0.6s both"});
 	pop.css({"display":"block","-webkit-animation":"fadeInUp 0.3s both"});
 	
 	$(".course-bug-pop .sec-mid ul li").on("touchend",function(){
