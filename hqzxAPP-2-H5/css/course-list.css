@@ -1,0 +1,46 @@
+html,body{
+	height:100%;
+}
+.course-list-box .item{
+	padding:1.9em 4%;
+	border-bottom:1px solid #eee;
+}
+.course-list-box .item .left:nth-child(1){
+	width:38%;
+}
+.course-list-box .item .left:nth-child(1) img{
+	width:100%;
+}
+.course-list-box .item .left:nth-child(2){
+	width:59%;
+	margin-left:3%;
+}
+.course-list-box .item .left:nth-child(2) p:nth-child(1){
+	font-size: 1.25em;
+	margin-bottom:0.7em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.course-list-box .item .left:nth-child(2) p:nth-child(2),.course-list-box .item .left:nth-child(2) p:nth-child(3){
+	font-size: 1em;
+	color:#666;
+}
+.course-list-box .item .left:nth-child(2) p:nth-child(2){
+	margin-bottom:0.3em;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+.course-list-box .item .left:nth-child(2) p:nth-child(1){
+	margin-bottom:0.5em;
+}
+}
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+	
+}
+@media only screen and (min-width: 414px){
+	
+}

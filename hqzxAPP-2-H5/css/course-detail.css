@@ -1,0 +1,142 @@
+.course-detail-head{
+	background-color: #fff;
+	margin-bottom:0.4em;
+}
+.course-detail-head .ban img{
+	width:100%;
+}
+.course-detail-head .bot{
+	padding: 4% 4%;
+	border:1px solid #eee;
+}
+.course-detail-head .bot .tit{
+	font-size: 1.5em;
+	margin-bottom:0.6em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.course-detail-head .bot .intro .left{
+	font-size: 1.25em;
+	color:#fe763a;
+}
+.course-detail-head .bot .intro .right{
+	font-size: 1.1em;
+	color:#666;
+}
+/*=============================*/
+.course-detail-body{
+	background-color: #fff;
+}
+/*=======================*/
+.lubo,.luzhibo{
+	padding:6% 6%;
+	border-bottom:1px solid #eee;
+}
+.banXing{
+	line-height: 2.5em;
+	overflow: hidden;
+}
+.banXing i,.banXing em{
+	float:left;
+}
+.banXing i{
+	color:#666;
+	width:32%;
+}
+.banXing em{
+	width:68%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.banXing.banXingo em{
+	color:#fe763a;
+}
+.banXing.kecheng{
+	margin-bottom:0.8em;
+}
+.banXing.kecheng i{
+	color:#333;
+}
+.banXing.kecheng em{
+	text-indent: -0.4em;
+}
+.banXing.kecheng em p{
+	line-height: 2.2em;
+}
+/*=============================*/
+.course-bug-pop{
+	position: fixed;
+	width:100%;
+	bottom:0;
+	left:0;
+	background-color: #fff;
+	z-index: 1000;
+	display: none;
+}
+.course-bug-pop .sec-top{
+	-webkit-box-sizing: border-box;
+	height:8.4em;
+	padding:4% 4%;
+	border-bottom:1px solid #eee;
+}
+.course-bug-pop .sec-top .img-box{
+	width:7.9em;
+	height:7.9em;
+	-webkit-border-radius: 10px;
+	border:1px solid #eee;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	top:-1.3em;
+}
+.course-bug-pop .sec-top .prise{
+	margin-left: 7em;
+	color:#fe763a;
+	font-size: 1.25em;
+}
+.course-bug-pop .sec-top .close-btn{
+	position: absolute;
+	top:0.4em;
+	right:0.3em;
+	width:3.4em;
+	height:3.4em;
+	background: url(../images/main/icon/close-btn.png) no-repeat center center;
+	-webkit-background-size: 50% 50%;
+}
+.course-bug-pop .sec-mid{
+	padding:6% 4%;
+}
+.course-bug-pop .sec-mid .tit{
+	font-size: 1.25em;
+	color:#666;
+	margin-bottom:1.3em;
+}
+.course-bug-pop .sec-mid ul li{
+	font-size: 1em;
+	float:left;
+	color:#999;
+	text-align: center;
+	padding: 0 1.2em;
+	height:2.4em;
+	line-height: 2.4em;
+	-webkit-border-radius: 2.4em;
+	border:1px solid #999;
+	margin-right: 1.2em;
+	margin-bottom:0.6em;
+	-webkit-transition: all 0.2s;
+}
+.course-bug-pop .sec-mid ul li.act{
+	background-color: #FE763A;
+	color:#fff;
+	border-color: #FE763A;
+	-webkit-transition: all 0.2s;
+}
+.course-bug-pop .sec-bot{
+	font-size: 1.25em;
+	background-color: #FE763A;
+	color:#fff;
+	height:2.9em;
+	line-height: 2.9em;
+	text-align: center;
+}

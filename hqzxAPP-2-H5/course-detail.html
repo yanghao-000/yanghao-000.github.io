@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>题库首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/common-2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/ani.css"/>
+	    
+		<link rel="stylesheet" type="text/css" href="css/course-detail.css"/>
+
+	</head>
+	<body class="f0f0f0 body-pad">
+		<div class="course-detail-head">
+			<div class="ban">
+				<img src="images/main/bg/course-detail-bg.jpg"/>
+			</div>
+			<div class="bot">
+				<div class="tit">猎才计划——面向零基础学员</div>
+				<div class="intro clearfix">
+					<p class="left">￥<em>1580</em></p>
+					<p class="right"><i>3516</i>人报名</p>
+				</div>
+			</div>
+			<script>
+				(function(){
+					var banWid = document.documentElement.clientWidth;
+					document.getElementsByClassName("course-detail-head")[0].getElementsByClassName("ban")[0].style.height = 337*banWid/750 + "px";
+				})();	
+			</script>
+		</div>
+		
+		<div class="course-detail-body">
+			<ul class="slide-nav slide-nav-2 clearfix">
+				<li><em class="act">介绍</em></li>
+				<li><em>课程</em></li>
+				<i class="nav-bar"></i>
+			</ul>
+			<script>
+				(function(){
+					var o = document.getElementsByClassName("slide-nav")[0];
+					var act = o.getElementsByClassName("act")[0];
+					var bar = o.getElementsByClassName("nav-bar")[0];
+					
+					bar.style.width = act.clientWidth + "px";
+					bar.style.left = act.offsetLeft + "px";
+				})();
+			</script>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+				    <div class="swiper-slide">
+				    	<div class="course-detail-box">
+							<div class="course-main-1">为什么选择恒企教育</div>
+							<div class="course-main-2">课程学习优势</div>
+							<div class="course-main-3">课程班型和售价</div>
+							<div class="course-main-4">学习流程</div>
+							<div class="course-main-5">学员评价</div>
+							<div class="course-main-6">品牌荣誉</div>
+				    	</div>
+				    </div>
+				    <div class="swiper-slide">
+						<div class="course-list-box">
+							<div class="course-detail-box">
+								<div class="lubo">
+									<div class="banXing"><i>班型</i><em>录播班</em></div>
+									<div class="banXing"><i>适合对象</i><em>零基础想胜任出纳及财务文员的学员</em></div>
+									<div class="banXing banXingo"><i>价格</i><em>1580元</em></div>
+									<div class="banXing"><i>课次</i><em>3</em></div>
+									<div class="banXing"><i>学习周期</i><em>2.5个月</em></div>
+									<div class="banXing kecheng clearfix">
+										<i>录播课程</i>
+										<em>
+											<p>《会计基础》</p>
+											<p>《会计基础》</p>
+										</em>
+									</div>
+								</div>
+								<div class="luzhibo">
+									<div class="banXing"><i>班型</i><em>录播+直播</em></div>
+									<div class="banXing"><i>适合对象</i><em>零基础想胜任出纳及财务文员的学员</em></div>
+									<div class="banXing banXingo"><i>价格</i><em>1580元</em></div>
+									<div class="banXing"><i>课次</i><em>3</em></div>
+									<div class="banXing"><i>学习周期</i><em>2.5个月</em></div>
+									<div class="banXing kecheng clearfix">
+										<i>直播课</i>
+										<em>
+											<p>《会计基础》</p>
+											<p>《会计基础》</p>
+										</em>
+									</div>
+									<div class="banXing kecheng clearfix">
+										<i>录播课</i>
+										<em>
+											<p>《会计基础》</p>
+											<p>《会计基础》</p>
+										</em>
+									</div>
+								</div>
+					    	</div>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="float-nav-bottom clearfix">
+			<div class="left">咨询</div>
+			<div class="right">立即购买</div>
+		</div>
+		
+		<div class="black-bg"></div>
+		<div class="course-bug-pop">
+			<div class="sec-top relative">
+				<div class="img-box absolute" style="background: url(images/main/bg/course-temp-img.jpg) no-repeat center center;"></div>
+				<div class="prise left">￥3580</div>
+				<div class="close-btn"></div>
+			</div>
+			<div class="sec-mid">
+				<div class="tit">请选择班型</div>
+				<ul class="clearfix">
+					<li class="act">录播班</li>
+					<li class="">录播+直播</li>
+				</ul>
+			</div>
+			<div class="sec-bot">确定</div>
+		</div>
+		
+		<script src="js/com/jquery.js"></script>
+		<script src="js/com/swiper.jquery.min.js"></script>
+		<script src="js/com/com-2.js"></script>
+		<script src="js/course-detail.js"></script>
+	</body>
+</html>
+

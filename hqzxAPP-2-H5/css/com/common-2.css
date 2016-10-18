@@ -1,0 +1,73 @@
+.f0f0f0{
+	background-color: #f0f0f0;
+}
+.body-pad{
+	padding-bottom:4em;
+}
+.black-bg{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width:100%;
+	height:100%;
+	z-index: 999;
+	top:0;
+	left:0;
+	display: none;
+}
+/*=======================*/
+.slide-nav{
+	position: relative;
+	-webkit-box-sizing: border-box;
+	padding: 0 4%;
+	text-align: center;
+	border-bottom:1px solid #eee;
+}
+.slide-nav li{
+	width:25%;
+	float:left;
+}
+.slide-nav li em{
+	font-size: 1.25em;
+	display: inline-block;
+	padding: 1em 0.4em;
+}
+.slide-nav li em.act{
+	color:#12C38C;
+}
+.slide-nav .nav-bar{
+	position: absolute;
+	height:3px;
+	background-color: #12C38C;
+	bottom:-1px;
+}
+.slide-nav.slide-nav-2{
+	padding: 0 18%;
+}
+.slide-nav.slide-nav-2 li{
+	width:50%;
+}
+/*--------------------------*/
+.float-nav-bottom{
+	position: fixed;
+	width:100%;
+	bottom:0;
+	left:0;
+	line-height: 4em;
+	z-index: 99;
+}
+.float-nav-bottom .left{
+	width:30%;
+	color:#12C38C;
+	font-size: 1.25em;
+	background: url(../../images/main/icon/erji.png) no-repeat 26% center;
+	-webkit-background-size: 24% 44% ;
+	text-indent: 14%;
+	background-color: #f0f0f0;
+}
+.float-nav-bottom .right{
+	width:70%;
+	text-align: center;
+	font-size: 1.25em;
+	color:#fff;
+	background-color: #12C38C;
+}
