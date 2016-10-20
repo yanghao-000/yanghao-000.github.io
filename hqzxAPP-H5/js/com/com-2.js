@@ -185,7 +185,8 @@ function judgeAnd(){
 	
 	if(browser.versions.android){
 		$(".item").each(function(){
-			$(this).find(".right p").eq(0).css({"marginBottom":"1em"});
+			$(this).find(".right p").eq(0).css({"marginBottom":"1.2em","marginTop":"0.2em"});
+			$(this).find(".right p").eq(1).css({"marginBottom":"0.2em"});
 		});
 	}
 }
