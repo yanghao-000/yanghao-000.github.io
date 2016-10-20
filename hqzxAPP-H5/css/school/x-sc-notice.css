@@ -1,0 +1,39 @@
+body{
+	background-color: #f0f0f0;
+}
+.notice{
+	padding:5% 3% 0;
+	margin-bottom:0.4em;
+	background-color: #fff;
+}
+.notice .sec-top .tit{
+	position: relative;
+	margin-bottom:0.7em;
+}
+.notice .sec-top .tit p{
+	width:72%;
+	font-size: 1.5em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.notice .sec-top .tit i{
+	position: absolute;
+	font-size: 1.25em;
+	color:#999;
+	bottom:0;
+	right:0;
+}
+.notice .sec-top .cont{
+	font-size: 1.25em;
+	color:#666;
+	padding-bottom:1.3em;
+	border-bottom:1px solid #eee;
+	line-height: 1.5em;
+}
+.notice .sec-bot{
+	position: relative;
+	font-size: 1.25em;
+	height:3em;
+	line-height: 3em;
+}

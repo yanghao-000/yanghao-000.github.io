@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单列表</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/common-2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/swiper.min.css"/>
+	    
+		<link rel="stylesheet" type="text/css" href="css/course/course-list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/course/u-course-order.css"/>
+
+	</head>
+	<body class="f0f0f0">
+		<ul class="slide-nav slide-nav-2 clearfix">
+			<li><em class="act">待支付</em></li>
+			<li><em>已购买</em></li>
+			<i class="nav-bar"></i>
+		</ul>
+		<script>
+			(function(){
+				var o = document.getElementsByClassName("slide-nav")[0];
+				var act = o.getElementsByClassName("act")[0];
+				var bar = o.getElementsByClassName("nav-bar")[0];
+				
+				bar.style.width = act.clientWidth + "px";
+				bar.style.left = act.offsetLeft + "px";
+			})();
+		</script>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+			    <div class="swiper-slide">
+			    	<div class="course-list-box">
+			    		<a href="u-course-detail.html"><div class="item clearfix">
+				    		<div class="left">
+				    			<img src="images/main/bg/exp-class-img.jpg"/>
+				    		</div>
+				    		<div class="right">
+				    			<p>2016会计初级职称协议班</p>
+					    		<p>适用对象：零起步学员</p>
+					    		<p>上课方式：线下面授</p>
+				    		</div>
+				    	</div></a>
+				    	<a href=""><div class="item clearfix">
+				    		<div class="left">
+				    			<img src="images/main/bg/exp-class-img.jpg"/>
+				    		</div>
+				    		<div class="right">
+				    			<p>会计从业考前轻松提分</p>
+					    		<p>适用对象：零起步学员</p>
+					    		<p>上课方式：线下面授</p>
+				    		</div>
+				    	</div></a>
+			    	</div>
+			    </div>
+			    <div class="swiper-slide">
+			    	<div class="course-list-box">
+			    		<a href=""><div class="item clearfix">
+				    		<div class="left">
+				    			<img src="images/main/bg/exp-class-img.jpg"/>
+				    		</div>
+				    		<div class="right">
+				    			<p>2016会计初级职称协议班</p>
+					    		<p>适用对象：零起步学员</p>
+					    		<p>上课方式：线下面授</p>
+				    		</div>
+				    	</div></a>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		
+		
+		
+		<script src="js/com/jquery.js"></script>
+		<script src="js/com/swiper.jquery.min.js"></script>
+		<script src="js/com/com-2.js"></script>
+		
+		<script src="js/course/u-course-order.js"></script>
+	</body>
+</html>
+

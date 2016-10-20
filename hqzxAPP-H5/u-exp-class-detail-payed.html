@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>经验学堂详情-已付款</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/common-2.css"/>
+	    
+		<link rel="stylesheet" type="text/css" href="css/course/exp-class-detail.css"/>
+
+	</head>
+	<body class="body-pad">
+		<div class="course-detail-head">
+			<div class="ban">
+				<img src="images/main/bg/course-detail-bg.jpg"/>
+			</div>
+			<div class="bot">
+				<div class="tit">猎才计划——面向零基础学员</div>
+				<div class="intro clearfix">
+					<p class="left vip">VIP专属</p>
+					<p class="right vip"><i>3516</i>人报名</p>
+				</div>
+			</div>
+			<script>
+				(function(){
+					var img = new Image();
+					img.src = "images/main/bg/course-detail-bg.jpg";
+					var check = function(){
+					    if(img.width>0 || img.height>0){
+					    	clearInterval(set);
+					    	var banWid = document.documentElement.clientWidth;
+							document.getElementsByClassName("course-detail-head")[0].getElementsByClassName("ban")[0].style.height = img.height*banWid/750 + "px";
+					    }
+					}
+					var set = setInterval(check,40);
+				})();	
+			</script>
+		</div>
+		
+		<div class="bar-b"></div>
+		
+		<div class="exp-class-detail-body">
+			<div class="block">
+				<p>讲师</p>
+				<p>何特嘉</p>
+			</div>
+			<div class="block">
+				<p>直播时间</p>
+				<p>8月23日19:00~10月24日20：00</p>
+			</div>
+			<div class="block">
+				<p>包含服务  <i>全场免费</i></p>
+				<p>本课程主要为会计从业知识点回顾课程，帮助学员梳理课程中重点章节及内容。帮助学员顺利通过考试，并为初级课程的学习奠定基础。</p>
+			</div>
+		</div>
+		
+		<div class="float-nav-bottom clearfix">
+			<div class="left">咨询</div>
+			<div class="right">进入课堂</div>
+		</div>
+	
+		
+		<script src="js/com/jquery.js"></script>
+		<script src="js/com/com-2.js"></script>
+		
+		<script src="js/course/exp-class-detail-payed.js"></script>
+	</body>
+</html>
+

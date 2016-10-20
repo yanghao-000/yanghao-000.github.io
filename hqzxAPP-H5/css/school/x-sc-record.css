@@ -1,0 +1,92 @@
+.record-box{
+	padding:1.75em 0 1.4em;
+	background-color: #fbfbfb;
+	margin-bottom:0.6em;
+	border-bottom:1px solid #eee;
+}
+.record-box .t-h1{
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom:0.6em;
+}
+.record-box .t-h2{
+	font-size: 1.25em;
+	text-align: center;
+	margin-bottom:1.1em;
+}
+.record-box .t-h2 i{
+	color:#999;
+}
+.record-box .t-progress{
+	position: relative;
+	height:1.9em;
+	width:76%;
+	margin:0 auto;
+	margin-bottom:0.8em;
+}
+.record-box .t-progress .sec-bg{
+	position: absolute;
+	width:100%;
+	height:1.2em;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	background-color: #f5f5f5;
+}
+.record-box .t-progress .sec{
+	position: absolute;
+	width:1.9em;
+	height:1.9em;
+	-webkit-border-radius: 50%;
+	background-color: #f5f5f5;
+	top:0;
+}
+.record-box .t-progress .sec-in{
+	position: absolute;
+	width:1.1em;
+	height:1.1em;
+	-webkit-border-radius: 50%;
+	background-color: #ddd;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+}
+.record-box .t-progress .sec-in .sec-bar{
+	position: absolute;
+	height:18%;
+	background-color: #ddd;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	right:50%;
+}
+.record-box .t-progress .sec-in:first-child .sec-bar{
+	display: none;
+}
+.record-box .t-progress .sec-in.act,.record-box .t-progress .sec-in.act .sec-bar{
+	background-color: #febf14;
+}
+/*===============*/
+.record-box .t-progress-text{
+	padding:0 1em;
+}
+.record-box .t-progress-text li{
+	float:left;
+	font-size: 1.2em;
+	color:#666;
+	text-align: center;
+}
+.record-box .t-progress-text li:last-child{
+	color:#333;
+}
+.record-box .t-progress-text li:nth-child(1){
+	width:20%;
+}
+.record-box .t-progress-text li:nth-child(2){
+	width:60%;
+}
+.record-box .t-progress-text li:nth-child(3){
+	width:20%;
+}

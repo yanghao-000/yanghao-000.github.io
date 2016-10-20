@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>校区首页-非学员</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/common-2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/swiper.min.css"/>
+	    
+		<link rel="stylesheet" type="text/css" href="css/school/x-index.css"/>
+		
+	</head>
+	<body>
+		<div class="banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/school/bg/school-ban-img_02.jpg"/>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/school/bg/school-ban-img_02.jpg"/>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/school/bg/school-ban-img_02.jpg"/>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<script>
+				(function(){
+					var img = new Image();
+					img.src = "images/school/bg/school-ban-img_02.jpg";
+					var check = function(){
+					    if(img.width>0 || img.height>0){
+					    	clearInterval(set);
+					    	var banWid = document.documentElement.clientWidth;
+							document.getElementsByClassName("banner")[0].style.height = img.height*banWid/750 + "px";
+					    }
+					}
+					var set = setInterval(check,40);
+				})();	
+			</script>
+		</div>
+		<div class="nav-ge">
+			<ul class="clearfix">
+				<a href=""><li class="t-li-1">
+					<dl><img src="images/school/icon/school-index-i-1.png"/><i></i></dl>
+					<p>前往校区</p>
+				</li></a>
+				<a href=""><li class="t-li-2">
+					<dl><img src="images/school/icon/school-index-i-2.png"/><i></i></dl>
+					<p>在线咨询</p>
+				</li></a>
+				<a href=""><li class="t-li-3">
+					<dl><img src="images/school/icon/school-index-i-3.png"/><i></i></dl>
+					<p>致电校区</p>
+				</li></a>
+				<a href=""><li class="t-li-4">
+					<dl><img src="images/school/icon/school-index-i-4.png"/><i></i></dl>
+					<p>考试查询</p>
+				</li></a>
+			</ul>
+		</div>
+		<div class="bar-b"></div>
+		<div class="kj-course">
+			<div class="tit clearfix relative">
+				<i></i>
+				<p>会计课程</p>
+				<em></em>
+			</div>
+			<ul class="clearfix">
+				<li><img src="images/main/bg/exp-class-img.jpg"/></li>
+				<li><img src="images/main/bg/exp-class-img.jpg"/></li>
+				<li><img src="images/main/bg/exp-class-img.jpg"/></li>
+				<li><img src="images/main/bg/exp-class-img.jpg"/></li>
+			</ul>
+		</div>
+		
+		
+		
+		<script src="js/com/jquery.js"></script>
+		<script src="js/com/swiper.jquery.min.js"></script>
+		<script src="js/com/com-2.js"></script>
+		
+		<script src="js/school/x-index-f.js"></script>
+	</body>
+</html>
+

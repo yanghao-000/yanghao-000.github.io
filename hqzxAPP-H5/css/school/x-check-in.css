@@ -1,0 +1,67 @@
+body{
+	background: #f0f0f0;
+}
+.check-tit{
+	padding:0 10%;
+	background-color: #fff;
+	margin-bottom:0.4em;
+}
+.check-tit ul{
+	padding: 1em 0;
+}
+.check-tit li{
+	-webkit-box-sizing: border-box;
+	float:left;
+	text-align: center;
+	width:50%;
+	font-size: 1.1em;
+	color:#666;
+	height: 1.6em;
+	line-height: 1.6em;
+}
+.check-tit li:nth-of-type(1){
+	border-right:1px solid #ccc;
+}
+.check-tit li i{
+	font-size: 1.1em;
+	color:#333;
+}
+/*=====================*/
+.check-list{
+	
+}
+.check-list li{
+	position: relative;
+	background-color: #fff;
+	padding:1em 4%;
+	margin-bottom:0.4em;
+}
+.check-list li .t-h1{
+	font-size: 1.25em;
+	margin-bottom:0.5em;
+}
+.check-list li .t-h2{
+	font-size: 1.1em;
+	margin-bottom:0.3em;
+	color:#666;
+}
+.check-list li .t-h3{
+	font-size: 1em;
+	color:#999;
+}
+.check-list li p{
+	position: absolute;
+	font-size: 1.1em;
+	width:6.7em;
+	height:2em;
+	line-height: 2em;
+	-webkit-border-radius: 2em;
+	text-align: center;
+	background-color: #12C38C;
+	color:#fff;
+	right:4%;
+	bottom:1em;
+}
+.check-list li p.act{
+	background-color: #ddd;
+}

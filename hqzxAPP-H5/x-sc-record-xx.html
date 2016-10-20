@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>休学记录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/common-2.css"/>
+	    
+		<link rel="stylesheet" type="text/css" href="css/school/x-sc-record.css"/>
+		<link rel="stylesheet" type="text/css" href="css/school/x-sc-record-xx.css"/>
+		
+	</head>
+	<body>
+		<div class="record-box">
+			<div class="t-h1">会计证精英级</div>
+			<div class="t-h2">休学时间：<i>2016.04.25~2016.06.24</i></div>
+			<div class="t-progress">
+				<div class="sec-in act">
+					<div class="sec-bar"></div>
+				</div>
+				<div class="sec-in">
+					<div class="sec-bar"></div>
+				</div>
+				<div class="sec-in">
+					<div class="sec-bar"></div>
+				</div>
+				<div class="sec-in">
+					<div class="sec-bar"></div>
+				</div>
+				
+				<div class="sec"></div>
+				<div class="sec"></div>
+				<div class="sec"></div>
+				<div class="sec"></div>
+				<div class="sec-bg"></div>
+			</div>
+			<ul class="t-progress-text clearfix">
+				<li>提交申请</li>
+				<li>教学经理确认</li>
+				<li>校长确认</li>
+				<li>申请成功</li>
+			</ul>
+		</div>
+		<div class="record-box">
+			<div class="t-h1">会计证精英级</div>
+			<div class="t-h2">休学时间：<i>2016.04.25~2016.06.24</i></div>
+			<div class="t-progress">
+				<div class="sec-in act">
+					<div class="sec-bar"></div>
+				</div>
+				<div class="sec-in act">
+					<div class="sec-bar"></div>
+				</div>
+				<div class="sec-in act">
+					<div class="sec-bar"></div>
+				</div>
+				<div class="sec-in act">
+					<div class="sec-bar"></div>
+				</div>
+				
+				<div class="sec"></div>
+				<div class="sec"></div>
+				<div class="sec"></div>
+				<div class="sec"></div>
+				<div class="sec-bg"></div>
+			</div>
+			<ul class="t-progress-text clearfix">
+				<li>提交申请</li>
+				<li>教学经理确认</li>
+				<li>校长确认</li>
+				<li>申请成功</li>
+			</ul>
+		</div>
+		<script>
+			function recordProgress(num){
+				var zong = document.getElementsByClassName("record-box");
+				var w = zong[0].getElementsByClassName("t-progress")[0].clientWidth/num;
+				var l = zong[0].getElementsByClassName("sec")[0].clientWidth/2;
+				var l2 = zong[0].getElementsByClassName("sec-in")[0].clientWidth/2;
+				for(var i=0; i<zong.length; i++){
+					var sec = zong[i].getElementsByClassName("sec");
+					var secIn = zong[i].getElementsByClassName("sec-in");
+					var bar = zong[i].getElementsByClassName("sec-bar");
+					for(var j=0; j<sec.length; j++){
+						sec[j].style.left = j*w-l+"px";
+						secIn[j].style.left = j*w-l2+"px";
+						secIn[j].style.zIndex = sec.length - j;
+						bar[j].style.width = w+"px";
+					}
+				}
+			}
+			recordProgress(3);
+		</script>
+		
+		
+		<script src="js/com/jquery.js"></script>
+		<script src="js/com/com-2.js"></script>
+		
+		<script src="js/school/x-sc-record-xx.js"></script>
+		
+	</body>
+</html>

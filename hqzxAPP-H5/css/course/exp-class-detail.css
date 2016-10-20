@@ -1,0 +1,43 @@
+.course-detail-head .bot .intro .left.vip{
+	font-size: 1.1em;
+	width:5.2em;
+	height:1.4em;
+	line-height: 1.4em;
+	text-align: center;
+	color:#fff;
+	background: url(../../images/main/icon/exp-class-yellow-bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+	text-indent: -0.3em;
+}
+.course-detail-head .bot .intro .right.vip{
+	font-size: 1.1em;
+	height:1.4em;
+	line-height: 1.4em;
+}
+.course-detail-head .bot .intro .left.free{
+	color:#12C38C;
+}
+/*=====================*/
+.exp-class-detail-body{
+	padding: 4% 4%;
+	background-color: #fff;
+}
+.exp-class-detail-body .block{
+	margin-bottom:1.4em;
+}
+.exp-class-detail-body .block p:nth-child(1){
+	font-size: 1.25em;
+	margin-bottom:0.4em;
+}
+.exp-class-detail-body .block p:nth-child(2){
+	font-size: 1.25em;
+	line-height: 1.5em;
+	color:#666;
+}
+/*========================*/
+.pop-pause.pop-flish{
+	z-index: 1000;
+}
+.pop-pause{
+	padding-top:2em;
+}

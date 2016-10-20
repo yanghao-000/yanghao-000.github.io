@@ -1,0 +1,22 @@
+body{
+	background-color: #f0f0f0;
+}
+.test-zixun-list li{
+	position: relative;
+	height:5em;
+	line-height: 5em;
+	padding:0 4%;
+	border-bottom:1px solid #eee;
+	background-color: #fff;
+}
+.test-zixun-list li p{
+	font-size: 1.25em;
+	color:#666;
+	width:90%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.test-zixun-list li .sc-arrow{
+	right:4%;
+}

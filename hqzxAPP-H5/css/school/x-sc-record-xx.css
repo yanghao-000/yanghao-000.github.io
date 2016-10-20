@@ -1,0 +1,19 @@
+.record-box .t-progress-text{
+	padding:0 0.5em;
+}
+.record-box .t-progress-text li{
+	font-size: 1.1em;
+}
+.record-box .t-progress-text li:nth-child(1){
+	width:20%;
+}
+.record-box .t-progress-text li:nth-child(2){
+	width:34%;
+}
+.record-box .t-progress-text li:nth-child(3){
+	width:20%;
+}
+.record-box .t-progress-text li:nth-child(4){
+	float:right;
+	width:21%;
+}

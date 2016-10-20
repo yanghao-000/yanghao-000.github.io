@@ -1,0 +1,207 @@
+body{
+	background-color: #f0f0f0;
+}
+.banner img{
+	width:100%;
+}
+.swiper-pagination-bullet{
+	opacity: 0.4;
+	width:0.85em;
+	height:0.85em;
+}
+.swiper-pagination-bullet-active{
+	background-color: #12C38C;
+	opacity: 1;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom:3%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+	margin:0 0.6em;
+}
+/*-===========================*/
+.school-tit{
+	padding:2% 4%;
+	border-bottom:1px solid #eee;
+	background-color: #fff;
+}
+.school-tit .left{
+	width:32%;
+	height:2.5em;
+	-webkit-box-sizing: border-box;
+	padding-right: 0.7em;
+	border-right:1px solid #eee;
+}
+.school-tit .left span{
+	display: inline-block;
+	width:100%;
+	height:1.7em;
+	background: url(../../images/school/icon/school-gonggao.png) no-repeat 0 center;
+	-webkit-background-size: contain;
+	vertical-align: middle;
+}
+.school-tit .left i{
+	display: inline-block;
+	height:100%;
+	vertical-align: middle;
+}
+.school-tit .right{
+	width:67%;
+	height:2.5em;
+	line-height: 2.5em;
+}
+.school-tit .right p{
+	font-size: 1.25em;
+	width:90%;
+	text-indent: 0.6em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.school-tit .right em{
+	width:0.6em;
+	height:1em;
+	right:-0.9em;
+	top:0;
+	bottom:0;
+	margin: auto 0;
+	padding:0.9em 0.9em;
+}
+.school-tit .right em img{
+	width:100%;
+	height:100%;
+}
+/*==============================*/
+.nav-ge{
+	text-align: center;
+}
+.nav-ge li{
+	float:left;
+	width:25%;
+}
+.nav-ge li dl{
+	height:2.2em;
+	margin-bottom:0.9em;
+}
+.nav-ge li dl img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav-ge li dl i{
+	display: inline-block;
+	height:100%;
+	vertical-align: middle;
+}
+.nav-ge li.t-li-1 dl img{
+	width:1.92em;
+	height:1.9em;
+}
+.nav-ge li.t-li-2 dl img{
+	width:1.96em;
+	height:1.67em;
+}
+.nav-ge li.t-li-3 dl img{
+	width:1.92em;
+	height:1.9em;
+}
+.nav-ge li.t-li-4 dl img{
+	width:1.92em;
+	height:1.9em;
+}
+.nav-ge li.t-li-5 dl img{
+	width:1.7em;
+	height:1.96em;
+}
+.nav-ge li.t-li-6 dl img{
+	width:1.91em;
+	height:1.91em;
+}
+.nav-ge li.t-li-7 dl img{
+	width:1.91em;
+	height:1.91em;
+}
+.nav-ge li.t-li-8 dl img{
+	width:1.78em;
+	height:1.78em;
+}
+.nav-ge li.t-li-9 dl img{
+	width:2.1em;
+	height:1.4em;
+}
+.nav-ge li.t-li-10 dl img{
+	width:0.875em;
+	height:2.1em;
+}
+.nav-ge li.t-li-11 dl img{
+	width:2em;
+	height:1.6em;
+}
+.nav-ge ul{
+	padding:2em 4%;
+	border-bottom:1px solid #eee;
+	background-color: #fff;
+}
+.nav-ge ul:nth-of-type(3){
+	border:none;
+}
+/*==============================*/
+.kj-course{
+	padding:2% 4%;
+	background-color: #fff;
+}
+.kj-course .tit{
+	height:3em;
+	line-height: 2.9em;
+	margin-bottom:0.4em;
+}
+.kj-course .tit p{
+	font-size: 1.25em;
+	text-indent: 0.7em;
+}
+.kj-course .tit i{
+	position: absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	width:0.3em;
+	height:1.4em;
+	background-color: #12C38C;
+	-webkit-border-radius: 3px;
+}
+.kj-course .tit em{
+	position: absolute;
+	width:0.6em;
+	height:1em;
+	background: url(../../images/school/icon/school-arrow.png) no-repeat center center;
+	-webkit-background-size: cover;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+}
+.kj-course ul li{
+	width:48%;
+	margin-bottom:0.9em;
+}
+.kj-course ul li:nth-child(odd){
+	float:left;
+}
+.kj-course ul li:nth-child(even){
+	float:right;
+}
+.kj-course ul li img{
+	width:100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+
+}
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+
+}
+@media only screen and (min-width: 414px){
+	.kj-course .tit{
+		line-height: 3em;
+	}
+}

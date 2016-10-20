@@ -1,0 +1,26 @@
+.course-list-box .item .right p:nth-child(4){
+	position: absolute;
+	width:5.4em;
+	height:1.5em;
+	line-height: 1.5em;
+	border:1px solid #666;
+	color:#666;
+	text-align: center;
+	-webkit-border-radius: 1.5em;
+	right:4%;
+	bottom:1.9em;
+}
+.course-list-box .item .right p.living{
+	background-color: #12C38C;
+	color:#fff;
+	border-color: #12C38C;
+}
+.course-list-box .item .right p.has-yuyue{
+	color:#12C38C;
+	border-color: #12C38C;
+}
+.course-list-box .item .right p.has-ending,.course-list-box .item .right p.huifang{
+	background-color: #ddd;
+	color:#fff;
+	border-color: #ddd;
+}

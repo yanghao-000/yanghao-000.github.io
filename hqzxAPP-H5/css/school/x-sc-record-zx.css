@@ -1,0 +1,81 @@
+.record-box .t-h1{
+	font-size: 1.2em;
+	margin-bottom:1em;
+}
+.record-box .t-progress-text{
+	padding:0 0.5em;
+}
+.record-box .t-progress-text li{
+	font-size: 1.1em;
+}
+.record-box .t-progress-text li:nth-child(1){
+	width:20%;
+}
+.record-box .t-progress-text li:nth-child(2){
+	width:20%;
+}
+.record-box .t-progress-text li:nth-child(3){
+	width:20%;
+}
+.record-box .t-progress-text li:nth-child(4){
+	width:20%;
+}
+.record-box .t-progress-text li:nth-child(5){
+	float:right;
+	width:20%;
+}
+
+.record-box .t-h3{
+	width:90%;
+	margin:0 auto;
+	border-bottom:1px solid #eee;
+	padding-bottom:1.25em;
+	margin-bottom:1.6em;
+}
+.record-box .t-h3 ul{
+	width:90%;
+	margin:0 auto;
+}
+.record-box .t-h3 ul li{
+	float:left;
+}
+.record-box .t-h3 ul li p{
+	text-align: center;
+}
+.record-box .t-h3 ul li.t-li-1{
+	width:36%;
+}
+.record-box .t-h3 ul li.t-li-2{
+	width:28%;
+	height:3em;
+	position: relative;
+}
+.record-box .t-h3 ul li.t-li-3{
+	width:36%;
+}
+.record-box .t-h3 ul li.t-li-1 .li-in p:nth-child(1){
+	font-size: 1em;
+	color:#12C38C;
+}
+.record-box .t-h3 ul li.t-li-1 .li-in p:nth-child(2){
+	font-size: 1.25em;
+}
+.record-box .t-h3 ul li.t-li-3 .li-in p:nth-child(1){
+	font-size: 1em;
+	color:#febf14;
+}
+.record-box .t-h3 ul li.t-li-3 .li-in p:nth-child(2){
+	font-size: 1.25em;
+}
+.record-box .t-h3 ul li.t-li-2 em{
+	position: absolute;
+	width:2.3em;
+	height:2.3em;
+	background: url(../../images/school/icon/sc-record-zx.png) no-repeat center center;
+	-webkit-background-size: cover;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+} 

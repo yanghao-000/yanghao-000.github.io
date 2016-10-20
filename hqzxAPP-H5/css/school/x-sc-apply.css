@@ -1,0 +1,70 @@
+.apply-bar{
+	position: relative;
+	font-size: 1.25em;
+	height: 4em;
+	line-height: 4em;
+	padding:0 4%;
+	background-color: #fff;
+	border-bottom:1px solid #eee;
+	color:#666;
+}
+.apply-bar .sc-arrow{
+	right:4%;
+}
+.apply-bar i{
+	text-align: right;
+	position: absolute;
+	width:64%;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	right:9%;
+	color:#333;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.apply-box{
+	background-color: #fff;
+	padding:5% 4%;
+}
+.apply-box .tit{
+	font-size: 1.25em;
+	color:#666;
+	margin-bottom:0.9em;
+}
+.apply-box .inp-text{
+	width:100%;
+	height:11.5em;
+}
+.apply-box .inp-text textarea{
+	-webkit-box-sizing: border-box;
+	font-size: 1.5em;
+	width:100%;
+	height:100%;
+	resize: none;
+	background-color: #f0f0f0;
+	border:none;
+	padding:3%;
+	outline: none;
+	color:#666;
+}
+.sub-btn{
+	font-size: 1.25em;
+	width:48%;
+	height:2.7em;
+	line-height: 2.7em;
+	text-align: center;
+	background-color: #12C38C;
+	color:#fff;
+	margin:0 auto;
+	-webkit-border-radius: 4px;
+	margin-top:2em;
+}
+/*==================*/
+.pop-pause .t-h3{
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color:#333;
+	margin-bottom:0.8em;
+}
