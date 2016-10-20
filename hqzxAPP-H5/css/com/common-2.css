@@ -98,7 +98,7 @@ body{
 }
 .course-list-box .item .right p:nth-child(1){
 	font-size: 1.25em;
-	margin-bottom:0.7em;
+	margin-bottom:0.6em;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
