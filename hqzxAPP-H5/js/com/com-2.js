@@ -163,3 +163,30 @@ var popup = (function(){
 		leave:leave
 	}
 })();
+
+function judgeAnd(){
+	var browser={
+  	  	versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {
+                webKit: u.indexOf('AppleWebKit') > -1, 
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, 
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, 
+                iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                wx: window.navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == 'micromessenger'
+            };
+        }(),
+        language:(navigator.browserLanguage || navigator.language).toLowerCase()
+	}
+	
+	if(browser.versions.android){
+		$(".item").each(function(){
+			$(this).find(".right p").eq(0).css({"marginBottom":"1em"});
+		});
+	}
+}
+judgeAnd();
