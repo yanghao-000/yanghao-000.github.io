@@ -50,16 +50,16 @@ var popup = (function(){
 		
 		bg.on("touchend",function(){
 			animateFlish();
-			
+			return false;
 		});
 		pop.find(".no-do").on("touchend",function(){
 			animateFlish();
-			
+			return false;
 		});
 		
 		pop.find(".yes-do").on("touchend",function(){
 			if(fn){fn();}
-			
+			return false;
 		});
 		
 		function animateFlish(){
