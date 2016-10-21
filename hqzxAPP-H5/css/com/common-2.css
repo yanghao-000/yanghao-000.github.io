@@ -68,6 +68,9 @@ body{
 	text-indent: 14%;
 	background-color: #f0f0f0;
 }
+.float-nav-bottom .left:active{
+	background-color: #ccc;
+}
 .float-nav-bottom .right{
 	width:70%;
 	text-align: center;
@@ -75,12 +78,18 @@ body{
 	color:#fff;
 	background-color: #12C38C;
 }
+.float-nav-bottom .right:active{
+	background-color: #ccc;
+}
 /*==================================*/
 .course-list-box .item{
 	padding-left: 1.1em;
 	padding-right:0;
 	position: relative;
 	background-color: #fff;
+}
+.course-list-box .item:active{
+	background-color: #eee;
 }
 .course-list-box .item .item-in{
 	padding: 1.6em 1.1em;
@@ -138,7 +147,7 @@ body{
 	color:#fe763a;
 }
 .course-detail-head .bot .intro .right{
-	font-size: 1.2em;
+	font-size: 1.25em;
 	color:#666;
 }
 /*=============================*/
@@ -197,8 +206,14 @@ body{
 .pop-pause .t-h4 li.no-do{
 	color:#999;
 }
+.pop-pause .t-h4 li.no-do:active{
+	background-color: #ccc;
+}
 .pop-pause .t-h4 li.yes-do{
 	color:#12C38C;
+}
+.pop-pause .t-h4 li.yes-do:active{
+	background-color: #ccc;
 }
 .pop-pause .t-h4 i{
 	display: block;

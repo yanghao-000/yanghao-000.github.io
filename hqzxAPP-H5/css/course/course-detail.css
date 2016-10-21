@@ -75,6 +75,9 @@
 	background: url(../../images/main/icon/close-btn.png) no-repeat center center;
 	-webkit-background-size: 50% 50%;
 }
+.course-bug-pop .sec-top .close-btn:active{
+	background-color: #ccc;
+}
 .course-bug-pop .sec-mid{
 	padding:6% 4%;
 }
@@ -110,4 +113,7 @@
 	height:2.9em;
 	line-height: 2.9em;
 	text-align: center;
+}
+.course-bug-pop .sec-bot:active{
+	background-color: #ccc;
 }
