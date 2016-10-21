@@ -269,8 +269,32 @@ body{
 	bottom:0;
 	margin:auto 0;
 }
-
-
+/*============================*/
+.main-btn{
+	position: absolute;
+    width: 5.4em;
+    height: 1.5em;
+    line-height: 1.5em;
+    border: 1px solid #666;
+    color: #666;
+    text-align: center;
+    -webkit-border-radius: 1.5em;
+}
+.main-btn-g{
+	background-color: #12C38C;
+	color:#fff;
+	border-color: #12C38C;
+}
+.main-btn-o{
+	background-color: #FE763A;
+	color:#fff;
+	border-color: #FE763A;
+}
+.main-btn-o-b{
+	color:#FE763A;
+	border-color:#FE763A;
+	background-color: #fff;
+}
 @media only screen and (min-width: 320px) and (max-width: 374px) {
 .course-list-box .item .right p:nth-child(1){
 	margin-bottom:0.5em;

@@ -1,0 +1,43 @@
+.course-list-box .item .item-in{
+	padding: 1em 1.1em;
+	padding-left:0;
+}
+.course-list-box .item .right p:nth-child(1){
+	margin-top:0.6em;
+}
+.item-prise{
+	height:3.5em;
+	line-height: 3.5em;
+}
+.item-prise p{
+	font-size: 1.25em;
+	color:#FE763A;
+}
+.item-prise p del{
+	font-size: 0.6em;
+	color:#666;
+	padding-left:0.6em;
+}
+.course-list-box .item .item-prise .right{
+	width:30%;
+	height:3.5em;
+}
+.course-list-box .item .item-prise .right:active{
+	background-color: #ccc;
+}
+.item-prise .main-btn{
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	right:1.1em;
+}
+.course-list-box .item:active{
+	background-color: #fff;
+}
+.course-list-box .item{
+	margin-bottom:0.4em;
+}
+.main-btn{
+	height:1.7em;
+	line-height: 1.7em;
+}
