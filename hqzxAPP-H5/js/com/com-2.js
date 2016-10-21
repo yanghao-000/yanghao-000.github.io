@@ -71,7 +71,7 @@ var popup = (function(){
 //			pop[0].addEventListener("webkitAnimationEnd", function(){
 //				$(this).remove();
 //			}, false); 
-			pop[0].remove();
+//			pop[0].remove();
 		}
 	}
 	
