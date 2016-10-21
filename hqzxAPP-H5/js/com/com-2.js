@@ -189,5 +189,8 @@ function judgeAnd(){
 		$(".box .sec-bot .sub-box .tit").each(function(){
 			$(this).find("em").css({"lineHeight":"1.4em"});
 		});
+		$(".record-box .t-h3 ul").each(function(){
+			$(this).find(".t-li-2").css({"height":"2.7em"});
+		});
 	}
 }

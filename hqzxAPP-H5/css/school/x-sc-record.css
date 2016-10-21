@@ -39,7 +39,7 @@
 	position: absolute;
 	width:1.9em;
 	height:1.9em;
-	-webkit-border-radius: 50%;
+	-webkit-border-radius: 1.9em;
 	background-color: #f5f5f5;
 	top:0;
 }
@@ -47,7 +47,7 @@
 	position: absolute;
 	width:1.1em;
 	height:1.1em;
-	-webkit-border-radius: 50%;
+	-webkit-border-radius: 1.1em;
 	background-color: #ddd;
 	top:0;
 	bottom:0;
