@@ -46,14 +46,14 @@ var popup = (function(){
 		pop.css({"marginTop":-hei/2});
 		
 		bg.css({"display":"block","-webkit-animation":"fadeIn 0.5s both"});
-		pop.css({"display":"block"});
+		pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
 		
 		bg.on("touchend",function(){
-			animateFlish(bg,pop);
+			animateFlish();
 			
 		});
 		pop.find(".no-do").on("touchend",function(){
-			animateFlish(bg,pop);
+			animateFlish();
 			
 		});
 		
@@ -62,16 +62,15 @@ var popup = (function(){
 			
 		});
 		
-		function animateFlish(bg,pop){
-			pop.css({"-webkit-animation":"fadeOut 0.4s both"});
+		function animateFlish(){
 			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
+			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
 			bg[0].addEventListener("webkitAnimationEnd", function(){
 				$(this).remove();
 			}, false); 
-//			pop[0].addEventListener("webkitAnimationEnd", function(){
-//				$(this).remove();
-//			}, false); 
-//			pop[0].remove();
+			pop[0].addEventListener("webkitAnimationEnd", function(){
+				$(this).remove();
+			}, false);
 		}
 	}
 	
