@@ -49,11 +49,11 @@ var popup = (function(){
 		pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
 		
 		bg.on("touchend",function(){
-			animateFlish();
+			animateFlish(bg,pop);
 			
 		});
 		pop.find(".no-do").on("touchend",function(){
-			animateFlish();
+			animateFlish(bg,pop);
 			
 		});
 		
@@ -62,7 +62,7 @@ var popup = (function(){
 			
 		});
 		
-		function animateFlish(){
+		function animateFlish(bg,pop){
 			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
 			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
 			bg[0].addEventListener("webkitAnimationEnd", function(){
