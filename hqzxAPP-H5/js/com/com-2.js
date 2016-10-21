@@ -102,9 +102,10 @@ var popup = (function(){
 			bg[0].addEventListener("webkitAnimationEnd", function(){
 				$(this).remove();
 			}, false); 
-			pop[0].addEventListener("webkitAnimationEnd", function(){
-				$(this).remove();
-			}, false); 
+//			pop[0].addEventListener("webkitAnimationEnd", function(){
+//				$(this).remove();
+//			}, false); 
+			pop.remove();
 		}
 	}
 	
