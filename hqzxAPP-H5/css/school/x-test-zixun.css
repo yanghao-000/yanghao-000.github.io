@@ -10,7 +10,7 @@ body{
 	background-color: #fff;
 }
 .test-zixun-list li:active{
-	background-color: #ccc;
+	background-color: #ddd;
 }
 .test-zixun-list li p{
 	font-size: 1.25em;

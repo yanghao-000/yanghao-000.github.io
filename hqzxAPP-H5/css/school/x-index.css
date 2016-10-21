@@ -51,7 +51,7 @@ body{
 	line-height: 2.5em;
 }
 .school-tit .right:active{
-	background-color: #ccc;
+	background-color: #ddd;
 }
 .school-tit .right p{
 	font-size: 1.25em;
@@ -83,7 +83,7 @@ body{
 	width:25%;
 }
 .nav-ge li:active{
-	background-color: #ccc;
+	background-color: #ddd;
 }
 .nav-ge li dl{
 	height:2.2em;

@@ -84,7 +84,7 @@
 	-webkit-background-size: 50% 50%;
 }
 .course-bug-pop .sec-top .close-btn:active{
-	background-color: #ccc;
+	background-color: #ddd;
 }
 .course-bug-pop .sec-mid{
 	padding:6% 4%;
@@ -123,5 +123,5 @@
 	text-align: center;
 }
 .course-bug-pop .sec-bot:active{
-	background-color: #ccc;
+	background-color: #ddd;
 }

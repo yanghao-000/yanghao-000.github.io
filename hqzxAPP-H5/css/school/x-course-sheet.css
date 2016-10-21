@@ -115,15 +115,17 @@ body{
 }
 /*===============*/
 .box .sec-bot .sub-box{
-	padding:4% 3%;
+	padding-top:4%;
 	padding-bottom:0;
-	margin-bottom:0.4em;
+	margin-bottom:0.6em;
 	background-color: #FFF;
 }
 .box .sec-bot .sub-box .tit{
 	height:1.1em;
 	line-height: 1.1em;
 	font-size: 1.1em;
+	padding-left:1.1em;
+	padding-right:1.1em;
 }
 .box .sec-bot .sub-box .tit i{
 	width:0.3em;
@@ -134,11 +136,11 @@ body{
 }
 .box .sec-bot .sub-box li{
 	position: relative;
-	padding:0.8em 0;
+	padding:0.8em 1.1em;
 	border-bottom:1px solid #eee;
 }
 .box .sec-bot .sub-box li:active{
-	background-color: #ccc;
+	background-color: #ddd;
 }
 .box .sec-bot .sub-box a:last-child li{
 	border-bottom:none;
@@ -161,7 +163,7 @@ body{
 	background-color: #ddd;
 	text-align: center;
 	-webkit-border-radius: 1.9em;
-	right:0;
+	right:1.1em;
 	top:0;
 	bottom:0;
 	margin:auto 0;
