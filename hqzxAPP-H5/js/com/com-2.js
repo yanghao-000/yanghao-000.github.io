@@ -46,7 +46,7 @@ var popup = (function(){
 		pop.css({"marginTop":-hei/2});
 		
 		bg.css({"display":"block","-webkit-animation":"fadeIn 0.5s both"});
-		pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
+		pop.css({"display":"block"});
 		
 		bg.on("touchend",function(){
 			animateFlish(bg,pop);
