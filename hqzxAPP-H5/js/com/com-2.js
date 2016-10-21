@@ -63,8 +63,8 @@ var popup = (function(){
 		});
 		
 		function animateFlish(){
-			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
 			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
+			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
 			bg[0].addEventListener("webkitAnimationEnd", function(){
 				$(this).remove();
 			}, false); 
