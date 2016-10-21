@@ -1,5 +1,7 @@
 $(function(){
 	$(".sub-btn").on("click",function(){
-		popup.apply();
+		popup.apply(function(){
+			window.location.href = "x-sc-record-fk.html";
+		});
 	});
 });

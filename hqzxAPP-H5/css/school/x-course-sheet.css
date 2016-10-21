@@ -137,7 +137,10 @@ body{
 	padding:0.8em 0;
 	border-bottom:1px solid #eee;
 }
-.box .sec-bot .sub-box li:last-child{
+.box .sec-bot .sub-box li:active{
+	background-color: #ccc;
+}
+.box .sec-bot .sub-box a:last-child li{
 	border-bottom:none;
 }
 .box .sec-bot .sub-box li h3{

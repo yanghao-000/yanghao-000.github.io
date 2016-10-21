@@ -1,0 +1,35 @@
+.holiday{
+	margin-bottom:0.6em;
+	background-color: #fff;
+}
+.holiday .tit{
+	text-align: center;
+	font-size: 1.5em;
+	height:2.7em;
+	line-height: 2.7em;
+	border-bottom:1px solid #eee;
+}
+.holiday .cont{
+	padding:1.3em 1.1em;
+	border-bottom:1px solid #eee;
+}
+.holiday .cont .t-h1{
+	margin-bottom:0.4em;
+}
+.holiday .cont .t-h1 .t-p-1{
+	width:27%;
+	font-size: 1.25em;
+}
+.holiday .cont .t-h1 .t-p-2{
+	width:73%;
+	font-size: 1.25em;
+	color:#999;
+}
+.holiday .cont .circle-yes{
+	width:2.2em;
+	height:2.2em;
+	background: url(../../images/school/icon/circle-yes.png) no-repeat center center;
+	-webkit-background-size: cover;
+	bottom:1.6em;
+	right:1.1em;	
+}

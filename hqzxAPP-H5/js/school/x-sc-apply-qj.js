@@ -1,5 +1,7 @@
 $(function(){
 	$(".sub-btn").on("click",function(){
-		popup.leave(function(){alert(123)});
+		popup.apply(function(){
+			window.location.href = "x-sc-record-qj.html";
+		});
 	});
 });

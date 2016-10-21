@@ -65,6 +65,14 @@
 	margin-left: 7em;
 	color:#fe763a;
 	font-size: 1.25em;
+	margin-bottom:0.4em;
+}
+.course-bug-pop .sec-top .infor{
+	margin-left: 8em;
+	font-size: 1.1em;
+}
+.course-bug-pop .sec-top .infor-2{
+	color:#999;
 }
 .course-bug-pop .sec-top .close-btn{
 	position: absolute;

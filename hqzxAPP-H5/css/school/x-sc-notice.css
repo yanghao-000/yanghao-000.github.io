@@ -3,7 +3,7 @@ body{
 }
 .notice{
 	padding:5% 3% 0;
-	margin-bottom:0.4em;
+	margin-bottom:0.6em;
 	background-color: #fff;
 }
 .notice .sec-top .tit{
@@ -36,4 +36,7 @@ body{
 	font-size: 1.25em;
 	height:3em;
 	line-height: 3em;
+}
+.notice .sec-bot:active{
+	background-color: #ccc;
 }

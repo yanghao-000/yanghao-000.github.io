@@ -50,6 +50,9 @@ body{
 	height:2.5em;
 	line-height: 2.5em;
 }
+.school-tit .right:active{
+	background-color: #ccc;
+}
 .school-tit .right p{
 	font-size: 1.25em;
 	width:90%;
@@ -78,6 +81,9 @@ body{
 .nav-ge li{
 	float:left;
 	width:25%;
+}
+.nav-ge li:active{
+	background-color: #ccc;
 }
 .nav-ge li dl{
 	height:2.2em;

@@ -8,6 +8,9 @@
 	border-bottom:1px solid #eee;
 	color:#666;
 }
+.apply-bar:active{
+	background-color: #ccc;
+}
 .apply-bar .sc-arrow{
 	right:4%;
 }
@@ -60,6 +63,9 @@
 	margin:0 auto;
 	-webkit-border-radius: 4px;
 	margin-top:2em;
+}
+.sub-btn:active{
+	background-color: #ccc;
 }
 /*==================*/
 .pop-pause .t-h3{

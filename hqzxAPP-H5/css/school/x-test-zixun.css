@@ -9,6 +9,9 @@ body{
 	border-bottom:1px solid #eee;
 	background-color: #fff;
 }
+.test-zixun-list li:active{
+	background-color: #ccc;
+}
 .test-zixun-list li p{
 	font-size: 1.25em;
 	color:#666;

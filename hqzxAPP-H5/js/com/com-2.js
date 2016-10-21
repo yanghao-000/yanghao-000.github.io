@@ -1,3 +1,5 @@
+document.body.addEventListener('touchstart', function (){});  
+
 function slideHuaDong(){
 	var nav = $(".slide-nav em");
 	var li = $(".slide-nav li");
@@ -74,7 +76,7 @@ var popup = (function(){
 		}
 	}
 	
-	var apply = function(){
+	var apply = function(fn){
 		var con = 	'<div class="black-bg"></div>'+
 					'<div class="pop-apply">'+
 						'<div class="img-box"></div>'+
@@ -101,6 +103,7 @@ var popup = (function(){
 			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
 			bg[0].addEventListener("webkitAnimationEnd", function(){
 				$(this).remove();
+				if(fn){fn();}
 			}, false); 
 			pop[0].addEventListener("webkitAnimationEnd", function(){
 				$(this).remove();

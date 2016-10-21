@@ -32,25 +32,25 @@
 					var img = new Image();
 					img.src = "images/school/bg/school-ban-img_02.jpg";
 					var check = function(){
-					    if(img.width>0 || img.height>0){
+					    if(img.width>0 && img.height>0){
 					    	clearInterval(set);
 					    	var banWid = document.documentElement.clientWidth;
-							document.getElementsByClassName("banner")[0].style.height = img.height*banWid/750 + "px";
+							document.getElementsByClassName("banner")[0].style.height = img.height*banWid/img.width + "px";
 					    }
 					}
 					var set = setInterval(check,40);
 				})();	
 			</script>
 		</div>
-		<a href=""><div class="school-tit clearfix">
+		<div class="school-tit clearfix">
 			<div class="left">
 				<span></span><i></i>
 			</div>
-			<div class="right relative">
+			<a href="x-sc-notice.html"><div class="right relative">
 				<p>人和校区暴雨停课通知！</p>
 				<em class="absolute"><img src="images/school/icon/school-arrow.png"/></em>
-			</div>
-		</div></a>
+			</div></a>
+		</div>
 		<div class="bar-b"></div>
 		<div class="nav-ge">
 			<ul class="clearfix">
@@ -66,17 +66,17 @@
 					<dl><img src="images/school/icon/school-index-i-3.png"/><i></i></dl>
 					<p>致电校区</p>
 				</li></a>
-				<a href=""><li class="t-li-4">
+				<a href="x-test-zixun.html"><li class="t-li-4">
 					<dl><img src="images/school/icon/school-index-i-4.png"/><i></i></dl>
 					<p>考试查询</p>
 				</li></a>
 			</ul>
 			<ul class="clearfix">
-				<a href=""><li class="t-li-5">
+				<a href="x-course-sheet.html"><li class="t-li-5">
 					<dl><img src="images/school/icon/school-index-i-5.png"/><i></i></dl>
 					<p>课程表</p>
 				</li></a>
-				<a href=""><li class="t-li-6">
+				<a href="x-check-in.html"><li class="t-li-6">
 					<dl><img src="images/school/icon/school-index-i-6.png"/><i></i></dl>
 					<p>考勤打卡</p>
 				</li></a>
@@ -84,13 +84,13 @@
 					<dl><img src="images/school/icon/school-index-i-7.png"/><i></i></dl>
 					<p>课程评价</p>
 				</li></a>
-				<a href=""><li class="t-li-8">
+				<a href="x-sc-apply.html"><li class="t-li-8">
 					<dl><img src="images/school/icon/school-index-i-8.png"/><i></i></dl>
 					<p>教务申请</p>
 				</li></a>
 			</ul>
 			<ul class="clearfix">
-				<a href=""><li class="t-li-9">
+				<a href="x-fly-class.html"><li class="t-li-9">
 					<dl><img src="images/school/icon/school-index-i-9.png"/><i></i></dl>
 					<p>空中教室</p>
 				</li></a>
