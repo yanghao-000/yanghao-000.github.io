@@ -14,13 +14,13 @@
 	color:#FE763A;
 }
 .item-prise p del{
-	font-size: 0.6em;
+	font-size: 0.8em;
 	color:#666;
 	padding-left:0.6em;
 }
 .course-list-box .item .item-prise .right{
 	width:30%;
-	height:3.5em;
+	height:3.6em;
 }
 .course-list-box .item .item-prise .right:active{
 	background-color: #ccc;
