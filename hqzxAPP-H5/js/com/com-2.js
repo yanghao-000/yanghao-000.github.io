@@ -40,7 +40,7 @@ var popup = (function(){
 		$("body").append(con);
 		
 		var bg = $(".black-bg");
-		var pop = $(".pop-flish");
+		var pop = $(".pop-pause.pop-flish");
 		
 		var hei = pop.outerHeight();
 		pop.css({"marginTop":-hei/2});
@@ -63,7 +63,7 @@ var popup = (function(){
 		});
 		
 		function animateFlish(bg,pop){
-			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
+			pop.css({"-webkit-animation":"fadeOut 0.4s both"});
 			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
 			bg[0].addEventListener("webkitAnimationEnd", function(){
 				$(this).remove();
