@@ -33,7 +33,7 @@ body{
 .slide-nav li em{
 	font-size: 1.25em;
 	display: inline-block;
-	padding: 1em 0.4em;
+	padding: 0.8em 0.4em;
 }
 .slide-nav li em.act{
 	color:#12C38C;
@@ -134,11 +134,11 @@ body{
 	text-overflow: ellipsis;
 }
 .course-detail-head .bot .intro .left{
-	font-size: 1.2em;
+	font-size: 1.35em;
 	color:#fe763a;
 }
 .course-detail-head .bot .intro .right{
-	font-size: 1.1em;
+	font-size: 1.2em;
 	color:#666;
 }
 /*=============================*/
