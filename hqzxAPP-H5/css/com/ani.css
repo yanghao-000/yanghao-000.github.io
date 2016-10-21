@@ -65,8 +65,6 @@
 @-webkit-keyframes fadeOutDown {
   from {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
   }
 
   to {

@@ -40,7 +40,7 @@ var popup = (function(){
 		$("body").append(con);
 		
 		var bg = $(".black-bg");
-		var pop = $(".pop-pause.pop-flish");
+		var pop = $(".pop-flish");
 		
 		var hei = pop.outerHeight();
 		pop.css({"marginTop":-hei/2});
