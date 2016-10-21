@@ -64,11 +64,11 @@ body{
 .school-tit .right em{
 	width:0.6em;
 	height:1em;
-	right:-0.9em;
+	right:0em;
 	top:0;
 	bottom:0;
 	margin: auto 0;
-	padding:0.9em 0.9em;
+	/*padding:0.9em 0.9em;*/
 }
 .school-tit .right em img{
 	width:100%;

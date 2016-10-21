@@ -249,7 +249,7 @@ body{
 	width:3.5em;
 	height:3.5em;
 	background: url(../../images/school/icon/apply-true.png) no-repeat center center;
-	-webkit-background-size: cover;
+	-webkit-background-size: 100% 100%;
 	margin:0 auto;
 	margin-bottom:1.25em;
 }
@@ -263,7 +263,7 @@ body{
 	width:0.5em;
 	height:1em;
 	background: url(../../images/school/icon/school-arrow.png) no-repeat center center;
-	-webkit-background-size: cover;
+	-webkit-background-size: 100% 100%;
 	right:0;
 	top:0;
 	bottom:0;

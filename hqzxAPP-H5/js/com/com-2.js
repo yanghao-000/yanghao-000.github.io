@@ -191,6 +191,9 @@ function judgeAnd(){
 			$(this).find(".right p").eq(0).css({"marginBottom":"1.2em"});
 			$(this).find(".right p").eq(1).css({"marginBottom":"0.4em"});
 		});
+		$(".box.all").each(function(){
+			$(this).find(".sec-top .tit p").css({"top":"0"});
+		});
 	}
 }
-judgeAnd();
+//judgeAnd();

@@ -1,6 +1,7 @@
 $(function(){
 	slideHuaDong();
 	clickCircle();
+	judgeAnd();
 });
 
 function clickCircle(){
