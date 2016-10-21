@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
 		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
 		<link rel="stylesheet" type="text/css" href="css/com/common-2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/ani.css"/>
 	    
 		<link rel="stylesheet" type="text/css" href="css/course/exp-class-detail.css"/>
 
@@ -27,14 +28,14 @@
 					var img = new Image();
 					img.src = "images/main/bg/course-detail-bg.jpg";
 					var check = function(){
-					    if(img.width>0 || img.height>0){
+					    if(img.width>0 && img.height>0){
 					    	clearInterval(set);
 					    	var banWid = document.documentElement.clientWidth;
-							document.getElementsByClassName("course-detail-head")[0].getElementsByClassName("ban")[0].style.height = img.height*banWid/750 + "px";
+							document.getElementsByClassName("course-detail-head")[0].getElementsByClassName("ban")[0].style.height = img.height*banWid/img.width + "px";
 					    }
 					}
 					var set = setInterval(check,40);
-				})();	
+				})();
 			</script>
 		</div>
 		
