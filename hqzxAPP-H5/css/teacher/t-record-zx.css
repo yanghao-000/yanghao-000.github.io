@@ -1,0 +1,26 @@
+.record-box .t-progress-text{
+	padding:0;
+}
+.record-box .t-progress{
+	width:78%;
+}
+.record-box .t-h1{
+	font-size: 1.25em;
+	margin-bottom:0.2em;
+}
+.record-box .t-h2{
+	font-size: 1em;
+	padding:0 1.1em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*.record-box .t-h3 ul li.t-li-1 .li-in p:nth-child(1),.record-box .t-h3 ul li.t-li-3 .li-in p:nth-child(1){
+	margin-bottom:0.2em;
+}*/
+.record-box{
+	padding-top:1.4em;
+}
+.record-box .t-progress-text li:nth-child(4){
+	float:left;
+}

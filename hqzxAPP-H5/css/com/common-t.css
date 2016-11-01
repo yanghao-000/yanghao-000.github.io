@@ -1,0 +1,133 @@
+body{
+	background-color: #f0f0f0;
+}
+.black-bg{
+	position: fixed;
+	background-color: rgba(0,0,0,0.4);
+	width:100%;
+	height:100%;
+	z-index: 999;
+	top:0;
+	left:0;
+	display: none;
+}
+.tit-arrow{
+	position: absolute;
+	width:0.6em;
+	height:1.1em;
+	background: url(../../images/teacher/icon/school-arrow.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	top:0;
+	bottom:0;
+	margin: auto 0;
+	right:0;
+}
+.of-sheng{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.color-g{
+	color:#12C38C;
+}
+.color-r{
+	color:#f16d60;
+}
+.v-mid{
+	display: inline-block;
+	vertical-align: middle;
+}
+.v-min-a{
+	display: inline-block;
+	vertical-align: middle;
+	height:100%;
+}
+.t-bar{
+	height:0.7em;
+	background-color: #F0F0F0;
+}
+body .slide-nav.slide-nav-2{
+	padding: 0 10%;
+}
+/*===================================*/
+.t-bar-work-ul{
+	border-bottom:1px solid #eee;
+	padding-left:1.1em;
+	background-color: #fff;
+}
+.t-bar-work-ul li{
+	height:3.6em;
+	line-height: 3.6em;
+	padding-right:1.1em;
+	border-bottom:1px solid #eee;
+}
+.t-bar-work-ul li:active{
+	opacity: 0.3;
+}
+.t-bar-work-ul li i{
+	right:1.1em;
+}
+.t-bar-work-ul li .left{
+	font-size: 1.25em;
+}
+.t-bar-work-ul li .right{
+	font-size: 1.15em;
+	color:#666;
+	margin-right:1.1em;
+	width:56%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: right;
+}
+.t-bar-work-ul.t-choice{
+	margin-bottom:0.6em;
+}
+.t-bar-work-ul.t-choice.no-bor-bot li{
+	border-bottom:none;
+}
+.t-sum-bar{
+	background-color: #999;
+	text-align: center;
+}
+.t-sum-bar li{
+	float:left;
+	color:#fff;
+	height:4em;
+}
+.t-sum-bar li i{
+	font-size: 1.16em;
+}
+.t-sum-bar li.t-h1{
+	width:25%;
+}
+.t-sum-bar li.t-h2{
+	width:25%;
+}
+.t-sum-bar li.t-h3{
+	width:25%;
+}
+.t-sum-bar li.t-h4{
+	width:25%;
+}
+.t-sum-bar.t-sum-bar-2{
+	padding:0 1.1em;
+}
+.t-sum-bar.t-sum-bar-2 li.t-h1{
+	width:40%;
+	text-align: left;
+	text-indent: 0.6em;
+}
+.t-sum-bar.t-sum-bar-2 li.t-h2{
+	width:22%;
+}
+.t-sum-bar.t-sum-bar-2 li.t-h3{
+	width:22%;
+}
+.t-sum-bar.t-sum-bar-2 li.t-h4{
+	width:16%;
+}
+/*============================*/
+.t-bar-work-ul li .right.w50{
+	width:50%;
+}

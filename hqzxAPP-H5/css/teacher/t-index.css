@@ -1,0 +1,62 @@
+body{
+	background-color: #fff;
+}
+.index-box{
+	border-bottom:1px solid #eee;
+	padding-top:1.2em;
+	padding-bottom:1.8em;
+	background-color: #fff;
+}
+.index-box.last{
+	border-bottom:none;
+}
+.index-box .tit{
+	padding: 0 1.2em 1.4em;
+}
+.index-box .tit p{
+	font-size: 1.25em;
+}
+.index-box ul{
+	text-align: center;
+}
+.index-box ul li{
+	float:left;
+	width:25%;
+}
+.index-box ul li:active{
+	opacity: 0.6;
+}
+.index-box ul li .t-h1{
+	width:50%;
+	margin:0 auto;
+	margin-bottom:0.8em;
+}
+.index-box .t-h1{
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: 100% 100%;
+}
+.index-box .t-h1.img-1{
+	background-image: url(../../images/teacher/t-index-icon-1.png);
+}
+.index-box .t-h1.img-2{
+	background-image: url(../../images/teacher/t-index-icon-2.png);
+}
+.index-box .t-h1.img-3{
+	background-image: url(../../images/teacher/t-index-icon-3.png);
+}
+.index-box .t-h1.img-4{
+	background-image: url(../../images/teacher/t-index-icon-4.png);
+}
+.index-box .t-h1.img-5{
+	background-image: url(../../images/teacher/t-index-icon-5.png);
+}
+.index-box .t-h1.img-6{
+	background-image: url(../../images/teacher/t-index-icon-6.png);
+}
+.index-box .t-h1.img-7{
+	background-image: url(../../images/teacher/t-index-icon-7.png);
+}
+.index-box .t-h1.img-8{
+	background-image: url(../../images/teacher/t-index-icon-8.png);
+}

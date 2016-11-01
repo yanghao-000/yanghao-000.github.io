@@ -1,0 +1,86 @@
+body{
+	background-color: #fff;
+}
+.course-infor{
+	border-bottom:1px solid #eee;
+	padding:1.1em 1.1em;
+	background-color: #fff;
+}
+.course-infor .t-h1{
+	font-size: 1.25em;
+	margin-bottom:0.6em;
+}
+.course-infor .t-h2 .left{
+	width:54%;
+	font-size: 1.16em;
+	color:#666;
+}
+.course-infor .t-h2 .right{
+	width:46%;
+	text-align: right;
+	font-size: 1em;
+	color:#999;
+	padding-top:0.2em;
+}
+
+.check-in-nav{
+	background-color: #fff;
+	border-bottom:1px solid #eee;
+}
+.check-in-nav ul{
+	text-align: center;
+	height:4.1em;
+	line-height: 4.1em;
+}
+.check-in-nav ul li{
+	font-size: 1.16em;
+	width:33.3%;
+	float:left;
+}
+
+.check-in-body{
+	background-color: #fff;
+	padding: 1.1em 2% 3em 2%; 
+}
+.check-in-body ul{
+	text-align: center;
+}
+.check-in-body ul li{
+	float: left;
+	width:20%;
+	margin-bottom:1em;
+}
+.check-in-body ul li .in-box{
+	border:1px solid #ccc;
+	width:82%;
+	margin:0 auto;
+}
+.check-in-body ul li .in-box i{
+	display: block;
+	font-size: 1em;
+	color:#999;
+}
+.check-in-body ul li i:nth-child(1){
+	margin-top:19%;
+}
+.check-in-body ul li .in-box.act{
+	border-color:#12C38C;
+}
+.check-in-body ul li .in-box.act i{
+	color:#12C38C;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	
+}
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+.check-in-body ul li .in-box{
+	width:78%;
+}
+}
+@media only screen and (min-width: 414px){
+.check-in-body ul li .in-box{
+	width:78%;
+}
+}

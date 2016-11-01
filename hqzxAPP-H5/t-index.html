@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>教师端-首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/common-t.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/teacher/t-index.css"/>
+	</head>
+	<body>
+		<div class="index-box">
+			<div class="tit"><p>教学教研</p></div>
+			<ul class="clearfix">
+				<a href="t-course-today.html"><li>
+					<div class="t-h1 img-1"></div>
+					<div class="t-h2">班级考勤</div>
+				</li></a>
+				<a href="t-test-work.html"><li>
+					<div class="t-h1 img-2"></div>
+					<div class="t-h2">考试作业</div>
+				</li></a>
+				<a href="t-prepare.html"><li>
+					<div class="t-h1 img-3"></div>
+					<div class="t-h2">备课中心</div>
+				</li></a>
+			</ul>
+		</div>
+		<div class="index-box">
+			<div class="tit"><p>商机管理</p></div>
+			<ul class="clearfix">
+				<a href="t-business.html"><li>
+					<div class="t-h1 img-4"></div>
+					<div class="t-h2">待办商机</div>
+				</li></a>
+			</ul>
+		</div>
+		<div class="index-box last">
+			<div class="tit"><p>教务管理</p></div>
+			<ul class="clearfix">
+				<a href="t-leave.html"><li>
+					<div class="t-h1 img-5"></div>
+					<div class="t-h2">请假单</div>
+				</li></a>
+				<a href="t-record-xx.html"><li>
+					<div class="t-h1 img-6"></div>
+					<div class="t-h2">休学单</div>
+				</li></a>
+				<a href="t-record-fk.html"><li>
+					<div class="t-h1 img-7"></div>
+					<div class="t-h2">复课单</div>
+				</li></a>
+				<a href="t-record-zx.html"><li>
+					<div class="t-h1 img-8"></div>
+					<div class="t-h2">转校单</div>
+				</li></a>
+			</ul>
+		</div>
+		<script>
+			(function(){
+				var th1 = document.getElementsByClassName("t-h1");
+				var w = th1[0].clientWidth;
+				for(var i=0; i<th1.length; i++){
+					th1[i].style.height = w + "px";
+				}
+			})();
+		</script>
+		
+		
+		
+		<script src="js/com/jquery.js"></script>
+		<script src="js/com/com-t.js"></script>
+		
+		<script src="js/teacher/t-index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+.tips{
+	height:3.6em;
+	line-height: 3.6em;
+	border-bottom:1px solid #eee;
+	text-align: center;
+}
+.tips p{
+	color:#999;
+}
+/*===========================*/
+.text-work-popup{
+	position: fixed;
+	width:100%;
+	bottom:0;
+	left:0;
+	background-color: #fff;
+	z-index: 1000;
+	display: none;
+}
+.text-work-popup .tit{
+	font-size: 1.25em;
+	padding-top:1.3em;
+	padding-bottom:1.1em;
+	text-align: center;
+}
+.text-work-popup .sure-btn{
+	color:#12C38C;
+	font-size: 1.25em;
+	height:3em;
+	line-height: 3em;
+	text-align: center;
+}
+.text-work-popup .sure-btn:active{
+	opacity: 0.6;
+}
+.text-work-popup .cont{
+	border-bottom:1px solid #eee;
+	padding: 0 9%;
+}
+.text-work-popup .cont li:nth-child(odd){
+	float:left;
+}
+.text-work-popup .cont li:nth-child(even){
+	float:right;
+}
+.text-work-popup .cont li{
+	width:45%;
+	text-align: center;
+	height:2.5em;
+	line-height: 2.5em;
+	text-align: center;
+	border:1px solid #ccc;
+	-webkit-border-radius: 2.5em;
+	color:#999;
+	margin-bottom:0.8em;
+}
+.text-work-popup .cont li.act{
+	color:#12C38C;
+	border-color: #12C38C;
+}

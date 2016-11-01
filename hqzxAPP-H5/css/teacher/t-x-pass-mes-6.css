@@ -1,0 +1,46 @@
+.pass-box .tit li.t-h1.spe{
+	width:18%
+}
+.pass-box .tit li.t-h2.spe{
+	width:34%
+}
+.pass-box .tit li.t-h3.spe{
+	width:48%
+}
+.pass-box .tit{
+	padding:0 0.4em;
+}
+.pass-box .tit li i span{
+	display: inline-block;
+	padding-top:0.6em;
+}
+.pass-box .tit li span em{
+	padding:0 0.4em;
+	
+}
+.pass-box .tit li span em:nth-of-type(1){
+	border-right:1px solid #ddd;
+}
+.pass-box .tit li.t-h2.spe i{
+	padding:0 0.6em;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+.pass-box .tit.tit-in li{
+	height:4em;
+}
+.pass-box .tit.tit-in li.t-h1{
+	text-align: center;
+}
+.pass-box .tit li.t-h1{
+	width:18%;
+}
+.pass-box .tit li.t-h2{
+	width:34%
+}
+.pass-box .tit li.t-h3{
+	width:24%
+}
+.pass-box .tit li.t-h4{
+	width:24%
+}

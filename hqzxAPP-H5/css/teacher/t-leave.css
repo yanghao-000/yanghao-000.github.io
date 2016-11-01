@@ -1,0 +1,39 @@
+body{
+	padding:0.6em 0.6em;
+}
+.leave-box{
+	border:1px solid #ddd;
+	-webkit-border-radius: 8px;
+	overflow: hidden;
+	background-color: #fff;
+	margin-bottom:0.5em;
+}
+.leave-box .tit{
+	padding:0 0.6em;
+	background-color: #FAFAFA;
+	height:3.2em;
+	line-height: 3.2em;
+	border-bottom:1px solid #eee;
+}
+.leave-box .tit .left{
+	color:#666;
+}
+.leave-box .tit .left i{
+	color:#333;
+}
+.leave-box .tit .right{
+	color:#999;
+}
+.leave-box .cont{
+	padding: 1em 0.6em;
+}
+.leave-box .cont .t-h1{
+	font-size: 1.25em;
+	color:#999;
+	margin-bottom:0.4em;
+}
+.leave-box .cont .t-h1 i{
+	color:#333;
+	float: right;
+	width:74%;
+}

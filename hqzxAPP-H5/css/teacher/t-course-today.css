@@ -1,0 +1,28 @@
+.course-today{
+	
+}
+.course-today li{
+	border-bottom:1px solid #eee;
+	padding: 1.1em 1.1em;
+	background-color: #fff;
+}
+.course-today li:active{
+	opacity: 0.6;
+}
+.course-today li .t-h1{
+	font-size: 1.25em;
+	width:94%;
+	margin-bottom:0.8em;
+}
+.course-today li .t-h2{
+	font-size: 1.16em;
+	margin-bottom:0.4em;
+	color:#666;
+}
+.course-today li .t-h3{
+	font-size: 1em;
+	color:#999;
+}
+.course-today .tit-arrow{
+	right:1.1em;
+}

@@ -30,6 +30,7 @@ body{
 	padding-bottom:1.3em;
 	border-bottom:1px solid #eee;
 	line-height: 1.5em;
+	word-break: break-all;
 }
 .notice .sec-bot{
 	position: relative;

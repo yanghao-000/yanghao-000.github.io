@@ -1,0 +1,27 @@
+.pass-box .tit li.t-h1{
+	width:20%;
+}
+.pass-box .tit li.t-h2{
+	width:32%;
+}
+.pass-box .tit li.t-h3{
+	width:16%;
+}
+.pass-box .tit li.t-h4{
+	width:16%;
+}
+.pass-box .tit li.t-h5{
+	width:16%;
+}
+.pass-box .tit.tit-in li:nth-of-type(1){
+	text-align: center;
+}
+.pass-box .tit.tit-in li:nth-of-type(2){
+	text-align: left;
+}
+.pass-box .tit.tit-in li:nth-of-type(1) i,.pass-box .tit.tit-in li:nth-of-type(2) i{
+	font-size: 1em;
+}
+.pass-box .tit{
+	padding:0 0.7em;
+}

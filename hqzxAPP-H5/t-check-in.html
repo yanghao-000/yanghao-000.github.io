@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>签到详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/common-t.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/teacher/t-check-in.css"/>
+	</head>
+	<body>
+		<div class="course-infor">
+			<div class="t-h1 of-sheng">第八章第九章固定资产《会计基础》</div>
+			<div class="t-h2 clearfix">
+				<div class="left of-sheng">北海校区 理论二</div>
+				<div class="right">2016.3.25 13:20-14:20</div>
+			</div>
+		</div>
+		
+		<div class="check-in-nav">
+			<ul class="clearfix">
+				<li>已签到 <i class="color-g">80人</i></li>
+				<li>未签到 <i class="color-r">2人</i></li>
+				<li>应签到 <i>82人</i></li>
+			</ul>
+		</div>
+		
+		<div class="t-bar"></div>
+		
+		<div class="check-in-body">
+			<ul class="clearfix">
+				<li>
+					<div class="in-box">
+						<i>王小二</i>
+						<i>未签到</i>
+					</div>
+				</li>
+				<li>
+					<div class="in-box act">
+						<i>欧阳小明</i>
+						<i>已签到</i>
+					</div>
+				</li>
+				<li>
+					<div class="in-box act">
+						<i>欧阳小明</i>
+						<i>已签到</i>
+					</div>
+				</li>
+				<li>
+					<div class="in-box act">
+						<i>欧阳小明</i>
+						<i>已签到</i>
+					</div>
+				</li>
+				<li>
+					<div class="in-box act">
+						<i>欧阳小明</i>
+						<i>已签到</i>
+					</div>
+				</li>
+				<li>
+					<div class="in-box act">
+						<i>欧阳小明</i>
+						<i>已签到</i>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			(function(){
+				var th1 = document.getElementsByClassName("in-box");
+				var w = th1[0].clientWidth;
+				for(var i=0; i<th1.length; i++){
+					th1[i].style.height = w + "px";
+				}
+			})();
+		</script>
+		
+		
+		<script src="js/com/jquery.js"></script>
+		<script src="js/com/com-t.js"></script>
+		
+		<script src="js/teacher/t-check-in.js"></script>
+	</body>
+</html>

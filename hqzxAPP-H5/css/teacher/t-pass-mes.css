@@ -1,0 +1,59 @@
+.pass-box{
+	
+}
+.pass-box .tit{
+	padding:0 1.1em;
+	background-color: #fff;
+	border-bottom:1px solid #ccc;
+}
+.pass-box .tit li{
+	float:left;
+	text-align: center;
+	height:5.6em;
+}
+.pass-box .tit li i{
+	font-size: 1.16em;
+}
+.pass-box .tit li.t-h1{
+	width:40%;
+}
+.pass-box .tit li.t-h2{
+	width:22%;
+}
+.pass-box .tit li.t-h3{
+	width:22%;
+}
+.pass-box .tit li.t-h4{
+	width:16%;
+}
+
+.pass-box .tit.tit-in{
+	border-color: #eee;
+	color:#666;
+}
+.pass-box .tit.tit-in li i{
+	font-size: 1.16em;
+}
+.pass-box .tit.tit-in li.t-h1{
+	text-align: left;
+}
+.pass-box .tit.tit-in:nth-child(odd){
+	background-color: #FAFAFA;
+}
+.t-bar-work-ul li .right{
+	width:66%;
+}
+/*================*/
+.t-bar-work-ul.t-choice.no-mar{
+	margin-bottom:0;
+}
+.t-tips-bar{
+	background-color: #F0F0F0;
+	text-align: center;
+	height:2.9em;
+	line-height: 2.9em;
+}
+.t-tips-bar p{
+	font-size: 1em;
+	color:#999;
+}

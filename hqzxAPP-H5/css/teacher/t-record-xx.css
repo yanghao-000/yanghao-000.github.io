@@ -1,0 +1,20 @@
+body{
+	padding:0;
+}
+.course-detail-box{
+	padding:0.6em 0.6em;
+}
+.leave-box .cont{
+	padding: 1em 1.2em;
+}
+.leave-box .cont .t-h1 i{
+	width:72%;
+}
+.record-box{
+	margin-bottom:0;
+	border-bottom:none;
+	padding-top:0;
+}
+.record-box .t-progress .sec-in.act, .record-box .t-progress .sec-in.act .sec-bar{
+	background-color: #12C38C;
+}

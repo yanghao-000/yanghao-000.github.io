@@ -1,0 +1,179 @@
+.slide-nav.slide-nav-2{
+	padding: 0 10%;
+}
+.ban{
+	position: relative;
+}
+.ban .play-btn-bg{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+	top:0;
+	left:0;
+}
+.ban .play-btn{
+	position: absolute;
+	width:3.5em;
+	height:3.5em;
+	background: url(../../images/teacher/icon/play-btn-icon.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin: auto;
+}
+.ban .play-btn:active{
+	opacity: 0.6;
+}
+.ban video{
+	display: block;
+	width:100%;
+	background-color: rgba(0,0,0,0.5);
+}
+.course-detail-head .bot{
+	padding:0.9em 1.1em;
+}
+.course-detail-head .bot .tit{
+	margin-bottom:0.3em;
+}
+.course-detail-head .bot .intro .left{
+	font-size: 1em;
+	color:#666;
+}
+.course-detail-head .bot .intro .right{
+	font-size: 1em;
+	color:#999;
+}
+.bar-b{
+	height:0.2em;
+}
+/*.course-detail-box .t-ul{
+	padding-left:1.1em;
+	background-color: #fff;
+}
+.course-detail-box .t-ul li{
+	padding-right:1.1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	border-bottom:1px solid #eee;
+}
+.course-detail-box .t-ul li:active{
+	opacity: 0.3;
+}
+.course-detail-box .t-ul li .left{
+	-webkit-box-sizing: border-box;
+	width:2.5em;
+	height:2.1em;
+	line-height: 2.1em;
+	background-color: #F0F0F0;
+	border:1px solid #F0F0F0;
+	text-align: center;
+	-webkit-border-radius: 3px;
+}
+.course-detail-box .t-ul li.act .left{
+	border-color: #12C38C;
+	background: url(../../images/teacher/icon/teacher-arrow-g.png) no-repeat center center;
+	-webkit-background-size: 30% 44%;
+}
+.course-detail-box .t-ul li.act .left i{
+	display: none;
+}
+.course-detail-box .t-ul li .right{
+	width:85%;
+	height:2.1em;
+	line-height: 2.1em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.course-detail-box .t-ul li .right p{
+	font-size: 1.25em;	
+}
+.update-time{
+	height:3.5em;
+	line-height: 3.5em;
+	padding:0 1.1em;
+	background-color: #fff;
+	border-bottom:1px solid #eee;
+}
+.update-time .left{
+	font-size: 1.25em;
+	color:#666;
+}
+.update-time .right{
+	font-size: 1.25em;
+	color:#999;
+}*/
+
+
+.box-out{
+	padding-left:1.1em;
+	background-color: #fff;
+}
+.box-out .box{
+	/*border-bottom:1px solid #eee;*/
+}
+.box-out .box .box-com li:active{
+	opacity: 0.3;	
+}
+.box-out .box .box-com li .left{
+	-webkit-box-sizing: border-box;
+	width:2.5em;
+	height:2.1em;
+	line-height: 2.1em;
+	background-color: #F0F0F0;
+	border:1px solid #F0F0F0;
+	text-align: center;
+	-webkit-border-radius: 3px;
+}
+.box-out .box .box-com li.act .left{
+	border-color: #12C38C;
+	background: url(../../images/teacher/icon/teacher-arrow-g.png) no-repeat center center;
+	-webkit-background-size: 30% 44%;
+}
+.box-out .box .box-com li.act .left i{
+	display: none;
+}
+.box-out .box .box-com li .right{
+	width:85%;
+	height:2.1em;
+	line-height: 2.1em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.box-out .box .box-com li .right p{
+	font-size: 1.25em;
+}
+.box-out .box .box-zhang li{
+	padding-right:1.1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	border-bottom:1px solid #eee;
+}
+.box-out .box .box-jie li{
+	padding-left:1.1em;
+	padding-right:2.2em;
+	padding-top:1em;
+	padding-bottom:1em;
+	border-bottom:1px solid #eee;
+}
+
+
+.update-time{
+	height:3.5em;
+	line-height: 3.5em;
+	padding:0 1.1em;
+	background-color: #fff;
+	border-bottom:1px solid #eee;
+}
+.update-time .left{
+	font-size: 1.25em;
+	color:#666;
+}
+.update-time .right{
+	font-size: 1.25em;
+	color:#999;
+}

@@ -1,0 +1,21 @@
+.pass-box .tit li.t-h1{
+	width:37%;
+}
+.pass-box .tit li.t-h2{
+	width:21%;
+}
+.pass-box .tit li.t-h3{
+	width:21%;
+}
+.pass-box .tit li.t-h4{
+	width:21%;
+}
+.pass-box .tit li.t-h4:active{
+	opacity: 0.6;
+}
+.pass-box .tit{
+	padding-right: 0;
+}
+.pass-box .tit{
+	padding-left:0.5em;
+}

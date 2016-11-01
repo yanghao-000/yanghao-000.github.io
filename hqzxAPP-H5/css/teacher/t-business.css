@@ -1,0 +1,46 @@
+em{
+	float:left;
+}
+em.t-h1{
+	width:20%;
+}
+em.t-h2{
+	width:26%;
+}
+em.t-h3{
+	width:34%;
+}
+em.t-h4{
+	float:right;
+	width:20%;
+}
+
+.bus-tit{
+	text-align: center;
+	height:3.75em;
+	line-height: 3.75em;
+	border-bottom:1px solid #ddd;
+	background-color: #fff;
+}
+.bus-tit em{
+	font-size: 1.25em;
+}
+.bus-cont{
+	text-align: center;
+}
+.bus-cont em{
+	font-size: 1.16em;
+	color:#666;
+}
+.bus-cont li{
+	height:3.75em;
+	line-height: 3.75em;
+	background-color: #fff;
+	border-bottom:1px solid #eee;
+}
+.bus-cont li:nth-child(odd){
+	background-color: #fafafa;
+}
+.bus-cont li:nth-child(even){
+	background-color: #fff;
+}
