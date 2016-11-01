@@ -131,3 +131,26 @@ body .slide-nav.slide-nav-2{
 .t-bar-work-ul li .right.w50{
 	width:50%;
 }
+/*=============================*/
+.test-zixun-list li{
+	position: relative;
+	height:4em;
+	line-height: 4em;
+	padding:0 4%;
+	border-bottom:1px solid #eee;
+	background-color: #fff;
+}
+.test-zixun-list li:active{
+	opacity: 0.3;
+}
+.test-zixun-list li p{
+	font-size: 1.25em;
+	color:#666;
+	width:94%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.test-zixun-list li .sc-arrow{
+	right:4%;
+}
