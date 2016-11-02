@@ -6,6 +6,7 @@ function judgeAndTeacher(){
   	  	versions:function(){
             var u = navigator.userAgent, app = navigator.appVersion;
             return {
+            	ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
                 android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, 
             };
         }(),
@@ -20,5 +21,10 @@ function judgeAndTeacher(){
 		$(".course-list-box .item .right").each(function(){
 			$(this).find("p").eq(0).css({"marginBottom":"0.2em"});
 		});
+	}
+	if(browser.versions.ios){
+		console.log(123);
+		$(".ban .play-btn-bg").css({"background":"none"});
+		$(".ban .play-btn").css({"background":"none"});
 	}
 }

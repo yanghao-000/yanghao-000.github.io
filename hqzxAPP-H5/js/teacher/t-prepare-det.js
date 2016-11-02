@@ -2,6 +2,7 @@ $(function(){
 	slideHuaDong(true);
 	videoControl();
 	slideUpDown();
+	judgeAndTeacher();
 });
 
 function videoControl(){
@@ -25,17 +26,7 @@ function slideUpDown(){
 	var zhang = $(".box-out .box .box-zhang");
 	var jie = $(".box-out .box .box-jie");
 	var wrap = $(".swiper-wrapper");
-//	zhang.on("click",function(){
-//		if($(this).hasClass("act")){
-//			$(this).removeClass("act");
-//			wrap.css({"height":"auto"});
-//			$(this).siblings(".box-jie").stop(true,true).slideUp(200);
-//		}else{
-//			$(this).addClass("act");
-//			wrap.css({"height":"auto"});
-//			$(this).siblings(".box-jie").stop(true,true).slideDown(200);
-//		}
-//	});
+
 	var posX; 
 	var posY;
 	var posXend;
