@@ -11,7 +11,7 @@
 	width:21%;
 }
 .pass-box .tit li.t-h4:active{
-	opacity: 0.6;
+	background-color: #f5f5f5;
 }
 .pass-box .tit{
 	padding-right: 0;

@@ -7,7 +7,7 @@
 	background-color: #fff;
 }
 .course-today li:active{
-	opacity: 0.6;
+	background-color: #f5f5f5;
 }
 .course-today li .t-h1{
 	font-size: 1.25em;

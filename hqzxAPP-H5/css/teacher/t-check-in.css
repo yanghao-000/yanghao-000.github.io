@@ -54,6 +54,7 @@ body{
 	border:1px solid #ccc;
 	width:82%;
 	margin:0 auto;
+	-webkit-border-radius: 2px;
 }
 .check-in-body ul li .in-box i{
 	display: block;

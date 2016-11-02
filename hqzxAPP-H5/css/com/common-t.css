@@ -63,6 +63,8 @@ body .slide-nav.slide-nav-2{
 }
 .t-bar-work-ul li:active{
 	background-color: #f5f5f5;
+	margin-left:-1.1em;
+	text-indent: 1.1em;
 }
 .t-bar-work-ul li i{
 	right:1.1em;
@@ -139,7 +141,7 @@ body .slide-nav.slide-nav-2{
 	background-color: #fff;
 }
 .test-zixun-list li:active{
-	opacity: 0.3;
+	background-color: #f5f5f5;
 }
 .test-zixun-list li p{
 	font-size: 1.25em;

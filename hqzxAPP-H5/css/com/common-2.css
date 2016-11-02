@@ -34,6 +34,7 @@ body{
 	font-size: 1.25em;
 	display: inline-block;
 	padding: 0.8em 0.4em;
+	color:#666;
 }
 .slide-nav li em.act{
 	color:#12C38C;
