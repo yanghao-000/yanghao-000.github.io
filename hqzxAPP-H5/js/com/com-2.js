@@ -1,6 +1,6 @@
 document.body.addEventListener('touchstart', function (){});  
 
-function slideHuaDong(){
+function slideHuaDong(flag){
 	var nav = $(".slide-nav em");
 	var li = $(".slide-nav li");
 	var bar = $(".slide-nav .nav-bar");
@@ -9,12 +9,16 @@ function slideHuaDong(){
 		onSlideChangeStart: function(){
 			inputI(mySwiper.activeIndex);
 		},
+		onTransitionEnd: function(){
+			if(!flag){wrapHei();}
+		},
 	});
 	li.on("touchend",function(){
 		var i = $(this).index();
 		inputI(i);
-		mySwiper.slideTo(i,300,false);
-		
+		mySwiper.slideTo(i,300,function(){
+			if(!flag){wrapHei();}
+		});
 	});
 	
 	function inputI(i){
@@ -23,6 +27,15 @@ function slideHuaDong(){
 		var l = nav.eq(i).offset().left;
 		bar.stop(true).animate({"width":w,"left":l},100);
 	}
+	
+	var wrap = $(".swiper-wrapper");
+	var hei = $(window).outerHeight() - $(".slide-nav").outerHeight();
+	function wrapHei(){
+		if(wrap.outerHeight()<hei){
+			wrap.css({"height":hei});
+		}
+	}
+	if(!flag){wrapHei();}
 }
 
 var popup = (function(){

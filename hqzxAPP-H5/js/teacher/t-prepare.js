@@ -1,8 +1,9 @@
 $(function(){
 	slideHuaDong2();
+	judgeAnd();
 });
 
-function slideHuaDong2(){
+function slideHuaDong2(flag){
 	var nav = $(".slide-nav em");
 	var li = $(".slide-nav li");
 	var bar = $(".slide-nav .nav-bar");
@@ -13,12 +14,17 @@ function slideHuaDong2(){
 			inputI(mySwiper.activeIndex);
 			inputI2(false,mySwiper.activeIndex);
 		},
+		onTransitionEnd: function(){
+			if(!flag){wrapHei();}
+		},
 	});
 	li.on("click",function(){
 		var i = $(this).index();
 		inputI(i);
 		inputI2(true);
-		mySwiper.slideTo(i,300,false);
+		mySwiper.slideTo(i,300,function(){
+			if(!flag){wrapHei();}
+		});
 	});
 	
 	function inputI(i){
@@ -57,4 +63,14 @@ function slideHuaDong2(){
 		}
 		obj.stop(true,true).animate({"scrollLeft":num*40+"px"},200);
 	}
+	
+	var wrap = $(".swiper-wrapper");
+	var hei = $(window).outerHeight() - $(".slide-nav").outerHeight();
+	var hei = hei || h;
+	function wrapHei(){
+		if(wrap.outerHeight()<hei){
+			wrap.css({"height":hei});
+		}
+	}
+	if(!flag){wrapHei();}
 }

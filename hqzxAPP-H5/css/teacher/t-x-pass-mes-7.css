@@ -1,0 +1,38 @@
+.t-bar-work-ul.t-choice{
+	margin-bottom:0;
+}
+.pass-box .tit li.t-h1{
+	width:23%;
+	padding-left: 1%;
+}
+.pass-box .tit li.t-h2{
+	width:18%;
+}
+.pass-box .tit li.t-h3{
+	width:20%;
+}
+.pass-box .tit li.t-h4{
+	width:20%;
+}
+.pass-box .tit li.t-h5{
+	width:18%;
+}
+.t-sum-bar li.t-h1{
+	width:42%;
+}
+.t-sum-bar li.t-h2{
+	width:20%;
+}
+.t-sum-bar li.t-h3{
+	width:20%;
+}
+.t-sum-bar li.t-h4{
+	width:18%;
+}
+.pass-box .tit.tit-in li{
+	height:4.6em;
+}
+.pass-box .tit.tit-in li.t-h1 i{
+	font-size: 1em;
+	text-align: left;
+}
