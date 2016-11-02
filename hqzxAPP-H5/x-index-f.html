@@ -32,10 +32,10 @@
 					var img = new Image();
 					img.src = "images/school/bg/school-ban-img_02.jpg";
 					var check = function(){
-					    if(img.width>0 || img.height>0){
+					    if(img.width>0 && img.height>0){
 					    	clearInterval(set);
 					    	var banWid = document.documentElement.clientWidth;
-							document.getElementsByClassName("banner")[0].style.height = img.height*banWid/750 + "px";
+							document.getElementsByClassName("banner")[0].style.height = img.height*banWid/img.width + "px";
 					    }
 					}
 					var set = setInterval(check,40);
@@ -64,16 +64,16 @@
 		</div>
 		<div class="bar-b"></div>
 		<div class="kj-course">
-			<div class="tit clearfix relative">
+			<a href="u-course-list.html"><div class="tit clearfix relative">
 				<i></i>
 				<p>会计课程</p>
 				<em></em>
-			</div>
+			</div></a>
 			<ul class="clearfix">
-				<li><img src="images/main/bg/exp-class-img.jpg"/></li>
-				<li><img src="images/main/bg/exp-class-img.jpg"/></li>
-				<li><img src="images/main/bg/exp-class-img.jpg"/></li>
-				<li><img src="images/main/bg/exp-class-img.jpg"/></li>
+				<a href=""><li><img src="images/main/bg/exp-class-img.jpg"/></li></a>
+				<a href=""><li><img src="images/main/bg/exp-class-img.jpg"/></li></a>
+				<a href=""><li><img src="images/main/bg/exp-class-img.jpg"/></li></a>
+				<a href=""><li><img src="images/main/bg/exp-class-img.jpg"/></li></a>
 			</ul>
 		</div>
 		

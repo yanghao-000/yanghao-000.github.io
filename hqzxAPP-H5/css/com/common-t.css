@@ -62,7 +62,7 @@ body .slide-nav.slide-nav-2{
 	border-bottom:1px solid #eee;
 }
 .t-bar-work-ul li:active{
-	opacity: 0.3;
+	background-color: #f5f5f5;
 }
 .t-bar-work-ul li i{
 	right:1.1em;

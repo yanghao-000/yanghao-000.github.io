@@ -8,6 +8,7 @@ body{
 	opacity: 0.4;
 	width:0.85em;
 	height:0.85em;
+	-webkit-border-radius: 50%;
 }
 .swiper-pagination-bullet-active{
 	background-color: #12C38C;
@@ -190,10 +191,10 @@ body{
 	width:48%;
 	margin-bottom:0.9em;
 }
-.kj-course ul li:nth-child(odd){
+.kj-course ul a:nth-child(odd) li{
 	float:left;
 }
-.kj-course ul li:nth-child(even){
+.kj-course ul a:nth-child(even) li{
 	float:right;
 }
 .kj-course ul li img{

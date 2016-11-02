@@ -1,5 +1,5 @@
 $(function(){
-	slideHuaDong();
+	slideHuaDong(true);
 	$(".float-nav-bottom .right").on("touchend",function(){
 		courseBuyPop();
 	});
