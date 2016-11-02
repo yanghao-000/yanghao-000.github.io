@@ -29,10 +29,10 @@
 .t-sum-bar li.t-h4{
 	width:18%;
 }
-.pass-box .tit.tit-in li{
-	height:4.6em;
-}
+/*.pass-box .tit.tit-in li{
+	height:5.2em;
+}*/
 .pass-box .tit.tit-in li.t-h1 i{
-	font-size: 1em;
+	/*font-size: 1em;*/
 	text-align: left;
 }

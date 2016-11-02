@@ -9,7 +9,10 @@
 .pass-box .tit li{
 	float:left;
 	text-align: center;
-	height:5.6em;
+	height:5.2em;
+}
+.pass-box .tit li.oneCal{
+	height:4em;
 }
 .pass-box .tit li i{
 	font-size: 1.16em;
@@ -56,4 +59,7 @@
 .t-tips-bar p{
 	font-size: 1em;
 	color:#999;
+}
+.pass-box .tit.tit-in li.f-one i{
+	font-size: 1em;
 }

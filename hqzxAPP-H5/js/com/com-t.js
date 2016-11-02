@@ -1,7 +1,7 @@
 document.body.addEventListener('touchstart', function (){});  
 
 
-function judgeAnd(){
+function judgeAndTeacher(){
 	var browser={
   	  	versions:function(){
             var u = navigator.userAgent, app = navigator.appVersion;
@@ -14,9 +14,9 @@ function judgeAnd(){
 	
 	if(browser.versions.android){
 		$(".check-in-body ul li").each(function(){
-			$(this).find("i").eq(0).css({"marginTop":"24%"});
+			$(this).find("i").eq(0).css({"marginTop":"25%"});
 		});
-		$(".slide-nav").css({"width":"128%"});
+		$(".slide-nav").css({"width":"126%"});
 		$(".course-list-box .item .right").each(function(){
 			$(this).find("p").eq(0).css({"marginBottom":"0.2em"});
 		});

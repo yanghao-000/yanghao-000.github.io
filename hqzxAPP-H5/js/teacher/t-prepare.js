@@ -1,6 +1,6 @@
 $(function(){
 	slideHuaDong2();
-	judgeAnd();
+	judgeAndTeacher();
 });
 
 function slideHuaDong2(flag){

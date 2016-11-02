@@ -19,9 +19,9 @@
 .pass-box .tit.tit-in li:nth-of-type(2){
 	text-align: left;
 }
-.pass-box .tit.tit-in li:nth-of-type(1) i,.pass-box .tit.tit-in li:nth-of-type(2) i{
+/*.pass-box .tit.tit-in li:nth-of-type(1) i,.pass-box .tit.tit-in li:nth-of-type(2) i{
 	font-size: 1em;
-}
+}*/
 .pass-box .tit{
 	padding:0 0.7em;
 }
