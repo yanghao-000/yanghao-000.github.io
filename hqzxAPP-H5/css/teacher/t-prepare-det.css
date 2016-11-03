@@ -71,7 +71,7 @@
 	height:2.1em;
 	line-height: 2.1em;
 	background-color: #F0F0F0;
-	border:1px solid #F0F0F0;
+	border:1px solid #F0F0F0 !important;
 	text-align: center;
 	-webkit-border-radius: 3px;
 }
@@ -98,7 +98,7 @@
 	padding-right:1.1em;
 	padding-top:1em;
 	padding-bottom:1em;
-	border-bottom:1px solid #eee;
+	border-bottom:1px solid #eee !important;
 }
 .box-out .box .box-zhang li:active{
 	margin-left:-1.1em;
