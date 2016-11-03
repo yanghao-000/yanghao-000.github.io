@@ -58,6 +58,6 @@ function slideUpDown(){
 				$(this).siblings(".box-jie").stop(true,true).slideDown(200);
 			}
     	}
- 		event.preventDefault();
+// 		event.preventDefault();
     });
 }
