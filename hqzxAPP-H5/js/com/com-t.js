@@ -23,7 +23,6 @@ function judgeAndTeacher(){
 		});
 	}
 	if(browser.versions.ios){
-		console.log(123);
 		$(".ban .play-btn-bg").css({"background":"none"});
 		$(".ban .play-btn").css({"background":"none"});
 	}
