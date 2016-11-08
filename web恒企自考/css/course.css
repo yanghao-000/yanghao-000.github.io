@@ -1,0 +1,124 @@
+/*html,body{
+	height:100%;
+}*/
+body{
+	padding-bottom:3.8em;
+}
+/*===============*/
+.ban{
+	width:100%;
+}
+.ban img{
+	width:100%;
+}
+.ban video{
+	width:100%;
+}
+/*======================*/
+.course-infor{
+	padding:1.1em 1.1em;
+	background-color: #fff;
+	margin-bottom:0.4em;
+}
+.course-infor .t-h1{
+	font-size: 1.5em;
+	margin-bottom:0.2em;
+}
+.course-infor .t-h2{
+	font-size: 1.15em;
+	color:#666;
+}
+/*========================*/
+.footer-fix{
+	position: fixed;
+	width:100%;
+	bottom:0;
+	left:0;
+	background-color: #fff;
+	z-index: 2;
+	border-top:1px solid #eee;
+}
+.footer-fix .erji{
+	float:left;
+	height:3.8em;
+	line-height: 4.2em;
+	width:20%;
+	padding-left:0.8em;
+	color:#27AE61;
+}
+.footer-fix .erji i{
+	font-size: 2.8em;
+}
+.footer-fix .zixun{
+	float:right;
+	background-color: #27AE61;
+	color:#fff;
+	height:3.8em;
+	line-height: 3.8em;
+	padding:0 1em;
+}
+.footer-fix .zixun:active{
+	opacity: 0.6;
+}
+.footer-fix .zixun i{
+	font-size: 1.3em;
+}
+.footer-fix .prise{
+	float:right;
+	height:3.8em;
+	line-height: 3.8em;
+	padding-right:1em;
+}
+.footer-fix .prise i{
+	font-size: 1.3em;
+	color:#ff5001;
+}
+.footer-fix .prise del{
+	font-size: 0.7em;
+	color:#666;
+	padding-left:0.4em;
+}
+/*======================*/
+.course-section ul{
+	background-color: #fff;
+	padding-left:0.8em;
+}
+.course-section ul li{
+	height:3.6em;
+	padding-right:0.8em;
+	border-bottom:1px solid #eee;
+}
+.course-section ul li.act:active{
+	background-color: #eee;
+	margin-left:-0.8em;
+	padding-left:0.8em;
+}
+.course-section ul li .iconfont{
+	width:8%;
+	font-size: 1.15em;
+}
+.course-section ul li .tit{
+	width:76%;
+	margin-right:2%;
+	font-size: 1.2em;
+}
+.course-section ul li .shiting{
+	width:14%;
+	height:1.8em;
+	line-height: 1.8em;
+	text-align: center;
+	background-color: #27AE61;
+	color:#fff;
+	font-size: 1.1em;
+	-webkit-border-radius: 4px;
+	display: none;
+}
+.course-section ul li.act .iconfont{
+	color:#27AE61;
+}
+.course-section ul li.act .tit{
+	color:#27AE61;
+}
+.course-section ul li.act .shiting{
+	display: inline-block;
+}

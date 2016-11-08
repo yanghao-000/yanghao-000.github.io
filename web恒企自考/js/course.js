@@ -1,0 +1,3 @@
+$(function(){
+	slideHuaDong(true);
+});

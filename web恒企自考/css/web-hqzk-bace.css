@@ -1,0 +1,46 @@
+body{	
+	font-family:"微软雅黑";
+	color:#333;
+	cursor: default;
+}
+body,html,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+ul,li,dl,dt,dd{
+	list-style: none;
+}
+i,em{
+	font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 400;
+}
+.clear{
+	clear: both;
+}
+.clearfix:after{
+	font-size: 0;
+	content: " ";
+	display: table;
+	clear: both;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.none{
+	display: none;
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
