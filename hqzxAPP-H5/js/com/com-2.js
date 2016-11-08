@@ -180,6 +180,78 @@ var popup = (function(){
 	}
 })();
 
+function choicePopBefore(){
+	var con =   '<div class="black-bg">'+
+					'<div class="loadEffect">'+
+				        '<span></span>'+
+				        '<span></span>'+
+				        '<span></span>'+
+				        '<span></span>'+
+				        '<span></span>'+
+				        '<span></span>'+
+				        '<span></span>'+
+				        '<span></span>'+
+					'</div>'+
+				'</div>';
+	
+	$("body").append(con);
+	
+	var bg = $(".black-bg");
+	var loading = bg.find(".loadEffect");
+	
+	bg.css({"display":"block","-webkit-animation":"fadeIn 0.5s both"});
+	
+	bg.on("touchend",function(){
+		animateFlish();
+		return false;
+	});
+	
+	function animateFlish(){
+		bg.remove();
+//		bg.css({"-webkit-animation":"fadeOut 0.5s both"});
+//		bg[0].addEventListener("webkitAnimationEnd", function(){
+//			$(this).remove();
+//		}, false); 
+	}
+}
+function choicePopAfter(){
+	if($(".black-bg").css("display") == "block"){	
+		var bg = $(".black-bg");
+		var pop = $(".choice-pop");
+		var loading = bg.find(".loadEffect");
+		var li = $(".choice-pop .cont li"); 
+		
+		loading.css({"display":"none"});
+		
+		var hei = pop.outerHeight();
+		pop.css({"marginTop":-hei/2});
+	
+		pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
+		
+		bg.on("touchend",function(){
+			animateFlish();
+			return false;
+		});
+		li.on("click",function(){
+			animateFlish();
+			return false;
+		});
+		
+		function animateFlish(){
+			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
+			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
+			bg[0].addEventListener("webkitAnimationEnd", function(){
+				$(this).remove();
+			}, false); 
+			pop[0].addEventListener("webkitAnimationEnd", function(){
+				$(this).remove();
+			}, false); 
+		}	
+	}else{
+		return false;
+	}
+}
+
 function judgeAnd(){
 	var browser={
   	  	versions:function(){
