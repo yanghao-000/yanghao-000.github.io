@@ -1,6 +1,16 @@
 $(function(){
 	verticalScroll($(".ty-6 .cont .ul-out"));
+	courseCanSwiper();
 });
+
+function courseCanSwiper(){
+	var mySwiper = new Swiper('.course-swiper-container',{
+		pagination : '.swiper-pagination',
+		autoplay : 4000,
+		autoplayDisableOnInteraction: false,
+		loop: true,
+	});
+}
 
 function verticalScroll(outer){
 	var outer = outer;

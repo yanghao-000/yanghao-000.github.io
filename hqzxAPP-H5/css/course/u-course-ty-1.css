@@ -63,6 +63,43 @@ img{
 	color:#999;
 }
 /*====================*/
+body{
+	overflow-x: hidden;
+}
+.ban .course-swiper-container{
+	position: relative;
+}
+.ban .swiper-slide{
+	text-align: center;
+	color:#fff;
+}
+/*.ban .course-swiper-container .swiper-pagination-bullet{
+	opacity: 0.2;
+}*/
+.ban .course-swiper-container .swiper-pagination-bullet-active{
+	background-color: #12C38C;
+	opacity: 1;
+}
+.ban .swiper-slide .t-h1,.ban .swiper-slide .t-h2,.ban .swiper-slide .t-h3{
+	width:100%;
+}
+.ban .swiper-slide .t-h1{
+	top:14%;
+}
+.ban .swiper-slide .t-h1 i{
+	font-size: 1.25em;
+}
+.ban .swiper-slide .t-h2{
+	top:28%;
+}
+.ban .swiper-slide .t-h2 i{
+	font-size: 2em;
+}
+.ban .swiper-slide .t-h3{
+	top:56%;
+	-webkit-transform: scale(0.8);
+}
+/*====================*/
 .ty-1{
 	background-color: #fff;
 }
@@ -566,5 +603,4 @@ img{
 .ty-9 .cont ul li.li-10{
 	font-size: 1.1em;
 	margin-top:-2em;
-	
 }

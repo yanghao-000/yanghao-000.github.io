@@ -134,7 +134,7 @@ body{
 }
 .course-detail-head .bot{
 	padding: 4% 4%;
-	border:1px solid #eee;
+	border-bottom:1px solid #eee;
 }
 .course-detail-head .bot .tit{
 	font-size: 1.5em;
