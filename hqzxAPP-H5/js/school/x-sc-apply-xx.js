@@ -5,8 +5,11 @@ $(function(){
 		});
 	});
 	
-	$(".apply-bar").on("touchend",function(){
-		choicePopBefore();	
-		var t = setTimeout("choicePopAfter()",1500);  //模拟接收数据
+	
+	$(".click-select").on("touchend",function(){
+		choicePopAfter($(".choice-pop"),function(){});
 	});
+	
+	dataInit($(".time-select"),function(){});
+		
 });

@@ -1,4 +1,7 @@
-document.body.addEventListener('touchstart', function (){});  
+$(function(){
+
+});
+document.body.addEventListener('touchstart', function (){});
 
 function slideHuaDong(flag){
 	var nav = $(".slide-nav em");
@@ -180,77 +183,160 @@ var popup = (function(){
 	}
 })();
 
-function choicePopBefore(){
-	var con =   '<div class="black-bg">'+
-					'<div class="loadEffect">'+
-				        '<span></span>'+
-				        '<span></span>'+
-				        '<span></span>'+
-				        '<span></span>'+
-				        '<span></span>'+
-				        '<span></span>'+
-				        '<span></span>'+
-				        '<span></span>'+
-					'</div>'+
-				'</div>';
-	
-	$("body").append(con);
-	
+//function choicePopBefore(){
+//	var con =   '<div class="black-bg">'+
+//					'<div class="loadEffect">'+
+//				        '<span></span>'+
+//				        '<span></span>'+
+//				        '<span></span>'+
+//				        '<span></span>'+
+//				        '<span></span>'+
+//				        '<span></span>'+
+//				        '<span></span>'+
+//				        '<span></span>'+
+//					'</div>'+
+//				'</div>';
+//	
+//	$("body").append(con);
+//	
+//	var bg = $(".black-bg");
+//	var loading = bg.find(".loadEffect");
+//	
+//	bg.css({"display":"block","-webkit-animation":"fadeIn 0.5s both"});
+//	
+//	bg.on("touchend",function(){
+//		animateFlish();
+//		return false;
+//	});
+//	
+//	function animateFlish(){
+//		bg.remove();
+////		bg.css({"-webkit-animation":"fadeOut 0.5s both"});
+////		bg[0].addEventListener("webkitAnimationEnd", function(){
+////			$(this).remove();
+////		}, false); 
+//	}
+//}
+//function choicePopAfter(showObj){
+//	if($(".black-bg").css("display") == "block"){	
+//		var bg = $(".black-bg");
+//		var pop = $(".choice-pop");
+//		var loading = bg.find(".loadEffect");
+//		var li = $(".choice-pop .cont li"); 
+//		
+//		loading.css({"display":"none"});
+//		
+//		var hei = pop.outerHeight();
+//		pop.css({"marginTop":-hei/2});
+//	
+//		pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
+//		
+//		bg.on("touchend",function(){
+//			animateFlish();
+//			return false;
+//		});
+//		li.on("click",function(){
+//			showObj.find("i").text($(this).text());
+//			animateFlish();
+//			return false;
+//		});
+//		
+//		function animateFlish(){
+//			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
+//			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
+//			bg[0].addEventListener("webkitAnimationEnd", function(){
+//				$(this).remove();
+//			}, false); 
+//			pop[0].addEventListener("webkitAnimationEnd", function(){
+//				$(this).remove();
+//			}, false); 
+//		}	
+//	}else{
+//		return false;
+//	}
+//}
+
+function choicePopAfter(popObj,fn){
 	var bg = $(".black-bg");
-	var loading = bg.find(".loadEffect");
-	
+	var pop = popObj;
+	// var li = $(".choice-pop .cont li");
+	var li = pop.find(".cont li");
+
+	var hei = pop.outerHeight();
+	pop.css({"marginTop":-hei/2});
+
 	bg.css({"display":"block","-webkit-animation":"fadeIn 0.5s both"});
+	pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
 	
 	bg.on("touchend",function(){
 		animateFlish();
 		return false;
 	});
+	li.on("click",function(){
+		animateFlish();
+		if(fn){fn(this);}
+		return false;
+	});
 	
 	function animateFlish(){
-		bg.remove();
-//		bg.css({"-webkit-animation":"fadeOut 0.5s both"});
-//		bg[0].addEventListener("webkitAnimationEnd", function(){
-//			$(this).remove();
-//		}, false); 
-	}
+		bg.hide(0);
+		pop.hide(0);
+	}	
 }
-function choicePopAfter(){
-	if($(".black-bg").css("display") == "block"){	
-		var bg = $(".black-bg");
-		var pop = $(".choice-pop");
-		var loading = bg.find(".loadEffect");
-		var li = $(".choice-pop .cont li"); 
-		
-		loading.css({"display":"none"});
-		
-		var hei = pop.outerHeight();
-		pop.css({"marginTop":-hei/2});
-	
-		pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
-		
-		bg.on("touchend",function(){
-			animateFlish();
-			return false;
+
+
+
+function dataInit(clickObj,fn){
+	if(typeof(mobiscrollFlag) == "boolean"){
+		clickObj.mobiscroll().date({ 
+		    theme: 'ios7', 
+		    display: 'bottom',
+		    minDate: new Date(),
+		    maxDate: new Date(2020,1,1),   
+		    lang: 'zh',
+		    onSelect: function (valueText,inst){
+				console.log(valueText.replace(/\//g,'-')); //返回选择的时间
+				var str = valueText.replace(/\//g,'-');
+				$(this).find("i").text(str);
+				if(fn){fn();}
+			},
+			onBeforeShow: function (inst) { 
+				if(inst.settings.wheels[0][0].values[0].length<=4){
+					dateAddText(inst.settings.wheels[0][0].values,"年");
+					dateAddText(inst.settings.wheels[0][1].values,"月");
+					dateAddText(inst.settings.wheels[0][2].values,"日");
+				}
+		   },
 		});
-		li.on("click",function(){
-			animateFlish();
-			return false;
-		});
-		
-		function animateFlish(){
-			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
-			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
-			bg[0].addEventListener("webkitAnimationEnd", function(){
-				$(this).remove();
-			}, false); 
-			pop[0].addEventListener("webkitAnimationEnd", function(){
-				$(this).remove();
-			}, false); 
-		}	
 	}else{
 		return false;
 	}
+	
+	function dateAddText(arr,str){
+		var a = arr;
+		var l = a.length;
+		var b = [];
+		for(var i=0; i<l; i++){
+			b.push(a[i]+str);
+		}
+		a.splice(0,l);
+		for(var i=0; i<l; i++){
+			a.push(b[i]);
+		}
+	}
 }
+
+function emptyState(text){
+	var con = 	'<div class="empty-bg">'+
+					'<div class="empty-cont">'+
+						'<div class="empty-img"><img src="images/school/icon/empty-bg.png"/></div>'+
+						'<div class="empty-text"><i>'+text+'</i></div>'+
+					'</div>'+
+				'</div>';
+	$("body").append(con);
+}
+
+
 
 function judgeAnd(){
 	var browser={

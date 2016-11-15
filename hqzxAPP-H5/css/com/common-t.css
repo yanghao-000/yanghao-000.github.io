@@ -154,3 +154,318 @@ body .slide-nav.slide-nav-2{
 .test-zixun-list li .sc-arrow{
 	right:4%;
 }
+/*choice-pop====================*/
+.loadEffect{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    z-index: 1000;
+    -webkit-transform: scale(0.5);
+}
+.loadEffect span{
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #fff;
+    position: absolute;
+    -webkit-animation: load 1.04s ease infinite;
+}
+@-webkit-keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+.loadEffect span:nth-child(1){
+    left: 0;
+    top: 50%;
+    margin-top:-5px;
+    -webkit-animation-delay:0.13s;
+    opacity: 0.3;
+}
+.loadEffect span:nth-child(2){
+    left: 10px;
+    top: 20px;
+    -webkit-transform: rotate(45deg);
+    -webkit-animation-delay:0.26s;
+    opacity: 0.3;
+}
+.loadEffect span:nth-child(3){
+    left: 50%;
+    top: 10px;
+    margin-left: -15px;
+    -webkit-transform: rotate(90deg);
+    -webkit-animation-delay:0.39s;
+    opacity: 0.3;
+}
+.loadEffect span:nth-child(4){
+    top: 20px;
+    right:10px;
+    -webkit-transform: rotate(135deg);
+    -webkit-animation-delay:0.52s;
+    opacity: 0.3;
+}
+.loadEffect span:nth-child(5){
+    right: 0;
+    top: 50%;
+    margin-top:-5px;
+    -webkit-transform: rotate(180deg);
+    -webkit-animation-delay:0.65s;
+    opacity: 0.3;
+}
+.loadEffect span:nth-child(6){
+    right: 10px;
+    bottom:20px;
+    -webkit-transform: rotate(225deg);
+    -webkit-animation-delay:0.78s;
+    opacity: 0.3;
+}
+.loadEffect span:nth-child(7){
+    bottom: 10px;
+    left: 50%;
+    margin-left: -15px;
+    -webkit-transform: rotate(270deg);
+    -webkit-animation-delay:0.91s;
+    opacity: 0.3;
+}
+.loadEffect span:nth-child(8){
+    bottom: 20px;
+    left: 10px;
+    -webkit-transform: rotate(315deg);
+    -webkit-animation-delay:1.04s;
+    opacity: 0.3;
+}
+.choice-pop{
+	position: fixed;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	top:50%;
+	width:80%;
+	background-color: #fff;
+	z-index: 1000;
+	-webkit-border-radius: 4px;
+	overflow: hidden;
+	display: none;
+}
+.choice-pop .tit{
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	height:4.2em;
+	line-height: 4.2em;
+	border-bottom:1px solid #ddd;
+}
+.choice-pop .tit i{
+	font-size: 1.5em;
+}
+.choice-pop .cont{
+	padding:0 5%;
+	max-height:29.6em;
+	overflow: auto;
+}
+.choice-pop .cont li{
+	-webkit-box-sizing: border-box;
+	height:3.7em;
+	line-height: 3.7em;
+	color:#666;
+	border-bottom:1px solid #eee;
+}
+.choice-pop .cont li:active{
+	background-color: #eee;
+	margin:0 -5%;
+	padding:0 5%;
+}
+.choice-pop .cont li i{
+	font-size: 1.16em;
+}
+.choice-pop .cont li:last-child{
+	border-bottom:none;
+}
+/*空状态=============================*/
+.empty-bg{
+	position: fixed;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background-color: #f8f8f8;
+	z-index: 1000;
+}
+.empty-bg .empty-cont{
+	position: absolute;
+	top:30%;
+	left:0;
+	right:0;
+	margin: auto;
+}
+.empty-bg .empty-cont .empty-img{
+	width:7em;
+	margin:0 auto;
+	margin-bottom:1em;
+}
+.empty-bg .empty-cont .empty-img img{
+	width:100%;
+}
+.empty-bg .empty-cont .empty-text{
+	text-align: center;
+	height:2em;
+	line-height: 2em;
+}
+.empty-bg .empty-cont .empty-text i{
+	font-size: 1.25em;
+	color:#999;
+}
+/*================================*/
+.pop-pause{
+	position: fixed;
+	left:0;
+	right:0;
+	margin:0 auto;
+	top:50%;
+	background-color: #fff;
+	width:86%;
+	-webkit-box-sizing: border-box;
+	padding:0;
+	text-align: center;
+	-webkit-border-radius: 6px;
+	z-index: 1000;
+	display: none;
+}
+.pop-pause .t-h1{
+	position: absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	width:38%;
+	top:-26%;
+}
+.pop-pause .t-h1 img{
+	width:100%;
+}
+.pop-pause .t-h2{
+	font-size: 1.5em;
+	margin-bottom:0.6em;
+}
+.pop-pause .t-h3{
+	font-size: 1.25em;
+	color:#999;
+	line-height: 1.6em;
+	padding: 0 4%;
+	margin-bottom:0.5em;
+}
+.pop-pause .t-h4{
+	padding:0.5em 0;
+	border-top:1px solid #ddd;
+}
+.pop-pause .t-h4 li{
+	width:49.5%;
+	font-size: 1.4em;
+	height:1.9em;
+	line-height: 1.9em;
+}
+.pop-pause .t-h4 li.no-do{
+	color:#999;
+}
+.pop-pause .t-h4 li.no-do:active{
+	background-color: #ddd;
+}
+.pop-pause .t-h4 li.yes-do{
+	color:#12C38C;
+}
+.pop-pause .t-h4 li.yes-do:active{
+	background-color: #ddd;
+}
+.pop-pause .t-h4 i{
+	display: block;
+	width:1px;
+	background-color: #ddd;
+	font-size: 1.4em;
+	height:1.9em;
+}
+.pop-pause .t-h5{
+	font-size: 1.25em;
+	color:#999;
+	margin-bottom: 1.4em;
+}
+.pop-pause .t-h5 i{
+	color:#FE763A;
+}
+/*========章节============================*/
+.section{
+	text-align: left;
+	height: 25.2em;
+	overflow: auto;
+}
+.section .stair-2,.section .stair-in{
+	-webkit-box-sizing: border-box;
+	border-bottom:1px solid #eee;
+}
+.section .stair-1{
+	line-height:3.6em;
+}
+.section .stair-in:active{
+	background-color: #eee;
+	margin: 0 -1em;
+	padding: 0 1em;
+}
+.section .stair-in:active .stair-h3{
+	right:1em;
+}
+.section .stair-2:active{
+	background-color: #eee;
+	margin: 0 -2em;
+	padding: 0 2em;
+}
+.section ul:last-child .stair:last-child{
+	border-bottom:none;
+}
+.section .stair-h1{
+	width:1.4em;
+	height:1.4em;
+	background: url(../../images/icon/title-no-choose.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	margin-right:0.6em;
+}
+.section .stair-h1.act{
+	background: url(../../images/icon/title-choose.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.section .stair-1 .stair-h3{
+	-webkit-transition: -webkit-transform 0.3s;
+	-webkit-transform: rotate(0deg);
+}
+.section .stair-1.act .stair-h3{
+	-webkit-transition: -webkit-transform 0.3s;
+	-webkit-transform: rotate(90deg);
+}
+.section .stair-h2{
+	
+}
+.section .stair-h3{
+	width:0.5em;
+	height:1em;
+	background: url(../../images/teacher/icon/school-arrow.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	right:0;
+}
+.section,.section ul{
+	padding: 0 1em;
+}
+.section .stair-in .stair-h2{
+	font-size: 1.16em;
+}
+.section ul{
+	display: none;
+}

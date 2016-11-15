@@ -5,7 +5,8 @@ $(function(){
 });
 
 
-function courseBuyPop(){
+function courseBuyPop(fn){
+	var pos =  $(".t-bar-work-ul.t-choice em");
 	$(".text-work-popup .cont li").on("touchend",function(){
 		$(this).addClass("act").siblings().removeClass("act");
 	});
@@ -17,6 +18,9 @@ function courseBuyPop(){
 	pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
 	
 	$(".black-bg,.text-work-popup .sure-btn").on("touchend",function(){
+		var str = $(".text-work-popup .cont li.act").text();
+		pos.text(str);
+		if(fn){fn();}
 		animateFlish();
 		return false;
 	});

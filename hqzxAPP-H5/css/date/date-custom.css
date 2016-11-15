@@ -7,19 +7,25 @@
 }
 .dwb.dwb1.dwb-e{
 	color:#666;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	font-weight: normal;
-	height:2.5em;
-	line-height: 2.5em;
+	height:2.8em;
+	line-height: 2.8em;
 	padding:0 1.1em;
+}
+.dwb.dwb1.dwb-e:active{
+	background-color: #eee;
 }
 .dwb.dwb0.dwb-e{
 	color:#12C38C;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	font-weight: normal;
-	height:2.5em;
-	line-height: 2.5em;
+	height:2.8em;
+	line-height: 2.8em;
 	padding:0 1.1em;
+}
+.dwb.dwb0.dwb-e:active{
+	background-color: #eee;
 }
 .mbsc-ios7 .dwb{
 	display: block;

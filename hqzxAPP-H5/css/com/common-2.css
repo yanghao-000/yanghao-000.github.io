@@ -297,9 +297,6 @@ body{
 	background-color: #fff;
 }
 /*choice-pop====================*/
-.black-bg{
-	display: block;
-}
 .loadEffect{
     width: 100px;
     height: 100px;
@@ -414,7 +411,7 @@ body{
 }
 .choice-pop .cont{
 	padding:0 5%;
-	max-height:22.2em;
+	max-height:29.6em;
 	overflow: auto;
 }
 .choice-pop .cont li{
@@ -426,6 +423,8 @@ body{
 }
 .choice-pop .cont li:active{
 	background-color: #eee;
+	margin:0 -5%;
+	padding:0 5%;
 }
 .choice-pop .cont li i{
 	font-size: 1.16em;

@@ -6,6 +6,7 @@
  * Licensed under the MIT license.
  *
  */
+var mobiscrollFlag = true;
 (function ($, undefined) {
 
     function testProps(props) {
