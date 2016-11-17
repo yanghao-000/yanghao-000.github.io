@@ -1,6 +1,8 @@
 body{
 	background-color: #f0f0f0;
 }
+.swiper-slide{height:0px}
+.swiper-slide-active{ height:auto;}
 .f0f0f0{
 	background-color: #f0f0f0;
 }
@@ -40,6 +42,49 @@ body{
 	color:#12C38C;
 }
 .slide-nav .nav-bar{
+	position: absolute;
+	height:3px;
+	background-color: #12C38C;
+	bottom:-1px;
+}
+.slide-nav.slide-nav-2{
+	padding: 0 18%;
+}
+.slide-nav.slide-nav-2 li{
+	width:50%;
+}
+/*=============二级导航*/
+.slide-nav-two-out{
+	overflow: auto;
+}
+.slide-nav-two{
+	position: relative;
+	-webkit-box-sizing: border-box;
+	/*padding: 0 4%;*/
+	/*padding:0 0;*/
+	text-align: center;
+	border-bottom:1px solid #eee;
+	background-color: #fff;
+}
+.slide-nav-two li{
+	/*width:25%;*/
+	width:auto;
+	padding:0 0.8em;
+	float:left;
+}
+.slide-nav-two li em{
+	font-size: 1.16em;
+	display: inline-block;
+	/*padding: 0.8em 0.4em;*/
+	padding: 0.6em 0.4em;
+	color:#666;
+}
+.slide-nav-two li em.act{
+	color:#12C38C;
+	border-bottom:3px solid #12C38C;
+	/*margin-bottom:-3px;*/
+}
+.slide-nav-two .nav-bar{
 	position: absolute;
 	height:3px;
 	background-color: #12C38C;

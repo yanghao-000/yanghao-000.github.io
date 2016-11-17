@@ -4,9 +4,10 @@
 }
 .ty-title{
 	text-align: center;
+	margin-bottom:2.5em;
 }
 .ty-title .t-h1{
-	margin-bottom:2.6em;
+	margin-bottom:1em;
 	line-height: 1.5;
 }
 .ty-title .t-h1 i{
@@ -62,8 +63,15 @@ img{
 	font-size: 1.2em;
 	color:#999;
 }
+.fff{
+	background-color: #fff;
+}
+.color-fff{
+	color:#fff;
+}
 /*====================*/
 body{
+	width:100%;
 	overflow-x: hidden;
 }
 .ban .course-swiper-container{
@@ -73,9 +81,10 @@ body{
 	text-align: center;
 	color:#fff;
 }
-/*.ban .course-swiper-container .swiper-pagination-bullet{
-	opacity: 0.2;
-}*/
+.ban .course-swiper-container .swiper-pagination-bullet{
+	opacity: 1;
+	background-color: #ccc;
+}
 .ban .course-swiper-container .swiper-pagination-bullet-active{
 	background-color: #12C38C;
 	opacity: 1;
@@ -90,13 +99,24 @@ body{
 	font-size: 1.25em;
 }
 .ban .swiper-slide .t-h2{
-	top:28%;
+	top:32%;
 }
 .ban .swiper-slide .t-h2 i{
-	font-size: 2em;
+	font-size: 1.8em;
 }
 .ban .swiper-slide .t-h3{
 	top:56%;
+	-webkit-transform: scale(0.8);
+}
+.ban .swiper-slide .shuang .t-h1{
+	top:10%;
+}
+.ban .swiper-slide .shuang .t-h2{
+	top:26%;
+	line-height: 1.2;
+}
+.ban .swiper-slide .shuang .t-h3{
+	top:61%;
 	-webkit-transform: scale(0.8);
 }
 /*====================*/
@@ -117,6 +137,9 @@ body{
 .ty-2 .cont li{
 	margin-bottom:2.5em;
 }
+.ty-2 .cont li:last-child{
+	margin-bottom:0;
+}
 .ty-2 .cont .t-h1{
 	margin-bottom:1.2em;
 }
@@ -133,8 +156,10 @@ body{
 	font-size: 1.5em;
 }
 .ty-2 .cont .t-h3{
-	text-align: center;
-	line-height: 1.4;
+	width:86%;
+	margin:0 auto;
+	text-align: left;
+	line-height: 1.6;
 	padding:0 1.1em;
 	color:#666;
 }
@@ -160,6 +185,9 @@ body{
 	color:#66bb6a;
 	top:22%;
 	left:35%;
+}
+.ty-3 .cont .img-box.dan i{
+	left:45%;
 }
 /*============================*/
 .bz-1,.bz-2,.bz-3,.bz-4{
@@ -297,7 +325,7 @@ body{
 }
 /*=====================*/
 .bz-5{
-	
+	padding-bottom:5em;
 }
 .bz-5 .cont .box{
 	-webkit-box-sizing: border-box;
@@ -346,11 +374,17 @@ body{
 	background: url(../../images/taoye/course-ty-teacher-2.png) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 }
-.bz-5 .cont .box:nth-of-type(1){
+.bz-5 .cont .box{
 	margin-bottom:5em;
+}
+.bz-5 .cont .box:last-child{
+	margin-bottom:0;
 }
 .bz-5 .bz-titlt .t-h2{
 	margin-bottom:5em;
+}
+.ty-4.ty-pad{
+	padding-bottom:0;
 }
 /*===================*/
 .ty-5{
@@ -359,6 +393,7 @@ body{
 .ty-5 .cont .box .t-h1{
 	padding-left:2em;
 	margin-bottom:0.6em;
+	color:#333;
 }
 .ty-5 .cont .box .t-h1 i{
 	font-size: 1.25em;
@@ -431,11 +466,11 @@ body{
 }
 /*=======================*/
 .ty-6 .cont .ul-out{
-	height:16em;
+	/*height:16em;*/
 	overflow: hidden;
 }
 .ty-6 .cont .ul-out ul{
-	margin-top:-24em;
+	/*margin-top:-24em;*/
 }
 .ty-6 .cont .ul-out ul li{
 	-webkit-box-sizing: border-box;
@@ -476,7 +511,7 @@ body{
 	background-color: #fff;
 	background: url(../../images/taoye/course-ty-biye.jpg) no-repeat center 0;
 	-webkit-background-size: cover;
-	color:#fff;
+	/*color:#fff;*/
 	text-align: center;
 }
 .ty-7 .cont .t-h1{
@@ -497,7 +532,7 @@ body{
 .ty-8 .cont .t-h1{
 	line-height: 1.9;
 	font-size: 1em;
-	color:#666;
+	/*color:#666;*/
 	padding:0 0.8em;
 }
 .ty-8 .ty-title .t-h1{
@@ -510,11 +545,14 @@ body{
 .ty-9.ty-pad{
 	padding-bottom:0;
 }
+.ty-9 .ty-title{
+	margin-bottom:0;
+}
 .ty-9 .ty-title .t-h1{
 	margin-bottom:0.4em;
 }
 .ty-9 .ty-title .t-h3{
-	margin-bottom:0.8em;
+	/*margin-bottom:0.8em;*/
 }
 .ty-9 .ty-title .t-h3 i{
 	font-size: 1.1em;
@@ -525,7 +563,8 @@ body{
 .ty-9 .cont .text{
 	width:80%;
 	margin:0 auto;
-	height:5em;
+	height:4em;
+	margin-bottom:0.8em;
 }
 .ty-9 .cont .text span{
 	font-size: 1em;
@@ -565,11 +604,11 @@ body{
 }
 .ty-9 .cont ul li.li-4 .t-h1{
 	background: url(../../images/taoye/index-ssn-img-5.png) no-repeat center center;
-	-webkit-background-size: 80% 80%;
+	-webkit-background-size: 70% 70%;
 }
 .ty-9 .cont ul li.li-5 .t-h1{
 	background: url(../../images/taoye/index-ssn-img-7.png) no-repeat center center;
-	-webkit-background-size: 80% 70%;
+	-webkit-background-size: 70% 70%;
 }
 .ty-9 .cont ul li.li-6 .t-h1{
 	background: url(../../images/taoye/index-ssn-img-8.png) no-repeat center center;
@@ -603,4 +642,61 @@ body{
 .ty-9 .cont ul li.li-10{
 	font-size: 1.1em;
 	margin-top:-2em;
+}
+/*=========================*/
+.ty-10{
+	background: url(../../images/taoye/taoye-zk/course-ty-zk-book-bg.jpg) no-repeat center 0;
+	-webkit-background-size: cover;
+}
+.ty-10 .ty-title .t-h3{
+	color:#fff;
+}
+.ty-10 .ty-title .t-h1{
+	margin-bottom:0.6em;
+}
+.ty-10 .cont .t-ul{
+	
+}
+.ty-10 .cont .t-ul li{
+	background-color: #fff;
+	width:70%;
+	margin:0 auto;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	padding-top:6em;
+	padding-bottom:2em;
+	margin-top:7em;
+}
+.ty-10 .cont .t-ul li .t-h1{
+	margin-bottom:0.6em;
+}
+.ty-10 .cont .t-ul li .t-h1 i{
+	font-size: 1.7em;
+}
+.ty-10 .cont .t-ul li .t-h2{
+	line-height: 1.5;
+}
+.ty-10 .cont .t-ul li .t-h2 i{
+	font-size: 1.25em;
+}
+.ty-10 .cont .t-ul li .t-h3{
+	width:8em;
+	height:8em;
+	left:0;
+	right:0;
+	margin:0 auto;
+	top:-4em;
+}
+.ty-10 .cont .t-ul li .t-h3 img{
+	width:100%;
+	height:100%;
+}
+/*=============================*/
+.ty-11{
+	background: url(../../images/taoye/taoye-zk/course-ty-zk-lou-bg.jpg) no-repeat center 0;
+	-webkit-background-size: cover;
+}
+.ty-11 .cont .box img{
+	width:80%;
+	margin:0 auto;
 }

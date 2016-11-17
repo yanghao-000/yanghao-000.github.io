@@ -1,6 +1,6 @@
 $(function(){
-	verticalScroll($(".ty-6 .cont .ul-out"));
 	courseCanSwiper();
+	verticalScroll($(".ty-6 .cont .ul-out"));
 });
 
 function courseCanSwiper(){

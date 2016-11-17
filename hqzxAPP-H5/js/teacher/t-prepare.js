@@ -1,21 +1,37 @@
 $(function(){
 	slideHuaDong2();
+	
+	slideNavTwoWid($(".slide-nav-scroll"));
+	slideNavTwoClick();
+	
+	scrollBottomLoading($(".swiper-slide-1"),function(text){
+		var t = setTimeout(function(){
+			text.remove();
+		},5000);
+	});
+	
 	judgeAndTeacher();
 });
+
 
 function slideHuaDong2(flag){
 	var nav = $(".slide-nav em");
 	var li = $(".slide-nav li");
 	var bar = $(".slide-nav .nav-bar");
 	var out = $(".slide-nav-out");
+	
 	var mySwiper = new Swiper(".swiper-container",{
-		autoHeight: true,
+//		autoHeight: true,
+		onTouchStart: function(swiper){
+			wrap.height('auto');
+		},
 		onSlideChangeStart: function(){
 			inputI(mySwiper.activeIndex);
 			inputI2(false,mySwiper.activeIndex);
 		},
 		onTransitionEnd: function(){
 			if(!flag){wrapHei();}
+			navTwoSlideDown(mySwiper.activeIndex);
 		},
 	});
 	li.on("click",function(){
@@ -24,6 +40,7 @@ function slideHuaDong2(flag){
 		inputI2(true);
 		mySwiper.slideTo(i,300,function(){
 			if(!flag){wrapHei();}
+			navTwoSlideDown(mySwiper.activeIndex);
 		});
 	});
 	
@@ -73,4 +90,10 @@ function slideHuaDong2(flag){
 		}
 	}
 	if(!flag){wrapHei();}
+	
+	function navTwoSlideDown(i){
+		var navTowUl = $(".slide-nav-two-out ul");
+		navTowUl.eq(i).stop(true,true).fadeIn().slideDown().siblings("ul").stop(true.true).hide(0);
+		slideNavTwoWid(navTowUl.eq(i));	
+	}
 }

@@ -1,6 +1,8 @@
 body{
 	background-color: #f0f0f0;
 }
+.swiper-slide{height:0px}
+.swiper-slide-active{ height:auto;}
 .black-bg{
 	position: fixed;
 	background-color: rgba(0,0,0,0.4);
@@ -468,4 +470,13 @@ body .slide-nav.slide-nav-2{
 }
 .section ul{
 	display: none;
+}
+/*====================*/
+.shanglaLoading{
+	text-align: center;
+	line-height: 4em;
+	color:#666;
+}
+.shanglaLoading i{
+	font-size: 1.25em;
 }

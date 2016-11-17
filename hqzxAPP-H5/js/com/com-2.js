@@ -8,12 +8,16 @@ function slideHuaDong(flag){
 	var li = $(".slide-nav li");
 	var bar = $(".slide-nav .nav-bar");
 	var mySwiper = new Swiper(".swiper-container",{
-		autoHeight: true,
+//		autoHeight: true,
+		onTouchStart: function(swiper){
+			wrap.height('auto');
+		},
 		onSlideChangeStart: function(){
 			inputI(mySwiper.activeIndex);
 		},
 		onTransitionEnd: function(){
 			if(!flag){wrapHei();}
+			navTwoSlideDown(mySwiper.activeIndex);
 		},
 	});
 	li.on("touchend",function(){
@@ -39,6 +43,12 @@ function slideHuaDong(flag){
 		}
 	}
 	if(!flag){wrapHei();}
+	
+	function navTwoSlideDown(i){
+		var navTowUl = $(".slide-nav-two-out ul");
+		navTowUl.eq(i).stop(true,true).fadeIn().slideDown().siblings("ul").stop(true.true).hide(0);
+		slideNavTwoWid(navTowUl.eq(i));	
+	}
 }
 
 var popup = (function(){
@@ -336,7 +346,36 @@ function emptyState(text){
 	$("body").append(con);
 }
 
+//列表加载loading
+function scrollBottomLoading(obj,fn){
+	$(window).on("scroll",function(){
+		if($(document).scrollTop() >= $(document).height() - $(window).height()){
+			$('<div class="shanglaLoading"><i>正在加载...</i></div>').appendTo(obj);
+			var text = obj.find(".shanglaLoading");
+//			$(window).off("scroll");
+			if(fn){fn(text);}
+		}
+	});
+}
 
+//导航二级设置宽度
+function slideNavTwoWid(obj){
+	var navTow = obj;
+	var sum = 0;
+	var li = navTow.find("li");
+	for(var i=0; i<li.length; i++){
+		sum += li.eq(i).outerWidth(true);
+	}
+	navTow.css({"width":sum+2});
+}
+
+//导航二级点击
+function slideNavTwoClick(){
+	$(".slide-nav-two li").on("click",function(){
+		$(this).parent().find("em").removeClass("act");
+		$(this).find("em").addClass("act");
+	});
+}
 
 function judgeAnd(){
 	var browser={
