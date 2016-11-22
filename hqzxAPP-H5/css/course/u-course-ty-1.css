@@ -79,10 +79,11 @@ img{
 html,body,.course-swiper-container,.swiper-wrapper{
 	width:100%;
 }
-body{
+html,body{overflow:hidden;overflow-y:auto;}
+/*body{
 	overflow: scroll;
 	overflow-x: hidden;
-}
+}*/
 .ban .course-swiper-container{
 	position: relative;
 }
