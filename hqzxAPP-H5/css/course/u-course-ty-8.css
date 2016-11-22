@@ -1,0 +1,59 @@
+.course-ty-8 .ty-12 .cont .tt-ul li.li-1{
+	background: url(../../images/taoye/taoye-zk-kj/course-ty-zk-kj-xqs-img-1.jpg) no-repeat center 0;
+	-webkit-background-size: cover;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li.li-2{
+	background: url(../../images/taoye/taoye-zk-kj/course-ty-zk-kj-xqs-img-2.jpg) no-repeat center 0;
+	-webkit-background-size: cover;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li.li-3{
+	background: url(../../images/taoye/taoye-zk-kj/course-ty-zk-kj-xqs-img-3.jpg) no-repeat center 0;
+	-webkit-background-size: cover;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li.li-1 .box{
+	background: none;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li.li-2 .box{
+	background: none;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li.li-3 .box{
+	background: none;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li.li-1 .t-h1{
+	background: none;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li.li-2 .t-h1{
+	background: none;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li.li-3 .t-h1{
+	background: none;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li .t-h1{
+	height:5em;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li .t-h1 img{
+	width:5em;
+	margin:0 auto;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li .box{
+	padding-left:1em;
+	padding-right:1em;
+	padding-bottom:0;
+}
+.course-ty-8 .ty-12 .cont .tt-ul li{
+	padding-top:2em;
+	padding-bottom:2em;
+}
+/*===============*/
+.course-ty-8 .ty-13 .cont-1 .t-ul li:nth-of-type(7){
+	margin-left:2%;
+}
+.course-ty-8 .ty-13 .cont-2 .text{
+	width:60%;
+}
+.course-ty-8.course-ty-7.course-ty-3 .ty-4 .bz-1{
+	background: #3c8d62;
+}
+.course-ty-8.course-ty-7.course-ty-3 .ty-8{
+	background-image: url(../../images/taoye/taoye-zk-kj/course-ty-zk-kj-nvli-bg.jpg);
+}
