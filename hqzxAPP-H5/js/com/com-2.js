@@ -3,12 +3,60 @@ $(function(){
 });
 document.body.addEventListener('touchstart', function (){});
 
+function slideHuaDongAH(flag){
+	var nav = $(".slide-nav em");
+	var li = $(".slide-nav li");
+	var bar = $(".slide-nav .nav-bar");
+	var mySwiper = new Swiper(".swiper-container",{
+		autoHeight: true,
+		onTouchStart: function(swiper){
+//			wrap.height('auto');
+		},
+		onSlideChangeStart: function(){
+			inputI(mySwiper.activeIndex);
+		},
+		onTransitionEnd: function(){
+			if(!flag){wrapHei();}
+			navTwoSlideDown(mySwiper.activeIndex);
+		},
+	});
+	li.on("touchend",function(){
+		var i = $(this).index();
+		inputI(i);
+		mySwiper.slideTo(i,300,function(){
+			if(!flag){wrapHei();}
+		});
+	});
+	
+	function inputI(i){
+		nav.eq(i).addClass("act").parent().siblings().find("em").removeClass("act");
+		var w = nav.eq(i).outerWidth();
+		var l = nav.eq(i).offset().left;
+		bar.stop(true).animate({"width":w,"left":l},100);
+	}
+	
+	var wrap = $(".swiper-wrapper");
+	var hei = $(window).outerHeight() - $(".slide-nav").outerHeight();
+	function wrapHei(){
+		if(wrap.outerHeight()<hei){
+			wrap.css({"height":hei});
+		}
+	}
+	if(!flag){wrapHei();}
+	
+	function navTwoSlideDown(i){
+		var navTowUl = $(".slide-nav-two-out ul");
+		navTowUl.eq(i).stop(true,true).fadeIn().slideDown().siblings("ul").stop(true.true).hide(0);
+		slideNavTwoWid(navTowUl.eq(i));	
+	}
+}
+
 function slideHuaDong(flag){
 	var nav = $(".slide-nav em");
 	var li = $(".slide-nav li");
 	var bar = $(".slide-nav .nav-bar");
 	var mySwiper = new Swiper(".swiper-container",{
-//		autoHeight: true,
+		autoHeight: true,
 		onTouchStart: function(swiper){
 			wrap.height('auto');
 		},
@@ -265,6 +313,23 @@ var popup = (function(){
 //		return false;
 //	}
 //}
+
+function backTop(){
+	var backTop = $(".back-top");
+	$(window).on("scroll",function(){
+		if($(this).scrollTop()>800){
+			backTop.show(0);
+		}else{
+			backTop.hide(0);
+		}
+	});
+	
+	backTop.on("click",function(){
+//		$(window).css({"scrollTop":"0"});
+		$("html,body").animate({"scrollTop":0},300);
+	});
+}
+backTop();
 
 function choicePopAfter(popObj,fn){
 	var bg = $(".black-bg");

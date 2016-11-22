@@ -243,7 +243,7 @@ function judgeAndTeacher(){
 		});
 	}
 	if(browser.versions.ios){
-		$(".ban .play-btn-bg").css({"background":"none"});
-		$(".ban .play-btn").css({"background":"none"});
+//		$(".ban .play-btn-bg").css({"background":"none"});
+//		$(".ban .play-btn").css({"background":"none"});
 	}
 }

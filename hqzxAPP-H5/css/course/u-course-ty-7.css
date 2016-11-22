@@ -1,0 +1,41 @@
+.course-ty-7 .ty-12 .cont .tt-ul li{
+	width:100%;
+}
+.course-ty-7 .ty-12 .cont .tt-ul li.li-1 .t-h1{
+	background: url(../../images/taoye/taoye-zk-cw/course-ty-zk-cw-xqs-img-1.jpg);
+	-webkit-background-size: 100% 100%;
+}
+.course-ty-7 .ty-12 .cont .tt-ul li.li-2 .t-h1{
+	background: url(../../images/taoye/taoye-zk-cw/course-ty-zk-cw-xqs-img-2.jpg);
+	-webkit-background-size: 100% 100%;
+}
+.course-ty-7 .ty-12 .cont .tt-ul li.li-3 .t-h1{
+	background: url(../../images/taoye/taoye-zk-cw/course-ty-zk-cw-xqs-img-3.jpg);
+	-webkit-background-size: 100% 100%;
+}
+.course-ty-7 .ty-12 .cont .tt-ul li.li-1 .box{
+	background-color: #5f452f;
+}
+.course-ty-7 .ty-12 .cont .tt-ul li.li-2 .box{
+	background-color: #262737;
+}
+.course-ty-7 .ty-12 .cont .tt-ul li.li-3 .box{
+	background-color: #3d5858;
+}
+.course-ty-7 .ty-12 .cont .tt-ul li{
+	margin-bottom:0;
+}
+.course-ty-7 .ty-12.ty-pad{
+	padding-bottom:0;
+}
+/*===============*/
+.course-ty-7.course-ty-3 .ty-4 .bz-1{
+	background: url(../../images/taoye/taoye-zk-cw/course-ty-zk-table-bg.jpg) no-repeat center 0;
+	-webkit-background-size: cover;
+}
+.course-ty-7.course-ty-3 .ty-8{
+	background-image: url(../../images/taoye/taoye-zk-sj/course-ty-zk-sj-nvli-bg.jpg);
+}
+.course-ty-7 .ty-11{
+	background: #ebebeb;
+}
