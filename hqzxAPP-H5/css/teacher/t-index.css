@@ -4,14 +4,14 @@ body{
 .index-box{
 	border-bottom:1px solid #eee;
 	padding-top:1.2em;
-	padding-bottom:1.8em;
+	padding-bottom:1.2em;
 	background-color: #fff;
 }
 .index-box.last{
 	border-bottom:none;
 }
 .index-box .tit{
-	padding: 0 1.2em 1.4em;
+	padding: 0 1.2em 1em;
 }
 .index-box .tit p{
 	font-size: 1.25em;
@@ -24,7 +24,8 @@ body{
 	width:25%;
 }
 .index-box ul li:active{
-	background-color: #f5f5f5;
+	/*background-color: #f5f5f5;*/
+	opacity: 0.6;
 }
 .index-box ul li .t-h1{
 	width:50%;
@@ -59,4 +60,16 @@ body{
 }
 .index-box .t-h1.img-8{
 	background-image: url(../../images/teacher/t-index-icon-8.png);
+}
+.index-box .t-h1.img-9{
+	background-image: url(../../images/teacher/t-index-icon-9.png);
+}
+.index-box .t-h1.img-10{
+	background-image: url(../../images/teacher/t-index-icon-10.png);
+}
+.index-box .t-h1.img-11{
+	background-image: url(../../images/teacher/t-index-icon-11.png);
+}
+.index-box .t-h1.img-12{
+	background-image: url(../../images/teacher/t-index-icon-12.png);
 }

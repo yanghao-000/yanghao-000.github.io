@@ -1,3 +1,3 @@
 $(function(){
-	emptyState("暂无请假记录~");
+	emptyState("暂无相关单据~",$("body"));
 });

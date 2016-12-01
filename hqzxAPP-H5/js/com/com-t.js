@@ -181,14 +181,14 @@ function dataInit(clickObj){
 	}
 }
 
-function emptyState(text){
+function emptyState(text,obj){
 	var con = 	'<div class="empty-bg">'+
 					'<div class="empty-cont">'+
 						'<div class="empty-img"><img src="images/school/icon/empty-bg.png"/></div>'+
 						'<div class="empty-text"><i>'+text+'</i></div>'+
 					'</div>'+
 				'</div>';
-	$("body").append(con);
+	obj.append(con);
 }
 //列表加载loading
 function scrollBottomLoading(obj,fn){

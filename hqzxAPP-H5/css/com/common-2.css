@@ -43,7 +43,7 @@ body{
 }
 .slide-nav .nav-bar{
 	position: absolute;
-	height:3px;
+	height:1.5px;
 	background-color: #12C38C;
 	bottom:-1px;
 }
@@ -81,7 +81,7 @@ body{
 }
 .slide-nav-two li em.act{
 	color:#12C38C;
-	border-bottom:3px solid #12C38C;
+	border-bottom:1px solid #12C38C;
 	/*margin-bottom:-3px;*/
 }
 .slide-nav-two .nav-bar{
@@ -115,7 +115,7 @@ body{
 	background-color: #f0f0f0;
 }
 .float-nav-bottom .left:active{
-	background-color: #ddd;
+	background-color: #f5f5f5;
 }
 .float-nav-bottom .right{
 	width:70%;
@@ -125,7 +125,7 @@ body{
 	background-color: #12C38C;
 }
 .float-nav-bottom .right:active{
-	background-color: #ddd;
+	opacity: 0.6;
 }
 /*==================================*/
 .course-list-box .item{
@@ -135,7 +135,7 @@ body{
 	background-color: #fff;
 }
 .course-list-box .item:active{
-	background-color: #ddd;
+	background-color: #f5f5f5;
 }
 .course-list-box .item .item-in{
 	padding: 1.6em 1.1em;
@@ -461,15 +461,23 @@ body{
 }
 .choice-pop .cont li{
 	-webkit-box-sizing: border-box;
-	height:3.7em;
-	line-height: 3.7em;
+	/*height:3.7em;
+	line-height: 3.7em;*/
 	color:#666;
 	border-bottom:1px solid #eee;
+	/*overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;*/
+	padding-top:1em;
+	padding-bottom:1em;
+	word-break: break-all;
 }
 .choice-pop .cont li:active{
-	background-color: #eee;
-	margin:0 -5%;
-	padding:0 5%;
+	background-color: #f5f5f5;
+	margin-left: -5%;
+	margin-right: -5%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 .choice-pop .cont li i{
 	font-size: 1.16em;
@@ -479,25 +487,26 @@ body{
 }
 /*空状态=============================*/
 .empty-bg{
-	position: fixed;
+	/*position: fixed;
 	width:100%;
 	height:100%;
 	left:0;
 	top:0;
 	background-color: #f8f8f8;
-	z-index: 1000;
+	z-index: 1000;*/
+	margin-top:38%;
 }
 .empty-bg .empty-cont{
-	position: absolute;
+	/*position: absolute;
 	top:30%;
 	left:0;
 	right:0;
-	margin: auto;
+	margin: auto;*/
 }
 .empty-bg .empty-cont .empty-img{
-	width:7em;
+	width:44%;
 	margin:0 auto;
-	margin-bottom:1em;
+	margin-bottom:2em;
 }
 .empty-bg .empty-cont .empty-img img{
 	width:100%;
@@ -508,9 +517,10 @@ body{
 	line-height: 2em;
 }
 .empty-bg .empty-cont .empty-text i{
-	font-size: 1.25em;
+	font-size: 1.3em;
 	color:#999;
 }
+/*====================*/
 .back-top{
 	position: fixed;
 	width:3.6em;

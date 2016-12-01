@@ -3,10 +3,10 @@
 	padding:6% 6%;
 	border-bottom:1px solid #eee;
 	background-color: #fff;
-	font-size: 1.25em;
+	font-size: 1.16em;
 }
 .banXing{
-	line-height: 2.5em;
+	line-height: 2.2em;
 	overflow: hidden;
 }
 .banXing i,.banXing em{
@@ -32,10 +32,10 @@
 	color:#333;
 }
 .banXing.kecheng em{
-	text-indent: -0.4em;
+	/*text-indent: -0.4em;*/
 }
 .banXing.kecheng em p{
-	line-height: 2.2em;
+	/*line-height: 1.8em;*/
 }
 /*=============================*/
 .course-bug-pop{
@@ -124,5 +124,5 @@
 	text-align: center;
 }
 .course-bug-pop .sec-bot:active{
-	background-color: #ddd;
+	opacity: 0.6;
 }

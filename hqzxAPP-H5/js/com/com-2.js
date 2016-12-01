@@ -3,53 +3,53 @@ $(function(){
 });
 document.body.addEventListener('touchstart', function (){});
 
-function slideHuaDongAH(flag){
-	var nav = $(".slide-nav em");
-	var li = $(".slide-nav li");
-	var bar = $(".slide-nav .nav-bar");
-	var mySwiper = new Swiper(".swiper-container",{
-		autoHeight: true,
-		onTouchStart: function(swiper){
-//			wrap.height('auto');
-		},
-		onSlideChangeStart: function(){
-			inputI(mySwiper.activeIndex);
-		},
-		onTransitionEnd: function(){
-			if(!flag){wrapHei();}
-			navTwoSlideDown(mySwiper.activeIndex);
-		},
-	});
-	li.on("touchend",function(){
-		var i = $(this).index();
-		inputI(i);
-		mySwiper.slideTo(i,300,function(){
-			if(!flag){wrapHei();}
-		});
-	});
-	
-	function inputI(i){
-		nav.eq(i).addClass("act").parent().siblings().find("em").removeClass("act");
-		var w = nav.eq(i).outerWidth();
-		var l = nav.eq(i).offset().left;
-		bar.stop(true).animate({"width":w,"left":l},100);
-	}
-	
-	var wrap = $(".swiper-wrapper");
-	var hei = $(window).outerHeight() - $(".slide-nav").outerHeight();
-	function wrapHei(){
-		if(wrap.outerHeight()<hei){
-			wrap.css({"height":hei});
-		}
-	}
-	if(!flag){wrapHei();}
-	
-	function navTwoSlideDown(i){
-		var navTowUl = $(".slide-nav-two-out ul");
-		navTowUl.eq(i).stop(true,true).fadeIn().slideDown().siblings("ul").stop(true.true).hide(0);
-		slideNavTwoWid(navTowUl.eq(i));	
-	}
-}
+//function slideHuaDongAH(flag){
+//	var nav = $(".slide-nav em");
+//	var li = $(".slide-nav li");
+//	var bar = $(".slide-nav .nav-bar");
+//	var mySwiper = new Swiper(".swiper-container",{
+//		autoHeight: true,
+//		onTouchStart: function(swiper){
+////			wrap.height('auto');
+//		},
+//		onSlideChangeStart: function(){
+//			inputI(mySwiper.activeIndex);
+//		},
+//		onTransitionEnd: function(){
+//			if(!flag){wrapHei();}
+//			navTwoSlideDown(mySwiper.activeIndex);
+//		},
+//	});
+//	li.on("touchend",function(){
+//		var i = $(this).index();
+//		inputI(i);
+//		mySwiper.slideTo(i,300,function(){
+//			if(!flag){wrapHei();}
+//		});
+//	});
+//	
+//	function inputI(i){
+//		nav.eq(i).addClass("act").parent().siblings().find("em").removeClass("act");
+//		var w = nav.eq(i).outerWidth();
+//		var l = nav.eq(i).offset().left;
+//		bar.stop(true).animate({"width":w,"left":l},100);
+//	}
+//	
+//	var wrap = $(".swiper-wrapper");
+//	var hei = $(window).outerHeight() - $(".slide-nav").outerHeight();
+//	function wrapHei(){
+//		if(wrap.outerHeight()<hei){
+//			wrap.css({"height":hei});
+//		}
+//	}
+//	if(!flag){wrapHei();}
+//	
+//	function navTwoSlideDown(i){
+//		var navTowUl = $(".slide-nav-two-out ul");
+//		navTowUl.eq(i).stop(true,true).fadeIn().slideDown().siblings("ul").stop(true.true).hide(0);
+//		slideNavTwoWid(navTowUl.eq(i));	
+//	}
+//}
 
 function slideHuaDong(flag){
 	var nav = $(".slide-nav em");
@@ -58,7 +58,7 @@ function slideHuaDong(flag){
 	var mySwiper = new Swiper(".swiper-container",{
 		autoHeight: true,
 		onTouchStart: function(swiper){
-			wrap.height('auto');
+//			wrap.height('auto');
 		},
 		onSlideChangeStart: function(){
 			inputI(mySwiper.activeIndex);
@@ -324,8 +324,7 @@ function backTop(){
 		}
 	});
 	
-	backTop.on("click",function(){
-//		$(window).css({"scrollTop":"0"});
+	backTop.on("touchend",function(){
 		$("html,body").animate({"scrollTop":0},300);
 	});
 }
@@ -401,14 +400,14 @@ function dataInit(clickObj,fn){
 	}
 }
 
-function emptyState(text){
+function emptyState(text,obj){
 	var con = 	'<div class="empty-bg">'+
 					'<div class="empty-cont">'+
 						'<div class="empty-img"><img src="images/school/icon/empty-bg.png"/></div>'+
 						'<div class="empty-text"><i>'+text+'</i></div>'+
 					'</div>'+
 				'</div>';
-	$("body").append(con);
+	obj.append(con);
 }
 
 //列表加载loading

@@ -6,8 +6,8 @@ body{
 }
 .swiper-pagination-bullet{
 	opacity: 0.4;
-	width:0.85em;
-	height:0.85em;
+	width:10px;
+	height:10px;
 	-webkit-border-radius: 50%;
 }
 .swiper-pagination-bullet-active{
@@ -52,7 +52,7 @@ body{
 	line-height: 2.5em;
 }
 .school-tit .right:active{
-	background-color: #ddd;
+	background-color: #f5f5f5;
 }
 .school-tit .right p{
 	font-size: 1.25em;
@@ -84,11 +84,12 @@ body{
 	width:25%;
 }
 .nav-ge li:active{
-	background-color: #ddd;
+	/*background-color: #f5f5f5;*/
+	opacity: 0.6;
 }
 .nav-ge li dl{
-	height:2.2em;
-	margin-bottom:0.9em;
+	/*height:2.2em;*/
+	/*margin-bottom:0.9em;*/
 }
 .nav-ge li dl img{
 	display: inline-block;
@@ -99,7 +100,11 @@ body{
 	height:100%;
 	vertical-align: middle;
 }
-.nav-ge li.t-li-1 dl img{
+.nav-ge li dl img{
+	width:3.8em;
+	height:3.8em;
+}
+/*.nav-ge li.t-li-1 dl img{
 	width:1.92em;
 	height:1.9em;
 }
@@ -142,9 +147,10 @@ body{
 .nav-ge li.t-li-11 dl img{
 	width:2em;
 	height:1.6em;
-}
+}*/
 .nav-ge ul{
 	padding:2em 4%;
+	padding-top:1em;
 	border-bottom:1px solid #eee;
 	background-color: #fff;
 }

@@ -1,5 +1,5 @@
 $(function(){
-	slideHuaDong2();
+	slideHuaDong2(true);
 	
 	slideNavTwoWid($(".slide-nav-scroll"));
 	slideNavTwoClick();
@@ -23,7 +23,7 @@ function slideHuaDong2(flag){
 	var mySwiper = new Swiper(".swiper-container",{
 //		autoHeight: true,
 		onTouchStart: function(swiper){
-			wrap.height('auto');
+//			wrap.height('auto');
 		},
 		onSlideChangeStart: function(){
 			inputI(mySwiper.activeIndex);

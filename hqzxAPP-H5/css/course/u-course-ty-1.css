@@ -80,10 +80,6 @@ html,body,.course-swiper-container,.swiper-wrapper{
 	width:100%;
 }
 html,body{overflow:hidden;overflow-y:auto;}
-/*body{
-	overflow: scroll;
-	overflow-x: hidden;
-}*/
 .ban .course-swiper-container{
 	position: relative;
 }
@@ -644,6 +640,10 @@ html,body{overflow:hidden;overflow-y:auto;}
 	background: url(../../images/taoye/index-ssn-img-7.png) no-repeat center center;
 	-webkit-background-size: 70% 60%;
 }
+.ty-9 .cont ul li.li-12 .t-h1{
+	background: url(../../images/taoye/index-ssn-img-10.png) no-repeat center center;
+	-webkit-background-size: 60% 90%;
+}
 .ty-9 .cont ul li .t-h2{
 	margin-bottom:0.2em;
 	color:#666;
@@ -657,10 +657,11 @@ html,body{overflow:hidden;overflow-y:auto;}
 .ty-9 .cont ul li .t-h3 i{
 	font-size: 1em;
 }
-.ty-9 .cont ul li.li-12{
+
+/*.ty-9 .cont ul li.last{
 	font-size: 1.1em;
 	margin-top:-2em;
-}
+}*/
 /*=========================*/
 .ty-10{
 	background: url(../../images/taoye/taoye-zk/course-ty-zk-book-bg.jpg) no-repeat center 0;
