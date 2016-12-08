@@ -6,8 +6,9 @@
 	font-size: 1.16em;
 }
 .banXing{
-	line-height: 2.2em;
+	/*line-height: 2.2em;*/
 	overflow: hidden;
+	padding:0.4em 0;
 }
 .banXing i,.banXing em{
 	float:left;
@@ -18,9 +19,9 @@
 }
 .banXing em{
 	width:68%;
-	overflow: hidden;
+	/*overflow: hidden;
 	white-space: nowrap;
-	text-overflow: ellipsis;
+	text-overflow: ellipsis;*/
 }
 .banXing.banXingo em{
 	color:#fe763a;

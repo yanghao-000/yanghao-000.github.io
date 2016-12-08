@@ -38,6 +38,7 @@ document.body.addEventListener('touchstart', function (){});
 ////		}, false); 
 //	}
 //}
+
 //选择列表弹框
 function choicePopAfter(popObj,fn){
 	var bg = $(".black-bg");
@@ -71,8 +72,9 @@ function multichoicePopAfter(popObj,fn){
 	var bg = $(".black-bg");
 	var pop = popObj;
 
-	var hei = pop.outerHeight();
-	pop.css({"marginTop":-hei/2});
+//	var hei = pop.outerHeight();
+//	pop.css({"marginTop":-hei/2});
+	pop.css({"top":"10%"});
 
 	bg.css({"display":"block","-webkit-animation":"fadeIn 0.5s both"});
 	pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
@@ -101,7 +103,11 @@ function multichoicePopAfter(popObj,fn){
 //多选框展开
 function sectionSlide(){
 	var sec = $(".section");
-	sec.on("click",".stair",function(){
+	var allone = $(".section .all-stair-h1");
+	var stair1 = $(".section .stair-in .stair-h1").not(".all-stair-h1");
+//	var stair2 = $(".section .stair-2 .stair-h1");
+	
+	sec.find(".stair").on("click",function(){
 		if($(this).hasClass("act")){
 			$(this).removeClass("act");
 			$(this).children("ul").stop(true,true).slideUp();
@@ -121,13 +127,19 @@ function sectionSlide(){
 		return false;
 	});
 	
-	$(".section .stair-1 .stair-h1").not(".all-stair-h1").on("click",function(){
+	$(".section .stair-in .stair-h1").not(".all-stair-h1").on("click",function(){
 		if($(this).hasClass("act")){
+			sec.find(".all").find(".stair-h1").removeClass("act");
 			$(this).removeClass("act");
 			$(this).parent().siblings("ul").find(".stair-h1").removeClass("act");
 		}else{
 			$(this).addClass("act");
 			$(this).parent().siblings("ul").find(".stair-h1").addClass("act");
+		}
+		if(checkStair1(stair1)){
+			allone.addClass("act");
+		}else{
+			allone.removeClass("act");
 		}
 		return false;
 	});
@@ -138,22 +150,66 @@ function sectionSlide(){
 		}else{
 			$(this).find(".stair-h1").addClass("act");
 		}
+		var stair2 = $(this).parent().find("li .stair-h1");
+		if(checkStair1(stair2)){
+			$(this).parent().siblings().find(".stair-h1").addClass("act");
+		}else{
+			$(this).parent().siblings().find(".stair-h1").removeClass("act");
+		}
+		if(checkStair1(stair1)){
+			allone.addClass("act");
+		}else{
+			allone.removeClass("act");
+		}
 		return false;
 	});
+	
+	function checkStair1(obj){
+		var str = "";
+		obj.each(function(){
+			if($(this).hasClass("act")){
+				
+			}else{
+				str = str + "false";
+			}
+		});
+		if(str.length==0){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	function checkStair2(obj){
+		var str = "";
+		obj.each(function(){
+			if($(this).hasClass("act")){
+				
+			}else{
+				str = str + "false";
+			}
+		});
+		if(str.length==0){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
 //时间选择弹框
-function dataInit(clickObj){
+function dataInit(clickObj,fn){
 	if(typeof(mobiscrollFlag) == "boolean"){
 		clickObj.mobiscroll().date({ 
 		    theme: 'ios7', 
 		    display: 'bottom',
-		    minDate: new Date(),
-		    maxDate: new Date(2020,1,1),   
+		    minDate: new Date(2010,0,1),
+		    maxDate: new Date(2030,11,30),   
 		    lang: 'zh',
 		    onSelect: function (valueText,inst){
-				console.log(valueText.replace(/\//g,'.')); //返回选择的时间
-				var str = valueText.replace(/\//g,'.');
+				console.log(valueText.replace(/\//g,'-')); //返回选择的时间
+				var str = valueText.replace(/\//g,'-');
 				$(this).find("em").text(str);
+				if(fn){fn();}
 			},
 			onBeforeShow: function (inst) { 
 				if(inst.settings.wheels[0][0].values[0].length<=4){
@@ -180,11 +236,19 @@ function dataInit(clickObj){
 		}
 	}
 }
-
-function emptyState(text,obj){
+//为空页
+function emptyState(text,obj,imgUrl){
+	var url;
+	if(!imgUrl){
+		url = "images/school/icon/empty-bg.png";
+	}else if(imgUrl == "1"){
+		url = "images/school/icon/kaifa-bg.png";
+	}else if(imgUrl == "2"){
+		url = "images/school/icon/noPower-bg.png";
+	}
 	var con = 	'<div class="empty-bg">'+
 					'<div class="empty-cont">'+
-						'<div class="empty-img"><img src="images/school/icon/empty-bg.png"/></div>'+
+						'<div class="empty-img"><img src='+url+'/></div>'+
 						'<div class="empty-text"><i>'+text+'</i></div>'+
 					'</div>'+
 				'</div>';
@@ -220,7 +284,7 @@ function slideNavTwoClick(){
 		$(this).find("em").addClass("act");
 	});
 }
-
+//样式调整
 function judgeAndTeacher(){
 	var browser={
   	  	versions:function(){
@@ -246,4 +310,70 @@ function judgeAndTeacher(){
 //		$(".ban .play-btn-bg").css({"background":"none"});
 //		$(".ban .play-btn").css({"background":"none"});
 	}
+}
+
+//提示弹框
+var popup = (function(){
+	var timer;
+	var flag = true;
+	
+	var tips = function(h1){
+		if(flag){
+			flag = false;
+			clearTimeout(timer);
+			$(".tips-popup").remove();
+			
+			var t = t || 1400;
+			
+			var con = '<div class="tips-popup">'+h1+'</div>'
+			$("body").append(con);
+			
+			var hei = $(".tips-popup").outerHeight();
+			$(".tips-popup").css({"marginTop":-hei/2});
+			
+			timer = setTimeout(function(){
+				$(".tips-popup").addClass("out");
+				$(".tips-popup.out")[0].addEventListener("webkitAnimationEnd", function(){
+					$(this).remove();
+					flag = true;
+				}, false); 
+			},t);
+		}
+	}
+	
+	return {
+		tips:tips,
+	}
+})();
+
+//数据加载前成功前创建loading
+function loadingBefor(){
+	var con =   '<div class="loading-bg">'+
+					'<div class="spinner">'+
+					  	'<div class="spinner-container container1">'+
+						    '<div class="circle1"></div>'+
+						    '<div class="circle2"></div>'+
+						    '<div class="circle3"></div>'+
+						    '<div class="circle4"></div>'+
+					  	'</div>'+
+					  	'<div class="spinner-container container2">'+
+						    '<div class="circle1"></div>'+
+						    '<div class="circle2"></div>'+
+						    '<div class="circle3"></div>'+
+						    '<div class="circle4"></div>'+
+					  	'</div>'+
+					  	'<div class="spinner-container container3">'+
+						    '<div class="circle1"></div>'+
+						    '<div class="circle2"></div>'+
+						    '<div class="circle3"></div>'+
+						    '<div class="circle4"></div>'+
+					 	'</div>'+
+					'</div>'+
+				'</div>'
+	
+	$("body").append(con);
+}
+//数据加载成功后去除loading
+function loadingAfter(){
+	$(".loading-bg").remove();
 }

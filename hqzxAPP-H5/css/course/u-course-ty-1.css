@@ -638,11 +638,19 @@ html,body{overflow:hidden;overflow-y:auto;}
 }
 .ty-9 .cont ul li.li-11 .t-h1{
 	background: url(../../images/taoye/index-ssn-img-7.png) no-repeat center center;
-	-webkit-background-size: 70% 60%;
+	-webkit-background-size: 70% 70%;
 }
 .ty-9 .cont ul li.li-12 .t-h1{
 	background: url(../../images/taoye/index-ssn-img-10.png) no-repeat center center;
 	-webkit-background-size: 60% 90%;
+}
+.ty-9 .cont ul li.li-13 .t-h1{
+	background: url(../../images/taoye/index-ssn-img-11.png) no-repeat center center;
+	-webkit-background-size: 80% 60%;
+}
+.ty-9 .cont ul li.li-14 .t-h1{
+	background: url(../../images/taoye/index-ssn-img-12.png) no-repeat center center;
+	-webkit-background-size: 80% 60%;
 }
 .ty-9 .cont ul li .t-h2{
 	margin-bottom:0.2em;

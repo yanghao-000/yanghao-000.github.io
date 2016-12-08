@@ -1,6 +1,7 @@
 $(function(){
 	courseCanSwiper();
 	verticalScroll($(".ty-6 .cont .ul-out"));
+	backTop();
 });
 
 function courseCanSwiper(){

@@ -3,54 +3,7 @@ $(function(){
 });
 document.body.addEventListener('touchstart', function (){});
 
-//function slideHuaDongAH(flag){
-//	var nav = $(".slide-nav em");
-//	var li = $(".slide-nav li");
-//	var bar = $(".slide-nav .nav-bar");
-//	var mySwiper = new Swiper(".swiper-container",{
-//		autoHeight: true,
-//		onTouchStart: function(swiper){
-////			wrap.height('auto');
-//		},
-//		onSlideChangeStart: function(){
-//			inputI(mySwiper.activeIndex);
-//		},
-//		onTransitionEnd: function(){
-//			if(!flag){wrapHei();}
-//			navTwoSlideDown(mySwiper.activeIndex);
-//		},
-//	});
-//	li.on("touchend",function(){
-//		var i = $(this).index();
-//		inputI(i);
-//		mySwiper.slideTo(i,300,function(){
-//			if(!flag){wrapHei();}
-//		});
-//	});
-//	
-//	function inputI(i){
-//		nav.eq(i).addClass("act").parent().siblings().find("em").removeClass("act");
-//		var w = nav.eq(i).outerWidth();
-//		var l = nav.eq(i).offset().left;
-//		bar.stop(true).animate({"width":w,"left":l},100);
-//	}
-//	
-//	var wrap = $(".swiper-wrapper");
-//	var hei = $(window).outerHeight() - $(".slide-nav").outerHeight();
-//	function wrapHei(){
-//		if(wrap.outerHeight()<hei){
-//			wrap.css({"height":hei});
-//		}
-//	}
-//	if(!flag){wrapHei();}
-//	
-//	function navTwoSlideDown(i){
-//		var navTowUl = $(".slide-nav-two-out ul");
-//		navTowUl.eq(i).stop(true,true).fadeIn().slideDown().siblings("ul").stop(true.true).hide(0);
-//		slideNavTwoWid(navTowUl.eq(i));	
-//	}
-//}
-
+//滑动切换
 function slideHuaDong(flag){
 	var nav = $(".slide-nav em");
 	var li = $(".slide-nav li");
@@ -99,7 +52,35 @@ function slideHuaDong(flag){
 	}
 }
 
+//弹框
 var popup = (function(){
+	var timer;
+	var flag = true;
+	
+	var tips = function(h1){
+		if(flag){
+			flag = false;
+			clearTimeout(timer);
+			$(".tips-popup").remove();
+			
+			var t = t || 1400;
+			
+			var con = '<div class="tips-popup">'+h1+'</div>'
+			$("body").append(con);
+			
+			var hei = $(".tips-popup").outerHeight();
+			$(".tips-popup").css({"marginTop":-hei/2});
+			
+			timer = setTimeout(function(){
+				$(".tips-popup").addClass("out");
+				$(".tips-popup.out")[0].addEventListener("webkitAnimationEnd", function(){
+					$(this).remove();
+					flag = true;
+				}, false); 
+			},t);
+		}
+	}
+	
 	var flish = function(t1,fn){
 		var con = 	'<div class="black-bg"></div>'+
 					'<div class="pop-pause pop-flish">'+
@@ -151,7 +132,8 @@ var popup = (function(){
 	}
 	
 	var apply = function(fn){
-		var con = 	'<div class="black-bg"></div>'+
+		var con = 	
+//		'<div class="black-bg"></div>'+
 					'<div class="pop-apply">'+
 						'<div class="img-box"></div>'+
 						'<div class="text">提交成功</div>'+
@@ -235,101 +217,35 @@ var popup = (function(){
 	}
 	
 	return {
+		tips:tips,
 		flish:flish,
 		apply:apply,
 		leave:leave
 	}
 })();
 
-//function choicePopBefore(){
-//	var con =   '<div class="black-bg">'+
-//					'<div class="loadEffect">'+
-//				        '<span></span>'+
-//				        '<span></span>'+
-//				        '<span></span>'+
-//				        '<span></span>'+
-//				        '<span></span>'+
-//				        '<span></span>'+
-//				        '<span></span>'+
-//				        '<span></span>'+
-//					'</div>'+
-//				'</div>';
-//	
-//	$("body").append(con);
-//	
-//	var bg = $(".black-bg");
-//	var loading = bg.find(".loadEffect");
-//	
-//	bg.css({"display":"block","-webkit-animation":"fadeIn 0.5s both"});
-//	
-//	bg.on("touchend",function(){
-//		animateFlish();
-//		return false;
-//	});
-//	
-//	function animateFlish(){
-//		bg.remove();
-////		bg.css({"-webkit-animation":"fadeOut 0.5s both"});
-////		bg[0].addEventListener("webkitAnimationEnd", function(){
-////			$(this).remove();
-////		}, false); 
-//	}
-//}
-//function choicePopAfter(showObj){
-//	if($(".black-bg").css("display") == "block"){	
-//		var bg = $(".black-bg");
-//		var pop = $(".choice-pop");
-//		var loading = bg.find(".loadEffect");
-//		var li = $(".choice-pop .cont li"); 
-//		
-//		loading.css({"display":"none"});
-//		
-//		var hei = pop.outerHeight();
-//		pop.css({"marginTop":-hei/2});
-//	
-//		pop.css({"display":"block","-webkit-animation":"fadeInUp 0.4s both"});
-//		
-//		bg.on("touchend",function(){
-//			animateFlish();
-//			return false;
-//		});
-//		li.on("click",function(){
-//			showObj.find("i").text($(this).text());
-//			animateFlish();
-//			return false;
-//		});
-//		
-//		function animateFlish(){
-//			bg.css({"-webkit-animation":"fadeOut 0.5s both"});
-//			pop.css({"-webkit-animation":"fadeOutDown 0.4s both"});
-//			bg[0].addEventListener("webkitAnimationEnd", function(){
-//				$(this).remove();
-//			}, false); 
-//			pop[0].addEventListener("webkitAnimationEnd", function(){
-//				$(this).remove();
-//			}, false); 
-//		}	
-//	}else{
-//		return false;
-//	}
-//}
-
+//返回顶部
 function backTop(){
-	var backTop = $(".back-top");
+	var flag = true;
+	var backTop;
 	$(window).on("scroll",function(){
 		if($(this).scrollTop()>800){
-			backTop.show(0);
+			if(flag){
+				flag = false;
+				$('<div class="back-top"><i>&and;</i></div>').appendTo("body");
+				$(".back-top").show(0);
+				$(".back-top").on("touchend",function(){
+					$("html,body").animate({"scrollTop":0},300);
+				});
+			}
 		}else{
-			backTop.hide(0);
+			flag = true;
+			$(".back-top").remove();
 		}
 	});
-	
-	backTop.on("touchend",function(){
-		$("html,body").animate({"scrollTop":0},300);
-	});
 }
-backTop();
-
+//backTop();
+//选择弹框
 function choicePopAfter(popObj,fn){
 	var bg = $(".black-bg");
 	var pop = popObj;
@@ -359,14 +275,14 @@ function choicePopAfter(popObj,fn){
 }
 
 
-
+//时间选择弹框
 function dataInit(clickObj,fn){
 	if(typeof(mobiscrollFlag) == "boolean"){
 		clickObj.mobiscroll().date({ 
 		    theme: 'ios7', 
 		    display: 'bottom',
-		    minDate: new Date(),
-		    maxDate: new Date(2020,1,1),   
+		    minDate: new Date(2010,0,1),
+		    maxDate: new Date(2030,11,30),   
 		    lang: 'zh',
 		    onSelect: function (valueText,inst){
 				console.log(valueText.replace(/\//g,'-')); //返回选择的时间
@@ -400,10 +316,19 @@ function dataInit(clickObj,fn){
 	}
 }
 
-function emptyState(text,obj){
+//为空页
+function emptyState(text,obj,imgUrl){
+	var url;
+	if(!imgUrl){
+		url = "images/school/icon/empty-bg.png";
+	}else if(imgUrl == 1){
+		url = "images/school/icon/kaifa-bg.png";
+	}else if(imgUrl == 2){
+		url = "images/school/icon/noPower-bg.png";
+	}
 	var con = 	'<div class="empty-bg">'+
 					'<div class="empty-cont">'+
-						'<div class="empty-img"><img src="images/school/icon/empty-bg.png"/></div>'+
+						'<div class="empty-img"><img src='+url+'/></div>'+
 						'<div class="empty-text"><i>'+text+'</i></div>'+
 					'</div>'+
 				'</div>';
@@ -441,6 +366,7 @@ function slideNavTwoClick(){
 	});
 }
 
+//样式调整
 function judgeAnd(){
 	var browser={
   	  	versions:function(){
@@ -467,4 +393,36 @@ function judgeAnd(){
 			$(this).find(".t-li-2").css({"height":"2.7em"});
 		});
 	}
+}
+
+//数据加载前成功前创建loading
+function loadingBefor(){
+	var con =   '<div class="loading-bg">'+
+					'<div class="spinner">'+
+					  	'<div class="spinner-container container1">'+
+						    '<div class="circle1"></div>'+
+						    '<div class="circle2"></div>'+
+						    '<div class="circle3"></div>'+
+						    '<div class="circle4"></div>'+
+					  	'</div>'+
+					  	'<div class="spinner-container container2">'+
+						    '<div class="circle1"></div>'+
+						    '<div class="circle2"></div>'+
+						    '<div class="circle3"></div>'+
+						    '<div class="circle4"></div>'+
+					  	'</div>'+
+					  	'<div class="spinner-container container3">'+
+						    '<div class="circle1"></div>'+
+						    '<div class="circle2"></div>'+
+						    '<div class="circle3"></div>'+
+						    '<div class="circle4"></div>'+
+					 	'</div>'+
+					'</div>'+
+				'</div>'
+	
+	$("body").append(con);
+}
+//数据加载成功后去除loading
+function loadingAfter(){
+	$(".loading-bg").remove();
 }

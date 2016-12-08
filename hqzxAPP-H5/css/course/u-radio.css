@@ -1,0 +1,27 @@
+/*.radio-title{
+	
+}*/
+/*.radio-title .t-h1{
+	margin-bottom:0.5em;
+	font-size: 1.5em;
+}*/
+/*.radio-title .t-h1 i{
+	
+}*/
+.tit{
+	margin-bottom:0.5em;
+	font-size: 1.5em;
+}
+.t-h2{
+	margin-bottom:0.8em;
+	color:#666;
+}
+.t-h2 i{
+	font-size: 1em;
+}
+.t-h2 i.i-2{
+	margin-left:1.6em;
+}
+body .foo{
+	margin-top:0;
+}
