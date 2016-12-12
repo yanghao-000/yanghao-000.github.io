@@ -1,0 +1,12 @@
+.slide-nav li:nth-of-type(1){
+	width:25%;
+}
+.slide-nav li:nth-of-type(2){
+	width:25%;
+}
+.slide-nav li:nth-of-type(3){
+	width:20%;
+}
+.slide-nav li:nth-of-type(4){
+	width:30%;
+}

@@ -2,6 +2,7 @@ $(function(){
 	slideHuaDong(true);
 	$(".float-nav-bottom .right").on("touchend",function(){
 		courseBuyPop();
+		return false;
 	});
 });
 
@@ -14,10 +15,12 @@ function courseBuyPop(){
 	
 	$(".course-bug-pop .sec-mid ul li").on("touchend",function(){
 		$(this).addClass("act").siblings().removeClass("act");
+		return false;
 	});
 	
 	$(".black-bg,.course-bug-pop .close-btn").on("touchend",function(){
 		animateFlish();
+		return false;
 	});
 	
 	function animateFlish(){

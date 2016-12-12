@@ -34,9 +34,9 @@ body{
 }
 .slide-nav li em{
 	/*font-size: 1.25em;*/
-	font-size: 1.16em;
+	font-size: 1.18em;
 	display: inline-block;
-	padding: 0.74em 0.4em;
+	padding: 0.78em 0.4em;
 	color:#666;
 }
 .slide-nav li em.act{
