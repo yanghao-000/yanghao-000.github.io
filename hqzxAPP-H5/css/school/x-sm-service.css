@@ -94,19 +94,6 @@
 	font-size: 1em;
 }
 /*===============*/
-.apply-bar{
-    position: relative;
-    font-size: 1em;
-    height: 4em;
-    line-height: 4em;
-    padding: 0 3%;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    color: #666;
-}
-.apply-bar > span{
-	font-size: 1.25em;
-}
 .apply-bar em.red-dian{
 	color:#f16d60;
 	font-size: 1.25em;
@@ -118,18 +105,15 @@
 	border:none;
 	background: none;
 	outline: none;
-	top:0;
-	bottom:0;
-	margin: auto 0;
-	/*margin:0;*/
+	margin:0;
 	padding:0;
 	/*height:100%;*/
-	font-size: 1.25em;
-	height:2em;
+	height:2.9em;
 	width:68%;
 	right: 3%;
 	font-family: "微软雅黑";
-	/*line-height: 2.9em;*/
+	font-size: 1.0em;
+	line-height: 2.9em;
 }
 .apply-ta{
 	-webkit-box-sizing: border-box;
