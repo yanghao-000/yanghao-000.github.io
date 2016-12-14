@@ -29,9 +29,9 @@ $(function(){
 
 //单选勾上
 function radioClick(){
-	$(".apply-bar .t-fen-gs .t-h1 .t-i1").on("touchend",function(){
-		if(!$("this").hasClass("act")){
-			$(this).addClass("act").parent().siblings().find(".t-i1").removeClass("act");
+	$(".apply-bar .t-fen-gs .t-h1").on("touchend",function(){
+		if(!$("this").find(".t-i1").hasClass("act")){
+			$(this).find(".t-i1").addClass("act").parent().siblings().find(".t-i1").removeClass("act");
 		}
 	});
 }
@@ -59,10 +59,11 @@ function navJinTuiSet(i){
 }
 //选择弹框
 function clickSelectPop(clickObj,popObj){
-	clickObj.on("click",function(){
+	clickObj.on("touchend",function(){
 		var that = $(this);
 		choicePopAfter(popObj,function(obj){
 			that.find("i").text($(obj).text());
 		});
+		return false;
 	});
 }
