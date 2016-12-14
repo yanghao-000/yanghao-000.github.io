@@ -377,3 +377,33 @@ function loadingBefor(){
 function loadingAfter(){
 	$(".loading-bg").remove();
 }
+
+//touchend解决办法
+function touchendResolve(cobj,fn){
+	var posX; 
+	var posY;
+	var posXend;
+	var posYend;
+	var slideX = 0;
+	var slideY = 0;
+    cobj.on("touchstart",function(){
+    	slideX = 0;
+    	slideY = 0;
+        var touch = event.targetTouches[0];
+        posX = touch.clientX;
+        posY = touch.clientY;
+    });
+	cobj.on("touchmove",function(){
+    	var touch = event.targetTouches[0];
+        posXend = touch.clientX;
+        posYend = touch.clientY;
+        slideX = Math.abs(posXend - posX);
+        slideY = Math.abs(posYend - posY);
+    });
+    cobj.on("touchend",function(event){
+    	if(slideX<4&&slideY<4){
+    		if(fn){fn();}
+    	}
+   		event.preventDefault();
+    });
+}

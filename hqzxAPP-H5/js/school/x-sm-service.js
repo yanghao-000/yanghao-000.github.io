@@ -4,10 +4,18 @@ $(function(){
 //	单选勾上
 	radioClick();
 	//	选择弹框
-	clickSelectPop($(".click-select-1"),$(".choice-pop-1"));
-	clickSelectPop($(".click-select-2"),$(".choice-pop-2"));
-	clickSelectPop($(".click-select-3"),$(".choice-pop-3"));
-	clickSelectPop($(".click-select-4"),$(".choice-pop-4"));
+	touchendResolve($(".click-select-1"),function(){
+		clickSelectPop($(".click-select-1"),$(".choice-pop-1"));
+	});
+	touchendResolve($(".click-select-2"),function(){
+		clickSelectPop($(".click-select-2"),$(".choice-pop-2"));
+	});
+	touchendResolve($(".click-select-3"),function(){
+		clickSelectPop($(".click-select-3"),$(".choice-pop-3"));
+	});
+	touchendResolve($(".click-select-4"),function(){
+		clickSelectPop($(".click-select-4"),$(".choice-pop-4"));
+	});
 //	点击下一步
 	$(".sevice-btn.sub-btn.sev-next-btn").on("click",function(){
 		firstClickNext();
@@ -23,7 +31,6 @@ $(function(){
 		firstClickNext();
 		navJinTuiSet(mySwiper.activeIndex);
 	});
-	
 	
 });
 
@@ -57,13 +64,21 @@ function navJinTuiSet(i){
 		obj.eq(j).addClass("act");
 	}
 }
+
+//选择弹框
+//function clickSelectPop(clickObj,popObj){
+//	clickObj.on("touchend",function(){
+//		var that = $(this);
+//		choicePopAfter(popObj,function(obj){
+//			that.find("i").text($(obj).text());
+//		});
+//		return false;
+//	});
+//}
+
 //选择弹框
 function clickSelectPop(clickObj,popObj){
-	clickObj.on("touchend",function(){
-		var that = $(this);
-		choicePopAfter(popObj,function(obj){
-			that.find("i").text($(obj).text());
-		});
-		return false;
+	choicePopAfter(popObj,function(obj){
+		clickObj.find("i").text($(obj).text());
 	});
 }
