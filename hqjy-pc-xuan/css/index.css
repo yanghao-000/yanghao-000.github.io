@@ -1,9 +1,9 @@
 *{margin:0;padding:0;}
 html,body{font-family: "微软雅黑";}
-/*.page1,.page2,.page3,.page4,.page5,.page6{
+.page1,.page2,.page3,.page4,.page5,.page6{
 	position: relative;
 	height: 100%;
-}*/
+}
 .page1{
 	background: url(../img/bg-0.jpg) no-repeat center center;
 }
