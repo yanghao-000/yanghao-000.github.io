@@ -20,6 +20,13 @@
 	margin:auto 0;
 	right:4%;
 }
+.tips-bar.tips-bar-move{
+	-webkit-box-sizing: border-box;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+}
 /*下载按钮======================*/
 .download-btn{
 	width:51.6%;
@@ -197,7 +204,7 @@
 }
 /*第四部分==============*/
 .section-4{
-	background: url(../img/bg-2.jpg) no-repeat center 0;
+	background: url(../img/bg-4.jpg) no-repeat center 0;
 	-webkit-background-size: 100%;
 }
 .ani-4{
@@ -222,53 +229,3 @@
 	color:#fff;
 }
 /*==========================*/
-.ani-1 .t-h1{
-	-webkit-transform: rotate(4deg) translate(20px);
-	/*-webkit-animation: ani-1-left 1.2s both;*/
-}
-.ani-1 .t-h2{
-	-webkit-transform: rotate(-5deg) translate(-20px);
-	/*-webkit-animation: ani-1-right 1.2s both;*/
-}
-/*====*/
-.ani-2 .t-h1{
-	-webkit-transform: translate(20px,20px);
-	/*-webkit-animation: ani-2-left 1.2s both;*/
-}
-.ani-2 .t-h2{
-	-webkit-transform: translate(-20px,-20px);
-	/*-webkit-animation: ani-2-right 1.2s both;*/
-}
-/*====*/
-.ani-3 .t-h1{
-	-webkit-transform: rotate(4deg) translate(20px);
-	/*-webkit-animation: ani-1-left 1.2s both;*/
-}
-.ani-3 .t-h2{
-	-webkit-transform: scale(0.5) translate(-40px);
-	/*-webkit-animation: ani-3-right 1.2s both;*/
-}
-/*====*/
-.ani-4 .t-h1{
-	-webkit-transform: scale(0);
-	/*-webkit-animation: ani-4-left 1.2s both;*/
-}
-/*=============*/
-.ani-1-left{
-	-webkit-animation: ani-1-left 1.2s both;
-}
-.ani-1-right{
-	-webkit-animation: ani-1-right 1.2s both;
-}
-.ani-2-left{
-	-webkit-animation: ani-2-left 1.2s both;
-}
-.ani-2-right{
-	-webkit-animation: ani-2-right 1.2s both;
-}
-.ani-3-right{
-	-webkit-animation: ani-3-right 1.2s both;
-}
-.ani-4-left{
-	-webkit-animation: ani-4-left 1.2s both;
-}

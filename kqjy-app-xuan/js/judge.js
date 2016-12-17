@@ -1,4 +1,4 @@
-$(function(){
+//$(function(){
 	var browser={
   	  	versions:function(){
             var u = navigator.userAgent, app = navigator.appVersion;
@@ -27,4 +27,4 @@ $(function(){
 			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v2.0.0.apk";
 		}
 	}
-});
+//});
