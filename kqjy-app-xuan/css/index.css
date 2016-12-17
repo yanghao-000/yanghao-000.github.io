@@ -28,6 +28,9 @@
 	width:100%;
 	z-index: 999;
 }
+.tips-bar,.tips-bar-move{
+	display: none;
+}
 /*下载按钮======================*/
 .download-btn{
 	width:51.6%;
