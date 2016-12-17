@@ -25,7 +25,6 @@ $(function(){
 	
 	function download(){
 		if(browser.versions.ios){
-			$(".tips-bar,.tips-bar-move").fadeIn();
 			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
 		}else if(browser.versions.android){
 			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v2.0.0.apk";

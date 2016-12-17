@@ -21,15 +21,16 @@
 	right:4%;
 }
 .tips-bar.tips-bar-move{
-	-webkit-box-sizing: border-box;
+	/*-webkit-box-sizing: border-box;*/
 	position: fixed;
 	top:0;
 	left:0;
-	width:100%;
+	width:92%;
 	z-index: 999;
 }
-.tips-bar,.tips-bar-move{
-	display: none;
+.tips-bar{
+	border-bottom:1px solid #ccc;
+	/*display: none;*/
 }
 /*下载按钮======================*/
 .download-btn{
@@ -107,7 +108,7 @@
 }
 .ani-1{
 	position: relative;
-	height:30em;
+	height:28em;
 }
 .ani-1 .t-h1{
 	position: absolute;
@@ -227,7 +228,7 @@
 .section-5{
 	/*background: url(../img/bg-5.jpg) no-repeat center 0;
 	-webkit-background-size: 100%;*/
-	height:26.8em;
+	height:26em;
 }
 .section-5 .tit .t-h1,.section-5 .tit .t-h2{
 	color:#fff;
