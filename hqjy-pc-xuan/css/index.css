@@ -627,3 +627,11 @@ body .pointIe{
 	top:0;
 	margin-top:50px;
 }
+/*=================*/
+html,body{
+	overflow: hidden;
+    height: 100%;
+}
+#fullpage{
+	height:100%;
+}
