@@ -27,9 +27,9 @@ body .foo{
 	margin-top:0;
 }
 /*mp3播放器=====================*/
-body{
+/*body{
 	padding:4%;
-}
+}*/
 .mp3-box{
 	border:1px solid #eee;
 	height:4em;
@@ -52,6 +52,9 @@ body{
 }
 .mp3-box .t-i2{
 	width:74%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .mp3-box .t-i3{
 	width:16%;

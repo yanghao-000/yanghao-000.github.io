@@ -5,8 +5,8 @@ $(function(){
 function playMp3(){
 	var mp3 = $("video.mp3")[0];
 	var bar = $(".mp3-box .mp3-bar");
-//  取音频时长
-	$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));   
+	$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
+	
 //	点击播放
 	$(".mp3-box").on("click",function(){
 		if(mp3.paused){
@@ -27,5 +27,9 @@ function playMp3(){
 //	结束
 	mp3.onended = function(){
 		bar.hide(0).css({"width":"0"});
+	}
+//  取音频时长
+	mp3.oncanplay = function(){
+		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));   
 	}
 }
