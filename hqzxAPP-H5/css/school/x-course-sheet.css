@@ -156,7 +156,7 @@ body{
 }
 .box .sec-bot .sub-box li h3{
 	font-size: 1.16em;
-	text-indent: -0.3em;
+	/*text-indent: -0.3em;*/
 	margin-bottom:0.3em;
 	width:74%;
 	overflow: hidden;

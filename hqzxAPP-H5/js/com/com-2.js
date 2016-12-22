@@ -4,12 +4,16 @@ $(function(){
 document.body.addEventListener('touchstart', function (){});
 
 //滑动切换
-function slideHuaDong(flag){
+function slideHuaDong(flag,autoHeiFlag){
 	var nav = $(".slide-nav em");
 	var li = $(".slide-nav li");
 	var bar = $(".slide-nav .nav-bar");
+	
+	var autoHeight;
+	if(autoHeiFlag==false){autoHeight=autoHeiFlag;}else{autoHeight=true;}
+	
 	var mySwiper = new Swiper(".swiper-container",{
-		autoHeight: true,
+		autoHeight: autoHeight,
 		onTouchStart: function(swiper){
 //			wrap.height('auto');
 		},
@@ -328,7 +332,7 @@ function emptyState(text,obj,imgUrl){
 	}
 	var con = 	'<div class="empty-bg">'+
 					'<div class="empty-cont">'+
-						'<div class="empty-img"><img src='+url+'/></div>'+
+						'<div class="empty-img"><img src='+url+' /></div>'+
 						'<div class="empty-text"><i>'+text+'</i></div>'+
 					'</div>'+
 				'</div>';

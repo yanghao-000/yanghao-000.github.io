@@ -14,7 +14,7 @@
 	font-weight: bold;
 }
 .t-h2{
-	margin-bottom:0.8em;
+	margin-bottom:1.6em;
 	color:#666;
 }
 .t-h2 i{
@@ -25,4 +25,47 @@
 }
 body .foo{
 	margin-top:0;
+}
+/*mp3播放器=====================*/
+body{
+	padding:4%;
+}
+.mp3-box{
+	border:1px solid #eee;
+	height:4em;
+	padding: 0 4%;
+	margin-bottom:2em;
+	position: relative;
+}
+.mp3-box .t-i1{
+	width:10%;
+}
+.mp3-box .t-i1 i{
+	width:1.05em;
+	height:1.45em;
+	background: url(../../images/main/icon/mp3-speak.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.mp3-box .t-i2,.mp3-box .t-i3{
+	font-size: 1.25em;
+	color:#666;
+}
+.mp3-box .t-i2{
+	width:74%;
+}
+.mp3-box .t-i3{
+	width:16%;
+	text-align: right;
+}
+video.mp3{
+	display: none;
+}
+.mp3-box .mp3-bar{
+	position: absolute;
+	left:0;
+	bottom:0;
+	background-color: #12C38C;
+	width:0;
+	height:0.1em;
+	display: none;
 }

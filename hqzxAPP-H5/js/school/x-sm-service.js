@@ -31,7 +31,12 @@ $(function(){
 		firstClickNext();
 		navJinTuiSet(mySwiper.activeIndex);
 	});
-	
+//	错误弹出 提示框
+	popup.tips("验证码错误");
+//	点击获取验证码
+	clickPhoneYzm($(".sevice-phone-yzm"),function(){
+		alert(123);
+	});
 });
 
 //单选勾上
@@ -81,4 +86,34 @@ function clickSelectPop(clickObj,popObj){
 	choicePopAfter(popObj,function(obj){
 		clickObj.find("i").text($(obj).text());
 	});
+}
+//点击获取验证码
+function clickPhoneYzm(obj,fn){
+	var timer;
+	var i = 60;
+	var flag = true;		
+
+	obj.on("click",function(){
+		if(flag){
+			flag = false;
+			if(fn){fn()};
+			var that = $(this);
+			that.text(i+"S");
+			timer = setInterval(function(){
+				cd(that,i);
+			},100);
+		}
+	});
+	
+	function cd(obj){
+		i--;
+		if(i>0){
+			obj.text(i+"S");
+		}else{
+			clearInterval(timer);
+			i = 60;
+			obj.text("获取验证码");
+			flag = true;
+		}
+	}
 }

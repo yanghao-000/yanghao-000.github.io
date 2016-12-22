@@ -1,80 +1,46 @@
 $(function(){
 	slideHuaDong(true);
-	
-	videoPlay(); //点击播放
-
+	slideUpDown();
+	judgeAndTeacher();
 });
-function videoPlay(){
-	var videoOut = $(".video-out"); 
-	var video = $("video").get(0);
-	document.IsFullScreen = false;
-	
-	$(".float-nav-bottom .right").on("click",function(){
-		videoOut.show(0);
-		video.play();
-		launchFullscreen(video);
-	});
-	
-	video.addEventListener("webkitfullscreenchange",function(){
-        if(document.IsFullScreen){
-        	document.IsFullScreen = false;
-        	videoOut.hide(0);
-			console.log(1);
-			
-		}else{
-			document.IsFullScreen = true;
-			console.log(2);		
-		}
-	});
-}
 
-function launchFullscreen(element) {
-	//此方法不可以在異步任務中執行，否則火狐無法全屏
-	if(element.requestFullscreen) {
-	element.requestFullscreen();
-	} else if(element.mozRequestFullScreen) {
-	element.mozRequestFullScreen();
-	} else if(element.msRequestFullscreen){ 
-	element.msRequestFullscreen(); 
-	} else if(element.oRequestFullscreen){
-	element.oRequestFullscreen();
-	}
-	else if(element.webkitRequestFullscreen)
-	{
-	element.webkitRequestFullScreen();
-	}else{
-	
-//	var docHtml = document.documentElement;
-//	var docBody = document.body;
-//	var videobox = document.getElementById('videobox');
-//	var cssText = 'width:100%;height:100%;overflow:hidden;';
-//	docHtml.style.cssText = cssText;
-//	docBody.style.cssText = cssText;
-//	videobox.style.cssText = cssText+';'+'margin:0px;padding:0px;';
-	
-	}
-	document.IsFullScreen = false;
-}
+//点击章节展开
+function slideUpDown(){
+	var zhang = $(".box-out .box .box-zhang");
+	var jie = $(".box-out .box .box-jie");
+	var wrap = $(".swiper-wrapper");
 
-function exitFullscreen(){
-	if (document.exitFullscreen) {
-	document.exitFullscreen();
-	} else if (document.msExitFullscreen) {
-	document.msExitFullscreen();
-	} else if (document.mozCancelFullScreen) {
-	document.mozCancelFullScreen();
-	} else if(document.oRequestFullscreen){
-	document.oCancelFullScreen();
-	}else if (document.webkitExitFullscreen){
-	document.webkitExitFullscreen();
-	}else{
-//	var docHtml = document.documentElement;
-//	var docBody = document.body;
-//	var videobox = document.getElementById('videobox');
-//	docHtml.style.cssText = "";
-//	docBody.style.cssText = "";
-//	videobox.style.cssText = "";
-	
-	}
-	document.IsFullScreen = true;
+	var posX; 
+	var posY;
+	var posXend;
+	var posYend;
+	var slideX = 0;
+	var slideY;
+    zhang.on("touchstart",function(){
+    	slideX = 0;
+        var touch = event.targetTouches[0];
+        posX = touch.clientX;
+        posY = touch.clientY;
+    });
+	zhang.on("touchmove",function(){
+    	var touch = event.targetTouches[0];
+        posXend = touch.clientX;
+        posYend = touch.clientY;
+        slideX = Math.abs(posXend - posX);
+        slideY = posYend - posY;
+    });
+    zhang.on("touchend",function(event){
+    	if(slideX<4){
+    		if($(this).hasClass("act")){
+				$(this).removeClass("act");
+				wrap.css({"height":"auto"});
+				$(this).siblings(".box-jie").stop(true,true).slideUp(200);
+			}else{
+				$(this).addClass("act");
+				wrap.css({"height":"auto"});
+				$(this).siblings(".box-jie").stop(true,true).slideDown(200);
+			}
+    	}
+// 		event.preventDefault();
+    });
 }

@@ -1,4 +1,4 @@
-.slide-nav li:nth-of-type(1){
+/*.slide-nav li:nth-of-type(1){
 	width:25%;
 }
 .slide-nav li:nth-of-type(2){
@@ -9,4 +9,121 @@
 }
 .slide-nav li:nth-of-type(4){
 	width:30%;
+}*/
+.ban .swiper-slide .t-h4{
+	top:80%;
+	width:100%;
+	text-align: center;
+	height:2em;
+}
+.ban .swiper-slide .t-h4 .t-i1{
+	width:1.1em;
+	height:1em;
+	background: url(../../images/icon/vip-icon.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.ban .swiper-slide .t-h2{
+	top: 13%;
+}
+/*========================*/
+.zong, .fen{
+	position: relative;
+	height:5.6em;
+}
+.fen h1{
+	background: none;
+}
+.ssr{
+	top:-4.4em;
+}
+.ssr h2{
+	height:3.94em;
+}
+.num{
+	font-size: 1em;
+}
+.num i{
+	font-size: 1em;
+	color:#666;
+}
+.zong.act h1,.zong.act .num i,.fen.act h1,.fen.act .num i{
+	color:#12C38C;
+}
+.t-zong-dan .ss{
+	width: 1.6em;
+	margin-top:0.3em;
+}
+.t-zong-dan .ss p{
+	width: 0.8em;
+    height: 0.8em;
+    background: url(../../images/icon/title-green-r.png) no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    margin: 0 auto;
+}
+.zong h1,.num{
+	width:70%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*======免费试听==========*/
+.jyxt-list-btn{
+	position: absolute;
+	width:24%;
+	height:2em;
+	line-height: 2em;
+	-webkit-border-radius: 2em;
+	text-align: center;
+	background-color: #12C38C;
+	color:#fff;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	right:3%;
+}
+.jyxt-list-btn:active{
+	opacity: 0.6;
+}
+.jyxt-list-btn i{
+	font-size: 1em;
+}
+.jyxt-list-btn.gray{
+	background-color: #ccc;
+}
+/*======成为会员===========*/
+body{
+	padding-bottom:3.5em;
+}
+.be-vip-btn{
+	width:100%;
+	height:3.5em;
+	line-height: 3.5em;
+	position: fixed;
+	bottom:0;
+	left:0;
+	background-color: #12C38C;
+	color:#fff;
+	text-align: center;
+	z-index: 999;
+}
+.be-vip-btn:active{
+	opacity: 0.6;
+}
+.be-vip-btn i{
+	font-size: 1.25em;
+}
+/*======播放器============*/
+.video-out{
+	width:100%;
+	display: none;
+}
+.video-out video{
+	width:100%;
+}
+/*===============*/
+.pop-pause .t-h3{
+	height: 1.6em;
+}
+.pop-pause{
+	padding: 5% 5% 0;
 }

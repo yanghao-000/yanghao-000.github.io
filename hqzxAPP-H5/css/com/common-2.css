@@ -672,6 +672,7 @@ body{
 /*提示框*/
 .tips-popup{
 	position: fixed;
+	z-index: 99999;
 	text-align: center;
 	width:36%;
 	font-size: 1.25em;

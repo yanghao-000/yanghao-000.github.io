@@ -1,0 +1,138 @@
+/*@media only screen and (min-width: 320px) and (max-width: 374px) {
+	body{font-size: 75%;}
+}
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+	body{font-size: 87.5%;}
+}
+@media only screen and (min-width: 414px){
+	body{font-size: 94%;}
+}*/
+.sec-bot{
+	position: relative;
+	/*font-size: 1.25em;*/
+	height:3.2em;
+	line-height: 3.2em;
+	width:94%;
+	margin:0 auto;
+	border-top:1px solid #eee;
+	color:#999;
+}
+.sec-bot:active{
+	-webkit-box-sizing: border-box;
+	background-color: #f5f5f5;
+	width:100%;
+	padding:0 3%;
+}
+.sec-bot i{
+	font-size: 1em;
+}
+.sec-bot:active em{
+	right:3%;
+}
+/*================*/
+.sum-box{
+	padding-top:2%;
+}
+.boss-box{
+	width:96%;
+	margin:0 auto;
+	background-color: #fff;
+	margin-bottom:2%;
+	-webkit-border-radius: 7px;
+	border:1px solid #eee;
+}
+.boss-box .t-h1,.boss-box .t-h2{
+	width:94%;
+	margin:0 auto;
+	border-bottom:1px solid #eee;
+}
+.boss-box .t-h1{
+	padding-top:0.8em;
+	padding-bottom:0.8em;
+	height:4.2em;
+}
+.boss-box .t-h1 .t-p1{
+	width:3.6em;
+	height:3.6em;
+	margin-top:0.3em;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+}
+.boss-box .t-h1 .t-p1 img{
+	width:100%;
+	height:100%;
+}
+.boss-box .t-h1 .t-p2{
+	width:81%;
+	margin-left:4%;
+	height:4.2em;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+}
+.boss-box .t-h1 .t-p2.dan{
+	height:2.9em;
+}
+.boss-box .t-h1 .t-p2 .t-div-1{
+	
+}
+.boss-box .t-h1 .t-p2 .t-div-1 i{
+	font-size: 1.16em;
+}
+.boss-box .t-h1 .t-p2 .t-div-2{
+	color:#999;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	border-bottom:none;
+}
+.boss-box .t-h2{
+	line-height: 1.5;
+	margin-top:0.8em;
+	margin-bottom:0.8em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	border-bottom:none;
+}
+.boss-box .t-h2 i{
+	font-size: 1.25em;
+}
+
+/*语录详情===============*/
+.boss-det-box{
+	padding-top:1.6em;
+	background-color: #fff;
+}
+.boss-det-box .tit{
+	color:#666;
+	text-align: center;
+	margin-bottom: 1.6em;
+	line-height: 1.6em;
+}
+.boss-det-box .tit i{
+	font-size: 1.25em;
+}
+.boss-det-box .tit em{
+	display: inline-block;
+	width:0.7em;
+	height:1.13em;
+	background: url(../../images/school/icon/xiegang.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.boss-det-box .tit .t-i1{
+	padding:0 1em;
+}
+.boss-det-box .cont{
+	padding:0 4%;
+	line-height: 1.8;
+}
+.boss-det-box .cont i{
+	font-size: 1.5em;
+}
