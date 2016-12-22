@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>恒企会计 —一个免费学会计的APP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common/base.css">
+    <link rel="stylesheet" href="css/hqzx.css">
+</head>
+<body>
+    <div class="pop">
+        <img src="images/icon.png" alt="" style="position:absolute;z-index:-9999;width:100%">
+    </div>
+	<div class="swiper-container all_box">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide purple" >
+            	<img src="images/bg/purple.png" class="an-png" alt="">
+            	<div class="swiper-box">
+            		<div class="box-h1">经验课堂 天天干货</div>
+            		<div class="box-h2"> 微课 • 电台 • 录播 </div>
+            		<div class="box-btn">
+            			<a href="javascript:;">下载恒企会计</a>
+            		</div>
+            	</div>
+            	<div class="box-p">
+        			<img src="images/temp/p1.png" alt="">
+        		</div>
+        		<div class="top-png">
+        			<img src="http://img.hengqijy.com/pc/statics/images/20160227/kdm/btn01_arrow.png">
+        		</div>
+            </div>
+            <div class="swiper-slide yellow" >
+            	<img src="images/bg/yellow.png" class="an-png" alt="">
+            	<div class="swiper-box">
+            		<div class="box-h1">免费答疑 想问就问</div>
+            		<div class="box-h2"> 图文 • 语音 • 白板 </div>
+            		<div class="box-btn">
+            			<a href="javascript:;">下载恒企会计</a>
+            		</div>
+            	</div>
+            	<div class="box-p">
+        			<img src="images/temp/p2.png" alt="">
+        		</div>
+        		<div class="top-png">
+        			<img src="http://img.hengqijy.com/pc/statics/images/20160227/kdm/btn01_arrow.png">
+        		</div>
+            </div>
+            <div class="swiper-slide blue" >
+            	<img src="images/bg/blue.png" class="an-png" alt="">
+            	<div class="swiper-box">
+            		<div class="box-h1">智能题库 快速拿证</div>
+            		<div class="box-h2"> 考点 • 考题 • 解析</div>
+            		<div class="box-btn">
+            			<a href="javascript:;">下载恒企会计</a>
+            		</div>
+            	</div>
+            	<div class="box-p">
+        			<img src="images/temp/p3.png" alt="">
+        		</div>
+        		<div class="top-png">
+        			<img src="http://img.hengqijy.com/pc/statics/images/20160227/kdm/btn01_arrow.png">
+        		</div>
+            </div>
+            <div class="swiper-slide orange" >
+            	<img src="images/bg/orange.png" class="an-png" alt="">
+            	<div class="swiper-box">
+            		<div class="box-h1">020服务 200+校区</div>
+            		<div class="box-h2">教务 • 教学 • 财务顾问</div>
+            		<div class="box-btn">
+            			<a href="javascript:;">下载恒企会计</a>
+            		</div>
+            	</div>
+            	<div class="box-p">
+        			<img src="images/temp/p4.png" alt="">
+        		</div>
+            </div>
+        </div>
+		<div class="swiper-pagination" style="display: none"></div>
+	</div>
+    <div class="pop-load-tip" style="display: none;position: fixed;width:100%;height:100%;z-index: 10000;">
+        <img src="" style="width:100%;height:100%;">
+    </div>
+</body>
+</html>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+//      var browser={
+//          versions:function(){
+//              var u = navigator.userAgent, app = navigator.appVersion;
+//              return {
+//                  webKit: u.indexOf('AppleWebKit') > -1, 
+//                  gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, 
+//                  mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+//                  ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+//                  android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, 
+//                  iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+//                  iPad: u.indexOf('iPad') > -1, //是否iPad
+//                  webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+//              };
+//           }(),
+//           language:(navigator.browserLanguage || navigator.language).toLowerCase()
+//      }
+//
+//      
+//      var iosCanDown = true;  //苹果下载接口         false --关闭   true --开启
+//      var androidCanDown = true; //安卓下载接口       false --关闭   true --开启
+//      // 手机系统检测
+//      if(browser.versions.ios){/*IOS*/
+//          // 在微信浏览器下弹出的提示
+//          $(".pop-dload-tip img").attr('src','http://m.kjcity.com/kuaida_weixin/images/pop_tit_bg.png');
+//
+//          // 判断是否可以下载
+//          if(iosCanDown){
+//              $(".lastDowloade img").attr('src','http://m.kjcity.com/kuaida_weixin/images/btn_dol_0.png');
+//              window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8"; //跳转APP下载链接
+//          }else{
+//              $(".lastDowloade img").attr('src','http://m.kjcity.com/kuaida_weixin/images/btn_dol_none.png');
+//          }
+//      }else if(browser.versions.android){
+//          // 在微信浏览器下弹出的提示
+//          $(".pop-dload-tip img").attr('src','http://m.kjcity.com/kuaida_weixin/images/androind_tip.png');
+////                      $(".pop-dload-tip img").src='images/kd20160729/images/pop_tit_bg.png';
+//          // 判断是否可以下载
+//          if(androidCanDown){
+//              $(".lastDowloade img").attr('src','http://m.kjcity.com/kuaida_weixin/images/btn_dol_0.png');
+//              // window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v1.5.3_10000010.apk"; //跳转APP下载链接
+//          }else{
+//              $(".lastDowloade img").attr('src','http://m.kjcity.com/kuaida_weixin/images/btn_dol_none.png');
+//          }
+//      }
+//
+//      // 微信浏览器判断
+//      function isWeiXin(){
+//          var ua = window.navigator.userAgent.toLowerCase();
+//          if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+//              $(".pop-dload-tip").fadeIn();
+//              return true;
+//          }else{
+//              return false;
+//          }
+//
+//      }
+//      $(".box-btn a").on("click",function(){
+//          if(browser.versions.ios){
+//              if(iosCanDown){
+//                  isWeiXin();
+//                  window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8"; //跳转APP下载链接
+//              }else{
+//                  return alert("IOS版本正在开发中");
+//              }
+//          }else if(browser.versions.android){
+//              if(androidCanDown){
+//                  if(isWeiXin()) return;
+//                  window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v1.5.3.apk"; //跳转APP下载链接
+//              }else{
+//                  
+//                  return alert("Android版本正在开发中");
+//              }
+//          }
+//      })
+//
+//      $(".pop-dload-tip img").click(function(){
+//          $(".pop-dload-tip").fadeOut();
+//      });
+//
+//  });
+    
+    
+    
+    var browser={
+  	  	versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {
+                webKit: u.indexOf('AppleWebKit') > -1, 
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, 
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, 
+                iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                wx: window.navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == 'micromessenger'
+            };
+         }(),
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()
+	}
+	var tipsPop = $(".pop-dload-tip");
+	
+	$(".box-btn").on("click",function(){
+		download();
+	});
+	judgeWeb();
+	
+	function download(){
+		tipsPop.fadeIn();
+		if(browser.versions.ios){
+			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+		}else if(browser.versions.android){
+			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v1.5.3.apk";
+		}
+	}
+	function judgeWeb(){
+		if(!browser.versions.wx){
+			download();
+		}
+		if(browser.versions.ios){
+			tipsPop.find("img").attr("src","images/tips/ios-tips.png");
+		}else if(browser.versions.android){
+			tipsPop.find("img").attr("src","images/tips/and-tips.png");	
+		}
+		tipsPop.find("img").click(function(){
+            tipsPop.fadeOut();
+        });
+	}
+});
+</script>
+
