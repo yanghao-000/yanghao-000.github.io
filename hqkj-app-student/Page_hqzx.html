@@ -78,7 +78,7 @@
         </div>
 		<div class="swiper-pagination" style="display: none"></div>
 	</div>
-    <div class="pop-load-tip" style="display: none;position: fixed;width:100%;height:100%;z-index: 10000;">
+    <div class="pop-load-tip" style="position: fixed;width:100%;height:100%;z-index: 10000;top:0;left:0;display: none;">
         <img src="" style="width:100%;height:100%;">
     </div>
 </body>
@@ -94,90 +94,7 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 
 <script type="text/javascript">
-    $(function(){
-//      var browser={
-//          versions:function(){
-//              var u = navigator.userAgent, app = navigator.appVersion;
-//              return {
-//                  webKit: u.indexOf('AppleWebKit') > -1, 
-//                  gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, 
-//                  mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
-//                  ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-//                  android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, 
-//                  iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
-//                  iPad: u.indexOf('iPad') > -1, //是否iPad
-//                  webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
-//              };
-//           }(),
-//           language:(navigator.browserLanguage || navigator.language).toLowerCase()
-//      }
-//
-//      
-//      var iosCanDown = true;  //苹果下载接口         false --关闭   true --开启
-//      var androidCanDown = true; //安卓下载接口       false --关闭   true --开启
-//      // 手机系统检测
-//      if(browser.versions.ios){/*IOS*/
-//          // 在微信浏览器下弹出的提示
-//          $(".pop-dload-tip img").attr('src','http://m.kjcity.com/kuaida_weixin/images/pop_tit_bg.png');
-//
-//          // 判断是否可以下载
-//          if(iosCanDown){
-//              $(".lastDowloade img").attr('src','http://m.kjcity.com/kuaida_weixin/images/btn_dol_0.png');
-//              window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8"; //跳转APP下载链接
-//          }else{
-//              $(".lastDowloade img").attr('src','http://m.kjcity.com/kuaida_weixin/images/btn_dol_none.png');
-//          }
-//      }else if(browser.versions.android){
-//          // 在微信浏览器下弹出的提示
-//          $(".pop-dload-tip img").attr('src','http://m.kjcity.com/kuaida_weixin/images/androind_tip.png');
-////                      $(".pop-dload-tip img").src='images/kd20160729/images/pop_tit_bg.png';
-//          // 判断是否可以下载
-//          if(androidCanDown){
-//              $(".lastDowloade img").attr('src','http://m.kjcity.com/kuaida_weixin/images/btn_dol_0.png');
-//              // window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v1.5.3_10000010.apk"; //跳转APP下载链接
-//          }else{
-//              $(".lastDowloade img").attr('src','http://m.kjcity.com/kuaida_weixin/images/btn_dol_none.png');
-//          }
-//      }
-//
-//      // 微信浏览器判断
-//      function isWeiXin(){
-//          var ua = window.navigator.userAgent.toLowerCase();
-//          if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-//              $(".pop-dload-tip").fadeIn();
-//              return true;
-//          }else{
-//              return false;
-//          }
-//
-//      }
-//      $(".box-btn a").on("click",function(){
-//          if(browser.versions.ios){
-//              if(iosCanDown){
-//                  isWeiXin();
-//                  window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8"; //跳转APP下载链接
-//              }else{
-//                  return alert("IOS版本正在开发中");
-//              }
-//          }else if(browser.versions.android){
-//              if(androidCanDown){
-//                  if(isWeiXin()) return;
-//                  window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v1.5.3.apk"; //跳转APP下载链接
-//              }else{
-//                  
-//                  return alert("Android版本正在开发中");
-//              }
-//          }
-//      })
-//
-//      $(".pop-dload-tip img").click(function(){
-//          $(".pop-dload-tip").fadeOut();
-//      });
-//
-//  });
-    
-    
-    
+$(function(){  
     var browser={
   	  	versions:function(){
             var u = navigator.userAgent, app = navigator.appVersion;
@@ -195,15 +112,23 @@
          }(),
          language:(navigator.browserLanguage || navigator.language).toLowerCase()
 	}
-	var tipsPop = $(".pop-dload-tip");
+	var tipsPop = $(".pop-load-tip");
 	
 	$(".box-btn").on("click",function(){
-		download();
+		downloadWeixin();
+		return false;
 	});
 	judgeWeb();
 	
-	function download(){
+	function downloadWeixin(){
+		if(browser.versions.ios){
+			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+		}else if(browser.versions.android){
+			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v1.5.3.apk";
+		}
 		tipsPop.fadeIn();
+	}
+	function download(){
 		if(browser.versions.ios){
 			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
 		}else if(browser.versions.android){
@@ -221,6 +146,7 @@
 		}
 		tipsPop.find("img").click(function(){
             tipsPop.fadeOut();
+            return false;
         });
 	}
 });
