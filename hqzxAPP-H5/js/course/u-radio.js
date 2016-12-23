@@ -6,6 +6,8 @@ function playMp3(){
 	var mp3 = $("video.mp3")[0];
 	var bar = $(".mp3-box .mp3-bar");
 	
+	
+	mp3.play();
 //	点击播放
 	$(".mp3-box").on("click",function(){
 		if(mp3.paused){

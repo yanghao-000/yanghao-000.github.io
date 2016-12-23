@@ -61,7 +61,7 @@ body .foo{
 	text-align: right;
 }
 video.mp3{
-	/*display: none;*/
+	display: none;
 }
 .mp3-box .mp3-bar{
 	position: absolute;
