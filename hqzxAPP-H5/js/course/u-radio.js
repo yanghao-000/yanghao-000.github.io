@@ -26,31 +26,33 @@ function playMp3(){
 		}else{
 			mp3.pause();
 			bar.hide(0);
-		}	
+		}
+		return false;
 	});
 //	进度条
 	mp3.ontimeupdate = function(){
 		if (!isNaN(mp3.duration)){
-			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
+			$(".mp3-box .t-i3").addClass("act").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
         	var a = mp3.currentTime/mp3.duration*100;
             bar.css({"width":a+"%"});
         }
 	}
 //	结束
-	mp3.onended = function(){
-		bar.hide(0).css({"width":"0"});
-	}
-//  取音频时长
-	mp3.oncanplay = function(){
-		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));   
-	}
-	mp3.addEventListener("loadedmetadata", function(){
-		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60)); 
-	}); 
-	var i = setInterval(function(){ 
-		if(mp3.readyState > 0) { 
-			clearInterval(i);
-			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
-		} 
-	}, 50);
+//	mp3.onended = function(){
+//		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
+//		bar.hide(0).css({"width":"0"});
+//	}
+////  取音频时长
+//	mp3.oncanplay = function(){
+//		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));   
+//	}
+//	mp3.addEventListener("loadedmetadata", function(){
+//		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60)); 
+//	}); 
+//	var i = setInterval(function(){ 
+//		if(mp3.readyState > 0) { 
+//			clearInterval(i);
+//			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
+//		} 
+//	}, 50);
 }

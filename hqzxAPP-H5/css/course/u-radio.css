@@ -59,9 +59,15 @@ body .foo{
 .mp3-box .t-i3{
 	width:16%;
 	text-align: right;
+	height: 1.4em;
+	background: url(../../images/main/icon/jyxt-player-act.png) no-repeat right center;
+	-webkit-background-size: contain;
+}
+.mp3-box .t-i3.act{
+	background: none;
 }
 video.mp3{
-	/*display: none;*/
+	display: none;
 }
 .mp3-box .mp3-bar{
 	position: absolute;
