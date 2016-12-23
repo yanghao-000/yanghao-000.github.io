@@ -6,17 +6,17 @@ function playMp3(){
 	var mp3 = $("video.mp3")[0];
 	var bar = $(".mp3-box .mp3-bar");
 	
-	$("body")[0].addEventListener("touchstart", function(){
-		mp3.play();
-		mp3.pause();
-		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60)); 
-		mp3.play();
-		mp3.pause();
-		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
-		var i = setTimeout(function(){
-			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
-		},100);
-	}); 
+//	$("body")[0].addEventListener("touchstart", function(){
+//		mp3.play();
+//		mp3.pause();
+//		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60)); 
+//		mp3.play();
+//		mp3.pause();
+//		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
+//		var i = setTimeout(function(){
+//			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
+//		},100);
+//	}); 
 	
 //	点击播放
 	$(".mp3-box").on("click",function(){
@@ -31,6 +31,7 @@ function playMp3(){
 //	进度条
 	mp3.ontimeupdate = function(){
 		if (!isNaN(mp3.duration)){
+			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
         	var a = mp3.currentTime/mp3.duration*100;
             bar.css({"width":a+"%"});
         }
