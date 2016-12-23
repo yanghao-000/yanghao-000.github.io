@@ -10,7 +10,7 @@ function playMp3(){
 	$(".mp3-box").on("click",function(){
 		if(mp3.paused){
 			mp3.play();
-			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
+//			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
 			bar.show(0);
 		}else{
 			mp3.pause();
