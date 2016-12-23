@@ -29,12 +29,12 @@ function playMp3(){
 	}
 //  取音频时长
 //	$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
-//	mp3.oncanplay = function(){
-//		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));   
-//	}
-//	mp3.addEventListener("loadedmetadata", function(){
-//		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60)); 
-//	}); 
+	mp3.oncanplay = function(){
+		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));   
+	}
+	mp3.addEventListener("loadedmetadata", function(){
+		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60)); 
+	}); 
 	var i = setInterval(function(){ 
 		if(mp3.readyState > 0) { 
 			clearInterval(i);
