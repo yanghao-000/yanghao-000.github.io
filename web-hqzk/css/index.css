@@ -1,0 +1,101 @@
+/*轮播==========================*/
+.swiper-wrapper img{
+	width:100%;
+}
+.swiper-pagination-bullet{
+	opacity: 0.4;
+	width:0.84em;
+	height:0.84em;
+	-webkit-border-radius: 50%;
+}
+.swiper-pagination-bullet-active{
+	background-color: #27AE61;
+	opacity: 1;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom:3%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+	margin:0 0.6em;
+}
+/*分类==============================*/
+.classify{
+	color:#27AE61;
+	background-color: #fff;
+}
+.classify p{
+	height:3.8em;
+	text-align: center;
+	line-height: 3.8em;
+	background-color: #f0f0f0;
+}
+.classify p span{
+	font-size: 1.4em;
+}
+.classify p i{
+	display: inline-block;
+	font-size: 1.4em;
+	-webkit-transform:rotate(0deg);
+	-webkit-transition: all 0.4s;
+}
+.classify p i.active{
+	-webkit-transform:rotate(180deg);
+	-webkit-transition: all 0.4s;
+}
+.classify ul{
+	text-align: center;
+	display: none;
+}
+.classify ul li{
+	font-size: 1.25em;
+	height: 2.8em;
+	line-height: 2.8em;
+	border-bottom:1px solid #eee;
+}
+.classify ul li:active{
+	background-color: #eee;
+}
+/*首页课程列表=========================*/
+.course-list{
+	background-color: #fff;
+}
+.course-list .dl-out{
+	padding-left: 1.1em;
+}
+.course-list dl{
+	padding-right: 1.1em;
+	padding-top:1.1em;
+	padding-bottom:1.1em;
+	border-bottom:1px solid #eee;
+}
+.course-list dl dt{
+	width:44%;
+}
+.course-list dl dt img{
+	width:100%;
+}
+.course-list dl dd{
+	width:53%;
+}
+.course-list dl dd .t-h1{
+	font-size: 1.4em;
+	margin-bottom:0.4em;
+}
+.course-list dl dd .t-h2{
+	font-size: 1.3em;
+	color:#666;
+	margin-bottom:0.2em;
+}
+.course-list dl dd .t-h2 del{
+	font-size: 0.8em;
+	padding-left: 0.4em;
+}
+.course-list dl dd .t-h3{
+	color:#999;
+}
+.course-list dl dd .t-h3 i{
+	font-size: 1.3em;
+}
+.course-list dl dd .t-h3 span{
+	font-size: 1.1em;
+}

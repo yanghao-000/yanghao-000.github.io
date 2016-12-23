@@ -1,0 +1,98 @@
+body{
+	background-color: #f0f0f0;
+}
+.a-hover:active{
+	background-color: #eee;
+}
+.a-hover-b:active{
+	background-color: #eee;
+	margin-left:-1.1em;
+	padding-left:1.1em;
+}
+/*=======================*/
+.slide-nav-1{
+	position: relative;
+	-webkit-box-sizing: border-box;
+	padding: 0 4%;
+	text-align: center;
+	border-bottom:1px solid #eee;
+	background-color: #fff;
+}
+.slide-nav-1 li{
+	width:25%;
+	float:left;
+}
+.slide-nav-1 li em{
+	font-size: 1.25em;
+	display: inline-block;
+	padding: 0.8em 0.4em;
+	color:#666;
+}
+.slide-nav-1 li em:active{
+	background-color: #eee;
+}
+.slide-nav-1 li em.act{
+	color: #27AE61;
+}
+.slide-nav-1 .nav-bar{
+	position: absolute;
+	height:3px;
+	background-color: #27AE61;
+	bottom:-1px;
+}
+.slide-nav-1.slide-nav-2{
+	padding: 0 18%;
+}
+.slide-nav-1.slide-nav-2 li{
+	width:50%;
+}
+/*返回顶部========================*/
+.backTop{
+	position: fixed;
+	z-index: 10;
+	right:4%;
+	bottom:3%;
+	width:3.2em;
+	height:3.2em;
+	line-height: 3.2em;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	background-color: #27AE61;
+	color:#fff;
+	opacity: 0.7;
+	display: none;
+}
+.backTop i{
+	font-size: 2.2em;
+}
+/*公共头部-返回====================*/
+.com-header{
+	
+}
+.com-header .text{
+	text-align: center;
+	height:4em;
+}
+.com-header .text .t-h1{
+	width:3em;
+	height:1.71em;
+	background: url(../../images/icon/zk-live-logo.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.com-header .text .t-h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	color:#27AE61;
+}
+.com-header .fh-arrow{
+	left:0;
+	height:4em;
+	line-height: 3em;
+	color:#27AE61;
+	padding: 0 3%;
+}
+.com-header .fh-arrow i{
+	font-size: 1.7em;
+	font-weight: bold;
+	
+}
