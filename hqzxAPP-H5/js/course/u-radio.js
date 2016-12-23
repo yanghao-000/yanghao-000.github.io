@@ -6,18 +6,16 @@ function playMp3(){
 	var mp3 = $("video.mp3")[0];
 	var bar = $(".mp3-box .mp3-bar");
 	
-	mp3.pause();
-	if(mp3.paused){
-			mp3.play();
-//			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
-			bar.show(0);
-	}
-	mp3.play();
+	$("body")[0].addEventListener("touchstart", function(){
+		mp3.pause();
+		mp3.play();
+		mp3.pause();
+		$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60)); 
+	}); 
 //	点击播放
 	$(".mp3-box").on("click",function(){
 		if(mp3.paused){
 			mp3.play();
-//			$(".mp3-box .t-i3").text(Math.floor(mp3.duration/60)+"'"+Math.ceil(mp3.duration%60));
 			bar.show(0);
 		}else{
 			mp3.pause();
