@@ -14,6 +14,8 @@ function setCss(){
 	}
 	
 	if(browser.versions.android){
-		$(".boss-box .t-h1 .t-p2").css({"height":"3.2em"});
+		$(".boss-box .t-h1 .t-p2").css({"height":"3.4em"});
+	}else{
+		$(".boss-box .t-h1 .t-p1").css({"height":"3.2em","width":"3.2em"});
 	}
 }
