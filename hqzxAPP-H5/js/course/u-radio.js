@@ -17,15 +17,11 @@ function playMp3(){
 			bar.hide(0);
 		}	
 	});
-	$(".mp3-box").click(function(){
-		if(mp3.paused){
-			mp3.play();
-			bar.show(0);
-		}else{
-			mp3.pause();
-			bar.hide(0);
-		}	
-	});
+	$(".mp3-box").click();
+	$(".mp3-box").click();
+	$(".mp3-box").click();
+	$(".mp3-box").click();
+	$(".mp3-box").click();
 //	进度条
 	mp3.ontimeupdate = function(){
 		if (!isNaN(mp3.duration)){
