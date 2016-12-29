@@ -1,0 +1,23 @@
+.learning .t-r li span{
+	background-image: url(../images/icon/course-sheet-arrow.png);
+}
+.box .t-l{
+	width:58%;
+}
+.box .sec-bot .sub-box li p.act{
+	background-color: #27ae61;
+	color:#fff;
+}
+.box .t-r li:nth-of-type(2){
+	margin-right:0;
+}
+.box .t-r li{
+	text-align: center;
+}
+/*=============*/
+.box .sec-bot .sub-box li .d-h1,.box .sec-bot .sub-box li .d-h2{
+	color:#666;
+}
+.box .sec-bot .sub-box li .d-h1{
+	margin-bottom:0.3em;
+}

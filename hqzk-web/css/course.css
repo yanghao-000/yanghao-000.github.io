@@ -88,7 +88,7 @@ body{
 	padding-right:0.8em;
 	border-bottom:1px solid #eee;
 }
-.course-section ul li.act:active{
+.course-section ul li:active{
 	background-color: #eee;
 	margin-left:-0.8em;
 	padding-left:0.8em;
@@ -111,7 +111,7 @@ body{
 	color:#fff;
 	font-size: 1.1em;
 	-webkit-border-radius: 4px;
-	display: none;
+	/*display: none;*/
 }
 .course-section ul li.act .iconfont{
 	color:#27AE61;
@@ -119,6 +119,6 @@ body{
 .course-section ul li.act .tit{
 	color:#27AE61;
 }
-.course-section ul li.act .shiting{
-	display: inline-block;
+.course-infor .t-h1 .i-h1{
+	/*font-size: 0.8em;*/
 }

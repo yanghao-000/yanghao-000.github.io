@@ -4,33 +4,60 @@
 		<meta charset="UTF-8">
 		<title>自考学院-课程详情</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
-		<link rel="stylesheet" type="text/css" href="css/bace.css"/>
-		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/bace.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/headerAndfooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/ani.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com/swiper.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/studyCenter/common-2.css"/>
 		
 		<link rel="stylesheet" type="text/css" href="css/course.css"/>
-		<script src="js/com-nojquery.js"></script>
 	</head>
 	<body>
+		<!--首页头部-->
+		<div class="header relative">
+			<a href="index.html"><div class="logo abs-mid">
+				<div class="t-h1"><img src="images/icon/zk-live-logo.png"/></div>
+				<div class="t-h2"><i>恒企自考</i></div>
+			</div></a>
+			<div class="slide-btn abs-mid">
+				<i class="iconfont">&#xe63d;</i>
+			</div>
+		</div>
+		<!--侧边栏-->
+		<div class="slide-nav-out">
+		 	<div class="black-bg-v2"></div>
+		 	<div class="slide-nav-v2">
+		 		<ul>
+		 			<a href="studyCenter.html"><li class="register">
+		 				<div class="t-h1"><img src="images/temp/user-photo.png"/></div>
+		 				<div class="t-h2">15521323446</div>
+		 			</li></a>
+		 			<a href="login.html"><li>登陆/注册</li></a>
+		 			<a href="studyCenter.html"><li>学习中心</li></a>
+		 			<a href=""><li>退出</li></a>
+		 		</ul>
+		 	</div>
+	 	</div>
+	 	<!--banner-->
 		<div class="ban">
 			<img src="http://183.63.120.222:8014/13/5/1469498668429.jpg"/>
-			<video class="none" src="http://video.hengqijy.com/video/product/20160128.mp4" preload="meta" poster="none.jpg" width="" height="" style="background:transparent url(http://183.63.120.222:8014/13/5/1469498668429.jpg) no-repeat center center;-webkit-background-size: 100% 100%;"></video>
 		</div>
         <!--课程介绍-->
 		<div class="course-infor">
-			<div class="t-h1">自考无忧保障班</div>
+			<div class="t-h1">自考无忧保障班<i class="i-h1">（专科）</i></div>
 			<div class="t-h2">适用对象：所有人</div>
 			<div class="t-h2">学习周期：2年</div>
 			<div class="t-h2">上课方式：直播课</div>
 		</div>
 		<!--切换-->
-		<ul class="slide-nav-1 slide-nav-2 clearfix">
+		<ul class="slide-nav slide-nav-2 clearfix">
 			<li><em class="act">课程大纲</em></li>
 			<li><em>课程详情</em></li>
 			<i class="nav-bar"></i>
 		</ul>
-		<script>huadongNav()</script>
 		
 		<div class="swiper-container">
 		    <div class="swiper-wrapper">
@@ -39,7 +66,7 @@
 			    		<ul>
 			    			<li class="clearfix act"><span class="iconfont v-mid">&#xe612;</span><i class="tit v-mid sl">1.毛泽东思想和中国毛泽东思想和中国毛泽东思想和中国</i><em class="shiting v-mid">试听</em><i class="v-mid-a"></i></li>
 			    			<li class="clearfix"><span class="iconfont v-mid">&#xe612;</span><i class="tit v-mid sl">1.毛泽东思想和中国</i><em class="shiting v-mid">试听</em><i class="v-mid-a"></i></li>
-			    			<li class="clearfix"><span class="iconfont v-mid">&#xe612;</span><i class="tit v-mid sl">1.毛泽东思想和中国</i><em class="shiting v-mid">试听</em><i class="v-mid-a"></i></li>
+			    			<li class="clearfix"><span class="iconfont v-mid">&#xe612;</span><i class="tit v-mid sl">1.毛泽东思想和中国</i><i class="v-mid-a"></i></li>
 			    		</ul>
 					</div>
 			    </div>
@@ -60,9 +87,22 @@
 			</div>
 		</div>
 		
-		<script src="js/jquery.js"></script>
-		<script src="js/swiper.jquery.min.js"></script>
-		<script src="js/com.js"></script>
+		
+		<script>
+			huadongNav();
+			function huadongNav(){
+				var o = document.getElementsByClassName("slide-nav")[0];
+				var act = o.getElementsByClassName("act")[0];
+				var bar = o.getElementsByClassName("nav-bar")[0];
+				
+				bar.style.width = act.clientWidth + "px";
+				bar.style.left = act.offsetLeft + "px";
+			}
+		</script>
+		<script src="js/com/jquery.js"></script>
+		<script src="js/com/swiper.jquery.min.js"></script>
+		<script src="js/com/com-2.js"></script>
+		<script src="js/com/com.js"></script>
 
 		<script src="js/course.js"></script>
 	</body>

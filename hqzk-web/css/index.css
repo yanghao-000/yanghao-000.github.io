@@ -1,41 +1,4 @@
-/*body,html{
-	height:100%;
-}*/
-.header{
-	background-color: #fff;
-}
-.header .logo{
-	height:2em;
-	line-height: 1.8em;
-	padding-top:1em;
-	padding-bottom:1em;
-	padding-left:1.1em;
-}
-.header .logo .left{
-	height:100%;
-}
-.header .logo .left img{
-	height:100%;
-}
-.header .logo .right{
-	font-size: 1.7em;
-	color:#27ae61;
-	font-weight: bold;
-}
-.header .slide-btn{
-	height: 4em;
-	line-height: 4em;
-	padding-right:1.1em;
-	padding-left:1.1em;
-}
-.header .slide-btn:active{
-	background-color: #eee;
-}
-.header .slide-btn i{
-	font-size: 2.2em;
-	 color:#27AE61;
-}
-/*==========================*/
+/*轮播==========================*/
 .swiper-wrapper img{
 	width:100%;
 }
@@ -55,7 +18,7 @@
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
 	margin:0 0.6em;
 }
-/*==============================*/
+/*分类==============================*/
 .classify{
 	color:#27AE61;
 	background-color: #fff;
@@ -92,7 +55,7 @@
 .classify ul li:active{
 	background-color: #eee;
 }
-/*=========================*/
+/*首页课程列表=========================*/
 .course-list{
 	background-color: #fff;
 }
@@ -119,105 +82,21 @@
 	margin-bottom:0.4em;
 }
 .course-list dl dd .t-h2{
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color:#666;
-	margin-bottom:0.2em;
+	/*margin-bottom:0.2em;*/
 }
 .course-list dl dd .t-h2 del{
 	font-size: 0.8em;
 	padding-left: 0.4em;
 }
 .course-list dl dd .t-h3{
-	color:#999;
+	color:#333;
+	margin-bottom:0.4em;
 }
 .course-list dl dd .t-h3 i{
 	font-size: 1.3em;
 }
 .course-list dl dd .t-h3 span{
-	font-size: 1.1em;
-}
-/*============================*/
-.footer{
-	text-align: center;
-	padding:1.4em 0;
-}
-.footer ul{
-	width:42%;
-	margin:0 auto;
-	margin-bottom:0.8em;
-}
-.footer ul li{
-	float:left;
-	width:49.5%;
-	font-size: 1.1em;
-}
-/*========================*/
-.backTop{
-	position: fixed;
-	z-index: 10;
-	right:4%;
-	bottom:3%;
-	width:3.4em;
-	height:3.4em;
-	line-height: 3.4em;
-	text-align: center;
-	-webkit-border-radius: 4px;
-	background-color: #27AE61;
-	color:#fff;
-}
-.backTop i{
-	font-size: 2.2em;
-}
-/*===========================*/
-.black-bg{
-	position: fixed;
-	width:100%;
-	height:100%;
-	background-color: rgba(0,0,0,0.5);
-	top:0;
-	left:0;
-	z-index: 99;
-	display: none;
-}
-.slide-nav{
-	position: fixed;
-	height:100%;
-	width:40%;
-	right:0;
-	top:0;
-	background-color: #27AE61;
-	z-index: 100;
-	display: none;
-}
-.slide-nav ul{
-	padding-left:1em;
-	padding-right:1em;
-}
-.slide-nav li{
-	padding-top:1em;
-	padding-bottom:1em;
-	font-size: 1.3em;
-	color:#fff;
-	border-bottom:1px solid #ddd;
-}
-.slide-nav li:active{
-	opacity: 0.6;
-}
-.slide-nav .register .t-h1{
-	width:4em;
-	height:4em;
-	-webkit-border-radius: 50%;
-	overflow: hidden;
-	margin:0 auto;
-	margin-bottom:0.4em;
-}
-.slide-nav .register .t-h1 img{
-	width:100%;
-	height:100%;
-	-webkit-border-radius: 50%;
-}
-.slide-nav .register .t-h2{
-	font-size: 0.9em;
-	text-align: center;
-	color:#fff;
+	font-size: 1.2em;
 }
