@@ -70,6 +70,14 @@ function dowmloadJudge(){
 			window.location.href="http://download.hqjy.com/app/Answer_Student_v3.0.0.apk";
 		}
 	}
+	function download2(){
+		if((!browser.versions.wx)&&browser.versions.ios){
+			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+		}
+		if((!browser.versions.wx)&&browser.versions.android){
+			window.location.href="http://download.hqjy.com/app/Answer_Student_v3.0.0.apk";
+		}
+	}
 	function judgeWeb(){
 		if(browser.versions.ios){
 			tipsPop.find("img").attr("src","images/tips/ios-tips.png");
@@ -80,7 +88,7 @@ function dowmloadJudge(){
             tipsPop.fadeOut();
             return false;
         });
-		download();
+		download2();
 	}
 	function shareTipsShow(){
 		$(".wx-share-btn").on("click",function(){
