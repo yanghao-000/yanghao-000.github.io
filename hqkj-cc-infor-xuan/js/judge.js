@@ -35,12 +35,14 @@ function dowmloadJudge(){
 	var tipsPop = $(".pop-load-tip");
 	var shareTipsPop = $(".pop-share-tip");
 	
+	judgeWeb();
+	shareTipsShow();
 	$(".download-btn").on("click",function(){
-		downloadWeixin();
+		download();
 		return false;
 	});
-	shareTipsShow();
-	judgeWeb();
+	
+	
 		
 	function downloadWeixin(){
 		if(browser.versions.ios){
@@ -51,16 +53,22 @@ function dowmloadJudge(){
 		tipsPop.fadeIn();
 	}
 	function download(){
-		if(browser.versions.ios){
+		if(browser.versions.wx&&browser.versions.ios){
 			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
-		}else if(browser.versions.android){
+			tipsPop.fadeIn();
+		}
+		if(browser.versions.wx&&browser.versions.android){
+			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v1.5.3.apk";
+			tipsPop.fadeIn();
+		}
+		if(!browser.versions.wx&&browser.versions.ios){
+			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+		}
+		if(!browser.versions.wx&&browser.versions.android){
 			window.location.href="http://answerimg.kjcity.com/app/Answer_Student_v1.5.3.apk";
 		}
 	}
 	function judgeWeb(){
-		if(!browser.versions.wx){
-			download();
-		}
 		if(browser.versions.ios){
 			tipsPop.find("img").attr("src","images/tips/ios-tips.png");
 		}else if(browser.versions.android){
@@ -70,6 +78,7 @@ function dowmloadJudge(){
             tipsPop.fadeOut();
             return false;
         });
+		download();
 	}
 	function shareTipsShow(){
 		$(".wx-share-btn").on("click",function(){
@@ -97,11 +106,9 @@ function videoPlay(){
         if(document.IsFullScreen){
         	document.IsFullScreen = false;
         	videoOut.hide(0);
-			console.log(1);
-			
+        	video.pause();
 		}else{
 			document.IsFullScreen = true;
-			console.log(2);		
 		}
 	});
 }
