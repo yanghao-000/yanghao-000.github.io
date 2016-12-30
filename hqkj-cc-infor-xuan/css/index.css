@@ -7,8 +7,8 @@
 	top:3%;
 	color:#12c38c;
 	text-align: center;
-	height: 2em;
-	line-height: 2em;
+	height: 3em;
+	line-height: 3em;
 }
 .tit .t-h1{
 	width:2em;
@@ -18,7 +18,7 @@
 	margin-right:0.75em;
 }
 .tit .t-h2{
-	/*font-size: 1.5em;*/
+	font-size: 1.5em;
 }
 /*=======================*/
 .play-box{
