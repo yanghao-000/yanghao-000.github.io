@@ -74,6 +74,8 @@
 	width:100%;
 }
 
-.ccH5playerBox{
-	/*display: none;*/
+body .ccH5playerBox{
+	display: none;
+	position: fixed;
+	top:50%;
 }
