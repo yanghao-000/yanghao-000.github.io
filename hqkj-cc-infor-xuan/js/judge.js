@@ -1,5 +1,5 @@
 $(function(){ 
-	dowmloadJudge();
+	
 	
 	var id = "3F2147C49F6DF30F9C33DC5901307461";
 	var h = "auto";
@@ -10,7 +10,9 @@ $(function(){
 			videoPlay();
 			clearInterval(timer);
 		}
-	},50);	
+	},50);
+	
+	dowmloadJudge();
     
 });
 //下载判断
@@ -44,26 +46,26 @@ function dowmloadJudge(){
 	
 	
 		
-//	function downloadWeixin(){
-//		if(browser.versions.ios){
-//			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
-//		}else if(browser.versions.android){
-//			window.location.href="http://download.hqjy.com/app/Answer_Student_v3.0.0.apk";
-//		}
-//		tipsPop.fadeIn();
-//	}
+	function downloadWeixin(){
+		if(browser.versions.ios){
+			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+		}else if(browser.versions.android){
+			window.location.href="http://download.hqjy.com/app/Answer_Student_v3.0.0.apk";
+		}
+		tipsPop.fadeIn();
+	}
 	function download(){
-//		if(browser.versions.wx&&browser.versions.ios){
-//			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
-//			tipsPop.fadeIn();
-//		}
+		if(browser.versions.wx&&browser.versions.ios){
+			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+			tipsPop.fadeIn();
+		}
 		if(browser.versions.wx&&browser.versions.android){
 			window.location.href="http://download.hqjy.com/app/Answer_Student_v3.0.0.apk";
 			tipsPop.fadeIn();
 		}
-//		if(!browser.versions.wx&&browser.versions.ios){
-//			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
-//		}
+		if(!browser.versions.wx&&browser.versions.ios){
+			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+		}
 		if(!browser.versions.wx&&browser.versions.android){
 			window.location.href="http://download.hqjy.com/app/Answer_Student_v3.0.0.apk";
 		}
@@ -81,7 +83,7 @@ function dowmloadJudge(){
 		download();
 	}
 	function shareTipsShow(){
-		$(".wx-share-btn").on("click",function(){
+		$(".wx-share-btn").on("touchend",function(){
 			shareTipsPop.fadeIn();
 		});
 		shareTipsPop.find("img").click(function(){
