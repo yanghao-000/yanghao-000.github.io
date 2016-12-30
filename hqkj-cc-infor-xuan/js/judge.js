@@ -114,19 +114,19 @@ function videoPlay(){
 		videoOut.show(0);
 		bg.show(0);
 		video.play();
-		launchFullscreen(video);
+//		launchFullscreen(video);
 	});
 	
-	video.addEventListener("webkitfullscreenchange",function(){
-        if(document.IsFullScreen){
-        	document.IsFullScreen = false;
-        	videoOut.hide(0);
-			bg.hide(0);
-        	video.pause();
-		}else{
-			document.IsFullScreen = true;
-		}
-	});
+//	video.addEventListener("webkitfullscreenchange",function(){
+//      if(document.IsFullScreen){
+//      	document.IsFullScreen = false;
+//      	videoOut.hide(0);
+//			bg.hide(0);
+//      	video.pause();
+//		}else{
+//			document.IsFullScreen = true;
+//		}
+//	});
 	
 	bg.on("click",function(){
 		videoOut.hide(0);
