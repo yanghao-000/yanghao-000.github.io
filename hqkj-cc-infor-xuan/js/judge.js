@@ -1,9 +1,5 @@
 $(function(){ 
 	
-	var id = "3F2147C49F6DF30F9C33DC5901307461";
-	var h = "200";
-	document.getElementById("voide-box").src = "http://p.bokecc.com/player?vid=" + id + "&siteid=FE7A65E6BE2EA539&autoStart=true&width=100%&height=" + h + "&playerid=CED4B0511C5D4992&playertype=1";
-	
 	var timer = setInterval(function(){
 		if($("video").length>0){
 			videoPlay();
