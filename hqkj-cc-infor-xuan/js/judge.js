@@ -6,6 +6,8 @@ $(function(){
 	
 	var timer = setInterval(function(){
 		if($("video").length>0){
+			$("video").attr("webkit-playsinline","");
+			$("video").attr("preload","");
 			$(".ccH5playerBox").css({"margin-top":-$(".ccH5playerBox").height()/2});
 			videoPlay();
 			clearInterval(timer);
