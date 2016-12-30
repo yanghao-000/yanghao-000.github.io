@@ -1,5 +1,5 @@
 $(function(){ 
-	dowmloadJudge();
+//	dowmloadJudge();
 	
 	var id = "3F2147C49F6DF30F9C33DC5901307461";
 	var h = "auto";
