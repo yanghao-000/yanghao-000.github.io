@@ -1,0 +1,101 @@
+body{	
+	font-family:"微软雅黑";
+	font-weight: 400;
+	color:#333;
+	cursor: default;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+*{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout:none;
+	/*-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;*/
+}
+/*body{
+    font-family:"webfont" !important;
+ 		font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+body,html,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+a:active{
+	background-color: #eee;
+}
+ul,li,dl,dt,dd{
+	list-style: none;
+}
+i,em{
+	font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+img{
+	display: block;
+	border:none;
+}
+.clear{
+	clear: both;
+}
+.clearfix:after{
+	font-size: 0;
+	content: " ";
+	display: table;
+	clear: both;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.none{
+	display: none;
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+.marginC{
+	margin-left:auto;
+	margin-right:auto;
+}
+.opacityZero{
+	opacity: 0;
+}
+.sl{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.v-mid{
+	display: inline-block;
+	vertical-align: middle;
+}
+.v-mid-a{
+	display: inline-block;
+	vertical-align: middle;
+	height:100%;
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	body{font-size: 75%;}
+}
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+	body{font-size: 84%;}
+}
+@media only screen and (min-width: 414px){
+	body{font-size: 94%;}
+}

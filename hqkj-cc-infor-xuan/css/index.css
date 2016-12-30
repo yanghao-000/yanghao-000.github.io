@@ -1,0 +1,77 @@
+.bg{
+	width:100%;
+}
+/*=================*/
+.tit{
+	width:100%;
+	top:3%;
+	color:#12c38c;
+	text-align: center;
+}
+.tit .t-h1{
+	width:2em;
+	height:2em;
+	background: url(../images/logo.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	margin-right:0.75em;
+}
+.tit .t-h2{
+	font-size: 1.5em;
+}
+/*=======================*/
+.play-box{
+	width:100%;
+	top:39%;
+}
+.play-box .t-h1{
+	width:6.8em;
+	height:6.8em;
+	background: url(../images/btn.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	margin:0 auto;
+	margin-bottom:1.1em;
+}
+.play-box .t-h2{
+	text-align: center;
+	color:#fff;
+	text-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+.play-box .t-h2 i{
+	font-size: 1.5em;
+}
+/*=======================*/
+.btn-box{
+	width:100%;
+	top:72%;
+}
+.btn{
+	width:92%;
+	line-height: 3.6em;
+	margin: 0 auto;
+	text-align: center;
+	-webkit-border-radius: 0.4em;
+}
+.btn i{
+	font-size: 1.5em;
+}
+.btn-1{
+	background-color: #12C38C;
+	color:#fff;
+	margin-bottom:0.8em;
+}
+.btn-2{
+	background-color: #fff;
+	color:#12C38C;
+	-webkit-box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+/*======================*/
+.st-pop{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+}
+
+.ccH5playerBox{
+	display: none;
+}
