@@ -6,9 +6,7 @@ $(function(){
 	
 	var timer = setInterval(function(){
 		if($("video").length>0){
-			$("video").attr("webkit-playsinline","");
-			$("video").attr("preload","");
-			$(".ccH5playerBox").css({"margin-top":-$(".ccH5playerBox").height()/2});
+			$(".ccH5playerBox").css({"margin-top":-($(".ccH5playerBox").height())/2,"width":"90%"});
 			videoPlay();
 			clearInterval(timer);
 		}
@@ -109,10 +107,12 @@ function dowmloadJudge(){
 function videoPlay(){
 	var videoOut = $(".ccH5playerBox"); 
 	var video = $("video").get(0);
+	var bg = $(".bla-bg");
 	document.IsFullScreen = false;
 	
 	$(".play-box .t-h1").on("click",function(){
 		videoOut.show(0);
+		bg.show(0);
 		video.play();
 		launchFullscreen(video);
 	});
@@ -121,10 +121,17 @@ function videoPlay(){
         if(document.IsFullScreen){
         	document.IsFullScreen = false;
         	videoOut.hide(0);
+			bg.hide(0);
         	video.pause();
 		}else{
 			document.IsFullScreen = true;
 		}
+	});
+	
+	bg.on("click",function(){
+		videoOut.hide(0);
+		bg.hide(0);
+        video.pause();
 	});
 }
 //进入全屏
