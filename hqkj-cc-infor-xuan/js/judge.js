@@ -56,11 +56,11 @@ function dowmloadJudge(){
 	}
 	function download(){
 		if(browser.versions.wx&&browser.versions.ios){
-			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
+//			window.location.href="https://itunes.apple.com/us/app/hui-da/id1064833923?l=zh&ls=1&mt=8";
 			tipsPop.fadeIn();
 		}
 		if(browser.versions.wx&&browser.versions.android){
-			window.location.href="http://download.hqjy.com/app/Answer_Student_v3.0.0.apk";
+//			window.location.href="http://download.hqjy.com/app/Answer_Student_v3.0.0.apk";
 			tipsPop.fadeIn();
 		}
 		if((!browser.versions.wx)&&browser.versions.ios){
