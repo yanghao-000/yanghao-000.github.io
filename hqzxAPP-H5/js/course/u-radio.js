@@ -3,22 +3,7 @@ $(function(){
 });
 
 function playMp3(){
-	var mp3;
-	$(document).on("click",function(){
-		mp3 = new Audio();
-		$(mp3).appendTo($(".mp3-box"));
-	});
-	$(document).trigger("click");
-	
-	$($("body")).on("click",function(){
-		mp3.src = "http://answerimg.kjcity.com/1.mp3";
-		mp3.autoplay = true;
-		mp3.play();
-		return false;
-	});
-	$($("body")).trigger("click");
-	
-//	var mp3 = $("audio.mp3")[0];
+	var mp3 = $("audio.mp3")[0];
 	var bar = $(".mp3-box .mp3-bar");
 	
 //	$("body")[0].addEventListener("touchstart", function(){
@@ -34,7 +19,6 @@ function playMp3(){
 //	}); 
 	
 //	点击播放
-bar.show(0);
 	$(".mp3-box").on("click",function(){
 		if(mp3.paused){
 			mp3.play();
