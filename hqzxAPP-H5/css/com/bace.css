@@ -90,6 +90,12 @@ img{
 	vertical-align: middle;
 	height:100%;
 }
+.absVer{
+	position: absolute;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+}
 @media only screen and (min-width: 320px) and (max-width: 374px) {
 	body{font-size: 75%;}
 }

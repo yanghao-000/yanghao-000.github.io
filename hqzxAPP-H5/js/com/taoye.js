@@ -11,6 +11,8 @@ function courseCanSwiper(){
 		autoplayDisableOnInteraction: false,
 		loop: true,
 	});
+	
+	$(".swiper-wrapper").eq(0).css({"height":"auto"});
 }
 
 function verticalScroll(outer){

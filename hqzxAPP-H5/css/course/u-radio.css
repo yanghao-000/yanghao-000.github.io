@@ -60,7 +60,7 @@ body .foo{
 	width:16%;
 	text-align: right;
 	height: 1.4em;
-	background: url(../../images/main/icon/jyxt-player-act.png) no-repeat right center;
+	/*background: url(../../images/main/icon/jyxt-player-act.png) no-repeat right center;*/
 	-webkit-background-size: contain;
 }
 .mp3-box .t-i3.act{

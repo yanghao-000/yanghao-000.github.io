@@ -1,0 +1,313 @@
+/*通用 切换 头部*/
+.slide-nav li em.act{
+	border-bottom:1px solid #12c38c;
+}
+/*=================*/
+body{
+	background-color: #f0f0f0;
+}
+.slide-nav.slide-nav-2{
+	padding:0 9%;
+}
+/*================*/
+.box .sec-top{
+	padding:1.1em 3%;
+	margin-bottom:0.4em;
+	background-color: #fff;
+}
+.box .sec-top .tit{
+	margin-bottom:1em;
+}
+.box .sec-top .tit i{
+	float: left;
+	font-size: 1.3em;
+	/*overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;*/
+}
+.box .sec-top .tit p{
+	background-color: #12c38c;
+	color:#fff;
+	text-align: center;
+	width:20%;
+	height:1.9em;
+	line-height: 1.9em;
+	-webkit-border-radius: 1.9em;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto 0;
+}
+.box .t-l{
+	width:42%;
+}
+.box .t-l .t-h1{
+	font-size: 1.1em;
+	color:#12c38c;
+	margin-bottom:0.6em;
+	/*padding-top:0.2em;*/
+}
+.box .t-l .t-h1 i{
+	padding-left: 0.6em;
+}
+.box .t-l .t-h2{
+	width:100%;
+	height:1.1em;
+	background-color: #ddd;
+	-webkit-border-radius: 1.1em;
+	overflow: hidden;
+}
+.box .t-l .t-h2 p{
+	width:0%;
+	height:100%;
+	background-color: #12c38c;
+	-webkit-border-radius: 1.1em;
+	-webkit-transition: width 0.5s;
+}
+.box .t-r{
+	text-align: center;
+}
+.box .t-r li{
+	/*position: relative;*/
+	/*float:left;*/
+	/*width:3.9em;*/
+	/*height:3.9em;*/
+	/*border:1px solid #ccc;*/
+	/*-webkit-border-radius: 50%;*/
+}
+.box .t-r li h4{
+	/*font-size: 1.05em;*/
+	font-size: 1.25em;
+	/*color:#999;*/
+	margin-bottom:0.2em;
+}
+.box .t-r li h5{
+	font-size: 1em;
+}
+.box .t-r li i,.box .t-r li em{
+	display: inline-block;
+	vertical-align: middle;
+}
+.box .t-r li em{
+	height:100%;
+}
+.box .t-r li:nth-of-type(2){
+	/*margin:0 0.4em;*/
+}
+.box .t-r li.act{
+	/*background-color: #12c38c;
+	border-color:#12c38c;*/
+}
+.box .t-r li.act h4{
+	/*color:#fff;*/
+}
+.box .t-r li.act h5{
+	/*color:#fff;*/
+}
+
+.learning .t-r li span{
+	position: absolute;
+	width:0.8em;
+	height:0.4em;
+	background: url(../../images/school/icon/course-sheet-arrow.png) no-repeat center center;
+	-webkit-background-size: cover;
+	left:0;
+	right:0;
+	margin:0 auto;
+	bottom:-1.2em;
+	display: none;
+}
+.learning .t-r li.act span{
+	display: block;
+}
+.all .sec-top .tit i{
+	width:76%;
+}
+/*===============*/
+.box .sec-bot .sub-box{
+	padding-top:4%;
+	padding-bottom:0;
+	/*margin-bottom:0.6em;*/
+	background-color: #FFF;
+}
+.box .sec-bot .sub-box .tit{
+	height:1.1em;
+	line-height: 1.1em;
+	font-size: 1.1em;
+	padding-left:3%;
+	padding-right:3%;
+}
+.box .sec-bot .sub-box .tit i{
+	width:0.3em;
+	height:1.1em;
+	background-color: #12c38c;
+	-webkit-border-radius: 4px;
+	margin-right: 0.4em;
+}
+.box .sec-bot .sub-box li{
+	-webkit-box-sizing: border-box;
+	position: relative;
+	padding:0.8em 0;
+	width:94%;
+	margin:0 auto;
+	border-bottom:1px solid #eee;
+}
+/*.box .sec-bot .sub-box li:active{
+	background-color: #f5f5f5;
+	width:100%;
+	padding-left:3%;
+	padding-right:3%;
+}
+.box .sec-bot .sub-box li:active p{
+	right:3%;
+}*/
+.box .sec-bot .sub-box a:last-child li{
+	border-bottom:none;
+}
+.box .sec-bot .sub-box li h3{
+	font-size: 1.16em;
+	/*text-indent: -0.3em;*/
+	margin-bottom:0.3em;
+	width:74%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.box .sec-bot .sub-box li h4{
+	font-size: 1em;
+	color:#999;
+}
+.box .sec-bot .sub-box li p{
+	position: absolute;
+	width:5.6em;
+	height:1.9em;
+	line-height: 1.9em;
+	color:#fff;
+	background-color: #ddd;
+	text-align: center;
+	-webkit-border-radius: 1.9em;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	/*bottom:24%;*/
+}
+.box .sec-bot .sub-box li p.act{
+	background-color: #12c38c;
+	color:#fff;
+}
+/*添加=======================================*/
+.learning .t-r li span{
+	background-image: url(../images/icon/course-sheet-arrow.png);
+}
+.box .t-l{
+	width:46%;
+}
+.box .sec-bot .sub-box li p.act{
+	background-color: #12c38c;
+	color:#fff;
+}
+.box .sec-bot .sub-box li p.act:active{
+	opacity: 0.8;
+}
+.box .t-r li{
+	text-align: center;
+}
+/*=============*/
+.box .sec-bot .sub-box li .d-h1,.box .sec-bot .sub-box li .d-h2{
+	color:#666;
+}
+.box .sec-bot .sub-box li .d-h1{
+	margin-bottom:0.3em;
+}
+/*===============*/
+.box .t-r .t-ver{
+	height:2.4em;
+	width:1px;
+	background-color: #ddd;
+	margin: 0 0.2em;
+	/*margin-top:4%;*/
+}
+/*在线录播 在线直播 头部*/
+.learning .sec-lr{
+	padding:0 6%;
+	height:3.6em;
+	background-color: #fff;
+	border-bottom:1px solid #eee;
+}
+.learning .sec-lr .t-i1,.learning .sec-lr .t-i2{
+	width:49%;
+	text-align: center;
+	font-size: 1.25em;
+}
+.learning .sec-lr .t-i.act{
+	color:#12C38C;
+}
+.learning .sec-lr .t-ver{
+	height:2em;
+	width:1px;
+	background-color: #999;
+}
+/*在线录播-章节*/
+.sec-lr-box .stair-tit{
+	position: relative;
+	padding:5% 4%;
+	border-bottom:1px solid #eee;
+}
+.sec-lr-box .stair-tit .t-h1{
+	margin-bottom:1%;
+	width:80%;
+}
+.sec-lr-box .stair-tit .t-h1 i{
+	font-size: 1.25em;
+}
+.sec-lr-box .stair-tit .t-h2{
+	color:#999;
+}
+.sec-lr-box .stair-tit .t-h2 i{
+	font-size: 1em;
+}
+.sec-lr-box .stair-tit .t-h2 .t-i1{
+	margin-right:4%;
+}
+.sec-lr-box .stair-tit .t-h3.no-arrow{
+	width:18%;
+	height:2.25em;
+	line-height: 2.25em;
+	border:1px solid #12C38C;
+	text-align: center;
+	right:4%;
+	color:#12C38C;
+	-webkit-border-radius: 6%;
+}
+.sec-lr-box .stair-tit .t-h3.no-arrow i{
+	
+}
+.sec-lr-box .stair-tit .t-h3.arrow{
+    width: 0.8em;
+    height: 1.3em;
+    background: url(../../images/teacher/icon/school-arrow.png) no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    right: 5%;
+    -webkit-transform: rotate(90deg);
+}
+.sec-lr-box .stair-tit .t-h3.arrow i{
+	
+}
+.stair-out{
+	background-color: #fff;
+}
+.sec-lr-box .stair-tit.w96{
+	width:96%;
+	margin-left: 4%;
+	padding-left:0;
+	-webkit-box-sizing: border-box;
+}
+.sec-lr-box .stair-tit.w92{
+	width:92%;
+	margin-left: 8%;
+	padding-left:0;
+	-webkit-box-sizing: border-box;
+}

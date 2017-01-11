@@ -3,7 +3,7 @@ $(function(){
 });
 
 function playMp3(){
-	var mp3 = $("video.mp3")[0];
+	var mp3 = $("audio.mp3")[0];
 	var bar = $(".mp3-box .mp3-bar");
 	
 //	$("body")[0].addEventListener("touchstart", function(){

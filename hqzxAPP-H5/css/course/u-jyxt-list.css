@@ -23,12 +23,23 @@
 	-webkit-background-size: 100% 100%;
 }
 .ban .swiper-slide .t-h2{
-	top: 13%;
+	top: 28%;
+}
+.ban .swiper-slide .t-h3{
+	top:55%;
+	-webkit-transform: none;
+}
+.ban .swiper-slide .t-h3 i{
+	font-size: 1.1em;
 }
 /*========================*/
 .zong, .fen{
 	position: relative;
-	height:5.6em;
+	/*height:5.6em;*/
+	padding-top:1.5em;
+}
+.ss{
+	top:1.56em;
 }
 .fen h1{
 	background: none;
@@ -37,7 +48,7 @@
 	top:-4.4em;
 }
 .ssr h2{
-	height:3.94em;
+	height:4.18em;
 }
 .num{
 	font-size: 1em;
@@ -51,7 +62,7 @@
 }
 .t-zong-dan .ss{
 	width: 1.6em;
-	margin-top:0.3em;
+	margin-top:0.34em;
 }
 .t-zong-dan .ss p{
 	width: 0.8em;
@@ -60,7 +71,7 @@
     -webkit-background-size: 100% 100%;
     margin: 0 auto;
 }
-.zong h1,.num{
+.zong h1,.num,.fen h1{
 	width:70%;
 	overflow: hidden;
 	white-space: nowrap;
@@ -127,3 +138,9 @@ body{
 .pop-pause{
 	padding: 5% 5% 0;
 }
+/*===================*/
+.fen h1{
+	font-size: 1.16em;
+	color:#666;
+}
+

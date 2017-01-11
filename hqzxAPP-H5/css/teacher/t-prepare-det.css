@@ -134,3 +134,16 @@
 	font-size: 1.25em;
 	color:#999;
 }
+/*=================*/
+.box-out .box .box-jie li.act .right p{
+	color:#12C38C;
+}
+.emp-text{
+	text-align: center;
+	height: 20em;
+	line-height: 4em;
+	/*background-color: #fff;*/
+}
+.emp-text i{
+	font-size: 1.25em;
+}

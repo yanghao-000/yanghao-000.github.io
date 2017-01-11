@@ -17,12 +17,12 @@ function slideHuaDong(flag,autoHeiFlag){
 		onTouchStart: function(swiper){
 //			wrap.height('auto');
 		},
-		onSlideChangeStart: function(){
-			inputI(mySwiper.activeIndex);
+		onSlideChangeStart: function(swiper){
+			inputI(swiper.activeIndex);
 		},
-		onTransitionEnd: function(){
+		onTransitionEnd: function(swiper){
 			if(!flag){wrapHei();}
-			navTwoSlideDown(mySwiper.activeIndex);
+			navTwoSlideDown(swiper.activeIndex);
 		},
 	});
 	li.on("touchend",function(){
@@ -40,11 +40,13 @@ function slideHuaDong(flag,autoHeiFlag){
 		bar.stop(true).animate({"width":w,"left":l},100);
 	}
 	
-	var wrap = $(".swiper-wrapper");
-	var hei = $(window).outerHeight() - $(".slide-nav").outerHeight();
-	function wrapHei(){
-		if(wrap.outerHeight()<hei){
-			wrap.css({"height":hei});
+	var wrap = $(".swiper-container .swiper-wrapper");
+	if(!flag){
+		var hei = $(window).outerHeight() - $(".slide-nav").outerHeight();
+		function wrapHei(){
+			if(wrap.outerHeight()<hei){
+				wrap.css({"height":hei});
+			}
 		}
 	}
 	if(!flag){wrapHei();}
@@ -54,8 +56,62 @@ function slideHuaDong(flag,autoHeiFlag){
 		navTowUl.eq(i).stop(true,true).fadeIn().slideDown().siblings("ul").stop(true.true).hide(0);
 		slideNavTwoWid(navTowUl.eq(i));	
 	}
+	
+	return mySwiper;
 }
+//滑动切换 新
+function slideHuaDongNew(objArr){
+	var nav = $(".slide-nav em");
+	var li = $(".slide-nav li");
+	
+	var wrap = $(".com-swiper-container .swiper-wrapper");
+	var winH = $(document).outerHeight(true);
+	var hei = winH;
+	
+	if(objArr){
+		for(var i=0; i<objArr.length; i++){
+			console.log(objArr[i]);
+			hei -= objArr[i].outerHeight(true);
+		}
+	}
+	
+	var mySwiper = new Swiper(".swiper-container.com-swiper-container",{
+//		noSwiping : true,
+//		noSwipingClass : 'stop-swiping',
+		autoHeight: true,
+		onInit: function(){
+			wrapHei();
+		},
+		onTouchStart: function(swiper){
+			
+		},
+		onSlideChangeStart: function(swiper){
+			inputI(swiper.activeIndex);
+		},
+		onTransitionEnd: function(swiper){
+			wrapHei();
+		},
+	});
+	
+	li.on("click",function(){
+		var i = $(this).index();
+		inputI(i);
+		mySwiper.slideTo(i,300,function(){
+			
+		});
+	});
+	function inputI(i){
+		nav.eq(i).addClass("act").parent().siblings().find("em").removeClass("act");
+	}
+	
+	function wrapHei(){
+		if(wrap.outerHeight(true)<hei){
+			wrap.css({"height":hei});
+		}
+	}
 
+	return mySwiper;
+}
 //弹框
 var popup = (function(){
 	var timer;
@@ -459,4 +515,24 @@ function touchendResolve(cobj,fn){
     	}
    		event.preventDefault();
     });
+}
+
+//滚动 使元素定位  
+function scrollFix(obj){
+	var flag = true;
+	var cl = {};
+	var ttop = obj.offset().top;
+	var lleft = obj.offset().left;
+	$(window).on("scroll",function(){
+		if($(this).scrollTop()>=ttop){
+			if(flag){
+				flag = false;
+				cl = obj.clone(true).css({"position":"fixed","width":"100%","top":0,"left":lleft,"zIndex":"1234569"});
+				obj.after(cl);
+			}
+		}else{
+			if(cl.length > 0){cl.remove();}
+			flag = true;
+		}
+	});
 }

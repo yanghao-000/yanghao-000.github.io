@@ -2,6 +2,7 @@ $(function(){
 	slideHuaDong(true);
 	slideUpDown();
 	judgeAndTeacher();
+	scrollFix($(".ban"));
 });
 
 //点击章节展开
