@@ -154,7 +154,7 @@ body{
 }
 .course-list-box .item .right p:nth-child(1){
 	font-size: 1.25em;
-	margin-bottom:0.5em;
+	/*margin-bottom:0.5em;*/
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -185,9 +185,9 @@ body{
 .course-detail-head .bot .tit{
 	font-size: 1.5em;
 	margin-bottom:0.6em;
-	overflow: hidden;
+	/*overflow: hidden;
 	white-space: nowrap;
-	text-overflow: ellipsis;
+	text-overflow: ellipsis;*/
 }
 .course-detail-head .bot .intro .left{
 	font-size: 1.35em;

@@ -1,6 +1,6 @@
 $(function () {
     slideHuaDong(true);
-    $(".float-nav-bottom #right-enable").on("touchend", function () {
+    $(".float-nav-bottom #right-enable").on("click", function () {
         courseBuyPop();
         return false;
     });
@@ -65,7 +65,7 @@ $(function () {
 //  }
 //}
 
-
+//立即购买弹框
 function courseBuyPop() {
     var bg = $(".black-bg");
     var pop = $(".course-bug-pop");

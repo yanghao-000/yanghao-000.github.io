@@ -73,3 +73,9 @@ body{
 .index-box .t-h1.img-12{
 	background-image: url(../../images/teacher/t-index-icon-12.png);
 }
+.index-box .t-h1.img-13{
+	background-image: url(../../images/teacher/t-index-icon-13.png);
+}
+.mar-bot{
+	margin-bottom:1em;
+}

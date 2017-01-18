@@ -23,9 +23,9 @@
 .t-h2 i.i-2{
 	margin-left:1.6em;
 }
-body .foo{
+/*body .foo{
 	margin-top:0;
-}
+}*/
 /*mp3播放器=====================*/
 /*body{
 	padding:4%;
@@ -61,7 +61,7 @@ body .foo{
 	text-align: right;
 	height: 1.4em;
 	/*background: url(../../images/main/icon/jyxt-player-act.png) no-repeat right center;*/
-	-webkit-background-size: contain;
+	/*-webkit-background-size: contain;*/
 }
 .mp3-box .t-i3.act{
 	background: none;
@@ -77,4 +77,29 @@ video.mp3{
 	width:0;
 	height:0.1em;
 	display: none;
+}
+.mainCon{
+	padding: 4% 4% 4%;
+}
+.foo{
+	font-size: 1.25em;
+	color:#666;
+	margin-top:1em;
+}
+.zan{
+	float:left;
+	margin-top:10px;
+	font-size: 18px;
+	height:30px;
+	color:#666;
+	/*line-height: 30px;*/
+}
+.zan .t-h1{
+	width:18px;
+	height:18px;
+	background: url(../images/art-zan.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+}
+.zan .t-h2{
+	
 }

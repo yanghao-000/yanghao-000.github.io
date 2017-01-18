@@ -1,5 +1,5 @@
 $(function(){
-
+	clickShowLeyu($(".ly-zixun"));
 });
 document.body.addEventListener('touchstart', function (){});
 
@@ -535,4 +535,18 @@ function scrollFix(obj){
 			flag = true;
 		}
 	});
+}
+
+//乐语入口
+function leyu_kf(){
+//  document.write('doyoo.util.openChat();doyoo.util.accept();return false;');
+	doyoo.util.openChat('g=10066933');
+	doyoo.util.accept('g=10066933');
+	return false;
+}
+//点击打开乐语
+function clickShowLeyu(obj){
+	obj.on("click",function(){  
+		leyu_kf();
+	});                 
 }
