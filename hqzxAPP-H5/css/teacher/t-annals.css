@@ -19,6 +19,9 @@
 			border-radius: 2px;
 			display: block;
 		}
+		.t-annals-main .t-annals-box:hover,
+		.t-annals-main .t-annals-box:active{
+			background: #f5f5f5;}
 		.t-annals-main .t-annals-box .left-box-img{
 			position: absolute;
 			left: 4.2%;
@@ -55,6 +58,7 @@
 		}
 		.t-annals-detail{
 			background: #fff;
+			overflow-x: hidden;
 		}
 		.detail-box{
 			display: block;
@@ -64,6 +68,12 @@
 			padding-top: 20px;
 			padding-bottom: 15px;
 			position: relative;
+		}
+		.detail-box:hover,
+		.detail-box:active{
+			padding-left:3.2%;
+			margin-left:0;
+			background: #f5f5f5;
 		}
 		.detail-box:after{
 			content: '';

@@ -65,12 +65,11 @@ function slideHuaDongNew(objArr){
 	var li = $(".slide-nav li");
 	
 	var wrap = $(".com-swiper-container .swiper-wrapper");
-	var winH = $(document).outerHeight(true);
+	var winH = $(window).outerHeight(true);
 	var hei = winH;
 	
 	if(objArr){
 		for(var i=0; i<objArr.length; i++){
-			console.log(objArr[i]);
 			hei -= objArr[i].outerHeight(true);
 		}
 	}
