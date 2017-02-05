@@ -1,7 +1,7 @@
 $(function(){
 //	slideHuaDongTe();
 	
-	createCCplayer($("#video-box-1"),"A0DF3C0F49B4B5B89C33DC5901307461");
+//	createCCplayer($("#video-box-1"),"A0DF3C0F49B4B5B89C33DC5901307461");
 	createCCplayer($("#video-box-2"),"E6CB736D45FBB16D9C33DC5901307461");
 });
 

@@ -13,6 +13,7 @@ function slideChannel(){
 		var i = $(this).index(".t-i");
 		$(this).addClass("act").siblings(".t-i").removeClass("act");
 		box.eq(i).stop(true,true).fadeIn(200).siblings().hide(0);
+		return false;
 	});
 }
 //网络课程-选择弹框
