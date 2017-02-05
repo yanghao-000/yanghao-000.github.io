@@ -357,6 +357,7 @@ body{
 	font-size: 1.25em;
 	/*height:2em;*/
 	/*line-height: 1.92em;*/
+	margin-top:-0.08em;
 }
 .sec-lr-bar{
 	text-align: center;
@@ -375,4 +376,24 @@ body{
 	height:1.48em;
 	background: url(../../images/school/icon/add-circle.png) no-repeat center center;
 	-webkit-background-size: 100% 100%;
+	margin-top:0.1em;
+}
+/*=====继续学习=============*/
+.continueLearning{
+	text-align: center;
+	color: #12C38C;
+	background-color: #ecfff9;
+	height:3.4em;
+}
+.continueLearning:active{
+	opacity: 0.6;
+}
+.continueLearning .t-i1{
+	width:5%;
+	height:100%;
+	background: url(../../images/school/icon/dianShi.png) no-repeat center center;
+	-webkit-background-size: contain;
+}
+.continueLearning .t-i2{
+	font-size: 1.25em;
 }
