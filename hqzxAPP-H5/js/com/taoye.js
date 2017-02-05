@@ -48,7 +48,7 @@ function verticalScroll(outer){
 }
 //cc视频========================
 function createCCplayer(obj,ccId){
-	obj.attr("src","http://p.bokecc.com/player?vid="+ ccId +"&siteid=FE7A65E6BE2EA539&autoStart=false&width=100%&height=100%&playerid=CED4B0511C5D4992&playertype=1");
+	obj.attr("src","https://p.bokecc.com/player?vid="+ ccId +"&siteid=FE7A65E6BE2EA539&autoStart=false&width=100%&height=100%&playerid=CED4B0511C5D4992&playertype=1");
 }
 //报名日期倒计时
 function dateCd(date,obj){

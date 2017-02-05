@@ -3,8 +3,25 @@ $(function(){
 	
 //	createCCplayer($("#video-box-1"),"A0DF3C0F49B4B5B89C33DC5901307461");
 	createCCplayer($("#video-box-2"),"E6CB736D45FBB16D9C33DC5901307461");
+	
 });
 
+function on_cc_player_init(vid, objectID) {
+//  console.info('vid', vid);
+//  var config = {};
+//  var player = getSWF(objectID);
+//  config.fullscreen_enable = 1;
+//  console.info('player', player);
+//  player.setConfig(config);
+//  //播放量+1
+//  $.ajax({
+//      url: '/Web/NH/PlayAmountAdd',
+//      data: { vid: vid },
+//      success: function () { }
+//  });
+	alert(123);
+};
+//on_cc_player_init();
 //function slideHuaDongTe(){
 //	var nav = $(".slide-nav em");
 //	var li = $(".slide-nav li");
