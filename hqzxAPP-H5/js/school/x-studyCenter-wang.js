@@ -19,5 +19,6 @@ function slideChannel(){
 function wangShowPop(){
 	$(".sec-lr-bar").on("touchend",function(){
 		choicePopAfter($(".choice-pop"),function(){});
+		return false;
 	});
 }
